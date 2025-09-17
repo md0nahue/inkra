@@ -22,7 +22,7 @@ class InterviewManager: ObservableObject {
     private var questionService: InterviewQuestionService?
     private let questionsManager = DailyQuestionsManager()
     private let networkService = NetworkService.shared
-    private let featureFlags = FeatureFlagManager.shared
+    // Feature flags removed in V1
 
     // MARK: - Configuration
     private var project: Project?
@@ -548,10 +548,9 @@ class InterviewManager: ObservableObject {
     }
 
     private func handleNetworkError(_ error: Error, operation: OfflineOperation) async {
-        guard featureFlags.isEnabled(.offlineMode) else {
-            handleError("Network error: \(error.localizedDescription)", recoverable: false)
-            return
-        }
+        // Offline mode always enabled in V1
+        // handleError("Network error: \(error.localizedDescription)", recoverable: false)
+        // return
 
         print("📱 Network error, queuing operation for offline: \(operation)")
 
@@ -610,9 +609,7 @@ class InterviewManager: ObservableObject {
     }
 
     private func tryOfflineMode() async -> Bool {
-        guard featureFlags.isEnabled(.offlineMode) else {
-            return false
-        }
+        // Offline mode always enabled in V1
 
         // Check if we have cached questions to continue
         if useDailyQuestions && !dailyQuestions.isEmpty {
@@ -696,16 +693,14 @@ class InterviewManager: ObservableObject {
     // MARK: - Improved Question Generation with Fallback
 
     private func generateQuestionsWithFallback() async throws -> [Question] {
-        // Try AWS Lambda first if enabled
-        if featureFlags.isEnabled(.awsBackend) {
-            do {
-                return try await executeWithCircuitBreaker(operation: "lambda_questions") {
-                    return try await generateQuestionsFromLambda()
-                }
-            } catch {
-                print("⚠️ Lambda generation failed, falling back to cached questions")
-                return getCachedFallbackQuestions()
+        // AWS Lambda always enabled in V1
+        do {
+            return try await executeWithCircuitBreaker(operation: "lambda_questions") {
+                return try await generateQuestionsFromLambda()
             }
+        } catch {
+            print("⚠️ Lambda generation failed, falling back to cached questions")
+            return getCachedFallbackQuestions()
         }
 
         // Use cached questions if AWS is disabled
@@ -757,25 +752,7 @@ enum OfflineOperation {
     case uploadAudio(url: URL)
 }
 
-enum NetworkError: LocalizedError {
-    case connectionLost
-    case serviceUnavailable
-    case timeout
-    case rateLimited
-
-    var errorDescription: String? {
-        switch self {
-        case .connectionLost:
-            return "Connection lost"
-        case .serviceUnavailable:
-            return "Service temporarily unavailable"
-        case .timeout:
-            return "Request timed out"
-        case .rateLimited:
-            return "Rate limit exceeded"
-        }
-    }
-}
+// NetworkError is defined in APIModels.swift
 
 // MARK: - Circuit Breaker Implementation
 
@@ -880,14 +857,7 @@ enum CircuitBreakerError: LocalizedError {
 
 // MARK: - Mock Network Service
 
-class NetworkService {
-    static let shared = NetworkService()
-
-    var isConnected: Bool {
-        // In real implementation, check actual network connectivity
-        return true
-    }
-}
+// NetworkService is defined in NetworkService.swift
 
 // MARK: - Supporting Types
 enum InterviewError: LocalizedError {

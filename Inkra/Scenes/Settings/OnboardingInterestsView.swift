@@ -127,8 +127,7 @@ struct OnboardingInterestsView: View {
             do {
                 let response = try await NetworkService.shared.updateUserInterests(Array(selectedInterests))
                 await MainActor.run {
-                    // Update the auth service with the new interests
-                    AuthService.shared.updateUserInterests(response.interests)
+                    // Auth disabled in V1 - interests saved locally
                     isLoading = false
                     onComplete()
                 }

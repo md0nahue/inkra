@@ -2,7 +2,6 @@ import SwiftUI
 
 struct AccountSettingsView: View {
     @Environment(\.dismiss) var dismiss
-    @StateObject private var authService = AuthService.shared
     @StateObject private var lifecycleService = UserLifecycleService.shared
     @State private var showingDeleteForm = false
     @State private var showingExportForm = false
@@ -17,7 +16,7 @@ struct AccountSettingsView: View {
                     HStack {
                         Text("Email")
                         Spacer()
-                        Text(authService.currentUserEmail ?? "Not available")
+                        Text("V1 User")
                             .foregroundColor(.secondary)
                     }
                 }
@@ -149,7 +148,7 @@ struct AccountSettingsView: View {
             )
             
             // Clear auth after successful deletion request
-            await authService.logout()
+            // Auth disabled in V1 - no logout needed
             dismiss()
         } catch {
             deleteError = error.localizedDescription

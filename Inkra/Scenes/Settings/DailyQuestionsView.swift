@@ -41,8 +41,7 @@ struct DailyQuestionsView: View {
                                     Image(systemName: "plus.circle")
                                     Text("Add Question")
                                 }
-                                .font(.subheadline)
-                                .fontWeight(.medium)
+                                .font(.system(size: 15, weight: .medium))
                                 .foregroundColor(.white)
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 12)
@@ -55,8 +54,7 @@ struct DailyQuestionsView: View {
                                     Image(systemName: "arrow.clockwise")
                                     Text("Reset to Defaults")
                                 }
-                                .font(.subheadline)
-                                .fontWeight(.medium)
+                                .font(.system(size: 15, weight: .medium))
                                 .foregroundColor(ColorTheme.primaryAccent)
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 12)

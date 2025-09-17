@@ -140,11 +140,11 @@ class InterviewQuestionService: ObservableObject {
                     try await AudioCacheService.shared.downloadPollyAudio(for: questionId, from: url, projectId: self.project.id)
                     print("✅💾 First question cached to disk")
                     
-                    // Memory preload first question immediately after download
-                    await MainActor.run {
-                        NativeVoiceService.shared.preloadAudio(url: url, for: questionId)
-                        print("⚡ First question preloaded to memory")
-                    }
+                    // V1: Audio preloading disabled for V1 simplicity
+                    // await MainActor.run {
+                    //     NativeVoiceService.shared.preloadAudio(url: url, for: questionId)
+                    //     print("⚡ First question preloaded to memory")
+                    // }
                 } catch {
                     print("⚠️ Priority download failed: \(error)")
                 }
@@ -249,13 +249,13 @@ class InterviewQuestionService: ObservableObject {
                 
                 await self.downloadMultipleAudioWithThrottling(audioItems)
                 
-                // Memory preload first 2 new questions for instant playback
-                for (questionId, url) in audioItems.prefix(2) {
-                    await MainActor.run {
-                        NativeVoiceService.shared.preloadAudio(url: url, for: questionId)
-                        print("⚡📋 Follow-up preloaded to memory: question \(questionId)")
-                    }
-                }
+                // V1: Audio preloading disabled for V1 simplicity
+                // for (questionId, url) in audioItems.prefix(2) {
+                //     await MainActor.run {
+                //         NativeVoiceService.shared.preloadAudio(url: url, for: questionId)
+                //         print("⚡📋 Follow-up preloaded to memory: question \(questionId)")
+                //     }
+                // }
                 
                 print("✅🚀 THROTTLED FOLLOWUP PRELOAD COMPLETE")
             }

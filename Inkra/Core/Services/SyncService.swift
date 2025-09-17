@@ -54,12 +54,8 @@ class SyncService: ObservableObject {
             return 
         }
         
-        // Don't sync if user is not authenticated
-        guard AuthService.shared.accessToken != nil else {
-            print("🚨 DEBUG: CRITICAL - User not authenticated, cannot sync")
-            print("🔐 Skipping sync - user not authenticated")
-            return
-        }
+        // Auth disabled in V1 - always proceed with local-only operation
+        print("🔐 Auth disabled in V1 - operating in local-only mode")
         
         print("🔄 Starting initial sync...")
         isSyncing = true
@@ -171,12 +167,8 @@ class SyncService: ObservableObject {
             return 
         }
         
-        // Don't sync if user is not authenticated
-        guard AuthService.shared.accessToken != nil else {
-            print("🚨 DEBUG: No auth token - cannot perform background sync")
-            print("🔐 Skipping background sync - user not authenticated")
-            return
-        }
+        // Auth disabled in V1 - always proceed with local-only operation
+        print("🔐 Auth disabled in V1 - operating in local-only mode")
         
         print("🔄 Starting background sync...")
         isSyncing = true

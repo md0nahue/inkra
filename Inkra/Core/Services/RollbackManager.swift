@@ -637,7 +637,7 @@ struct BackupVersion: Codable, Identifiable {
 
 struct AppState: Codable {
     let version: String
-    let featureFlags: [String: FeatureFlagConfig]
+    let featureFlags: [String: Bool]
     let lastInterviewDate: Date?
     let userOnboardingComplete: Bool
     let selectedVoiceId: String?
@@ -649,15 +649,15 @@ class VersionCompatibility {
         return from.compare(to, options: .numeric) == .orderedDescending
     }
 
-    func getCompatibleFeatures(for version: String) -> [FeatureFlagManager.Feature] {
+    func getCompatibleFeatures(for version: String) -> [String] {
         // Return features compatible with the given version
         switch version {
         case "1.0.0":
-            return [.dailyQuestions, .offlineMode]
+            return ["dailyQuestions", "offlineMode"]
         case "2.0.0":
-            return [.nativeSpeech, .localAudio, .dailyQuestions, .offlineMode]
+            return ["nativeSpeech", "localAudio", "dailyQuestions", "offlineMode"]
         default:
-            return FeatureFlagManager.Feature.allCases
+            return ["dailyQuestions", "offlineMode", "nativeSpeech", "localAudio"]
         }
     }
 }

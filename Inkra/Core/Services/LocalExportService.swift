@@ -90,9 +90,7 @@ class LocalExportService {
     }
     
     func startPodcastExport(projectId: Int) async throws -> PodcastExportResponse {
-        guard let token = await AuthService.shared.accessToken else {
-            throw ExportError.notAuthenticated
-        }
+        // Auth disabled in V1 - always proceed
         
         let url = URL(string: "\(AppConfig.apiBaseURL)/api/projects/\(projectId)/export/podcast")!
         var request = URLRequest(url: url)
@@ -112,9 +110,7 @@ class LocalExportService {
     }
     
     func checkPodcastStatus(projectId: Int, jobId: String) async throws -> PodcastStatusResponse {
-        guard let token = await AuthService.shared.accessToken else {
-            throw ExportError.notAuthenticated
-        }
+        // Auth disabled in V1 - always proceed
         
         let url = URL(string: "\(AppConfig.apiBaseURL)/api/projects/\(projectId)/export/podcast/status/\(jobId)")!
         var request = URLRequest(url: url)
@@ -138,9 +134,7 @@ class LocalExportService {
         fileName: String,
         parameters: [String: String] = [:]
     ) async throws -> URL {
-        guard let token = await AuthService.shared.accessToken else {
-            throw ExportError.notAuthenticated
-        }
+        // Auth disabled in V1 - always proceed
         
         var urlComponents = URLComponents(string: "\(AppConfig.apiBaseURL)/api/projects/\(projectId)/export/\(format)")!
         

@@ -2,7 +2,6 @@ import SwiftUI
 
 struct MenuView: View {
     @Environment(\.dismiss) var dismiss
-    @StateObject private var authService = AuthService.shared
     @State private var showingAccountSettings = false
     @State private var showingInkra = false
     @State private var showingFeedback = false
@@ -65,21 +64,7 @@ struct MenuView: View {
                             )
                         }
                         
-                        // Logout Section
-                        VStack(spacing: 16) {
-                            MenuButton(
-                                title: "Logout",
-                                icon: "arrow.backward.circle",
-                                isDestructive: true,
-                                action: {
-                                    Task {
-                                        try? await authService.logout()
-                                        dismiss()
-                                    }
-                                }
-                            )
-                        }
-                        .padding(.top, 20)
+                        // No logout needed in V1
                         
                         Spacer(minLength: 60)
                     }

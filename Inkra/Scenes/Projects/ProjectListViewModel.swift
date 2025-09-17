@@ -54,9 +54,8 @@ class ProjectListViewModel: ObservableObject {
         if projects.isEmpty {
             print("🚨 DEBUG: STILL NO PROJECTS after local load - investigating...")
             
-            // Check Auth state
-            let hasAuth = AuthService.shared.accessToken != nil
-            print("🔍 DEBUG: Has auth token: \(hasAuth)")
+            // Auth disabled in V1 - always proceed
+            print("🔍 DEBUG: Auth disabled in V1")
             
             // Check sync service state
             print("🔍 DEBUG: SyncService needsSync: \(syncService.needsSync())")
@@ -232,12 +231,8 @@ class ProjectListViewModel: ObservableObject {
             projects = response.projects
             
         } catch {
-            if let networkError = error as? NetworkError, case .unauthorized = networkError {
-                // Handle 401 by logging out
-                print("🔐 Unauthorized - logging out user")
-                try? await AuthService.shared.logout()
-                return
-            }
+            // Auth disabled in V1 - no logout needed
+            print("🔐 Auth disabled in V1 - handling error normally")
             
             // Show error but keep local data if available
             errorMessage = "Failed to refresh projects: \(error.localizedDescription)"
@@ -419,11 +414,8 @@ class ProjectListViewModel: ObservableObject {
             print("✅ Total projects now: \(projects.count), has more: \(hasMoreProjects)")
             
         } catch {
-            if let networkError = error as? NetworkError, case .unauthorized = networkError {
-                print("🔐 Unauthorized - logging out user")
-                try? await AuthService.shared.logout()
-                return
-            }
+            // Auth disabled in V1 - no logout needed
+            print("🔐 Auth disabled in V1 - handling error normally")
             
             errorMessage = "Failed to load more projects: \(error.localizedDescription)"
             print("Error loading more projects: \(error)")

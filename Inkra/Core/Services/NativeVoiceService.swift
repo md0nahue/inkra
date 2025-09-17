@@ -17,10 +17,10 @@ class NativeVoiceService: NSObject, ObservableObject {
     private var utteranceQueue: [AVSpeechUtterance] = []
     private var utteranceMap: [AVSpeechUtterance: String] = [:]
 
-    // MARK: - Configuration
-    private var speechRate: Float = 0.5
-    private var pitchMultiplier: Float = 1.0
-    private var volume: Float = 1.0
+    // MARK: - Configuration (V1: Made public for simplicity)
+    public var speechRate: Float = 0.5
+    public var pitchMultiplier: Float = 1.0
+    public var volume: Float = 1.0
     private var preUtteranceDelay: TimeInterval = 0.0
     private var postUtteranceDelay: TimeInterval = 0.0
 

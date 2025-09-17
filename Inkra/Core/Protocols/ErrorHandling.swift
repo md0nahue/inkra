@@ -26,12 +26,8 @@ extension ErrorHandling {
             case .invalidURL:
                 errorMessage = "Invalid request. Please try again."
             case .unauthorized:
-                Task {
-                    print("🔐 Unauthorized - logging out user")
-                    try? await AuthService.shared.logout()
-                    AppStateService.shared.showSessionExpiredMessage()
-                }
-                return
+                // Auth disabled in V1 - handle as normal error
+                errorMessage = "Unauthorized access. Please try again."
             case .validationError(let message):
                 errorMessage = message
             default:

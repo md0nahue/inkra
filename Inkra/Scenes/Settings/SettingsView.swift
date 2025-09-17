@@ -4,7 +4,6 @@ import UniformTypeIdentifiers
 @available(iOS 15.0, macOS 11.0, *)
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
-    @StateObject private var authService = AuthService.shared
     @StateObject private var questionsManager = DailyQuestionsManager()
     @State private var showingVoiceSettings = false
     @State private var showingDailyQuestions = false
@@ -176,14 +175,8 @@ struct SettingsView: View {
     // MARK: - Actions
 
     private func signOut() {
-        Task {
-            do {
-                try await authService.logout()
-                dismiss()
-            } catch {
-                showAlert(title: "Sign Out Failed", message: error.localizedDescription)
-            }
-        }
+        // Auth disabled in V1 - no logout needed
+        dismiss()
     }
 
     private func exportSettings() {

@@ -16,11 +16,6 @@ class LambdaService: ObservableObject {
     private let urlSession: URLSession
     private var cancellables = Set<AnyCancellable>()
 
-    // MARK: - Rate Limiting
-    @Published var dailyUsage: Int = 0
-    @Published var dailyLimit: Int = 10
-    @Published var isRateLimited = false
-
     private init() {
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = 30.0
@@ -32,11 +27,11 @@ class LambdaService: ObservableObject {
 
     // MARK: - Setup
     private func setupConfiguration() {
-        // This will be configured from Terraform outputs
+        // V1: Use simplified API Gateway URL from environment or default
         apiGatewayBaseURL = ProcessInfo.processInfo.environment["API_GATEWAY_URL"] ??
                            "https://placeholder.execute-api.us-east-1.amazonaws.com/dev"
 
-        print("🌐 Configured Lambda service with base URL: \(apiGatewayBaseURL)")
+        print("🌐 V1 Lambda service configured with base URL: \(apiGatewayBaseURL)")
     }
 
     func configure(apiGatewayURL: String) {
@@ -44,7 +39,7 @@ class LambdaService: ObservableObject {
         print("🔧 Lambda service reconfigured with URL: \(apiGatewayURL)")
     }
 
-    // MARK: - Question Generation
+    // MARK: - Question Generation (V1 Simplified)
     func generateQuestions(
         position: String,
         company: String,
@@ -64,12 +59,10 @@ class LambdaService: ObservableObject {
             throw LambdaError.invalidURL(endpoint)
         }
 
-        let requestBody = QuestionGenerationRequest(
+        // V1: Simplified request body - only position and company needed
+        let requestBody = V1QuestionGenerationRequest(
             position: position,
-            company: company,
-            yearsOfExperience: yearsOfExperience,
-            difficulty: difficulty,
-            questionType: questionType
+            company: company
         )
 
         var request = URLRequest(url: url)
@@ -91,11 +84,7 @@ class LambdaService: ObservableObject {
 
             let questionResponse = try JSONDecoder().decode(QuestionGenerationResponse.self, from: data)
 
-            // Update rate limiting info
-            self.dailyUsage = questionResponse.metadata?.dailyUsage ?? self.dailyUsage
-            self.dailyLimit = questionResponse.metadata?.dailyLimit ?? self.dailyLimit
-
-            print("✅ Generated \(questionResponse.questions.count) questions successfully")
+            print("✅ V1: Generated \(questionResponse.questions.count) questions successfully")
             return questionResponse
 
         } catch let error as LambdaError {
@@ -108,85 +97,7 @@ class LambdaService: ObservableObject {
         }
     }
 
-    // MARK: - User Profile Management
-    func getUserProfile() async throws -> UserProfile {
-        isLoading = true
-        errorMessage = nil
-
-        defer { isLoading = false }
-
-        let endpoint = "\(apiGatewayBaseURL)/user/profile"
-
-        guard let url = URL(string: endpoint) else {
-            throw LambdaError.invalidURL(endpoint)
-        }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-
-        do {
-            let (data, response) = try await urlSession.data(for: request)
-
-            try validateResponse(response)
-
-            let userProfile = try JSONDecoder().decode(UserProfile.self, from: data)
-
-            // Update local rate limiting info
-            self.dailyUsage = userProfile.dailyUsage
-            self.dailyLimit = userProfile.dailyLimit
-
-            print("✅ Retrieved user profile successfully")
-            return userProfile
-
-        } catch let error as LambdaError {
-            handleLambdaError(error)
-            throw error
-        } catch {
-            let lambdaError = LambdaError.networkError(error)
-            handleLambdaError(lambdaError)
-            throw lambdaError
-        }
-    }
-
-    func updateUserPreferences(_ preferences: UserPreferences) async throws {
-        isLoading = true
-        errorMessage = nil
-
-        defer { isLoading = false }
-
-        let endpoint = "\(apiGatewayBaseURL)/user/preferences"
-
-        guard let url = URL(string: endpoint) else {
-            throw LambdaError.invalidURL(endpoint)
-        }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "PUT"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
-        // Encode request body
-        do {
-            request.httpBody = try JSONEncoder().encode(preferences)
-        } catch {
-            throw LambdaError.encodingError(error)
-        }
-
-        do {
-            let (data, response) = try await urlSession.data(for: request)
-
-            try validateResponse(response)
-
-            print("✅ Updated user preferences successfully")
-
-        } catch let error as LambdaError {
-            handleLambdaError(error)
-            throw error
-        } catch {
-            let lambdaError = LambdaError.networkError(error)
-            handleLambdaError(lambdaError)
-            throw lambdaError
-        }
-    }
+    // MARK: - V1 Note: User profile management removed for V1 simplicity
 
     // MARK: - Request Validation
     private func validateResponse(_ response: URLResponse) throws {
@@ -205,7 +116,7 @@ class LambdaService: ObservableObject {
         case 403:
             throw LambdaError.forbidden
         case 429:
-            isRateLimited = true
+            // V1: No rate limiting, but still handle 429 status
             throw LambdaError.rateLimitExceeded
         case 500...599:
             throw LambdaError.serverError(httpResponse.statusCode)
@@ -214,21 +125,22 @@ class LambdaService: ObservableObject {
         }
     }
 
-    // MARK: - Error Handling
+    // MARK: - Error Handling (V1 Simplified)
     private func handleLambdaError(_ error: LambdaError) {
         errorMessage = error.localizedDescription
 
         switch error {
         case .rateLimitExceeded:
-            isRateLimited = true
+            // V1: No rate limiting state tracking
+            break
         case .unauthorized:
-            // Could trigger re-authentication flow
+            // V1: No authentication in V1
             break
         default:
             break
         }
 
-        print("❌ Lambda service error: \(error.localizedDescription)")
+        print("❌ V1 Lambda service error: \(error.localizedDescription)")
     }
 
     // MARK: - Retry Logic
@@ -262,28 +174,16 @@ class LambdaService: ObservableObject {
         throw lastError ?? LambdaError.unknownError(0)
     }
 
-    // MARK: - Rate Limiting Helpers
-    func checkRateLimit() -> (canMakeRequest: Bool, resetTime: Date?) {
-        if dailyUsage >= dailyLimit {
-            // Calculate reset time (midnight UTC)
-            let calendar = Calendar.current
-            let tomorrow = calendar.date(byAdding: .day, value: 1, to: Date()) ?? Date()
-            let resetTime = calendar.startOfDay(for: tomorrow)
-
-            return (false, resetTime)
-        }
-
-        return (true, nil)
-    }
-
-    func resetRateLimit() {
-        dailyUsage = 0
-        isRateLimited = false
-        print("🔄 Rate limit reset")
-    }
+    // MARK: - V1 Note: Rate limiting helpers removed for V1 simplicity
 }
 
-// MARK: - Request/Response Models
+// MARK: - V1 Request/Response Models
+struct V1QuestionGenerationRequest: Codable {
+    let position: String
+    let company: String
+}
+
+// Legacy model kept for compatibility
 struct QuestionGenerationRequest: Codable {
     let position: String
     let company: String
@@ -308,34 +208,17 @@ struct GeneratedQuestion: Codable, Identifiable {
 
 struct QuestionMetadata: Codable {
     let position: String
-    let company: String
-    let yearsOfExperience: String
-    let difficulty: String
-    let questionType: String
+    let company: String?
     let generatedAt: String
-    let dailyUsage: Int
-    let dailyLimit: Int
+    // V1: Removed rate limiting fields
+    let yearsOfExperience: String?
+    let difficulty: String?
+    let questionType: String?
+    let dailyUsage: Int?
+    let dailyLimit: Int?
 }
 
-struct UserProfile: Codable {
-    let username: String
-    let email: String
-    let subscriptionTier: String
-    let dailyUsage: Int
-    let dailyLimit: Int
-    let monthlyQuota: Int
-    let preferences: UserPreferences?
-}
-
-struct UserPreferences: Codable {
-    let voiceId: String?
-    let speechRate: Double?
-    let autoSubmit: Bool?
-    let notificationsEnabled: Bool?
-    let dailyQuestionsEnabled: Bool?
-    let preferredDifficulty: String?
-    let theme: String?
-}
+// V1: User profile and preferences models removed for V1 simplicity
 
 // MARK: - Error Types
 enum LambdaError: LocalizedError {
@@ -370,7 +253,7 @@ enum LambdaError: LocalizedError {
         case .forbidden:
             return "Access denied. Please check your permissions."
         case .rateLimitExceeded:
-            return "Daily question limit exceeded. Upgrade to premium for more questions."
+            return "Service temporarily unavailable. Please try again later."
         case .serverError(let code):
             return "Server error (\(code)). Please try again later."
         case .unknownError(let code):
@@ -415,12 +298,12 @@ extension LambdaService {
         let metadata = QuestionMetadata(
             position: position,
             company: company,
-            yearsOfExperience: "entry-level",
-            difficulty: "medium",
-            questionType: "behavioral",
             generatedAt: Date().ISO8601Format(),
-            dailyUsage: dailyUsage + 1,
-            dailyLimit: dailyLimit
+            yearsOfExperience: nil,
+            difficulty: nil,
+            questionType: nil,
+            dailyUsage: nil,
+            dailyLimit: nil
         )
 
         return QuestionGenerationResponse(questions: mockQuestions, metadata: metadata)

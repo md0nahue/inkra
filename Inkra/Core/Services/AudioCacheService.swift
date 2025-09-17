@@ -316,8 +316,8 @@ class AudioCacheService: ObservableObject {
             print("❌ Failed to clear disk cache: \(error)")
         }
         
-        // Clear NativeVoiceService preloaded items  
-        NativeVoiceService.shared.clearPreloadedItems()
+        // V1: clearPreloadedItems method not available - skip
+        // NativeVoiceService.shared.clearPreloadedItems()
         
         // Reset all status tracking
         cacheStatus.removeAll()

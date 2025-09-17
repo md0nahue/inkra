@@ -398,12 +398,7 @@ class NetworkService: NetworkServiceProtocol {
         // Add correlation ID to header for server-side logging
         request.setValue(correlationId, forHTTPHeaderField: "X-Correlation-ID")
         
-        // Add Authorization header if we have an access token (except for auth endpoints)
-        if !endpoint.path.contains("/auth") {
-            if let accessToken = await AuthService.shared.accessToken {
-                request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
-            }
-        }
+        // Auth disabled in V1 - no authorization headers needed
         
         if let body = endpoint.body {
             let encoder = JSONEncoder()
@@ -433,10 +428,7 @@ class NetworkService: NetworkServiceProtocol {
         case 200...299:
             return
         case 401:
-            // Handle unauthorized access by logging out the user
-            Task { @MainActor in
-                await AuthService.shared.handleUnauthorizedAccess()
-            }
+            // Auth disabled in V1 - handle as normal error
             throw NetworkError.unauthorized
         case 400...499:
             if let data = data, let errorMessage = parseErrorMessage(from: data) {
