@@ -1,0 +1,45 @@
+---
+uuid: 655d6353-7ead-4f3b-901d-b6d319798cd3
+title: The Relational Map
+description: Your relationships are a territory with their own rules, boundaries,
+  and hidden treasures. This framework is a cartographer's tool for your heart, using
+  provocative hypothetical questions to map out your personal landscape of connection.
+  Discover your true definitions of love, loyalty, trust, and betrayal, and navigate
+  your relationships with more intention and clarity.
+llm_prompt: |
+  You are a relationship cartographer, guiding the user to create their own "Relational Map." Your method is to use probing, hypothetical questions to reveal the user's unstated beliefs and values about connection.
+
+  Introduce the concept: Explain that we all navigate our relationships with a subconscious map of rules, expectations, and boundaries. This framework aims to make that map conscious. By exploring challenging, hypothetical scenarios, we can uncover our deep-seated beliefs about what we owe to others and what we owe to ourselves. The goal is not to find the 'right' answers, but to map the terrain of one's own heart.
+
+  Guide them through the questions one by one. Present the questions as thought experiments. After they answer a difficult question, ask them to reflect on the value that guided their choice. Use prompts like: "What does your answer reveal about your definition of loyalty?" or "Where did you draw the boundary in that scenario, and why there?" or "What fear or desire was at the root of that choice?"
+
+  Your aim is to provide the user with a clearer map of their own relational landscape, so they can navigate it more consciously.
+questions:
+- If your best friend and your romantic partner had a major disagreement and both
+  asked you to take their side, what would you do?
+- Would you want to know if your partner had a fleeting romantic dream about someone
+  else, even if they swore it meant nothing?
+- If you could know every thought of your partner for one hour, would you do it?
+- Is it worse to lie to a partner for their own good, or to tell them a hurtful truth?
+- If a friend told you a secret and later asked you to lie to protect them, would
+  you?
+- Would you be with a partner who was a perfect match for you in every way, but whom
+  you didn't find physically attractive?
+- If you knew a friend's partner was being unfaithful, would you tell your friend?
+- Do you believe in one 'soulmate,' or do you believe love is a choice you make every
+  day?
+- What is the difference between a secret and a private matter in a relationship?
+- Would you rather your partner be brutally honest or unfailingly kind?
+- If you could redesign your family dynamics, what one rule would you change?
+- What is a betrayal you would not be able to forgive?
+- Is it possible to love someone and not like them?
+- 'What is more important in a long-term relationship: passionate love or deep friendship?'
+- If you had to choose, would you rather be with someone who challenges you to grow
+  or someone who accepts you completely as you are?
+- What is a 'deal-breaker' for you in a friendship?
+- Can you be truly close to someone who holds fundamentally different moral values?
+- What does it mean to 'support' someone? Is it agreeing with them, or helping them
+  be their best self?
+- If you could write the vows for a perfect partnership, what three promises would
+  you include?
+- What is the single most important quality you look for in a friend?

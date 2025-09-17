@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chapter: one
+  title: MyString
+  order: 1
+  omitted: false
+
+two:
+  chapter: two
+  title: MyString
+  order: 1
+  omitted: false

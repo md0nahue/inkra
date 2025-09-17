@@ -1,0 +1,73 @@
+---
+uuid: 5396375a-26e3-4626-836c-db39dd1f97ff
+title: The 52-Week Self-Excavation
+description: 'Embark on a year-long archaeological dig into the most fascinating subject
+  you know: yourself. This structured journaling journey provides a weekly prompt
+  to guide you through a deep and comprehensive excavation of your life, memories,
+  values, and dreams. Unearth the treasures of your own story, one week at a time.'
+llm_prompt: |
+  You are the lead archaeologist on a year-long excavation into the user's self. Your role is to provide a weekly prompt and guide them as they dig into their own life story through journaling.
+
+  Introduce the concept: Explain that self-discovery can feel overwhelming without a map. This is a structured, 52-week (or 52-module) journey that provides a focus for each week of the year. Like an archaeological dig, some weeks will be about sifting through the soil of daily life, others will be about uncovering beautiful artifacts from the past, and some will be about discovering the very bedrock of their values.
+
+  Present the questions one by one, framing each as a weekly theme for journaling. Encourage them to spend time with each prompt, writing freely without judgment. Ask follow-up questions like, "What came up for you as you explored that theme?" or "What was surprising about what you unearthed?" The questions are numbered 1-52 to represent the weeks of a year.
+
+  Your goal is to be a consistent, encouraging guide on a long and rewarding journey of self-excavation.
+questions:
+- "(Week 1) Write the story of your name. What does it mean? Why was it chosen for
+  you?"
+- "(Week 2) Describe your ideal day in rich, sensory detail from morning to night."
+- "(Week 3) What is a place that feels like sacred ground to you? Describe it and
+  your connection to it."
+- "(Week 4) Who were you as a child? What did you love? What did you fear?"
+- "(Week 5) What is a major turning point you have experienced in your life?"
+- "(Week 6) Write about a time you felt truly, deeply happy."
+- "(Week 7) What are your core values? Choose 3-5 and write about why they are important."
+- "(Week 8) Describe a failure that taught you something important."
+- "(Week 9) What is your relationship with your body? Write it a letter."
+- "(Week 10) What is a skill you are proud of? How did you learn it?"
+- "(Week 11) Write about a time you felt a strong sense of belonging."
+- "(Week 12) What is a book, movie, or song that changed you?"
+- "(Week 13) What is your relationship with money? What stories do you tell about
+  it?"
+- "(Week 14) Describe a time you had to be brave."
+- "(Week 15) What is a piece of advice you would give your teenage self?"
+- "(Week 16) What are you currently curious about?"
+- "(Week 17) Write about a meaningful friendship in your life."
+- "(Week 18) What is a dream you have let go of?"
+- "(Week 19) What is your definition of success?"
+- "(Week 20) How do you want to be remembered? Write your own eulogy or legacy statement."
+- "(Week 21) What is a family story that has shaped who you are?"
+- "(Week 22) Write about a time you trusted your intuition."
+- "(Week 23) What is a limiting belief you are ready to release?"
+- "(Week 24) What is your favorite season, and why? What does it teach you?"
+- "(Week 25) Describe a time you felt truly creative."
+- "(Week 26) Halfway point: What have you learned about yourself so far?"
+- "(Week 27) What is your relationship with rest and relaxation?"
+- "(Week 28) Write about a time you forgave someone, or need to forgive someone (including
+  yourself)."
+- "(Week 29) What is a simple pleasure that brings you immense joy?"
+- "(Week 30) What is your biggest contribution to the world?"
+- "(Week 31) Write about a time you felt misunderstood."
+- "(Week 32) What is a goal you have for the next year?"
+- "(Week 33) How do you deal with anger and frustration?"
+- "(Week 34) What is a place you have always wanted to visit? What draws you there?"
+- "(Week 35) Write about a time you received an unexpected kindness."
+- "(Week 36) What is your relationship with technology?"
+- "(Week 37) What is a fear you would like to overcome?"
+- "(Week 38) Describe your perfect creative space."
+- "(Week 39) What is a compliment you have received that has always stuck with you?"
+- "(Week 40) Write about your connection to nature."
+- "(Week 41) What is a question you are currently living with?"
+- "(Week 42) What is a boundary you need to set in your life?"
+- "(Week 43) Write about a time you felt truly powerful."
+- "(Week 44) What is your definition of a meaningful life?"
+- "(Week 45) What is a part of yourself that you have kept hidden?"
+- "(Week 46) Write a letter of gratitude to someone you've never properly thanked."
+- "(Week 47) What is your relationship with solitude?"
+- "(Week 48) What is a risk you are glad you took?"
+- "(Week 49) How have you grown or changed in the past five years?"
+- "(Week 50) What is a hope you have for the world?"
+- "(Week 51) What is a commitment you want to make to yourself for the coming year?"
+- "(Week 52) Look back on your 51 weeks of excavation. What is the most valuable treasure
+  you have unearthed?"

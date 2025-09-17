@@ -1,0 +1,57 @@
+# Plan for Implementing Rate Limiting
+
+This document outlines the plan for implementing rate limiting based on user plan levels, as requested in `db.txt`.
+
+## 1. Overview
+
+The goal is to implement a secure and scalable rate-limiting system that prevents users from exceeding the request limits of their subscription plan. The recommended approach is to use a combination of AWS Cognito, AWS Lambda, and Amazon DynamoDB.
+
+## 2. Recommended Architecture: Lambda + DynamoDB
+
+This approach provides the most flexibility and control over the rate-limiting logic.
+
+### 2.1. Storing User Plan Levels
+
+*   **AWS Cognito:** We will use Cognito User Pools to manage user accounts. A custom attribute named `planLevel` will be added to the user profile. This attribute will store the user's subscription plan (e.g., "free", "premium").
+
+### 2.2. Tracking Usage
+
+*   **Amazon DynamoDB:** A new DynamoDB table will be created to track the number of requests made by each user. The table will have the following schema:
+    *   `userId` (Partition Key, String): The unique identifier for the user, obtained from Cognito.
+    *   `requestCount` (Number): The number of requests the user has made in the current billing cycle.
+    *   `billingCycleStart` (String): The start date of the current billing cycle (e.g., in ISO 8601 format).
+
+### 2.3. Enforcing Rate Limits
+
+*   **AWS Lambda:** The existing Lambda function (which communicates with the Gemini API) will be modified to include the rate-limiting logic.
+
+    The workflow will be as follows:
+
+    1.  The iOS app will send the user's Cognito access token with each request to the Lambda function.
+    2.  The Lambda function will use the access token to fetch the user's `planLevel` from Cognito.
+    3.  Based on the `planLevel`, the function will determine the maximum allowed requests for the user.
+    4.  The function will query the DynamoDB table to get the user's current `requestCount`.
+    5.  **If the user is within their limit:**
+        *   The `requestCount` in the DynamoDB table will be incremented.
+        *   The request to the Gemini API will be processed.
+        *   The response will be sent back to the iOS app.
+    6.  **If the user has exceeded their limit:**
+        *   The Lambda function will return an error message to the iOS app, indicating that the rate limit has been exceeded.
+
+## 3. Alternative Approach: API Gateway Usage Plans
+
+An alternative is to use AWS API Gateway's built-in Usage Plans.
+
+*   **Pros:** Simpler to configure and managed by AWS.
+*   **Cons:** Less flexible. Rate limiting is based on the number of requests to the API Gateway endpoint, and it's harder to implement custom logic.
+
+**Conclusion:** The Lambda + DynamoDB approach is recommended for its flexibility and scalability, which aligns with the long-term vision for the application.
+
+## 4. Implementation Steps
+
+1.  **Cognito:** Add the `planLevel` custom attribute to the Cognito User Pool.
+2.  **DynamoDB:** Create the `RequestTracking` table with the specified schema.
+3.  **Lambda:**
+    *   Add the necessary IAM permissions to the Lambda function to allow it to access Cognito and DynamoDB.
+    *   Implement the rate-limiting logic in the Lambda function.
+4.  **iOS App:** Ensure the iOS app handles the rate-limiting error responses from the Lambda function gracefully.

@@ -1,0 +1,432 @@
+presets:
+  - title: "Gratitude Practice"
+    uuid: "fe4cf411-27a6-44a2-af7a-a80c615a9715"
+    description: "Gratitude is more than a pleasant emotion; it's a practice that rewires your brain for wellbeing and resilience. This interview guides you through a structured reflection on the people, experiences, and small moments that have enriched your life. Use it as a regular practice to cultivate appreciation and shift your focus toward abundance."
+    category: "personal_growth"
+    icon_name: "hands.sparkles.fill"
+    order_position: 2
+    active: true
+    is_featured: true
+    chapters:
+      - title: "People Who Matter"
+        sections:
+          - title: "Those Who Shaped You"
+            questions:
+              - "Think of someone who has significantly impacted your life in a positive way. Who is this person?"
+              - "What specific thing did they do or say that made such a difference?"
+              - "How would your life be different without their influence?"
+          - title: "Everyday Angels"
+            questions:
+              - "Who is someone in your daily life that you appreciate but rarely thank?"
+              - "What small kindnesses do they regularly offer?"
+              - "How can you express your gratitude to them this week?"
+      - title: "Moments of Joy"
+        sections:
+          - title: "Simple Pleasures"
+            questions:
+              - "What is a simple, everyday experience that brings you genuine happiness?"
+              - "Describe a recent moment when you felt truly content."
+              - "What small ritual or routine in your life do you look forward to?"
+      - title: "Growth Through Challenge"
+        sections:
+          - title: "Difficult Gifts"
+            questions:
+              - "Think of a challenging experience that ultimately led to something positive. What was it?"
+              - "What unexpected strength or wisdom did you gain from that experience?"
+              - "How has that difficult experience contributed to who you are today?"
+
+  - title: "The Accountability Mirror"
+    uuid: "7c7c8e45-d1e6-4fba-bbd3-233dc7299374"
+    description: "Stop lying to yourself. This isn't a gentle reflection; it's a brutally honest debrief with the person who is 100% responsible for your outcomes: you. This framework is designed to help you confront the gap between what you say you want and what your actions prove you want. Use it to identify your bullshit, own your failures, and build a foundation for radical accountability."
+    category: "personal_growth"
+    icon_name: "shield.lefthalf.filled"
+    order_position: 3
+    active: true
+    is_featured: true
+    chapters:
+      - title: "The Unvarnished Truth"
+        sections:
+          - title: "Defining the Standard"
+            questions:
+              - "Identify one critical goal you are currently failing to achieve. What is it, specifically?"
+              - "What is the story you tell yourself and others about why you haven't achieved it yet?"
+              - "Now, what is the brutally honest, uncomfortable truth? What are you actually doing or not doing?"
+      - title: "Deconstructing the Failure"
+        sections:
+          - title: "The Path of Least Resistance"
+            questions:
+              - "Where are you opting for comfort over progress? Be specific."
+              - "What specific moments in the last 48 hours did you have a choice, and you chose the easier path?"
+              - "Who are you blaming, even subconsciously, for your lack of results?"
+          - title: "The Real Enemy"
+            questions:
+              - "What is the single biggest limiting belief that is fueling your inaction or ineffective action?"
+              - "What immediate gratification are you prioritizing over your long-term goal?"
+              - "If someone watched a recording of your last week, what would they say your true priorities are?"
+      - title: "The Action Contract"
+        sections:
+          - title: "Building the New Identity"
+            questions:
+              - "What is the single, non-negotiable action you must take every day to make progress?"
+              - "How will you 'callous your mind'? What specific, voluntary hardship will you introduce to build discipline?"
+              - "What is your public or private commitment? Who will hold you accountable, and what are the consequences of failure?"
+
+  - title: "A Letter to a Younger Self"
+    uuid: "0fb8eaf6-f9b4-44b2-870a-75917a934031"
+    description: "We often judge our past selves with the wisdom of the present. This interview is an act of self-compassion, guiding you to reflect on a younger version of yourself at a pivotal time. By gathering your thoughts and lessons learned, you're essentially crafting a letter of understanding and encouragement, offering the perspective and kindness you wish you'd had back then."
+    category: "personal_growth"
+    icon_name: "envelope.fill"
+    order_position: 6
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Remembering That Time"
+        sections:
+          - title: "Setting the Scene"
+            questions:
+              - "Picture yourself at a specific younger age. What was the world like for you then?"
+              - "What was your biggest worry or concern at that time in your life?"
+              - "What was a source of joy or excitement for you back then?"
+      - title: "The Lessons Learned"
+        sections:
+          - title: "Wisdom Gained"
+            questions:
+              - "What is the most important thing you now understand about the challenges you were facing then?"
+              - "What strength were you building at that time, even if you didn't realize it?"
+              - "Describe something you thought was incredibly important then that you see differently now."
+      - title: "Words of Encouragement"
+        sections:
+          - title: "Offering Compassion"
+            questions:
+              - "What is one thing you want to tell your younger self that you needed to hear?"
+              - "What would you tell them to stop worrying so much about?"
+              - "Finish this sentence for your younger self: 'I am proud of you for...'"
+
+  - title: "Discovering Your Personal Compass"
+    uuid: "36996535-1ec9-41c6-942c-6c77b4a74ab4"
+    description: "Our core values are the internal compass that guides our decisions and gives us a sense of purpose. This interview is a journey inward to uncover those guiding principles. By reflecting on moments of energy, pride, and flow, you can identify the values that are most authentic to you, providing clarity for your career, relationships, and life choices."
+    category: "personal_growth"
+    icon_name: "safari.fill"
+    order_position: 8
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Identifying Your Energy"
+        sections:
+          - title: "Sources of Flow"
+            questions:
+              - "Describe an activity during which you lose all track of time. What are you doing?"
+              - "Think about the past month. What was a moment or task that left you feeling energized and motivated, rather than drained?"
+              - "What kinds of problems do you genuinely enjoy solving, regardless of whether it's part of your job?"
+      - title: "Moments of Meaning"
+        sections:
+          - title: "Pride and Impact"
+            questions:
+              - "Tell me about an accomplishment, big or small, that you are genuinely proud of. What makes it so meaningful?"
+              - "Describe a time you felt you made a positive impact on someone else's life."
+              - "When have you felt most aligned with your true self?"
+      - title: "Defining Your Principles"
+        sections:
+          - title: "Naming Your Values"
+            questions:
+              - "Looking back at your answers, what recurring themes or values stand out—like creativity, community, stability, or adventure?"
+              - "If you had to choose three words to serve as your guiding principles, what would they be and why?"
+              - "How could you bring one of those principles more to the forefront of your life this week?"
+
+  - title: "Fear-Setting: Deconstruct Your Next Move"
+    uuid: "c60d524d-16b0-494c-b212-2033927ef89a"
+    description: "The biggest risks are often the ones you don't take. This interview is a pragmatic framework, inspired by Tim Ferriss and Stoic philosophy, for making major life and business decisions. Instead of being paralyzed by fear of the unknown, you will systematically define, prevent, and repair the worst-case scenarios. Use this to find clarity and take calculated, massive action."
+    category: "personal_growth"
+    icon_name: "hammer.fill"
+    order_position: 10
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Define the Nightmare"
+        sections:
+          - title: "The Worst-Case Scenarios"
+            questions:
+              - "What is the major action or decision you are considering, but are afraid to take?"
+              - "On a scale of 1-10, what is the absolute worst that could happen if you took this action? Describe that scenario in detail."
+              - "If the worst happened, what would be the permanent impact on your life, finances, or career?"
+      - title: "Prevent and Repair"
+        sections:
+          - title: "Mitigation Strategies"
+            questions:
+              - "What steps could you take to prevent each of those 'worst-case' scenarios from happening?"
+              - "What could you do to minimize the damage if they did happen?"
+              - "If the worst-case scenario came true, what would be your specific plan to get back to where you are now?"
+      - title: "The Cost of Inaction"
+        sections:
+          - title: "The Status Quo Tax"
+            questions:
+              - "Now, describe in detail what your life will look like in 6 months, 1 year, and 5 years if you don't take this action."
+              - "What are the emotional, physical, and financial costs of maintaining the status quo?"
+              - "What are you missing out on by allowing this fear to stop you?"
+
+  - title: "The Arena Debrief"
+    uuid: "16161fa7-f7d0-4e9d-8a37-bb5abc4dce05"
+    description: "Innovation, leadership, and creating anything meaningful requires stepping into the arena and risking failure. This interview is not about avoiding failure; it's about building the skill of getting back up. Inspired by Brené Brown's research on vulnerability, this is a structured debrief for a time you dared greatly and got knocked down. Use it to process the setback, learn from it, and find the courage to re-enter the arena."
+    category: "personal_growth"
+    icon_name: "figure.stand"
+    order_position: 15
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Stepping into the Arena"
+        sections:
+          - title: "The Act of Daring"
+            questions:
+              - "Describe a recent time you took a professional or personal risk—launched a project, had a tough conversation, or shared a creative idea—and it didn't go as planned."
+              - "What was the fear or uncertainty you had to push through just to take that risk?"
+              - "Who was in the 'arena' with you, and whose opinions from the 'stands' mattered the most?"
+      - title: "Rumbling with the Story"
+        sections:
+          - title: "The Narrative of Failure"
+            questions:
+              - "What is the story you started telling yourself immediately after it failed or was poorly received?"
+              - "What emotions were strongest in that moment? Be specific—was it shame, disappointment, anger, or fear?"
+              - "What is the most compassionate, objective truth you can tell yourself about the situation right now?"
+      - title: "The Rise Strong Protocol"
+        sections:
+          - title: "Reckoning and Revolution"
+            questions:
+              - "What is the single most important lesson this experience taught you about your process, your assumptions, or your environment?"
+              - "How did this setback clarify what your core values are?"
+              - "What is one small, concrete action you can take to show yourself that you are ready to dare again?"
+
+  - title: "Operationalizing Your Values"
+    uuid: "ffa27412-ba67-4052-bc89-574fd7903d95"
+    description: "Your core values are not just nice words; they are the operating system for your life and work. When clearly defined, they simplify decision-making and reduce friction. This interview is a protocol to reverse-engineer your values from your life experiences. You will identify your top two values and translate them from abstract concepts into actionable behaviors."
+    category: "personal_growth"
+    icon_name: "line.3.horizontal.decrease.circle.fill"
+    order_position: 16
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Identifying the Core Code"
+        sections:
+          - title: "Peak and Trough Experiences"
+            questions:
+              - "Describe a peak experience in your life—a time you felt completely engaged, proud, and alive. What were you doing, and who were you with?"
+              - "Now, describe a time you felt angry, resentful, or deeply frustrated. What line was crossed? What was at stake?"
+              - "From those two stories, what underlying principles or values seem to be most important to you? (e.g., freedom, connection, integrity, growth)."
+      - title: "The Alignment Audit"
+        sections:
+          - title: "Living Into Your Values"
+            questions:
+              - "Choose one of your core values. In what area of your life is this value most alive and well-integrated?"
+              - "Where is there a gap? Describe a situation or a recurring behavior in your life that is out of alignment with this value."
+              - "What are three specific behaviors that are examples of you living into this value?"
+      - title: "The Integration Sprint"
+        sections:
+          - title: "From Value to Action"
+            questions:
+              - "How can you use this value to make your next big decision easier?"
+              - "What is one thing you will commit to stop doing because it's not in alignment with this value?"
+              - "Who is someone in your life that you need to share this value with so they can better understand your motivations and boundaries?"
+
+  - title: "The Burnout Recovery Blueprint"
+    uuid: "3774d0d1-dee4-4ddb-ac39-72f9e6f4cf00"
+    description: "Burnout isn't a personal failing—it's a systemic issue with personal solutions. This interview helps you understand your burnout experience, identify what led to it, and create a sustainable path forward. It's designed for anyone who has experienced or is experiencing burnout."
+    category: "personal_growth"
+    icon_name: "flame.circle.fill"
+    order_position: 32
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Recognizing the Burnout"
+        sections:
+          - title: "The Warning Signs"
+            questions:
+              - "What were the first signs that you were burning out? How did it show up for you?"
+              - "What were you telling yourself about your exhaustion before you recognized it as burnout?"
+              - "What was happening in your life or work that contributed to your burnout?"
+          - title: "The Breaking Point"
+            questions:
+              - "What was the moment you realized you couldn't continue at that pace?"
+              - "How did burnout affect your relationships, health, and sense of self?"
+              - "What myths about productivity or success did you have to confront?"
+      - title: "The Recovery Process"
+        sections:
+          - title: "Stepping Back"
+            questions:
+              - "What did you have to stop doing or say no to in order to recover?"
+              - "How did you create space for rest and recovery in your life?"
+              - "What was the hardest part about slowing down and prioritizing your wellbeing?"
+          - title: "Rebuilding Differently"
+            questions:
+              - "What boundaries did you need to establish to prevent future burnout?"
+              - "How has your relationship with work and productivity changed?"
+              - "What support systems did you build or strengthen during your recovery?"
+      - title: "Sustainable Living"
+        sections:
+          - title: "New Patterns"
+            questions:
+              - "What does a sustainable pace look like for you now?"
+              - "How do you recognize and respond to early warning signs of burnout?"
+              - "What would you tell someone who's currently experiencing burnout?"
+
+  - title: "Money Mindset Deep Dive"
+    uuid: "63511553-685b-44d9-b96a-de1b1aa6253e"
+    description: "Your relationship with money reflects your deepest beliefs about worth, security, and success. This interview explores your money story, challenges limiting beliefs, and helps you develop a healthier relationship with finances and abundance."
+    category: "personal_growth"
+    icon_name: "dollarsign.circle.fill"
+    order_position: 33
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Your Money Story"
+        sections:
+          - title: "Early Influences"
+            questions:
+              - "What messages about money did you receive growing up?"
+              - "How did your family handle money—was it a source of stress, security, or something else?"
+              - "What was your first significant experience with earning or managing money?"
+          - title: "Current Patterns"
+            questions:
+              - "How do you feel when you think about money—anxious, excited, neutral?"
+              - "What patterns do you notice in how you spend, save, or think about money?"
+              - "What limiting beliefs about money do you recognize in yourself?"
+      - title: "Rewriting the Story"
+        sections:
+          - title: "Challenging Beliefs"
+            questions:
+              - "What money belief would you most like to change?"
+              - "How has your relationship with money evolved over the years?"
+              - "What would financial abundance mean to you beyond just having more money?"
+          - title: "New Relationship"
+            questions:
+              - "What healthy money habits are you working to develop?"
+              - "How do you want to teach or model a healthy money mindset for others?"
+              - "What does financial wellness look like for you personally?"
+      - title: "Money and Values"
+        sections:
+          - title: "Alignment and Purpose"
+            questions:
+              - "How do your spending habits reflect your true values and priorities?"
+              - "What role do you want money to play in your life purpose and goals?"
+              - "How can you use money as a tool for your wellbeing and the wellbeing of others?"
+
+  - title: "The Perfectionism Prison Break"
+    uuid: "5fe8d771-37f4-4fef-97fc-5017b38a619f"
+    description: "Perfectionism promises excellence but delivers paralysis. This interview helps you understand your perfectionist patterns, explore where they came from, and develop a healthier relationship with standards, mistakes, and 'good enough.'"
+    category: "personal_growth"
+    icon_name: "checkmark.circle.fill"
+    order_position: 34
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Perfectionist Trap"
+        sections:
+          - title: "How It Shows Up"
+            questions:
+              - "In what areas of your life does perfectionism show up most strongly?"
+              - "What does your inner perfectionist voice sound like? What does it tell you?"
+              - "How has perfectionism both helped and hindered you in your life?"
+          - title: "The Origins"
+            questions:
+              - "Where do you think your perfectionist tendencies came from?"
+              - "What were you trying to achieve or avoid through being perfect?"
+              - "How did perfectionism serve you in the past, even if it doesn't now?"
+      - title: "The Cost of Perfection"
+        sections:
+          - title: "What You've Missed"
+            questions:
+              - "What opportunities have you avoided because you were afraid you couldn't do them perfectly?"
+              - "How has perfectionism affected your relationships and connection with others?"
+              - "What's the emotional and physical toll of trying to be perfect?"
+          - title: "The Paralysis"
+            questions:
+              - "When has perfectionism prevented you from starting or finishing something?"
+              - "How do you handle criticism or feedback when you're in perfectionist mode?"
+              - "What's your relationship with making mistakes?"
+      - title: "Embracing Good Enough"
+        sections:
+          - title: "The Recovery Process"
+            questions:
+              - "What does 'good enough' mean to you, and why is that concept challenging?"
+              - "What strategies help you break out of perfectionist paralysis?"
+              - "How are you learning to celebrate progress over perfection?"
+
+  - title: "Intuition vs. Logic: Finding Your Inner Compass"
+    uuid: "9da21999-7e40-4729-a98c-df4ea6467916"
+    description: "We live in a world that prizes logic, but intuition holds its own wisdom. This interview explores your relationship with both rational thinking and intuitive knowing, helping you understand when to trust each and how to integrate both in decision-making."
+    category: "personal_growth"
+    icon_name: "heart.text.square.fill"
+    order_position: 35
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Your Decision-Making Style"
+        sections:
+          - title: "Current Approach"
+            questions:
+              - "When facing a big decision, do you tend to rely more on logic, intuition, or a mix of both?"
+              - "How do you typically gather information when making important choices?"
+              - "What does your internal decision-making process actually look like?"
+          - title: "Past Experiences"
+            questions:
+              - "Tell me about a time you followed your intuition and it turned out well."
+              - "Describe a situation where logical analysis led you to the right choice."
+              - "When have you regretted not trusting your gut feeling?"
+      - title: "Understanding Both Voices"
+        sections:
+          - title: "The Logical Mind"
+            questions:
+              - "What are the strengths of your analytical, logical thinking?"
+              - "When does logical analysis serve you best in decision-making?"
+              - "How do you know when you're overthinking or getting stuck in analysis paralysis?"
+          - title: "The Intuitive Voice"
+            questions:
+              - "How does intuition communicate with you—through feelings, images, body sensations?"
+              - "What helps you access and trust your intuitive wisdom?"
+              - "What makes it difficult for you to trust your intuition?"
+      - title: "Integration and Balance"
+        sections:
+          - title: "The Whole-Brain Approach"
+            questions:
+              - "How can you honor both logical analysis and intuitive wisdom in your decisions?"
+              - "What would change in your life if you trusted your intuition more?"
+              - "How do you want to continue developing your relationship with both logic and intuition?"
+
+  - title: "The People-Pleasing Recovery Program"
+    uuid: "a06e5648-12eb-4862-9e36-e5c857a45589"
+    description: "People-pleasing isn't kindness—it's self-abandonment. This interview helps you understand your people-pleasing patterns, explore their origins, and develop the skills to be authentically kind while honoring your own needs and boundaries."
+    category: "personal_growth"
+    icon_name: "person.crop.circle.badge.checkmark"
+    order_position: 36
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Pattern Recognition"
+        sections:
+          - title: "How It Shows Up"
+            questions:
+              - "In what situations do you find yourself saying yes when you want to say no?"
+              - "How do you typically respond when someone is upset with you or disappointed?"
+              - "What physical or emotional signs do you notice when you're people-pleasing?"
+          - title: "The Driving Forces"
+            questions:
+              - "What are you most afraid will happen if you stop people-pleasing?"
+              - "What messages did you receive about being 'good' or 'nice' when you were younger?"
+              - "How has people-pleasing both protected and limited you?"
+      - title: "The Hidden Costs"
+        sections:
+          - title: "What You're Losing"
+            questions:
+              - "How has people-pleasing affected your sense of self and authenticity?"
+              - "What opportunities or experiences have you missed because you were focused on pleasing others?"
+              - "How do you feel after a day of extensive people-pleasing?"
+          - title: "Relationship Impact"
+            questions:
+              - "How does people-pleasing actually affect the quality of your relationships?"
+              - "What do you think people would think of the 'real' you versus the people-pleasing version?"
+              - "How does resentment show up in your relationships, even when you're trying to be nice?"
+      - title: "Authentic Kindness"
+        sections:
+          - title: "Setting Boundaries"
+            questions:
+              - "What's the difference between being kind and being people-pleasing?"
+              - "What boundaries do you need to set to break free from people-pleasing patterns?"
+              - "How can you practice saying no in a way that feels authentic and caring?"

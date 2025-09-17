@@ -1,0 +1,101 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold text-gray-900">Interview Presets</h1>
+    <div class="space-x-2">
+      <%= link_to "New Preset", new_admin_preset_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+      <%= link_to "Publish New Presets", publish_new_presets_admin_presets_path, method: :patch, 
+                  class: "bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded",
+                  confirm: "This will activate all inactive presets. Are you sure?" %>
+    </div>
+  </div>
+  
+  <div class="bg-white shadow-md rounded-lg overflow-hidden">
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Questions</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+        <% @presets.each do |preset| %>
+          <tr>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="flex items-center">
+                <div class="text-sm font-medium text-gray-900"><%= preset.title %></div>
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                <%= preset.category.humanize %>
+              </span>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+              <%= preset.preset_questions.count %>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="flex space-x-2">
+                <% if preset.active? %>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    Active
+                  </span>
+                <% else %>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                    Inactive
+                  </span>
+                <% end %>
+                
+                <% if preset.is_featured? %>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                    Featured
+                  </span>
+                <% end %>
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium space-x-2">
+              <%= link_to "View", admin_preset_path(preset), class: "text-indigo-600 hover:text-indigo-900" %>
+              <%= link_to "Edit", edit_admin_preset_path(preset), class: "text-indigo-600 hover:text-indigo-900" %>
+              <%= link_to preset.active? ? "Deactivate" : "Activate", 
+                          toggle_active_admin_preset_path(preset), 
+                          method: :patch,
+                          class: "text-yellow-600 hover:text-yellow-900" %>
+              <%= link_to preset.is_featured? ? "Unfeature" : "Feature", 
+                          toggle_featured_admin_preset_path(preset), 
+                          method: :patch,
+                          class: "text-purple-600 hover:text-purple-900" %>
+              <%= link_to "Delete", admin_preset_path(preset), 
+                          method: :delete, 
+                          confirm: "Are you sure?",
+                          class: "text-red-600 hover:text-red-900" %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="mt-8">
+    <h2 class="text-xl font-semibold mb-4">Statistics</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="bg-blue-50 p-4 rounded-lg">
+        <div class="text-2xl font-bold text-blue-600"><%= @presets.count %></div>
+        <div class="text-blue-800">Total Presets</div>
+      </div>
+      <div class="bg-green-50 p-4 rounded-lg">
+        <div class="text-2xl font-bold text-green-600"><%= @presets.select(&:active?).count %></div>
+        <div class="text-green-800">Active Presets</div>
+      </div>
+      <div class="bg-yellow-50 p-4 rounded-lg">
+        <div class="text-2xl font-bold text-yellow-600"><%= @presets.select(&:is_featured?).count %></div>
+        <div class="text-yellow-800">Featured Presets</div>
+      </div>
+      <div class="bg-purple-50 p-4 rounded-lg">
+        <div class="text-2xl font-bold text-purple-600"><%= @categories.count %></div>
+        <div class="text-purple-800">Categories</div>
+      </div>
+    </div>
+  </div>
+</div>

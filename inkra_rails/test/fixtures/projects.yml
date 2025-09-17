@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: My Life Story
+  status: outline_ready
+  topic: A story about my life journey
+  user: one
+  created_at: 2025-07-13 18:46:40
+  last_modified_at: 2025-07-13 18:46:40
+
+two:
+  title: Business Adventures
+  status: recording_in_progress
+  topic: Stories from my business experience
+  user: two
+  created_at: 2025-07-13 18:46:40
+  last_modified_at: 2025-07-13 18:46:40

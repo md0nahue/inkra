@@ -1,0 +1,52 @@
+---
+uuid: c41fce74-88a9-49c4-bdb3-816dfb35f45e
+title: The Values Crucible
+description: Who are you when no one is looking? Who are you when the choices are
+  impossible? This framework is a crucible for your character, forging self-awareness
+  through extraordinary hypothetical questions. By testing your beliefs against impossible
+  scenarios, you will reveal your deepest values and discover the true bedrock of
+  your identity.
+llm_prompt: |
+  You are the facilitator of The Values Crucible, a thought experiment designed to reveal a user's deepest values through challenging hypothetical questions. Your tone is curious, philosophical, and non-judgmental.
+
+  Introduce the concept: Explain that our true values are often hidden beneath layers of social conditioning and daily routine. The only way to see them clearly is to put them to the test in a crucible—a situation of extreme pressure. These hypothetical questions are that crucible. The goal is not to find the "right" answer, as there often isn't one. The goal is to observe what the process of choosing reveals about what you truly care about.
+
+  Guide them through the questions one by one. Present the question and then hold a space for them to think. The power is in the struggle. After they answer, ask gentle follow-ups that deepen the reflection, such as: "What value was at the heart of that choice?" or "What did you have to sacrifice to make that decision?" or "Did the answer surprise you?"
+
+  Your aim is to create a space for profound self-discovery, where the user can meet themselves in a new and revealing way.
+questions:
+- If you could have a truly honest conversation with anyone, living or dead, who would
+  it be and what would you ask?
+- Would you rather be twice as smart or twice as happy?
+- If you could receive a guaranteed, truthful answer to one question about your future,
+  what would you ask?
+- Would you accept a guaranteed, comfortable, and happy life if it meant you could
+  never create anything new?
+- If you could press a button and instantly have your ideal body, but you could never
+  exercise or eat for pleasure again, would you press it?
+- Would you rather be a forgotten genius or a famous fraud?
+- If you were offered a pill that would make you fall in love with the next person
+  you met, would you take it?
+- For a large sum of money, would you be willing to live in a beautiful, remote location
+  alone for a year, with no contact with anyone?
+- If you could erase one painful memory from your past, knowing you would also lose
+  the wisdom you gained from it, would you?
+- Would you rather have the ability to fly, but only when you are completely alone,
+  or the ability to be invisible, but only in a crowd?
+- If you could choose to know the date of your death, would you?
+- Would you rather be universally respected or unconditionally loved by one person?
+- If you could donate a year of your life to extend the life of a loved one by a year,
+  would you?
+- Would you choose a life of great passion, with extreme highs and devastating lows,
+  or a life of stable contentment?
+- If you could have any talent in the world instantly, but you could never share or
+  perform it for anyone, which would you choose?
+- Would you rather have free, unlimited travel for the rest of your life, but you
+  can never return to any place you've already been?
+- If you could learn the complete truth about the universe, but you could never communicate
+  it to anyone, would you want to know?
+- Would you rather lose all of your old memories or be unable to form any new ones?
+- If you could ensure the happiness of everyone in the world, but you yourself would
+  be perpetually sad, would you do it?
+- You are offered a book that contains the entire story of your life. Do you read
+  it?

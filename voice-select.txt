@@ -1,0 +1,119 @@
+# Voice Selection Redesign - Apple Native Voices
+
+## Overview
+Redesign the voice selection interface to exclusively use Apple's native text-to-speech voices, providing a streamlined and consistent user experience across all Apple devices.
+
+## Current State Analysis
+- Need to assess existing voice selection implementation
+- Identify dependencies on third-party voice providers
+- Evaluate current UI/UX patterns
+
+## Apple Native Voice Categories
+
+### English Voices
+- **Enhanced Voices**: Samantha, Alex, Victoria, Fred
+- **Premium Voices**: Siri voices (multiple variants)
+- **Compact Voices**: Basic system voices
+- **Novelty Voices**: Bad News, Bubbles, Cellos, etc.
+
+### Multilingual Support
+- Spanish: Monica, Paulina, Juan
+- French: Amelie, Thomas
+- German: Anna, Helena, Martin
+- Italian: Alice, Luca
+- Japanese: Kyoko, Otoya
+- Chinese: Ting-Ting, Sin-ji
+
+## Design Concepts
+
+### 1. Categorized Selection
+```
+Voice Categories:
+├── Natural (Siri-quality voices)
+├── Classic (Traditional system voices)
+├── Character (Novelty/themed voices)
+└── Languages (Organized by locale)
+```
+
+### 2. Voice Preview System
+- Inline sample playback with standardized test phrase
+- Real-time voice switching during preview
+- Waveform visualization for voice characteristics
+
+### 3. Smart Recommendations
+- Device-optimized voice suggestions
+- Usage-based voice ordering
+- Context-aware recommendations (reading vs conversation)
+
+## Technical Implementation
+
+### Voice Discovery
+```swift
+// Use AVSpeechSynthesisVoice to enumerate available voices
+let voices = AVSpeechSynthesisVoice.speechVoices()
+let englishVoices = voices.filter { $0.language.hasPrefix("en") }
+```
+
+### Quality Tiers
+- **Tier 1**: Enhanced/Neural voices (best quality)
+- **Tier 2**: Standard system voices
+- **Tier 3**: Compact voices (smaller download)
+
+### Storage & Caching
+- Cache voice availability checks
+- Handle voice downloads for premium voices
+- Graceful fallback for unavailable voices
+
+## User Experience Flow
+
+1. **Voice Browser**
+   - Grid/list view with voice cards
+   - Each card shows: name, language, quality indicator
+   - Quick preview button on each card
+
+2. **Detailed Voice View**
+   - Extended sample text playback
+   - Voice characteristics (speed, pitch range)
+   - Download status for premium voices
+
+3. **Selection Confirmation**
+   - A/B comparison with current voice
+   - Settings persistence across app sessions
+
+## Platform Considerations
+
+### macOS
+- Access to full voice library
+- System Preferences integration hints
+- Voice download management
+
+### iOS/iPadOS
+- Respect system voice downloads
+- Settings app integration
+- Accessibility considerations
+
+## Migration Strategy
+
+1. **Phase 1**: Inventory current voice usage
+2. **Phase 2**: Map existing voices to Apple equivalents
+3. **Phase 3**: Implement new selection UI
+4. **Phase 4**: Migrate user preferences
+5. **Phase 5**: Remove legacy voice dependencies
+
+## Accessibility Features
+- VoiceOver support for voice selection
+- High contrast mode compatibility
+- Reduced motion alternatives
+- Keyboard navigation support
+
+## Performance Considerations
+- Lazy loading of voice previews
+- Background voice availability checks
+- Efficient voice switching without audio interruption
+- Memory management for multiple voice instances
+
+## Future Enhancements
+- Voice cloning/customization (when Apple supports it)
+- Personal voice integration (iOS 17+)
+- Cross-device voice sync via iCloud
+- Voice mood/emotion selection

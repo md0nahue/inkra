@@ -1,0 +1,53 @@
+---
+uuid: a52a133f-fb47-4fce-849f-e49fd00c7acd
+title: The Learner/Judger Switch
+description: 'Every moment, you choose a path: Judgment or Learning. This framework
+  teaches you to recognize the questions that lead to dead ends (Judger) versus those
+  that open up possibilities (Learner). Learn to consciously flip the switch from
+  judgment to curiosity and transform your approach to challenges, relationships,
+  and life itself.'
+llm_prompt: |
+  You are a mindset coach, helping the user master "The Learner/Judger Switch." Your role is to help them identify which mindset they are in by listening to the questions they ask themselves, and then show them how to switch to Learner mode.
+
+  Introduce the concept: Explain that our mindset is determined by the questions we ask. The "Judger" mindset asks questions like, "Whose fault is it?" or "What's wrong with me?" which lead to negativity and being stuck. The "Learner" mindset asks questions like, "What can I learn?" or "What are the possibilities?" which lead to growth and solutions. The power lies in realizing we can consciously switch from one to the other.
+
+  Guide them through the questions one by one. For each question, help them identify the underlying mindset. Contrast Judger vs. Learner questions. Ask them to think of a recent challenge and identify the Judger questions they asked. Then, help them brainstorm the Learner questions they *could* have asked. Use the metaphor of a light switch they can flip at any time.
+
+  Your goal is to make the user highly aware of their internal questions and empower them with the ability to intentionally shift to a Learner mindset, especially under pressure.
+questions:
+- Think of a recent mistake. What was the primary 'Judger' question you asked yourself?
+  (e.g., 'Why am I so stupid?')
+- In that same situation, what is a 'Learner' question you could have asked instead?
+  (e.g., 'What can I learn from this?')
+- When facing a conflict with someone, what is your default 'Judger' question about
+  them? (e.g., 'What's wrong with them?')
+- What 'Learner' question could you ask to better understand their perspective? (e.g.,
+  'What's important to them right now?')
+- What is a 'Judger' question you ask that creates stress before you even start a
+  task?
+- What 'Learner' question could you replace it with to create a sense of possibility?
+- When you feel stuck, is your internal question a 'Judger' question (e.g., 'Why is
+  this happening to me?') or a 'Learner' one?
+- What is a powerful Learner question you can have ready for the next time you feel
+  stuck? (e.g., 'What's one small step I can take?')
+- What Judger questions arise when you think about your long-term goals?
+- How can you rephrase them as Learner questions that inspire action?
+- Listen to the way you talk to yourself. Is it predominantly from a Judger or Learner
+  stance?
+- What is a Judger question that often leads to procrastination?
+- What is a Learner question that creates motivation?
+- When receiving feedback, what Judger question do you use to defend yourself?
+- What Learner question could you ask to get the most value from the feedback?
+- Think of a relationship that is challenging. What Judger question are you asking
+  about it?
+- What Learner question could open up a new way of relating?
+- What is your go-to Judger question when you feel insecure?
+- What is a compassionate Learner question you could ask yourself instead?
+- How does your body feel when you are on the 'Judger Path'?
+- How does your body feel when you flip the switch to the 'Learner Path'?
+- What is a situation where switching to Learner mode could dramatically change the
+  outcome?
+- What is a Judger question you ask about your own capabilities?
+- What Learner question would help you see your potential?
+- The next time you say 'I don't know,' try adding the Learner question, 'but how
+  could I find out?'

@@ -1,0 +1,1000 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:01.589 align:start position:0%
+ 
+hello<00:00:00.480><c> and</c><00:00:00.560><c> welcome</c><00:00:00.719><c> back</c><00:00:00.880><c> to</c><00:00:01.040><c> learn</c><00:00:01.280><c> social</c>
+
+00:00:01.589 --> 00:00:01.599 align:start position:0%
+hello and welcome back to learn social
+ 
+
+00:00:01.599 --> 00:00:02.950 align:start position:0%
+hello and welcome back to learn social
+life<00:00:01.760><c> and</c><00:00:01.920><c> in</c><00:00:02.000><c> this</c><00:00:02.159><c> episode</c><00:00:02.480><c> i'll</c><00:00:02.560><c> be</c><00:00:02.720><c> sharing</c>
+
+00:00:02.950 --> 00:00:02.960 align:start position:0%
+life and in this episode i'll be sharing
+ 
+
+00:00:02.960 --> 00:00:04.470 align:start position:0%
+life and in this episode i'll be sharing
+with<00:00:03.120><c> you</c><00:00:03.280><c> how</c><00:00:03.520><c> i</c><00:00:03.679><c> created</c><00:00:04.080><c> this</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+with you how i created this
+ 
+
+00:00:04.480 --> 00:00:06.630 align:start position:0%
+with you how i created this
+uh<00:00:04.720><c> setup</c><00:00:05.120><c> using</c><00:00:05.359><c> animation</c><00:00:05.839><c> nodes</c><00:00:06.319><c> and</c>
+
+00:00:06.630 --> 00:00:06.640 align:start position:0%
+uh setup using animation nodes and
+ 
+
+00:00:06.640 --> 00:00:08.629 align:start position:0%
+uh setup using animation nodes and
+geometry<00:00:07.200><c> nodes</c>
+
+00:00:08.629 --> 00:00:08.639 align:start position:0%
+geometry nodes
+ 
+
+00:00:08.639 --> 00:00:11.589 align:start position:0%
+geometry nodes
+so<00:00:08.800><c> the</c><00:00:08.880><c> setup</c><00:00:09.200><c> is</c><00:00:09.280><c> simple</c><00:00:10.559><c> this</c><00:00:10.800><c> is</c><00:00:10.960><c> a</c><00:00:11.360><c> test</c>
+
+00:00:11.589 --> 00:00:11.599 align:start position:0%
+so the setup is simple this is a test
+ 
+
+00:00:11.599 --> 00:00:12.230 align:start position:0%
+so the setup is simple this is a test
+recording
+
+00:00:12.230 --> 00:00:12.240 align:start position:0%
+recording
+ 
+
+00:00:12.240 --> 00:00:15.190 align:start position:0%
+recording
+so<00:00:12.400><c> there's</c><00:00:12.719><c> a</c><00:00:12.880><c> sound</c><00:00:13.679><c> audio</c><00:00:14.719><c> running</c><00:00:15.040><c> in</c><00:00:15.120><c> the</c>
+
+00:00:15.190 --> 00:00:15.200 align:start position:0%
+so there's a sound audio running in the
+ 
+
+00:00:15.200 --> 00:00:17.189 align:start position:0%
+so there's a sound audio running in the
+background
+
+00:00:17.189 --> 00:00:17.199 align:start position:0%
+background
+ 
+
+00:00:17.199 --> 00:00:20.710 align:start position:0%
+background
+and<00:00:18.640><c> you</c><00:00:18.800><c> see</c><00:00:18.960><c> there's</c><00:00:19.199><c> a</c><00:00:19.279><c> bunch</c><00:00:19.840><c> of</c><00:00:20.080><c> ecosphere</c>
+
+00:00:20.710 --> 00:00:20.720 align:start position:0%
+and you see there's a bunch of ecosphere
+ 
+
+00:00:20.720 --> 00:00:22.230 align:start position:0%
+and you see there's a bunch of ecosphere
+that's<00:00:20.960><c> kind</c><00:00:21.119><c> of</c>
+
+00:00:22.230 --> 00:00:22.240 align:start position:0%
+that's kind of
+ 
+
+00:00:22.240 --> 00:00:25.189 align:start position:0%
+that's kind of
+uh<00:00:22.960><c> reacting</c><00:00:23.600><c> into</c><00:00:23.840><c> that</c><00:00:24.080><c> audio</c><00:00:24.720><c> let</c><00:00:24.880><c> me</c><00:00:25.039><c> show</c>
+
+00:00:25.189 --> 00:00:25.199 align:start position:0%
+uh reacting into that audio let me show
+ 
+
+00:00:25.199 --> 00:00:27.029 align:start position:0%
+uh reacting into that audio let me show
+you<00:00:25.359><c> the</c><00:00:25.599><c> audio</c><00:00:26.000><c> first</c>
+
+00:00:27.029 --> 00:00:27.039 align:start position:0%
+you the audio first
+ 
+
+00:00:27.039 --> 00:00:30.310 align:start position:0%
+you the audio first
+it's<00:00:27.359><c> under</c><00:00:27.840><c> video</c><00:00:28.160><c> sequence</c><00:00:28.840><c> editor</c>
+
+00:00:30.310 --> 00:00:30.320 align:start position:0%
+it's under video sequence editor
+ 
+
+00:00:30.320 --> 00:00:33.430 align:start position:0%
+it's under video sequence editor
+this<00:00:30.560><c> is</c><00:00:30.720><c> the</c><00:00:30.960><c> voice</c><00:00:31.279><c> that</c><00:00:31.599><c> i</c><00:00:31.760><c> recorded</c><00:00:32.640><c> i</c><00:00:32.800><c> can</c>
+
+00:00:33.430 --> 00:00:33.440 align:start position:0%
+this is the voice that i recorded i can
+ 
+
+00:00:33.440 --> 00:00:36.630 align:start position:0%
+this is the voice that i recorded i can
+anytime<00:00:34.320><c> change</c><00:00:34.640><c> this</c><00:00:34.880><c> audio</c><00:00:36.160><c> and</c><00:00:36.320><c> record</c>
+
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+anytime change this audio and record
+ 
+
+00:00:36.640 --> 00:00:38.150 align:start position:0%
+anytime change this audio and record
+different<00:00:36.960><c> audio</c><00:00:37.360><c> and</c><00:00:37.520><c> it</c><00:00:37.600><c> should</c><00:00:37.760><c> give</c><00:00:38.079><c> a</c>
+
+00:00:38.150 --> 00:00:38.160 align:start position:0%
+different audio and it should give a
+ 
+
+00:00:38.160 --> 00:00:41.270 align:start position:0%
+different audio and it should give a
+different<00:00:38.559><c> result</c>
+
+00:00:41.270 --> 00:00:41.280 align:start position:0%
+ 
+ 
+
+00:00:41.280 --> 00:00:44.549 align:start position:0%
+ 
+this<00:00:41.520><c> is</c><00:00:41.680><c> a</c><00:00:42.000><c> test</c><00:00:42.239><c> recording</c><00:00:43.040><c> so</c><00:00:43.200><c> let</c><00:00:43.360><c> me</c><00:00:43.520><c> try</c>
+
+00:00:44.549 --> 00:00:44.559 align:start position:0%
+this is a test recording so let me try
+ 
+
+00:00:44.559 --> 00:00:48.229 align:start position:0%
+this is a test recording so let me try
+like<00:00:45.039><c> if</c><00:00:45.200><c> i</c><00:00:45.280><c> delete</c><00:00:45.680><c> that</c><00:00:46.160><c> audio</c><00:00:47.520><c> and</c>
+
+00:00:48.229 --> 00:00:48.239 align:start position:0%
+like if i delete that audio and
+ 
+
+00:00:48.239 --> 00:00:51.350 align:start position:0%
+like if i delete that audio and
+test<00:00:48.559><c> recording</c><00:00:49.039><c> this</c><00:00:49.200><c> is</c><00:00:49.360><c> a</c><00:00:50.559><c> push-to-talk</c>
+
+00:00:51.350 --> 00:00:51.360 align:start position:0%
+test recording this is a push-to-talk
+ 
+
+00:00:51.360 --> 00:00:52.150 align:start position:0%
+test recording this is a push-to-talk
+add-on
+
+00:00:52.150 --> 00:00:52.160 align:start position:0%
+add-on
+ 
+
+00:00:52.160 --> 00:00:55.430 align:start position:0%
+add-on
+for<00:00:52.399><c> blender</c><00:00:53.039><c> so</c><00:00:53.360><c> just</c>
+
+00:00:55.430 --> 00:00:55.440 align:start position:0%
+for blender so just
+ 
+
+00:00:55.440 --> 00:00:59.670 align:start position:0%
+for blender so just
+do<00:00:55.600><c> a</c><00:00:55.840><c> quick</c><00:00:56.160><c> test</c><00:00:56.840><c> recording</c>
+
+00:00:59.670 --> 00:00:59.680 align:start position:0%
+do a quick test recording
+ 
+
+00:00:59.680 --> 00:01:03.120 align:start position:0%
+do a quick test recording
+and<00:01:00.719><c> if</c><00:01:00.879><c> we</c><00:01:01.280><c> turn</c><00:01:01.600><c> on</c><00:01:02.239><c> waveform</c>
+
+00:01:03.120 --> 00:01:03.130 align:start position:0%
+and if we turn on waveform
+ 
+
+00:01:03.130 --> 00:01:04.710 align:start position:0%
+and if we turn on waveform
+[Music]
+
+00:01:04.710 --> 00:01:04.720 align:start position:0%
+[Music]
+ 
+
+00:01:04.720 --> 00:01:07.510 align:start position:0%
+[Music]
+do<00:01:04.960><c> a</c><00:01:05.119><c> quick</c><00:01:05.519><c> test</c><00:01:05.760><c> recording</c><00:01:06.880><c> so</c><00:01:07.040><c> you</c><00:01:07.119><c> can</c><00:01:07.360><c> see</c>
+
+00:01:07.510 --> 00:01:07.520 align:start position:0%
+do a quick test recording so you can see
+ 
+
+00:01:07.520 --> 00:01:08.070 align:start position:0%
+do a quick test recording so you can see
+it's<00:01:07.760><c> a</c>
+
+00:01:08.070 --> 00:01:08.080 align:start position:0%
+it's a
+ 
+
+00:01:08.080 --> 00:01:11.270 align:start position:0%
+it's a
+quite<00:01:08.640><c> real</c><00:01:08.960><c> time</c><00:01:09.280><c> and</c><00:01:09.439><c> reactive</c>
+
+00:01:11.270 --> 00:01:11.280 align:start position:0%
+quite real time and reactive
+ 
+
+00:01:11.280 --> 00:01:15.590 align:start position:0%
+quite real time and reactive
+so<00:01:11.520><c> the</c><00:01:11.680><c> audio</c><00:01:12.479><c> is</c><00:01:12.799><c> controlling</c><00:01:14.159><c> the</c><00:01:14.320><c> nodes</c>
+
+00:01:15.590 --> 00:01:15.600 align:start position:0%
+so the audio is controlling the nodes
+ 
+
+00:01:15.600 --> 00:01:17.830 align:start position:0%
+so the audio is controlling the nodes
+so<00:01:15.759><c> what's</c><00:01:16.000><c> going</c><00:01:16.240><c> on</c><00:01:16.640><c> really</c><00:01:17.280><c> this</c><00:01:17.520><c> is</c><00:01:17.680><c> all</c>
+
+00:01:17.830 --> 00:01:17.840 align:start position:0%
+so what's going on really this is all
+ 
+
+00:01:17.840 --> 00:01:19.990 align:start position:0%
+so what's going on really this is all
+the<00:01:18.000><c> nodes</c><00:01:18.320><c> under</c><00:01:18.640><c> 10</c><00:01:18.880><c> nodes</c><00:01:19.119><c> that</c><00:01:19.360><c> you</c><00:01:19.439><c> can</c>
+
+00:01:19.990 --> 00:01:20.000 align:start position:0%
+the nodes under 10 nodes that you can
+ 
+
+00:01:20.000 --> 00:01:23.990 align:start position:0%
+the nodes under 10 nodes that you can
+just<00:01:20.240><c> set</c><00:01:20.479><c> up</c><00:01:21.280><c> very</c><00:01:21.520><c> very</c><00:01:21.759><c> quickly</c>
+
+00:01:23.990 --> 00:01:24.000 align:start position:0%
+just set up very very quickly
+ 
+
+00:01:24.000 --> 00:01:26.310 align:start position:0%
+just set up very very quickly
+this<00:01:24.240><c> is</c><00:01:24.400><c> animation</c><00:01:24.880><c> nodes</c><00:01:25.680><c> right</c><00:01:26.000><c> as</c><00:01:26.159><c> you</c>
+
+00:01:26.310 --> 00:01:26.320 align:start position:0%
+this is animation nodes right as you
+ 
+
+00:01:26.320 --> 00:01:27.910 align:start position:0%
+this is animation nodes right as you
+already<00:01:26.640><c> know</c>
+
+00:01:27.910 --> 00:01:27.920 align:start position:0%
+already know
+ 
+
+00:01:27.920 --> 00:01:31.030 align:start position:0%
+already know
+this<00:01:28.159><c> guy</c><00:01:28.479><c> can</c><00:01:29.040><c> take</c><00:01:29.280><c> an</c><00:01:29.439><c> audio</c><00:01:30.159><c> and</c>
+
+00:01:31.030 --> 00:01:31.040 align:start position:0%
+this guy can take an audio and
+ 
+
+00:01:31.040 --> 00:01:33.830 align:start position:0%
+this guy can take an audio and
+you<00:01:31.200><c> can</c><00:01:31.600><c> sample</c><00:01:32.000><c> it</c><00:01:32.560><c> based</c><00:01:32.880><c> on</c><00:01:33.040><c> these</c><00:01:33.360><c> counts</c>
+
+00:01:33.830 --> 00:01:33.840 align:start position:0%
+you can sample it based on these counts
+ 
+
+00:01:33.840 --> 00:01:35.190 align:start position:0%
+you can sample it based on these counts
+so<00:01:34.000><c> i</c><00:01:34.240><c> assemble</c><00:01:34.640><c> it</c>
+
+00:01:35.190 --> 00:01:35.200 align:start position:0%
+so i assemble it
+ 
+
+00:01:35.200 --> 00:01:39.270 align:start position:0%
+so i assemble it
+20<00:01:35.520><c> times</c><00:01:36.720><c> that's</c><00:01:36.960><c> why</c><00:01:37.200><c> we</c><00:01:37.360><c> have</c><00:01:38.079><c> i</c><00:01:38.240><c> think</c>
+
+00:01:39.270 --> 00:01:39.280 align:start position:0%
+20 times that's why we have i think
+ 
+
+00:01:39.280 --> 00:01:42.870 align:start position:0%
+20 times that's why we have i think
+kind<00:01:39.439><c> of</c><00:01:39.520><c> like</c><00:01:39.680><c> a</c><00:01:39.840><c> 20</c><00:01:40.799><c> sound</c><00:01:41.200><c> samples</c>
+
+00:01:42.870 --> 00:01:42.880 align:start position:0%
+kind of like a 20 sound samples
+ 
+
+00:01:42.880 --> 00:01:46.389 align:start position:0%
+kind of like a 20 sound samples
+anyhow<00:01:43.360><c> this</c><00:01:43.680><c> goes</c><00:01:44.079><c> inside</c><00:01:45.759><c> set</c><00:01:46.000><c> custom</c>
+
+00:01:46.389 --> 00:01:46.399 align:start position:0%
+anyhow this goes inside set custom
+ 
+
+00:01:46.399 --> 00:01:47.910 align:start position:0%
+anyhow this goes inside set custom
+attributes<00:01:46.880><c> so</c><00:01:47.040><c> this</c><00:01:47.280><c> is</c><00:01:47.439><c> actually</c>
+
+00:01:47.910 --> 00:01:47.920 align:start position:0%
+attributes so this is actually
+ 
+
+00:01:47.920 --> 00:01:52.469 align:start position:0%
+attributes so this is actually
+quite<00:01:48.320><c> interesting</c><00:01:48.799><c> notes</c><00:01:50.000><c> with</c><00:01:50.479><c> uh</c>
+
+00:01:52.469 --> 00:01:52.479 align:start position:0%
+quite interesting notes with uh
+ 
+
+00:01:52.479 --> 00:01:54.550 align:start position:0%
+quite interesting notes with uh
+animation<00:01:53.040><c> notes</c><00:01:53.280><c> this</c><00:01:53.439><c> is</c><00:01:53.520><c> like</c><00:01:53.759><c> a</c><00:01:54.000><c> animation</c>
+
+00:01:54.550 --> 00:01:54.560 align:start position:0%
+animation notes this is like a animation
+ 
+
+00:01:54.560 --> 00:01:55.510 align:start position:0%
+animation notes this is like a animation
+notes
+
+00:01:55.510 --> 00:01:55.520 align:start position:0%
+notes
+ 
+
+00:01:55.520 --> 00:01:59.190 align:start position:0%
+notes
+with<00:01:55.840><c> extra</c><00:01:57.040><c> i</c><00:01:57.119><c> think</c><00:01:57.360><c> it's</c><00:01:57.520><c> coming</c><00:01:57.840><c> from</c>
+
+00:01:59.190 --> 00:01:59.200 align:start position:0%
+with extra i think it's coming from
+ 
+
+00:01:59.200 --> 00:02:02.469 align:start position:0%
+with extra i think it's coming from
+cool<00:01:59.360><c> lip</c><00:01:59.920><c> color</c><00:02:00.399><c> vfx</c><00:02:02.000><c> and</c>
+
+00:02:02.469 --> 00:02:02.479 align:start position:0%
+cool lip color vfx and
+ 
+
+00:02:02.479 --> 00:02:04.950 align:start position:0%
+cool lip color vfx and
+this<00:02:02.799><c> is</c><00:02:03.200><c> this</c><00:02:03.439><c> guy</c><00:02:03.680><c> is</c><00:02:03.920><c> sending</c><00:02:04.240><c> data</c><00:02:04.640><c> into</c>
+
+00:02:04.950 --> 00:02:04.960 align:start position:0%
+this is this guy is sending data into
+ 
+
+00:02:04.960 --> 00:02:06.469 align:start position:0%
+this is this guy is sending data into
+geometric<00:02:05.520><c> nodes</c><00:02:05.759><c> so</c><00:02:05.920><c> this</c><00:02:06.079><c> is</c>
+
+00:02:06.469 --> 00:02:06.479 align:start position:0%
+geometric nodes so this is
+ 
+
+00:02:06.479 --> 00:02:10.309 align:start position:0%
+geometric nodes so this is
+quite<00:02:06.960><c> advanced</c><00:02:08.080><c> the</c><00:02:08.319><c> notes</c><00:02:08.720><c> is</c><00:02:08.879><c> simple</c>
+
+00:02:10.309 --> 00:02:10.319 align:start position:0%
+quite advanced the notes is simple
+ 
+
+00:02:10.319 --> 00:02:12.869 align:start position:0%
+quite advanced the notes is simple
+but<00:02:10.560><c> it's</c><00:02:10.800><c> a</c><00:02:11.280><c> in</c><00:02:11.520><c> order</c><00:02:11.760><c> to</c><00:02:11.920><c> do</c><00:02:12.080><c> this</c><00:02:12.400><c> you</c><00:02:12.560><c> might</c>
+
+00:02:12.869 --> 00:02:12.879 align:start position:0%
+but it's a in order to do this you might
+ 
+
+00:02:12.879 --> 00:02:14.550 align:start position:0%
+but it's a in order to do this you might
+need<00:02:13.280><c> some</c><00:02:13.520><c> understanding</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+need some understanding
+ 
+
+00:02:14.560 --> 00:02:17.510 align:start position:0%
+need some understanding
+of<00:02:14.800><c> what's</c><00:02:15.040><c> going</c><00:02:15.280><c> on</c><00:02:16.800><c> so</c><00:02:16.959><c> the</c><00:02:17.120><c> notes</c><00:02:17.440><c> is</c>
+
+00:02:17.510 --> 00:02:17.520 align:start position:0%
+of what's going on so the notes is
+ 
+
+00:02:17.520 --> 00:02:18.229 align:start position:0%
+of what's going on so the notes is
+saying<00:02:17.840><c> that</c>
+
+00:02:18.229 --> 00:02:18.239 align:start position:0%
+saying that
+ 
+
+00:02:18.239 --> 00:02:20.949 align:start position:0%
+saying that
+in<00:02:18.319><c> order</c><00:02:18.560><c> to</c><00:02:18.720><c> see</c><00:02:18.879><c> the</c><00:02:19.040><c> data</c><00:02:19.520><c> i</c><00:02:19.760><c> just</c><00:02:20.560><c> remove</c>
+
+00:02:20.949 --> 00:02:20.959 align:start position:0%
+in order to see the data i just remove
+ 
+
+00:02:20.959 --> 00:02:22.869 align:start position:0%
+in order to see the data i just remove
+the<00:02:21.200><c> instance</c>
+
+00:02:22.869 --> 00:02:22.879 align:start position:0%
+the instance
+ 
+
+00:02:22.879 --> 00:02:25.990 align:start position:0%
+the instance
+for<00:02:23.120><c> now</c><00:02:24.319><c> you</c><00:02:24.480><c> can</c><00:02:24.720><c> see</c><00:02:24.959><c> this</c><00:02:25.200><c> is</c><00:02:25.360><c> the</c>
+
+00:02:25.990 --> 00:02:26.000 align:start position:0%
+for now you can see this is the
+ 
+
+00:02:26.000 --> 00:02:28.470 align:start position:0%
+for now you can see this is the
+am<00:02:26.480><c> animation</c><00:02:26.959><c> nodes</c><00:02:27.360><c> attributes</c><00:02:28.080><c> custom</c>
+
+00:02:28.470 --> 00:02:28.480 align:start position:0%
+am animation nodes attributes custom
+ 
+
+00:02:28.480 --> 00:02:29.910 align:start position:0%
+am animation nodes attributes custom
+attributes
+
+00:02:29.910 --> 00:02:29.920 align:start position:0%
+attributes
+ 
+
+00:02:29.920 --> 00:02:33.830 align:start position:0%
+attributes
+that's<00:02:30.239><c> been</c><00:02:30.560><c> passed</c><00:02:30.959><c> into</c><00:02:31.280><c> the</c><00:02:31.920><c> queue</c>
+
+00:02:33.830 --> 00:02:33.840 align:start position:0%
+that's been passed into the queue
+ 
+
+00:02:33.840 --> 00:02:37.509 align:start position:0%
+that's been passed into the queue
+and<00:02:34.080><c> then</c><00:02:35.280><c> we</c><00:02:35.440><c> have</c><00:02:35.680><c> this</c><00:02:36.000><c> custom</c>
+
+00:02:37.509 --> 00:02:37.519 align:start position:0%
+and then we have this custom
+ 
+
+00:02:37.519 --> 00:02:40.710 align:start position:0%
+and then we have this custom
+data<00:02:38.080><c> coming</c><00:02:38.400><c> in</c><00:02:39.360><c> the</c><00:02:39.519><c> number</c><00:02:39.840><c> of</c><00:02:40.080><c> points</c>
+
+00:02:40.710 --> 00:02:40.720 align:start position:0%
+data coming in the number of points
+ 
+
+00:02:40.720 --> 00:02:43.910 align:start position:0%
+data coming in the number of points
+from<00:02:40.959><c> here</c><00:02:41.440><c> is</c><00:02:41.599><c> not</c><00:02:41.840><c> matching</c><00:02:43.200><c> here</c><00:02:43.599><c> but</c><00:02:43.840><c> we</c>
+
+00:02:43.910 --> 00:02:43.920 align:start position:0%
+from here is not matching here but we
+ 
+
+00:02:43.920 --> 00:02:44.470 align:start position:0%
+from here is not matching here but we
+can
+
+00:02:44.470 --> 00:02:44.480 align:start position:0%
+can
+ 
+
+00:02:44.480 --> 00:02:48.949 align:start position:0%
+can
+always<00:02:44.959><c> adjust</c><00:02:45.440><c> it</c><00:02:46.400><c> so</c><00:02:46.560><c> we</c><00:02:46.640><c> have</c><00:02:46.800><c> now</c><00:02:47.040><c> 25</c><00:02:47.599><c> data</c>
+
+00:02:48.949 --> 00:02:48.959 align:start position:0%
+always adjust it so we have now 25 data
+ 
+
+00:02:48.959 --> 00:02:51.430 align:start position:0%
+always adjust it so we have now 25 data
+in<00:02:49.120><c> real</c><00:02:49.360><c> time</c><00:02:49.680><c> this</c><00:02:49.920><c> audio</c><00:02:50.480><c> is</c><00:02:50.640><c> turned</c><00:02:51.040><c> into</c><00:02:51.280><c> a</c>
+
+00:02:51.430 --> 00:02:51.440 align:start position:0%
+in real time this audio is turned into a
+ 
+
+00:02:51.440 --> 00:02:52.630 align:start position:0%
+in real time this audio is turned into a
+value
+
+00:02:52.630 --> 00:02:52.640 align:start position:0%
+value
+ 
+
+00:02:52.640 --> 00:02:55.830 align:start position:0%
+value
+that's<00:02:54.400><c> kind</c><00:02:54.560><c> of</c><00:02:54.800><c> being</c><00:02:55.120><c> transferred</c><00:02:55.599><c> into</c>
+
+00:02:55.830 --> 00:02:55.840 align:start position:0%
+that's kind of being transferred into
+ 
+
+00:02:55.840 --> 00:02:57.670 align:start position:0%
+that's kind of being transferred into
+the<00:02:56.000><c> instance</c><00:02:56.480><c> object</c>
+
+00:02:57.670 --> 00:02:57.680 align:start position:0%
+the instance object
+ 
+
+00:02:57.680 --> 00:03:01.190 align:start position:0%
+the instance object
+over<00:02:58.000><c> here</c><00:03:00.080><c> okay</c><00:03:00.400><c> so</c><00:03:00.560><c> it's</c><00:03:00.800><c> quite</c>
+
+00:03:01.190 --> 00:03:01.200 align:start position:0%
+over here okay so it's quite
+ 
+
+00:03:01.200 --> 00:03:07.670 align:start position:0%
+over here okay so it's quite
+advanced<00:03:01.760><c> like</c><00:03:02.000><c> i</c><00:03:03.840><c> quick</c><00:03:04.239><c> test</c><00:03:04.560><c> recording</c>
+
+00:03:07.670 --> 00:03:07.680 align:start position:0%
+ 
+ 
+
+00:03:07.680 --> 00:03:10.710 align:start position:0%
+ 
+do<00:03:07.840><c> a</c><00:03:08.000><c> quick</c><00:03:08.400><c> test</c><00:03:08.720><c> recording</c><00:03:09.920><c> so</c>
+
+00:03:10.710 --> 00:03:10.720 align:start position:0%
+do a quick test recording so
+ 
+
+00:03:10.720 --> 00:03:13.589 align:start position:0%
+do a quick test recording so
+yeah<00:03:11.680><c> um</c><00:03:12.239><c> but</c><00:03:12.400><c> you</c><00:03:12.480><c> get</c><00:03:12.640><c> that</c><00:03:12.879><c> kind</c><00:03:13.040><c> of</c><00:03:13.280><c> neat</c>
+
+00:03:13.589 --> 00:03:13.599 align:start position:0%
+yeah um but you get that kind of neat
+ 
+
+00:03:13.599 --> 00:03:15.750 align:start position:0%
+yeah um but you get that kind of neat
+effects<00:03:14.080><c> very</c><00:03:14.319><c> very</c><00:03:14.560><c> quickly</c><00:03:15.040><c> and</c>
+
+00:03:15.750 --> 00:03:15.760 align:start position:0%
+effects very very quickly and
+ 
+
+00:03:15.760 --> 00:03:19.190 align:start position:0%
+effects very very quickly and
+and<00:03:16.000><c> you</c><00:03:16.080><c> can</c><00:03:17.040><c> even</c><00:03:17.360><c> simplify</c><00:03:18.640><c> further</c>
+
+00:03:19.190 --> 00:03:19.200 align:start position:0%
+and you can even simplify further
+ 
+
+00:03:19.200 --> 00:03:22.229 align:start position:0%
+and you can even simplify further
+simplify<00:03:19.680><c> the</c><00:03:19.920><c> queue</c><00:03:21.440><c> further</c><00:03:21.920><c> and</c><00:03:22.000><c> then</c>
+
+00:03:22.229 --> 00:03:22.239 align:start position:0%
+simplify the queue further and then
+ 
+
+00:03:22.239 --> 00:03:25.190 align:start position:0%
+simplify the queue further and then
+randomize<00:03:22.720><c> the</c><00:03:22.879><c> positions</c>
+
+00:03:25.190 --> 00:03:25.200 align:start position:0%
+randomize the positions
+ 
+
+00:03:25.200 --> 00:03:30.070 align:start position:0%
+randomize the positions
+and<00:03:25.599><c> if</c><00:03:25.840><c> we</c><00:03:26.239><c> check</c><00:03:26.640><c> how</c><00:03:26.959><c> what's</c><00:03:27.200><c> the</c><00:03:27.360><c> number</c>
+
+00:03:30.070 --> 00:03:30.080 align:start position:0%
+ 
+ 
+
+00:03:30.080 --> 00:03:37.910 align:start position:0%
+ 
+90<00:03:30.840><c> seconds</c><00:03:32.080><c> this</c><00:03:32.319><c> sample</c><00:03:32.720><c> is</c><00:03:32.879><c> 97</c><00:03:33.599><c> times</c>
+
+00:03:37.910 --> 00:03:37.920 align:start position:0%
+ 
+ 
+
+00:03:37.920 --> 00:03:41.830 align:start position:0%
+ 
+do<00:03:38.159><c> a</c><00:03:38.319><c> quick</c><00:03:38.720><c> test</c><00:03:39.040><c> recording</c>
+
+00:03:41.830 --> 00:03:41.840 align:start position:0%
+ 
+ 
+
+00:03:41.840 --> 00:03:43.830 align:start position:0%
+ 
+so<00:03:42.000><c> i</c><00:03:42.159><c> think</c><00:03:42.560><c> we</c><00:03:42.720><c> don't</c><00:03:42.959><c> actually</c><00:03:43.280><c> need</c><00:03:43.519><c> that</c>
+
+00:03:43.830 --> 00:03:43.840 align:start position:0%
+so i think we don't actually need that
+ 
+
+00:03:43.840 --> 00:03:45.670 align:start position:0%
+so i think we don't actually need that
+one<00:03:44.319><c> but</c><00:03:44.640><c> many</c>
+
+00:03:45.670 --> 00:03:45.680 align:start position:0%
+one but many
+ 
+
+00:03:45.680 --> 00:03:47.750 align:start position:0%
+one but many
+do<00:03:45.840><c> a</c><00:03:46.000><c> quick</c><00:03:46.400><c> test</c><00:03:46.720><c> recording</c><00:03:47.280><c> it's</c><00:03:47.519><c> more</c>
+
+00:03:47.750 --> 00:03:47.760 align:start position:0%
+do a quick test recording it's more
+ 
+
+00:03:47.760 --> 00:03:49.190 align:start position:0%
+do a quick test recording it's more
+interesting<00:03:48.159><c> like</c><00:03:48.319><c> this</c>
+
+00:03:49.190 --> 00:03:49.200 align:start position:0%
+interesting like this
+ 
+
+00:03:49.200 --> 00:03:53.670 align:start position:0%
+interesting like this
+so<00:03:49.440><c> just</c><00:03:49.680><c> 20</c><00:03:50.000><c> times</c><00:03:50.319><c> sampling</c><00:03:50.799><c> of</c><00:03:50.959><c> the</c><00:03:51.200><c> audio</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+so just 20 times sampling of the audio
+ 
+
+00:03:53.680 --> 00:03:56.869 align:start position:0%
+so just 20 times sampling of the audio
+and<00:03:53.840><c> then</c><00:03:54.080><c> the</c><00:03:54.239><c> value</c><00:03:54.640><c> is</c><00:03:55.200><c> kind</c><00:03:55.360><c> of</c><00:03:55.599><c> scattered</c>
+
+00:03:56.869 --> 00:03:56.879 align:start position:0%
+and then the value is kind of scattered
+ 
+
+00:03:56.879 --> 00:03:59.830 align:start position:0%
+and then the value is kind of scattered
+randomly<00:03:57.519><c> anyway</c><00:03:57.920><c> it's</c><00:03:58.080><c> like</c><00:03:58.319><c> a</c><00:03:58.480><c> random</c><00:03:59.519><c> test</c>
+
+00:03:59.830 --> 00:03:59.840 align:start position:0%
+randomly anyway it's like a random test
+ 
+
+00:03:59.840 --> 00:04:01.270 align:start position:0%
+randomly anyway it's like a random test
+recording<00:04:00.400><c> but</c><00:04:00.640><c> it</c><00:04:00.720><c> looks</c><00:04:00.879><c> like</c>
+
+00:04:01.270 --> 00:04:01.280 align:start position:0%
+recording but it looks like
+ 
+
+00:04:01.280 --> 00:04:04.550 align:start position:0%
+recording but it looks like
+reactive<00:04:02.000><c> quick</c><00:04:02.400><c> test</c><00:04:02.720><c> recording</c><00:04:04.080><c> imagine</c>
+
+00:04:04.550 --> 00:04:04.560 align:start position:0%
+reactive quick test recording imagine
+ 
+
+00:04:04.560 --> 00:04:06.229 align:start position:0%
+reactive quick test recording imagine
+having<00:04:04.799><c> this</c><00:04:05.120><c> like</c><00:04:05.360><c> uh</c>
+
+00:04:06.229 --> 00:04:06.239 align:start position:0%
+having this like uh
+ 
+
+00:04:06.239 --> 00:04:09.270 align:start position:0%
+having this like uh
+as<00:04:06.560><c> augmented</c><00:04:07.120><c> reality</c><00:04:08.400><c> objects</c><00:04:09.040><c> you</c><00:04:09.200><c> know</c>
+
+00:04:09.270 --> 00:04:09.280 align:start position:0%
+as augmented reality objects you know
+ 
+
+00:04:09.280 --> 00:04:11.350 align:start position:0%
+as augmented reality objects you know
+like<00:04:09.519><c> scattered</c><00:04:10.000><c> points</c>
+
+00:04:11.350 --> 00:04:11.360 align:start position:0%
+like scattered points
+ 
+
+00:04:11.360 --> 00:04:13.670 align:start position:0%
+like scattered points
+that's<00:04:11.599><c> reacting</c><00:04:12.080><c> to</c><00:04:12.239><c> your</c><00:04:12.400><c> voice</c><00:04:13.280><c> based</c><00:04:13.519><c> on</c>
+
+00:04:13.670 --> 00:04:13.680 align:start position:0%
+that's reacting to your voice based on
+ 
+
+00:04:13.680 --> 00:04:15.830 align:start position:0%
+that's reacting to your voice based on
+the<00:04:13.840><c> distance</c><00:04:14.400><c> of</c><00:04:14.560><c> you</c>
+
+00:04:15.830 --> 00:04:15.840 align:start position:0%
+the distance of you
+ 
+
+00:04:15.840 --> 00:04:18.390 align:start position:0%
+the distance of you
+it's<00:04:16.160><c> a</c><00:04:16.560><c> pretty</c><00:04:16.799><c> interesting</c><00:04:17.600><c> stuff</c><00:04:18.079><c> you</c><00:04:18.239><c> can</c>
+
+00:04:18.390 --> 00:04:18.400 align:start position:0%
+it's a pretty interesting stuff you can
+ 
+
+00:04:18.400 --> 00:04:20.629 align:start position:0%
+it's a pretty interesting stuff you can
+do
+
+00:04:20.629 --> 00:04:20.639 align:start position:0%
+ 
+ 
+
+00:04:20.639 --> 00:04:23.670 align:start position:0%
+ 
+oh<00:04:20.799><c> yeah</c><00:04:21.040><c> if</c><00:04:21.120><c> you</c><00:04:21.280><c> are</c><00:04:22.720><c> interested</c><00:04:23.199><c> with</c><00:04:23.360><c> this</c>
+
+00:04:23.670 --> 00:04:23.680 align:start position:0%
+oh yeah if you are interested with this
+ 
+
+00:04:23.680 --> 00:04:26.550 align:start position:0%
+oh yeah if you are interested with this
+it's<00:04:23.840><c> a</c><00:04:24.080><c> it's</c><00:04:24.240><c> an</c><00:04:24.479><c> add-on</c><00:04:24.880><c> that</c><00:04:25.040><c> you</c><00:04:25.120><c> can</c><00:04:25.440><c> add</c>
+
+00:04:26.550 --> 00:04:26.560 align:start position:0%
+it's a it's an add-on that you can add
+ 
+
+00:04:26.560 --> 00:04:32.710 align:start position:0%
+it's a it's an add-on that you can add
+push<00:04:26.880><c> to</c><00:04:27.120><c> talk</c>
+
+00:04:32.710 --> 00:04:32.720 align:start position:0%
+ 
+ 
+
+00:04:32.720 --> 00:04:36.310 align:start position:0%
+ 
+by<00:04:33.040><c> enes</c><00:04:34.000><c> and</c><00:04:34.320><c> francesco</c><00:04:35.680><c> so</c><00:04:35.919><c> once</c><00:04:36.160><c> you</c>
+
+00:04:36.310 --> 00:04:36.320 align:start position:0%
+by enes and francesco so once you
+ 
+
+00:04:36.320 --> 00:04:37.909 align:start position:0%
+by enes and francesco so once you
+install<00:04:36.800><c> this</c>
+
+00:04:37.909 --> 00:04:37.919 align:start position:0%
+install this
+ 
+
+00:04:37.919 --> 00:04:40.150 align:start position:0%
+install this
+you<00:04:38.080><c> have</c><00:04:38.320><c> this</c><00:04:38.560><c> recorder</c><00:04:39.280><c> inside</c><00:04:39.840><c> video</c>
+
+00:04:40.150 --> 00:04:40.160 align:start position:0%
+you have this recorder inside video
+ 
+
+00:04:40.160 --> 00:04:43.909 align:start position:0%
+you have this recorder inside video
+sequence<00:04:40.840><c> editor</c><00:04:41.919><c> inside</c><00:04:42.240><c> blender</c>
+
+00:04:43.909 --> 00:04:43.919 align:start position:0%
+sequence editor inside blender
+ 
+
+00:04:43.919 --> 00:04:47.909 align:start position:0%
+sequence editor inside blender
+testing<00:04:44.880><c> one</c><00:04:45.120><c> two</c><00:04:45.360><c> three</c><00:04:45.759><c> tests</c>
+
+00:04:47.909 --> 00:04:47.919 align:start position:0%
+testing one two three tests
+ 
+
+00:04:47.919 --> 00:04:53.510 align:start position:0%
+testing one two three tests
+so<00:04:48.160><c> these</c>
+
+00:04:53.510 --> 00:04:53.520 align:start position:0%
+ 
+ 
+
+00:04:53.520 --> 00:04:56.310 align:start position:0%
+ 
+testing<00:04:54.479><c> one</c><00:04:54.720><c> two</c><00:04:54.960><c> three</c><00:04:55.360><c> press</c><00:04:55.919><c> so</c><00:04:56.080><c> this</c>
+
+00:04:56.310 --> 00:04:56.320 align:start position:0%
+testing one two three press so this
+ 
+
+00:04:56.320 --> 00:04:57.990 align:start position:0%
+testing one two three press so this
+actually<00:04:56.800><c> save</c>
+
+00:04:57.990 --> 00:04:58.000 align:start position:0%
+actually save
+ 
+
+00:04:58.000 --> 00:05:01.350 align:start position:0%
+actually save
+save<00:04:58.240><c> the</c><00:04:58.400><c> audio</c><00:04:59.520><c> inside</c><00:05:00.479><c> your</c><00:05:00.800><c> folder</c>
+
+00:05:01.350 --> 00:05:01.360 align:start position:0%
+save the audio inside your folder
+ 
+
+00:05:01.360 --> 00:05:05.029 align:start position:0%
+save the audio inside your folder
+somewhere<00:05:02.880><c> so</c><00:05:03.120><c> push</c><00:05:03.360><c> to</c><00:05:03.520><c> talk</c><00:05:03.759><c> add-on</c>
+
+00:05:05.029 --> 00:05:05.039 align:start position:0%
+somewhere so push to talk add-on
+ 
+
+00:05:05.039 --> 00:05:07.189 align:start position:0%
+somewhere so push to talk add-on
+it's<00:05:05.199><c> using</c><00:05:05.520><c> the</c><00:05:05.759><c> built-in</c><00:05:06.080><c> microphone</c><00:05:07.120><c> you</c>
+
+00:05:07.189 --> 00:05:07.199 align:start position:0%
+it's using the built-in microphone you
+ 
+
+00:05:07.199 --> 00:05:08.950 align:start position:0%
+it's using the built-in microphone you
+can<00:05:07.360><c> specify</c><00:05:07.840><c> the</c><00:05:08.000><c> folder</c>
+
+00:05:08.950 --> 00:05:08.960 align:start position:0%
+can specify the folder
+ 
+
+00:05:08.960 --> 00:05:12.070 align:start position:0%
+can specify the folder
+it's<00:05:09.360><c> going</c><00:05:09.520><c> to</c><00:05:09.680><c> save</c><00:05:10.000><c> it</c><00:05:10.160><c> as</c><00:05:10.479><c> wav</c><00:05:10.880><c> file</c><00:05:11.919><c> and</c>
+
+00:05:12.070 --> 00:05:12.080 align:start position:0%
+it's going to save it as wav file and
+ 
+
+00:05:12.080 --> 00:05:14.710 align:start position:0%
+it's going to save it as wav file and
+blender<00:05:12.479><c> will</c><00:05:12.639><c> reload</c><00:05:13.120><c> it</c>
+
+00:05:14.710 --> 00:05:14.720 align:start position:0%
+blender will reload it
+ 
+
+00:05:14.720 --> 00:05:17.350 align:start position:0%
+blender will reload it
+and<00:05:14.880><c> you</c><00:05:14.960><c> have</c><00:05:15.120><c> this</c><00:05:16.000><c> you</c><00:05:16.160><c> can</c><00:05:16.320><c> simply</c><00:05:16.720><c> specify</c>
+
+00:05:17.350 --> 00:05:17.360 align:start position:0%
+and you have this you can simply specify
+ 
+
+00:05:17.360 --> 00:05:20.390 align:start position:0%
+and you have this you can simply specify
+the<00:05:17.520><c> audio</c><00:05:18.000><c> inside</c><00:05:18.400><c> animation</c><00:05:18.880><c> nodes</c>
+
+00:05:20.390 --> 00:05:20.400 align:start position:0%
+the audio inside animation nodes
+ 
+
+00:05:20.400 --> 00:05:23.029 align:start position:0%
+the audio inside animation nodes
+and<00:05:21.039><c> just</c><00:05:21.360><c> transfer</c><00:05:21.759><c> the</c><00:05:21.919><c> data</c><00:05:22.240><c> into</c><00:05:22.479><c> geometry</c>
+
+00:05:23.029 --> 00:05:23.039 align:start position:0%
+and just transfer the data into geometry
+ 
+
+00:05:23.039 --> 00:05:23.510 align:start position:0%
+and just transfer the data into geometry
+notes
+
+00:05:23.510 --> 00:05:23.520 align:start position:0%
+notes
+ 
+
+00:05:23.520 --> 00:05:26.629 align:start position:0%
+notes
+all<00:05:23.680><c> right</c><00:05:23.840><c> so</c><00:05:25.840><c> it's</c><00:05:26.160><c> quite</c>
+
+00:05:26.629 --> 00:05:26.639 align:start position:0%
+all right so it's quite
+ 
+
+00:05:26.639 --> 00:05:29.189 align:start position:0%
+all right so it's quite
+advanced<00:05:27.600><c> but</c><00:05:28.080><c> pretty</c><00:05:28.320><c> cool</c><00:05:28.560><c> stuff</c><00:05:28.880><c> you</c><00:05:29.039><c> can</c>
+
+00:05:29.189 --> 00:05:29.199 align:start position:0%
+advanced but pretty cool stuff you can
+ 
+
+00:05:29.199 --> 00:05:31.189 align:start position:0%
+advanced but pretty cool stuff you can
+do<00:05:29.440><c> this</c><00:05:29.680><c> is</c><00:05:29.759><c> just</c><00:05:30.000><c> the</c><00:05:30.080><c> basics</c><00:05:30.720><c> alright</c><00:05:31.039><c> so</c>
+
+00:05:31.189 --> 00:05:31.199 align:start position:0%
+do this is just the basics alright so
+ 
+
+00:05:31.199 --> 00:05:32.469 align:start position:0%
+do this is just the basics alright so
+i'm<00:05:31.280><c> just</c><00:05:31.440><c> showing</c><00:05:31.759><c> you</c>
+
+00:05:32.469 --> 00:05:32.479 align:start position:0%
+i'm just showing you
+ 
+
+00:05:32.479 --> 00:05:34.150 align:start position:0%
+i'm just showing you
+the<00:05:32.639><c> whole</c><00:05:32.880><c> thing</c><00:05:33.039><c> is</c><00:05:33.199><c> working</c><00:05:33.520><c> together</c><00:05:34.000><c> all</c>
+
+00:05:34.150 --> 00:05:34.160 align:start position:0%
+the whole thing is working together all
+ 
+
+00:05:34.160 --> 00:05:36.150 align:start position:0%
+the whole thing is working together all
+right<00:05:34.720><c> so</c><00:05:34.880><c> thanks</c><00:05:35.120><c> again</c><00:05:35.360><c> for</c><00:05:35.520><c> tuning</c><00:05:35.840><c> in</c><00:05:36.000><c> and</c>
+
+00:05:36.150 --> 00:05:36.160 align:start position:0%
+right so thanks again for tuning in and
+ 
+
+00:05:36.160 --> 00:05:37.430 align:start position:0%
+right so thanks again for tuning in and
+i'll<00:05:36.320><c> see</c><00:05:36.479><c> you</c><00:05:36.560><c> next</c><00:05:36.720><c> time</c><00:05:36.960><c> thank</c><00:05:37.120><c> you</c>
+
+00:05:37.430 --> 00:05:37.440 align:start position:0%
+i'll see you next time thank you
+ 
+
+00:05:37.440 --> 00:05:39.840 align:start position:0%
+i'll see you next time thank you
+bye
+

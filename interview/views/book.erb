@@ -1,0 +1,30 @@
+<div class="book-view">
+    <nav class="breadcrumb">
+        <a href="/">Home</a> &raquo; <%= @book['source'] %>
+    </nav>
+    
+    <h2><%= @book['source'] %></h2>
+    
+    <div class="tracks-list">
+        <% @book['tracks'].each_with_index do |track, index| %>
+            <div class="track-card">
+                <div class="track-header">
+                    <h3>Track <%= track['track_number'] %>: <%= track['title'] %></h3>
+                    <span class="question-count"><%= track['questions'].length %> questions</span>
+                </div>
+                <% if track['description'] && !track['description'].empty? %>
+                    <p class="track-description"><%= track['description'] %></p>
+                <% end %>
+                <div class="question-preview">
+                    <p><strong>Sample questions:</strong></p>
+                    <ul>
+                        <% track['questions'].first(2).each_with_index do |question, q_index| %>
+                            <li><%= truncate_text(question, 150) %></li>
+                        <% end %>
+                    </ul>
+                </div>
+                <a href="/book/<%= @book_id %>/track/<%= index %>" class="btn btn-small">View All Questions</a>
+            </div>
+        <% end %>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: user1@example.com
+  password_digest: <%= BCrypt::Password.create('password123') %>
+  is_premium: false
+  subscription_expires_at: null
+
+two:
+  email: user2@example.com
+  password_digest: <%= BCrypt::Password.create('password456') %>
+  is_premium: true
+  subscription_expires_at: <%= 30.days.from_now %>

@@ -1,0 +1,133 @@
+<div class="track-view">
+    <nav class="breadcrumb">
+        <a href="/">Home</a> &raquo; 
+        <a href="/book/<%= @book_id %>"><%= @book['source'] %></a> &raquo; 
+        Track <%= @track['track_number'] %>
+    </nav>
+    
+    <div class="track-header">
+        <h2>Track <%= @track['track_number'] %>: <%= @track['title'] %></h2>
+        <% if @track['description'] && !@track['description'].empty? %>
+            <p class="track-description"><%= @track['description'] %></p>
+        <% end %>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">0 of <%= @track['questions'].length %> completed</span>
+        </div>
+    </div>
+    
+    <div class="questions-list">
+        <% @track['questions'].each_with_index do |question, index| %>
+            <div class="question-item" data-question-id="<%= index %>">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="q<%= index %>" class="question-checkbox">
+                    <label for="q<%= index %>" class="checkbox-label">
+                        <svg class="checkmark" viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                        </svg>
+                    </label>
+                </div>
+                <div class="question-number"><%= format_question_number(index) %></div>
+                <div class="question-text"><%= question %></div>
+            </div>
+        <% end %>
+    </div>
+    
+    <div class="navigation">
+        <% if @track_id > 0 %>
+            <a href="/book/<%= @book_id %>/track/<%= @track_id - 1 %>" class="btn btn-nav">&laquo; Previous Track</a>
+        <% end %>
+        
+        <a href="/book/<%= @book_id %>" class="btn btn-nav">Back to Book</a>
+        
+        <% if @track_id < @total_tracks - 1 %>
+            <a href="/book/<%= @book_id %>/track/<%= @track_id + 1 %>" class="btn btn-nav">Next Track &raquo;</a>
+        <% end %>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.question-checkbox');
+    const progressFill = document.getElementById('progressFill');
+    const progressText = document.getElementById('progressText');
+    const totalQuestions = checkboxes.length;
+    
+    // Load saved state from localStorage
+    const trackKey = 'track_<%= @book_id %>_<%= @track_id %>';
+    const savedState = JSON.parse(localStorage.getItem(trackKey) || '[]');
+    
+    // Restore checkbox states
+    savedState.forEach(questionId => {
+        const checkbox = document.getElementById('q' + questionId);
+        if (checkbox) {
+            checkbox.checked = true;
+            checkbox.closest('.question-item').classList.add('completed');
+        }
+    });
+    
+    updateProgress();
+    
+    // Add event listeners
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const questionItem = this.closest('.question-item');
+            const questionId = questionItem.dataset.questionId;
+            
+            if (this.checked) {
+                questionItem.classList.add('completed');
+                // Add celebration animation
+                questionItem.classList.add('celebrate');
+                setTimeout(() => questionItem.classList.remove('celebrate'), 600);
+                
+                // Save to localStorage
+                if (!savedState.includes(questionId)) {
+                    savedState.push(questionId);
+                }
+            } else {
+                questionItem.classList.remove('completed');
+                // Remove from localStorage
+                const index = savedState.indexOf(questionId);
+                if (index > -1) {
+                    savedState.splice(index, 1);
+                }
+            }
+            
+            localStorage.setItem(trackKey, JSON.stringify(savedState));
+            updateProgress();
+            
+            // Check if all completed
+            if (savedState.length === totalQuestions) {
+                celebrateCompletion();
+            }
+        });
+    });
+    
+    function updateProgress() {
+        const completed = document.querySelectorAll('.question-checkbox:checked').length;
+        const percentage = (completed / totalQuestions) * 100;
+        progressFill.style.width = percentage + '%';
+        progressText.textContent = `${completed} of ${totalQuestions} completed`;
+        
+        // Change color based on progress
+        if (percentage === 100) {
+            progressFill.style.background = 'linear-gradient(135deg, #4ade80 0%, #22c55e 100%)';
+        } else if (percentage >= 75) {
+            progressFill.style.background = 'linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)';
+        } else if (percentage >= 50) {
+            progressFill.style.background = 'linear-gradient(135deg, #c084fc 0%, #a855f7 100%)';
+        }
+    }
+    
+    function celebrateCompletion() {
+        const confetti = document.createElement('div');
+        confetti.className = 'completion-celebration';
+        confetti.innerHTML = '🎉 All Questions Completed! Amazing Work! 🎉';
+        document.querySelector('.track-header').appendChild(confetti);
+        
+        setTimeout(() => confetti.remove(), 3000);
+    }
+});
+</script>

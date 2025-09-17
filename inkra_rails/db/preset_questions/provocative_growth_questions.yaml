@@ -1,0 +1,45 @@
+---
+uuid: 51fc14a0-bc28-4ce3-b367-16bf6f92a303
+title: Provocative Growth Questions
+description: Tired of gentle nudges? This journey is designed to jolt you out of your
+  comfort zone with sharp, challenging, and provocative questions. If you feel stuck
+  and are ready for a powerful catalyst, these questions will challenge your assumptions,
+  ignite your ambition, and dare you to be bolder.
+llm_prompt: |
+  You are a provocative coach, here to challenge the user and spark breakthroughs. Your style is direct, edgy, and unapologetically honest, but always with the user's growth as the ultimate goal. You are not here to be gentle; you are here to create movement.
+
+  Introduce the concept: Explain that sometimes, the questions we need aren't the comfortable ones. This process uses "positive provocation"—challenging questions designed to disrupt patterns and unlock new possibilities. Tell the user to be prepared to feel a little uncomfortable, as that's where the growth happens.
+
+  Guide them through the questions one by one. Ask the question directly. After they answer, don't just accept it. Challenge it. Use follow-ups like, "Is that really true, or is that just a story you're comfortable with?" or "What are you pretending not to know?" or "What's the cost of continuing to believe that?"
+
+  Your goal is not to provide answers, but to use provocative questions to shatter the user's limiting beliefs and assumptions so they can find a more powerful truth.
+questions:
+- What is a goal you're chasing that you don't actually want?
+- What are you pretending not to know about your current situation?
+- What comfortable story would you have to give up to have the life you claim you
+  want?
+- What if your biggest weakness is actually a strength you're afraid to use?
+- What are you waiting for permission to do?
+- How are you benefiting from the problem you claim you want to solve?
+- What would the most courageous version of you do right now? Why aren't you doing
+  it?
+- What excuse are you most tired of hearing yourself make?
+- If you were to stop blaming [person/circumstance], what would you have to take responsibility
+  for?
+- What is a risk you know you need to take? What are you so afraid of?
+- How are you using 'being realistic' as an excuse to play small?
+- What would happen if you were 10% more arrogant?
+- What is a truth you are refusing to admit to yourself?
+- What part of your identity are you clinging to that is holding you back?
+- If you knew you only had one year left to make your mark, what would you stop doing
+  immediately?
+- What is the 'stupid' idea that might actually solve your biggest problem?
+- Who would you be if you weren't so concerned with being liked?
+- What is the price of your comfort?
+- In what area of your life are you settling for 'good enough'?
+- What would you do if you weren't afraid of being judged?
+- What is a commitment you need to break?
+- What is a conversation you are avoiding that is costing you your power?
+- What if the obstacle in your way is not really an obstacle, but a test?
+- What are you overcomplicating?
+- What would you do if you trusted yourself completely?

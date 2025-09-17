@@ -1,0 +1,357 @@
+This is a scrolling waveform visualization with a temporal flow design. Here's how I'd describe it:
+The visualization displays audio amplitude as a continuous waveform that moves horizontally across the screen from right to left, creating a "timeline" effect. The key characteristics are:
+
+Live capture point: New audio enters from the right edge of the screen as it's being recorded, showing the real-time amplitude of what's currently being spoken
+Scrolling motion: The entire waveform continuously scrolls leftward, so what was just recorded moves progressively toward and eventually off the left edge of the screen
+Temporal context: This creates a moving window of audio history - you can see several seconds of both what was just said (center-left portion) and what's currently being said (right edge)
+Fixed viewport: The display area stays stationary while the waveform data flows through it, like watching a river flow past a fixed observation point
+
+This design is particularly effective for voice recording because it provides immediate visual feedback of the current audio input while maintaining context of recent audio history. It helps users see patterns in their speech, identify pauses, and get a sense of the recording's dynamics without needing to see the entire recording at once.
+The metaphor is essentially like a seismograph or EKG monitor - a continuous strip chart where time flows in one direction and the present moment is always at the same position on screen.
+
+Here's how you can implement a scrolling waveform visualization in SwiftUI:This implementation provides a scrolling waveform visualization similar to Apple's Voice Memos app. Here are the key components:
+
+## Core Features:
+
+1. **AudioManager Class**: 
+   - Captures real-time audio using `AVAudioEngine`
+   - Processes audio buffers to calculate RMS (amplitude) values
+   - Maintains a rolling buffer of audio levels (last 200 samples)
+
+2. **Two Visualization Styles**:
+   - **Bar visualization**: Individual bars with fade effect (older samples are more transparent)
+   - **Continuous waveform**: Smooth path that creates a filled waveform shape
+
+3. **Scrolling Effect**:
+   - New audio data is added to the end of the array
+   - Old data is removed from the beginning when the buffer is full
+   - The view is aligned to `.trailing` so new data appears from the right
+
+## Key Implementation Details:
+
+- **Real-time processing**: The audio tap processes buffers and calculates RMS values for smooth amplitude representation
+- **Automatic scrolling**: By limiting the array size and always showing the most recent samples, the waveform naturally scrolls
+- **Visual feedback**: Recording indicator with pulsing animation
+- **Smooth animations**: Each bar/path animates smoothly as values change
+
+## To Use This Code:
+
+1. Add microphone usage description to your Info.plist:
+   ```xml
+   <key>NSMicrophoneUsageDescription</key>
+   <string>This app needs microphone access to record audio</string>
+   ```
+
+2. The visualization automatically scrolls as new audio comes in from the right and older audio moves left
+
+3. You can customize:
+   - `maxSamples`: How much history to show
+   - `barWidth` and `barSpacing`: Visual appearance
+   - Animation timings and colors
+   - Sample rate (currently 20Hz via the timer)
+
+This creates the exact effect you described - audio enters from the right, scrolls left, and eventually disappears off the left edge while maintaining a continuous view of recent audio activity.
+
+import SwiftUI
+import AVFoundation
+
+// MARK: - Audio Manager
+class AudioManager: NSObject, ObservableObject {
+    @Published var audioLevels: [Float] = []
+    @Published var isRecording = false
+    
+    private var audioEngine: AVAudioEngine?
+    private var inputNode: AVAudioInputNode?
+    private var timer: Timer?
+    private let maxSamples = 200 // Number of samples to keep in history
+    
+    override init() {
+        super.init()
+        setupAudioSession()
+    }
+    
+    private func setupAudioSession() {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playAndRecord, mode: .default)
+            try audioSession.setActive(true)
+        } catch {
+            print("Failed to set up audio session: \(error)")
+        }
+    }
+    
+    func startRecording() {
+        audioEngine = AVAudioEngine()
+        guard let audioEngine = audioEngine else { return }
+        
+        inputNode = audioEngine.inputNode
+        let recordingFormat = inputNode!.outputFormat(forBus: 0)
+        
+        // Install tap on input node to capture audio
+        inputNode!.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { [weak self] buffer, _ in
+            self?.processAudioBuffer(buffer)
+        }
+        
+        do {
+            try audioEngine.start()
+            isRecording = true
+            
+            // Start timer to add samples even during silence
+            timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { [weak self] _ in
+                if self?.audioLevels.last != 0 {
+                    // Add a zero sample if we haven't received audio recently
+                    DispatchQueue.main.async {
+                        self?.addAudioLevel(0)
+                    }
+                }
+            }
+        } catch {
+            print("Failed to start audio engine: \(error)")
+        }
+    }
+    
+    func stopRecording() {
+        audioEngine?.stop()
+        inputNode?.removeTap(onBus: 0)
+        audioEngine = nil
+        timer?.invalidate()
+        timer = nil
+        isRecording = false
+    }
+    
+    private func processAudioBuffer(_ buffer: AVAudioPCMBuffer) {
+        guard let channelData = buffer.floatChannelData else { return }
+        
+        let channelDataValue = channelData.pointee
+        let channelDataArray = Array(UnsafeBufferPointer(start: channelDataValue, count: Int(buffer.frameLength)))
+        
+        // Calculate RMS (Root Mean Square) for amplitude
+        let rms = sqrt(channelDataArray.map { $0 * $0 }.reduce(0, +) / Float(buffer.frameLength))
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.addAudioLevel(rms)
+        }
+    }
+    
+    private func addAudioLevel(_ level: Float) {
+        audioLevels.append(level)
+        
+        // Keep only the last maxSamples
+        if audioLevels.count > maxSamples {
+            audioLevels.removeFirst()
+        }
+    }
+}
+
+// MARK: - Waveform View
+struct WaveformView: View {
+    let audioLevels: [Float]
+    let maxHeight: CGFloat
+    let barWidth: CGFloat = 3
+    let barSpacing: CGFloat = 2
+    
+    var body: some View {
+        GeometryReader { geometry in
+            HStack(alignment: .center, spacing: barSpacing) {
+                ForEach(Array(audioLevels.enumerated()), id: \.offset) { index, level in
+                    WaveformBar(
+                        amplitude: CGFloat(level),
+                        maxHeight: maxHeight,
+                        opacity: opacity(for: index, total: audioLevels.count)
+                    )
+                    .frame(width: barWidth)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .trailing)
+        }
+    }
+    
+    // Create fade effect for older samples
+    private func opacity(for index: Int, total: Int) -> Double {
+        let position = Double(index) / Double(total)
+        return 0.3 + (position * 0.7) // Fade from 30% to 100% opacity
+    }
+}
+
+// MARK: - Individual Waveform Bar
+struct WaveformBar: View {
+    let amplitude: CGFloat
+    let maxHeight: CGFloat
+    let opacity: Double
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 1.5)
+            .fill(
+                LinearGradient(
+                    colors: [
+                        Color.blue.opacity(opacity),
+                        Color.cyan.opacity(opacity)
+                    ],
+                    startPoint: .bottom,
+                    endPoint: .top
+                )
+            )
+            .frame(height: min(amplitude * maxHeight * 500, maxHeight))
+            .animation(.easeOut(duration: 0.1), value: amplitude)
+    }
+}
+
+// MARK: - Alternative Continuous Line Waveform
+struct ContinuousWaveformView: View {
+    let audioLevels: [Float]
+    let maxHeight: CGFloat
+    
+    var body: some View {
+        GeometryReader { geometry in
+            Path { path in
+                guard !audioLevels.isEmpty else { return }
+                
+                let width = geometry.size.width
+                let height = geometry.size.height
+                let midY = height / 2
+                let stepX = width / CGFloat(audioLevels.count - 1)
+                
+                // Start at the first point
+                path.move(to: CGPoint(x: 0, y: midY))
+                
+                // Draw the waveform
+                for (index, level) in audioLevels.enumerated() {
+                    let x = CGFloat(index) * stepX
+                    let amplitude = CGFloat(level) * maxHeight * 200
+                    
+                    // Draw both positive and negative amplitude
+                    if index == 0 {
+                        path.move(to: CGPoint(x: x, y: midY - amplitude))
+                    } else {
+                        path.addLine(to: CGPoint(x: x, y: midY - amplitude))
+                    }
+                }
+                
+                // Draw the bottom half (mirror)
+                for (index, level) in audioLevels.enumerated().reversed() {
+                    let x = CGFloat(index) * stepX
+                    let amplitude = CGFloat(level) * maxHeight * 200
+                    path.addLine(to: CGPoint(x: x, y: midY + amplitude))
+                }
+                
+                path.closeSubpath()
+            }
+            .fill(
+                LinearGradient(
+                    colors: [Color.blue.opacity(0.6), Color.cyan.opacity(0.3)],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            )
+            .animation(.linear(duration: 0.05), value: audioLevels)
+        }
+    }
+}
+
+// MARK: - Main Content View
+struct ContentView: View {
+    @StateObject private var audioManager = AudioManager()
+    @State private var visualizationStyle = 0
+    
+    var body: some View {
+        VStack(spacing: 30) {
+            Text("Voice Memo Waveform")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            // Visualization container
+            ZStack {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.gray.opacity(0.1))
+                    .frame(height: 200)
+                
+                if visualizationStyle == 0 {
+                    WaveformView(
+                        audioLevels: audioManager.audioLevels,
+                        maxHeight: 180
+                    )
+                    .padding()
+                } else {
+                    ContinuousWaveformView(
+                        audioLevels: audioManager.audioLevels,
+                        maxHeight: 180
+                    )
+                    .padding()
+                }
+                
+                // Current recording indicator
+                if audioManager.isRecording {
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Circle()
+                                .fill(Color.red)
+                                .frame(width: 12, height: 12)
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.red.opacity(0.3), lineWidth: 4)
+                                        .scaleEffect(1.5)
+                                        .opacity(0.5)
+                                        .animation(
+                                            .easeInOut(duration: 1)
+                                            .repeatForever(autoreverses: true),
+                                            value: audioManager.isRecording
+                                        )
+                                )
+                            Spacer()
+                        }
+                        .padding()
+                    }
+                }
+            }
+            
+            // Style picker
+            Picker("Visualization Style", selection: $visualizationStyle) {
+                Text("Bars").tag(0)
+                Text("Continuous").tag(1)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal)
+            
+            // Control buttons
+            HStack(spacing: 40) {
+                Button(action: {
+                    if audioManager.isRecording {
+                        audioManager.stopRecording()
+                    } else {
+                        audioManager.startRecording()
+                    }
+                }) {
+                    Image(systemName: audioManager.isRecording ? "stop.circle.fill" : "mic.circle.fill")
+                        .font(.system(size: 64))
+                        .foregroundColor(audioManager.isRecording ? .red : .blue)
+                }
+                
+                Button(action: {
+                    audioManager.audioLevels.removeAll()
+                }) {
+                    Image(systemName: "trash.circle.fill")
+                        .font(.system(size: 48))
+                        .foregroundColor(.gray)
+                }
+                .disabled(audioManager.isRecording)
+            }
+            
+            Text(audioManager.isRecording ? "Recording..." : "Tap to record")
+                .font(.caption)
+                .foregroundColor(.secondary)
+            
+            Spacer()
+        }
+        .padding()
+    }
+}
+
+// MARK: - App Entry Point
+struct WaveformApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}

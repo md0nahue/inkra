@@ -1,0 +1,250 @@
+<h1><%= @interview.title %></h1>
+<p class="subtitle">Welcome, <%= @speaker.name %>! Please answer the following questions.</p>
+
+<div class="progress-bar">
+  <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+</div>
+
+<div id="errorMessage" class="error-message" style="display: none;"></div>
+<div id="successMessage" class="success-message" style="display: none;"></div>
+
+<div class="question-container">
+  <div class="question-number" id="questionNumber">Question 1 of <%= @questions.count %></div>
+  <div class="question-text" id="questionText">
+    <%= @questions.first&.formatted_for_perspective(@interview.narrative_perspective) %>
+  </div>
+  <div id="questionPhoto"></div>
+</div>
+
+<div class="recording-indicator" id="recordingIndicator">
+  <div class="recording-dot"></div>
+  <span>Recording in progress...</span>
+</div>
+
+<div class="controls">
+  <button class="btn btn-record" id="recordBtn">Start Recording</button>
+  <button class="btn btn-stop" id="stopBtn" style="display: none;">Stop Recording</button>
+  <button class="btn btn-next" id="nextBtn" style="display: none;">Next Question</button>
+  <button class="btn btn-complete" id="completeBtn" style="display: none;">Complete Interview</button>
+</div>
+
+<script>
+  const interviewData = {
+    token: '<%= params[:token] %>',
+    questions: <%= @questions.to_json.html_safe %>,
+    currentIndex: 0,
+    responses: []
+  };
+  
+  let mediaRecorder;
+  let audioChunks = [];
+  let recordingStartTime;
+  
+  const recordBtn = document.getElementById('recordBtn');
+  const stopBtn = document.getElementById('stopBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const completeBtn = document.getElementById('completeBtn');
+  const recordingIndicator = document.getElementById('recordingIndicator');
+  const progressBar = document.getElementById('progressBar');
+  const questionNumber = document.getElementById('questionNumber');
+  const questionText = document.getElementById('questionText');
+  const questionPhoto = document.getElementById('questionPhoto');
+  const errorMessage = document.getElementById('errorMessage');
+  const successMessage = document.getElementById('successMessage');
+  
+  // Initialize audio recording
+  async function initRecording() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mediaRecorder = new MediaRecorder(stream);
+      
+      mediaRecorder.ondataavailable = (event) => {
+        audioChunks.push(event.data);
+      };
+      
+      mediaRecorder.onstop = async () => {
+        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+        const duration = Math.round((Date.now() - recordingStartTime) / 1000);
+        
+        await uploadAudio(audioBlob, duration);
+        audioChunks = [];
+      };
+    } catch (error) {
+      showError('Please allow microphone access to record your responses.');
+      console.error('Error accessing microphone:', error);
+    }
+  }
+  
+  // Start recording
+  recordBtn.addEventListener('click', () => {
+    if (!mediaRecorder) {
+      initRecording().then(() => {
+        if (mediaRecorder) {
+          startRecording();
+        }
+      });
+    } else {
+      startRecording();
+    }
+  });
+  
+  function startRecording() {
+    audioChunks = [];
+    recordingStartTime = Date.now();
+    mediaRecorder.start();
+    
+    recordBtn.style.display = 'none';
+    stopBtn.style.display = 'inline-block';
+    nextBtn.style.display = 'none';
+    recordingIndicator.classList.add('active');
+    
+    hideMessages();
+  }
+  
+  // Stop recording
+  stopBtn.addEventListener('click', () => {
+    mediaRecorder.stop();
+    
+    stopBtn.style.display = 'none';
+    recordingIndicator.classList.remove('active');
+    
+    // Show loading state
+    showSuccess('Saving your response...');
+  });
+  
+  // Upload audio
+  async function uploadAudio(audioBlob, duration) {
+    const formData = new FormData();
+    formData.append('audio', audioBlob, 'recording.webm');
+    formData.append('question_id', interviewData.questions[interviewData.currentIndex].id);
+    formData.append('duration', duration);
+    
+    try {
+      const response = await fetch(`/g/<%= params[:token] %>/upload`, {
+        method: 'POST',
+        headers: {
+          'X-CSRF-Token': document.querySelector('[name="csrf-token"]').content
+        },
+        body: formData
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        interviewData.responses.push(result);
+        showSuccess('Response saved successfully!');
+        
+        if (interviewData.currentIndex < interviewData.questions.length - 1) {
+          nextBtn.style.display = 'inline-block';
+        } else {
+          completeBtn.style.display = 'inline-block';
+        }
+      } else {
+        showError('Failed to save response. Please try again.');
+        recordBtn.style.display = 'inline-block';
+      }
+    } catch (error) {
+      showError('Failed to upload audio. Please try again.');
+      recordBtn.style.display = 'inline-block';
+      console.error('Upload error:', error);
+    }
+  }
+  
+  // Next question
+  nextBtn.addEventListener('click', () => {
+    interviewData.currentIndex++;
+    updateQuestion();
+    
+    recordBtn.style.display = 'inline-block';
+    nextBtn.style.display = 'none';
+    hideMessages();
+  });
+  
+  // Update question display
+  function updateQuestion() {
+    const question = interviewData.questions[interviewData.currentIndex];
+    const totalQuestions = interviewData.questions.length;
+    
+    questionNumber.textContent = `Question ${interviewData.currentIndex + 1} of ${totalQuestions}`;
+    questionText.textContent = formatQuestionForPerspective(question.text);
+    
+    // Update progress bar
+    const progress = ((interviewData.currentIndex + 1) / totalQuestions) * 100;
+    progressBar.style.width = `${progress}%`;
+    
+    // Update photo if exists
+    if (question.photo_url) {
+      questionPhoto.innerHTML = `<img src="${question.photo_url}" class="question-photo" alt="Question photo">`;
+    } else {
+      questionPhoto.innerHTML = '';
+    }
+  }
+  
+  // Format question based on narrative perspective
+  function formatQuestionForPerspective(text) {
+    const perspective = '<%= @interview.narrative_perspective %>';
+    const speakerName = '<%= @speaker.name %>';
+    const pronoun = '<%= @speaker.pronoun || "they" %>';
+    
+    if (perspective === 'first_person') {
+      return text.replace(/\byou\b/gi, 'I').replace(/\byour\b/gi, 'my');
+    } else if (perspective === 'third_person') {
+      const possessive = pronoun === 'he' ? 'his' : (pronoun === 'she' ? 'her' : 'their');
+      return text.replace(/\byou\b/gi, speakerName).replace(/\byour\b/gi, possessive);
+    }
+    return text;
+  }
+  
+  // Complete interview
+  completeBtn.addEventListener('click', async () => {
+    completeBtn.disabled = true;
+    showSuccess('Completing interview...');
+    
+    try {
+      const response = await fetch(`/g/<%= params[:token] %>/complete`, {
+        method: 'POST',
+        headers: {
+          'X-CSRF-Token': document.querySelector('[name="csrf-token"]').content,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({})
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        window.location.href = result.redirect_url;
+      } else {
+        showError('Failed to complete interview. Please try again.');
+        completeBtn.disabled = false;
+      }
+    } catch (error) {
+      showError('Failed to complete interview. Please try again.');
+      completeBtn.disabled = false;
+      console.error('Complete error:', error);
+    }
+  });
+  
+  // Helper functions
+  function showError(message) {
+    errorMessage.textContent = message;
+    errorMessage.style.display = 'block';
+    successMessage.style.display = 'none';
+  }
+  
+  function showSuccess(message) {
+    successMessage.textContent = message;
+    successMessage.style.display = 'block';
+    errorMessage.style.display = 'none';
+  }
+  
+  function hideMessages() {
+    errorMessage.style.display = 'none';
+    successMessage.style.display = 'none';
+  }
+  
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    initRecording();
+  });
+</script>

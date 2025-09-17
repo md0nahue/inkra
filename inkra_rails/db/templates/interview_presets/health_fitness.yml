@@ -1,0 +1,492 @@
+presets:
+  - title: "Your Fitness Journey"
+    uuid: "98721651-d5d8-45cf-96c8-db089630a069"
+    description: "Document your fitness transformation, from where you started to where you're going. This interview helps you reflect on your progress, identify what's working, and clarify your vision for a healthier, stronger you. Perfect for tracking your evolution and staying motivated."
+    category: "health_fitness"
+    icon_name: "figure.run"
+    order_position: 22
+    active: true
+    is_featured: true
+    chapters:
+      - title: "Starting Point"
+        sections:
+          - title: "Your Why"
+            questions:
+              - "What made you decide to start your fitness journey? What was the turning point?"
+              - "How did you feel about your body and health before you started?"
+              - "What were your biggest fears or concerns about starting to exercise?"
+          - title: "Initial Goals"
+            questions:
+              - "What were your original fitness goals when you started?"
+              - "How did you choose your first workout routine or program?"
+              - "What challenges did you face in the first few weeks?"
+      - title: "The Progress"
+        sections:
+          - title: "Wins & Milestones"
+            questions:
+              - "What's the first fitness milestone you achieved that made you proud?"
+              - "Describe a moment when you realized you were stronger than you thought."
+              - "What physical changes have you noticed that excite you the most?"
+          - title: "Mindset Shifts"
+            questions:
+              - "How has your relationship with exercise changed since you started?"
+              - "What mental or emotional benefits have you experienced from working out?"
+              - "What limiting beliefs about fitness have you overcome?"
+      - title: "Future Vision"
+        sections:
+          - title: "Next Level Goals"
+            questions:
+              - "What are your current fitness goals and why do they matter to you?"
+              - "What does your ideal fitness routine look like one year from now?"
+              - "How do you want to feel in your body five years from now?"
+
+  - title: "Nutrition & Wellness Check-In"
+    uuid: "16b26a8b-9d2d-409f-8d8f-12c9efb6e146"
+    description: "Explore your relationship with food, nutrition, and overall wellness. This interview helps you identify patterns, celebrate healthy changes, and create a sustainable approach to nourishing your body. Great for anyone working on their health from the inside out."
+    category: "health_fitness"
+    icon_name: "leaf.arrow.circlepath"
+    order_position: 23
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Food Relationship"
+        sections:
+          - title: "Past Patterns"
+            questions:
+              - "How would you describe your relationship with food growing up?"
+              - "What eating habits from your past no longer serve you?"
+              - "What emotional connections do you have with certain foods?"
+          - title: "Current Approach"
+            questions:
+              - "How do you currently approach nutrition and meal planning?"
+              - "What healthy eating habits have you successfully developed?"
+              - "What's the biggest challenge you face with maintaining good nutrition?"
+      - title: "Wellness Practices"
+        sections:
+          - title: "Daily Habits"
+            questions:
+              - "What wellness practices have become non-negotiable in your daily routine?"
+              - "How do you prioritize sleep and recovery?"
+              - "What stress management techniques work best for you?"
+          - title: "Holistic Health"
+            questions:
+              - "How do you balance physical health with mental and emotional wellbeing?"
+              - "What supplements or wellness tools have made a difference for you?"
+              - "How has improving your health affected other areas of your life?"
+      - title: "Sustainable Changes"
+        sections:
+          - title: "Long-term Vision"
+            questions:
+              - "What sustainable nutrition changes are you committed to maintaining?"
+              - "How do you handle setbacks without giving up on your health goals?"
+              - "What does optimal health and wellness look like for you?"
+
+  - title: "Athletic Performance Debrief"
+    uuid: "8cc50d5e-e3a9-4d12-a516-62fb86025058"
+    description: "For athletes and fitness enthusiasts who want to optimize their performance. This interview helps you analyze your training, competition experiences, and mental game to identify areas for improvement and celebrate your athletic achievements."
+    category: "health_fitness"
+    icon_name: "trophy.fill"
+    order_position: 24
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Training Analysis"
+        sections:
+          - title: "Current Program"
+            questions:
+              - "Describe your current training program and how you developed it."
+              - "What aspects of your training are producing the best results?"
+              - "Where do you feel your training could be more effective?"
+          - title: "Recovery & Adaptation"
+            questions:
+              - "How do you approach recovery and injury prevention?"
+              - "What signs does your body give you when you need to adjust your training?"
+              - "How do you balance intense training with adequate rest?"
+      - title: "Competition Mindset"
+        sections:
+          - title: "Mental Preparation"
+            questions:
+              - "How do you mentally prepare for a competition or challenging workout?"
+              - "Describe a time when your mental strength carried you through a physical challenge."
+              - "What mental barriers have you had to overcome in your sport or training?"
+          - title: "Performance Review"
+            questions:
+              - "Tell me about your best athletic performance. What made it special?"
+              - "How do you handle disappointing performances or setbacks?"
+              - "What have you learned from your toughest competitions?"
+      - title: "Next Level"
+        sections:
+          - title: "Evolution & Goals"
+            questions:
+              - "What specific performance goals are you working toward?"
+              - "How are you planning to evolve your training to reach the next level?"
+              - "What legacy do you want to create through your athletic pursuits?"
+
+  - title: "Body Image & Self-Love Journey"
+    uuid: "699e38d6-a227-4463-b810-7ad8ea99b469"
+    description: "A compassionate exploration of your relationship with your body. This interview helps you process body image challenges, celebrate self-acceptance victories, and cultivate a more loving relationship with yourself at every stage of your journey."
+    category: "health_fitness"
+    icon_name: "heart.circle.fill"
+    order_position: 25
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Relationship"
+        sections:
+          - title: "Past Struggles"
+            questions:
+              - "How has your body image evolved throughout your life?"
+              - "What negative beliefs about your body have you had to confront?"
+              - "What external influences shaped how you view your body?"
+          - title: "Turning Points"
+            questions:
+              - "Describe a moment when you felt truly comfortable in your own skin."
+              - "What helped you start shifting from criticism to acceptance?"
+              - "Who or what has positively influenced your body image?"
+      - title: "Self-Acceptance Work"
+        sections:
+          - title: "Daily Practice"
+            questions:
+              - "What daily practices help you maintain a positive body image?"
+              - "How do you handle days when you don't feel good about your body?"
+              - "What affirmations or mindset shifts have been most powerful for you?"
+          - title: "Celebrating Your Body"
+            questions:
+              - "What does your body allow you to do that you're grateful for?"
+              - "How do you celebrate your body beyond its appearance?"
+              - "What would you tell someone struggling with the same body image issues you've faced?"
+      - title: "Moving Forward"
+        sections:
+          - title: "Continued Growth"
+            questions:
+              - "How do you want to continue evolving your relationship with your body?"
+              - "What does complete body acceptance look like to you?"
+              - "How can you be a positive influence on others' body image?"
+
+  - title: "Habit Building Blueprint"
+    uuid: "3874ce4d-ceab-4a39-acd0-4a7c2f86e956"
+    description: "Master the art of building healthy habits that stick. This interview helps you understand your habit patterns, design effective routines, and create lasting change in your health and fitness journey."
+    category: "health_fitness"
+    icon_name: "calendar.circle.fill"
+    order_position: 26
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Habit Inventory"
+        sections:
+          - title: "Current Patterns"
+            questions:
+              - "What healthy habits have you successfully maintained for over 6 months?"
+              - "What habits have you tried to build but couldn't stick with? Why?"
+              - "What triggers or cues currently drive your daily routines?"
+          - title: "Success Factors"
+            questions:
+              - "Think of a habit you've successfully built. What made it stick?"
+              - "What environmental changes have helped you maintain good habits?"
+              - "How do you stay consistent when motivation fades?"
+      - title: "Designing New Habits"
+        sections:
+          - title: "The System"
+            questions:
+              - "What new health habit would have the biggest impact on your life?"
+              - "How can you make this new habit as easy as possible to start?"
+              - "What existing habit can you stack this new behavior onto?"
+          - title: "Accountability Structure"
+            questions:
+              - "How will you track your progress with this new habit?"
+              - "What rewards or consequences will you create for yourself?"
+              - "Who can support you in maintaining this habit?"
+      - title: "Long-term Success"
+        sections:
+          - title: "Sustainability Plan"
+            questions:
+              - "How will you handle disruptions to your routine (travel, stress, etc.)?"
+              - "What will you do when you miss a day or fall off track?"
+              - "How will you know when a habit has become truly automatic?"
+
+  - title: "Recovery & Rest Revolution"
+    uuid: "789976f7-47e1-4c7c-92c1-75d17744bac6"
+    description: "Explore the often-overlooked aspects of health: recovery, rest, and restoration. This interview helps you optimize your recovery practices, understand your body's needs, and find balance between pushing hard and pulling back."
+    category: "health_fitness"
+    icon_name: "moon.stars.fill"
+    order_position: 27
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Understanding Recovery"
+        sections:
+          - title: "Current State"
+            questions:
+              - "How do you currently approach rest and recovery in your routine?"
+              - "What signs does your body give you when you need more recovery?"
+              - "What misconceptions about rest did you have to overcome?"
+          - title: "Sleep Quality"
+            questions:
+              - "Describe your current sleep routine and quality."
+              - "What factors most affect your ability to get good sleep?"
+              - "How has prioritizing sleep impacted your fitness and health?"
+      - title: "Recovery Practices"
+        sections:
+          - title: "Active Recovery"
+            questions:
+              - "What active recovery methods work best for your body?"
+              - "How do you balance intense training with gentler movement?"
+              - "What mobility or flexibility work has made the biggest difference?"
+          - title: "Mental Recovery"
+            questions:
+              - "How do you give your mind a break from fitness goals and pressure?"
+              - "What activities help you mentally reset and recharge?"
+              - "How do you maintain perspective when you need to take time off?"
+      - title: "Optimization"
+        sections:
+          - title: "Enhanced Recovery"
+            questions:
+              - "What recovery tools or techniques do you want to explore?"
+              - "How could better recovery practices improve your performance?"
+              - "What would ideal recovery and rest look like in your life?"
+
+  - title: "Weight Loss Journey Real Talk"
+    uuid: "06996522-57d9-47cb-8724-99d3964cf951"
+    description: "Weight loss is never just about the number on the scale. This honest interview explores the emotional, mental, and physical aspects of losing weight, celebrating wins, acknowledging struggles, and sharing the real story behind your transformation."
+    category: "health_fitness"
+    icon_name: "scale.3d"
+    order_position: 43
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Starting Point"
+        sections:
+          - title: "The Decision"
+            questions:
+              - "What was the moment you decided you wanted to lose weight?"
+              - "What were you hoping to gain (beyond just losing pounds) from this journey?"
+              - "What approach or method did you choose, and why did it appeal to you?"
+          - title: "Early Challenges"
+            questions:
+              - "What was the hardest part about starting your weight loss journey?"
+              - "What myths or misconceptions about weight loss did you have to unlearn?"
+              - "How did you handle social situations and food-focused events?"
+      - title: "The Process"
+        sections:
+          - title: "What Worked"
+            questions:
+              - "What strategies or changes made the biggest difference for you?"
+              - "How did you handle plateaus or times when progress stalled?"
+              - "What role did exercise play versus dietary changes in your success?"
+          - title: "Mental & Emotional Journey"
+            questions:
+              - "How did your relationship with food change throughout this process?"
+              - "What emotional challenges came up during your weight loss journey?"
+              - "How did losing weight affect your self-image and confidence?"
+      - title: "Maintenance & Lessons"
+        sections:
+          - title: "Keeping It Off"
+            questions:
+              - "What does maintenance look like for you now?"
+              - "What's your approach to handling weight fluctuations or regain?"
+              - "What would you tell someone just starting their weight loss journey?"
+
+  - title: "Injury Comeback Chronicles"
+    uuid: "293e0f34-ead0-419a-af7f-64e69e95f8c4"  
+    description: "Coming back from an injury is both a physical and mental challenge. This interview explores your injury experience, the recovery process, and how overcoming physical setbacks has changed your relationship with your body and movement."
+    category: "health_fitness"
+    icon_name: "bandage.fill"
+    order_position: 44
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Injury"
+        sections:
+          - title: "What Happened"
+            questions:
+              - "Tell me about your injury - how did it happen and what was the initial impact?"
+              - "What was your first reaction when you realized the extent of your injury?"
+              - "How did the injury affect your daily life and activities you loved?"
+          - title: "The Emotional Impact"
+            questions:
+              - "What was the hardest part emotionally about being injured?"
+              - "How did the injury change your relationship with your body?"
+              - "What did you learn about yourself during the forced rest period?"
+      - title: "The Recovery Process"
+        sections:
+          - title: "Healing Journey"
+            questions:
+              - "What did your recovery process look like - physical therapy, rest, gradual return?"
+              - "What were the biggest challenges during rehabilitation?"
+              - "How did you stay motivated during the slow recovery process?"
+          - title: "Mental Recovery"
+            questions:
+              - "How did you handle the fear of re-injury when returning to activity?"
+              - "What coping strategies helped you through the frustrating parts of recovery?"
+              - "How did this experience change your perspective on physical limitations?"
+      - title: "Coming Back Stronger"
+        sections:
+          - title: "New Relationship with Movement"
+            questions:
+              - "How do you approach fitness and movement differently now?"
+              - "What have you gained from this injury experience beyond just healing?"
+              - "What advice would you give to someone currently dealing with a similar injury?"
+
+  - title: "Sports & Competition Mindset"
+    uuid: "63583f74-5688-465e-8a69-9e016e7ef931"
+    description: "Whether you're a weekend warrior or competitive athlete, sports teach lessons that extend far beyond the game. This interview explores your athletic experiences, the mental game, and how competition has shaped your character."
+    category: "health_fitness"
+    icon_name: "sportscourt.fill"
+    order_position: 45
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Your Athletic Story"
+        sections:
+          - title: "Getting Started"
+            questions:
+              - "What sport or physical activity first captured your passion?"
+              - "How did you get involved in competitive sports or serious training?"
+              - "What drew you to competition versus just recreational participation?"
+          - title: "Early Lessons"
+            questions:
+              - "What was your first major win or achievement in your sport?"
+              - "Tell me about a significant loss or failure that taught you something important."
+              - "How did sports teach you to handle pressure and perform under stress?"
+      - title: "The Mental Game"
+        sections:
+          - title: "Competition Psychology"
+            questions:
+              - "How do you mentally prepare for competition or challenging workouts?"
+              - "What's your process for handling pre-competition nerves or anxiety?"
+              - "How do you bounce back from poor performances or disappointing results?"
+          - title: "Team vs. Individual"
+            questions:
+              - "Do you prefer individual or team sports, and what does that teach you about yourself?"
+              - "How has being part of a team (or going solo) shaped your approach to goals?"
+              - "What role has coaching or mentorship played in your athletic development?"
+      - title: "Life Lessons"
+        sections:
+          - title: "Beyond the Game"
+            questions:
+              - "What life skills has sports competition taught you?"
+              - "How do you apply your competitive mindset to other areas of life?"
+              - "What would you tell someone who thinks they're 'not athletic' or too old to start?"
+
+  - title: "Mindful Movement & Body Awareness"
+    uuid: ""
+    description: "True fitness isn't just about strength or endurance—it's about developing a conscious relationship with your body. This interview explores mindful movement practices, body awareness, and the journey toward intuitive fitness."
+    category: "health_fitness"
+    icon_name: "figure.yoga"
+    order_position: 46
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Discovering Mindful Movement"
+        sections:
+          - title: "The Shift"
+            questions:
+              - "When did you first become interested in more mindful or conscious forms of movement?"
+              - "What drew you away from traditional fitness toward practices like yoga, tai chi, or dance?"
+              - "How is mindful movement different from other exercise you've done?"
+          - title: "Body Awareness"
+            questions:
+              - "How has practicing mindful movement changed your relationship with your body?"
+              - "What have you learned about listening to your body's signals and needs?"
+              - "How do you balance pushing yourself with honoring your limits?"
+      - title: "The Practice"
+        sections:
+          - title: "Daily Integration"
+            questions:
+              - "How do you incorporate mindful movement into your regular routine?"
+              - "What does a typical practice session look or feel like for you?"
+              - "How has your practice evolved since you started?"
+          - title: "Mental & Emotional Benefits"
+            questions:
+              - "What mental or emotional benefits have you noticed from mindful movement?"
+              - "How does your movement practice affect your stress levels and mental state?"
+              - "What role does breathwork play in your physical practice?"
+      - title: "Integration & Growth"
+        sections:
+          - title: "Holistic Wellness"
+            questions:
+              - "How has mindful movement influenced other areas of your health and wellness?"
+              - "What has this practice taught you about patience and acceptance?"
+              - "What would you tell someone who thinks mindful movement is 'too slow' or 'not a real workout'?"
+
+  - title: "Food Relationship Recovery"
+    uuid: ""
+    description: "Healing your relationship with food is a journey of self-discovery and liberation. This interview explores food struggles, diet culture recovery, and the path toward food freedom and intuitive eating."
+    category: "health_fitness"
+    icon_name: "heart.text.square.fill"
+    order_position: 47
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Struggle"
+        sections:
+          - title: "How It Started"
+            questions:
+              - "When did you first realize you had a complicated relationship with food?"
+              - "What diet culture messages or experiences shaped your early relationship with eating?"
+              - "How did food rules and restrictions show up in your daily life?"
+          - title: "The Impact"
+            questions:
+              - "How did your relationship with food affect your mental and emotional wellbeing?"
+              - "What social situations became difficult because of your food struggles?"
+              - "How did diet culture affect your body image and self-worth?"
+      - title: "The Healing Process"
+        sections:
+          - title: "Breaking Free"
+            questions:
+              - "What was your turning point in deciding to heal your relationship with food?"
+              - "What approaches or resources were most helpful in your recovery?"
+              - "How did you start to challenge diet culture messages and food rules?"
+          - title: "Learning to Trust"
+            questions:
+              - "What does intuitive eating or food freedom look like for you?"
+              - "How are you learning to trust your body's hunger and fullness cues?"
+              - "What's the hardest part about letting go of food control?"
+      - title: "Food Freedom"
+        sections:
+          - title: "New Relationship"
+            questions:
+              - "How has your daily experience with food changed since beginning this work?"
+              - "What advice would you give to someone still struggling with food and diet culture?"
+              - "What does a healthy relationship with food mean to you now?"
+
+  - title: "Strength Training Transformation"
+    uuid: ""
+    description: "Strength training is about more than building muscle—it's about building confidence, resilience, and a new relationship with what your body can do. This interview explores your strength journey and the empowerment that comes with getting stronger."
+    category: "health_fitness"
+    icon_name: "dumbbell.fill"
+    order_position: 48
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Getting Started"
+        sections:
+          - title: "First Steps"
+            questions:
+              - "What motivated you to start strength training?"
+              - "What were your biggest fears or concerns about lifting weights?"
+              - "How did you learn proper form and technique when you started?"
+          - title: "Early Challenges"
+            questions:
+              - "What was most intimidating about the gym or weight room environment?"
+              - "How did you overcome feelings of being judged or not belonging?"
+              - "What mistakes did you make early on that taught you important lessons?"
+      - title: "Building Strength"
+        sections:
+          - title: "Progress & Milestones"
+            questions:
+              - "What was your first major strength milestone that made you proud?"
+              - "How do you track progress beyond just the numbers on the weights?"
+              - "What's been your most surprising discovery about your body's capabilities?"
+          - title: "Mental Transformation"
+            questions:
+              - "How has getting stronger physically affected your mental confidence?"
+              - "What has strength training taught you about persistence and discipline?"
+              - "How do you handle plateaus or periods when progress seems slow?"
+      - title: "Strength Beyond the Gym"
+        sections:
+          - title: "Life Applications"
+            questions:
+              - "How has physical strength translated to other areas of your life?"
+              - "What does strength mean to you beyond just lifting heavier weights?"
+              - "What would you tell someone who's intimidated by strength training?"

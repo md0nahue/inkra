@@ -1,0 +1,483 @@
+presets:
+  - title: "Mapping a Friendship"
+    uuid: "0a7d91e2-03c6-43c1-827e-dbcd45896955"
+    description: "Meaningful friendships are a cornerstone of a happy life, yet we rarely pause to appreciate their depth and complexity. This interview is a space to honor a significant friendship, exploring its origins, celebrating its strengths, and acknowledging its impact on you. It's an act of gratitude that can strengthen your bond and remind you of the value of connection."
+    category: "social_sharing"
+    icon_name: "person.2.fill"
+    order_position: 4
+    active: true
+    is_featured: true
+    chapters:
+      - title: "The Beginning"
+        sections:
+          - title: "First Impressions"
+            questions:
+              - "Think of a friendship that is truly important to you. How and where did you first meet this person?"
+              - "What was your initial impression of them? Has that impression changed over time?"
+              - "Describe a moment you knew this was going to be a significant friendship."
+      - title: "The Heart of the Connection"
+        sections:
+          - title: "Shared Moments"
+            questions:
+              - "Tell me about a memory with this friend that always makes you smile."
+              - "How has this friend supported you during a difficult time?"
+              - "What is something you have learned from them, either directly or just by observing how they live?"
+          - title: "What Makes It Work"
+            questions:
+              - "What qualities in this person do you admire the most?"
+              - "In what ways do you feel truly seen and understood by this friend?"
+              - "How is your relationship with them different from your other relationships?"
+      - title: "The Friendship Today"
+        sections:
+          - title: "Evolving Together"
+            questions:
+              - "How has your friendship evolved or changed over the years?"
+              - "What role does this person play in your life right now?"
+              - "What is one thing you appreciate about your friendship today that you might have taken for granted in the past?"
+
+  - title: "The Influence Audit"
+    uuid: "7fd5cb2c-2643-4756-b0e3-af7448cd8362"
+    description: "Effective communication is not a soft skill; it's a protocol for upgrading your interactions. This interview is a debrief on a recent, critical conversation. Using principles from Dale Carnegie's 'How to Win Friends and Influence People,' you'll analyze your approach, identify leverage points you missed, and build a concrete strategy for your next high-stakes discussion. This is about engineering better human connections to achieve your goals."
+    category: "social_sharing"
+    icon_name: "bubble.left.and.bubble.right.fill"
+    order_position: 14
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Interaction Debrief"
+        sections:
+          - title: "The Goal and the Outcome"
+            questions:
+              - "Bring to mind a recent, important conversation where you needed to persuade, lead, or resolve a conflict. What was your primary objective going into it?"
+              - "What was the actual outcome? Describe the final state of the situation and the relationship."
+              - "What was the most challenging moment in the conversation for you?"
+      - title: "Analyzing the Protocol"
+        sections:
+          - title: "The Other Perspective"
+            questions:
+              - "Did you genuinely try to see the situation from the other person's point of view? What do you believe their primary motivations were?"
+              - "What did you learn from listening to them, and where could you have asked better, more curious questions?"
+              - "Thinking back, how did you make the other person feel important and heard during the conversation?"
+          - title: "Your Approach"
+            questions:
+              - "Did you begin in a friendly way, even if there was disagreement?"
+              - "Review the interaction. At what points, if any, did you criticize, condemn, or complain?"
+              - "Was there an opportunity to admit you might have been wrong about something, and did you take it?"
+      - title: "The Next Conversation Protocol"
+        sections:
+          - title: "Pre-Mortem for Your Next Talk"
+            questions:
+              - "Think about an upcoming important conversation. What is the single Carnegie principle you will consciously practice?"
+              - "How can you frame the discussion around the other person's wants and interests to find common ground?"
+              - "What is one thing you will do differently in your preparation based on this debrief?"
+
+  - title: "Love & Heartbreak Stories"
+    uuid: "e0251940-5227-47e1-90ca-55a446395dbc"
+    description: "Share your most memorable moments of love, heartbreak, and everything in between. These questions help you explore romantic experiences in a way that's both deeply personal and universally relatable. Perfect for creating content that resonates with others who've walked similar paths."
+    category: "social_sharing"
+    icon_name: "heart.fill"
+    order_position: 17
+    active: true
+    is_featured: false
+    chapters:
+      - title: "First Love"
+        sections:
+          - title: "The Beginning"
+            questions:
+              - "Tell me about your first real crush or love. How old were you and what was it like?"
+              - "What's the most embarrassing thing you did for love when you were younger?"
+              - "Describe the moment you first knew you were in love."
+      - title: "Heartbreak & Healing"
+        sections:
+          - title: "The Hard Times"
+            questions:
+              - "What's a breakup that changed you? What did you learn from it?"
+              - "Tell me about a time someone broke your heart. How did you heal?"
+              - "What's the best advice you received about getting over someone?"
+          - title: "Moving Forward"
+            questions:
+              - "How has your definition of love changed over the years?"
+              - "What do you know now about relationships that you wish you knew earlier?"
+              - "What's one romantic gesture that still makes you smile when you think about it?"
+      - title: "Love Lessons"
+        sections:
+          - title: "What You've Learned"
+            questions:
+              - "What's the most important thing you've learned about love?"
+              - "If you could give your younger self relationship advice, what would it be?"
+              - "What's your idea of perfect love now versus when you were younger?"
+
+  - title: "Best Friend Chronicles"
+    uuid: "2c1dfd5c-d49b-49a8-ac08-9c6c9c7108fa"
+    description: "Celebrate your ride-or-die friendships with questions that capture the chaos, laughter, and unbreakable bonds. From inside jokes to 3am adventures, these prompts help you share the stories that make your friendships legendary."
+    category: "social_sharing"
+    icon_name: "star.fill"
+    order_position: 18
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Origin Stories"
+        sections:
+          - title: "How It Started"
+            questions:
+              - "Tell me about meeting your best friend for the first time. What was your first impression?"
+              - "What's the exact moment you knew this person would be in your life forever?"
+              - "What's the weirdest way you've made a close friend?"
+      - title: "Legendary Moments"
+        sections:
+          - title: "Adventures & Chaos"
+            questions:
+              - "What's the craziest adventure you've had with your best friend?"
+              - "Tell me about a time you and your friend got into trouble together."
+              - "What's your funniest drunk/high story with friends? (Keep it light!)"
+          - title: "The Real Ones"
+            questions:
+              - "Describe a time your friend showed up for you when you really needed them."
+              - "What's something your best friend did that made you ugly cry (happy tears)?"
+              - "What inside joke do you have that nobody else would understand?"
+      - title: "Friendship Goals"
+        sections:
+          - title: "Why They Matter"
+            questions:
+              - "What makes your best friend irreplaceable?"
+              - "How has your friendship survived and evolved over the years?"
+              - "What's your favorite tradition or ritual you have with your friends?"
+
+  - title: "Happy Memory Lane"
+    uuid: "0fcc1e9f-e046-456a-b13e-5221d308d6ab"
+    description: "Take a joyful walk down memory lane with prompts designed to uncover your brightest, funniest, and most heartwarming moments. These questions help you create feel-good content that spreads positivity and makes people smile."
+    category: "social_sharing"
+    icon_name: "sparkles"
+    order_position: 19
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Childhood Magic"
+        sections:
+          - title: "Growing Up"
+            questions:
+              - "What's your happiest childhood memory that still makes you smile?"
+              - "Tell me about your favorite family tradition growing up."
+              - "What's the best birthday you ever had as a kid?"
+      - title: "Peak Moments"
+        sections:
+          - title: "Pure Joy"
+            questions:
+              - "Describe a moment when you felt pure, unbridled happiness."
+              - "What's the best surprise you've ever received?"
+              - "Tell me about a time you laughed so hard you cried."
+          - title: "Achievements & Pride"
+            questions:
+              - "What accomplishment are you most proud of and why?"
+              - "Describe the moment you achieved something you thought was impossible."
+              - "What's the best compliment you've ever received?"
+      - title: "Recent Joys"
+        sections:
+          - title: "Current Happiness"
+            questions:
+              - "What's something small that happened recently that made your whole day?"
+              - "What's bringing you the most joy in your life right now?"
+              - "Tell me about the last time you felt genuinely grateful."
+
+  - title: "Embarrassing Moments Hall of Fame"
+    uuid: "ed2cf4bb-8941-4850-8c05-b608c45cd26c"
+    description: "Everyone loves a good cringe story! Share your most embarrassing moments in a way that's relatable and hilarious. These questions help you turn your awkward experiences into entertaining content that makes others feel less alone in their own embarrassment."
+    category: "social_sharing"
+    icon_name: "face.smiling.fill"
+    order_position: 20
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Social Disasters"
+        sections:
+          - title: "Public Embarrassment"
+            questions:
+              - "What's your most embarrassing moment in public?"
+              - "Tell me about a time you completely misread a social situation."
+              - "What's the most awkward thing you've done on a date?"
+      - title: "Digital Disasters"
+        sections:
+          - title: "Technology Fails"
+            questions:
+              - "What's your worst autocorrect or text-to-the-wrong-person story?"
+              - "Tell me about your most embarrassing social media moment."
+              - "What's the cringiest thing you posted online that you later deleted?"
+      - title: "Learning to Laugh"
+        sections:
+          - title: "Growth Through Cringe"
+            questions:
+              - "What embarrassing moment taught you the most about yourself?"
+              - "How do you handle embarrassment differently now versus when you were younger?"
+              - "What's an embarrassing story that you can finally laugh about?"
+
+  - title: "Hot Takes & Unpopular Opinions"
+    uuid: "a5d9acba-c445-4fcf-9135-697c7cbc817e"
+    description: "Share your controversial opinions and unique perspectives on everything from food to pop culture. These questions help you create engaging content that sparks conversation and shows your authentic, unfiltered self."
+    category: "social_sharing"
+    icon_name: "flame.fill"
+    order_position: 21
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Pop Culture Takes"
+        sections:
+          - title: "Entertainment Opinions"
+            questions:
+              - "What's your most controversial opinion about a popular TV show or movie?"
+              - "Which celebrity do you think is overrated and why?"
+              - "What trend do you refuse to participate in no matter how popular it gets?"
+      - title: "Life Philosophy"
+        sections:
+          - title: "How You See Things"
+            questions:
+              - "What's something everyone seems to care about that you think is completely overrated?"
+              - "What life advice do you strongly disagree with?"
+              - "What's a 'normal' thing that you think is actually really weird?"
+      - title: "Personal Preferences"
+        sections:
+          - title: "Your Truth"
+            questions:
+              - "What food combination do you love that others find disgusting?"
+              - "What's your pettiest deal-breaker in relationships or friendships?"
+              - "What's something you do that you know annoys people but you're not changing?"
+
+  - title: "School Days Nostalgia"
+    uuid: "c34bf406-9f64-4ce5-bb74-729fd41e17af"
+    description: "Take a trip down memory lane to your school years! From elementary crushes to high school drama, these questions help you share the funny, awkward, and formative moments that shaped who you became. Perfect for creating nostalgic content that everyone can relate to."
+    category: "social_sharing"
+    icon_name: "book.fill"
+    order_position: 37
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Elementary Era"
+        sections:
+          - title: "The Early Years"
+            questions:
+              - "What's your most vivid memory from elementary school?"
+              - "Who was your elementary school best friend and what did you love doing together?"
+              - "What was your biggest fear or worry as a little kid in school?"
+      - title: "Middle School Mayhem"
+        sections:
+          - title: "The Awkward Phase"
+            questions:
+              - "What was your most embarrassing middle school moment?"
+              - "Tell me about your first crush or 'relationship' in middle school."
+              - "What trend or fad were you obsessed with in middle school?"
+          - title: "Finding Your Tribe"
+            questions:
+              - "How did you figure out where you belonged socially in middle school?"
+              - "What teacher had the biggest impact on you during those years?"
+              - "What extracurricular activity or hobby were you passionate about?"
+      - title: "High School Highlights"
+        sections:
+          - title: "Coming Into Your Own"
+            questions:
+              - "What's your favorite high school memory that still makes you smile?"
+              - "How would you describe your high school persona versus who you are now?"
+              - "What life lesson did high school teach you that you still carry today?"
+
+  - title: "Childhood Dreams & Adult Reality"
+    uuid: "c49c0698-6510-478c-acec-03deaddc2f0d"
+    description: "Remember when you wanted to be a astronaut-veterinarian-rock star? Explore the wild dreams of your childhood and how they've evolved into your adult reality. These questions create content that's both nostalgic and surprisingly insightful."
+    category: "social_sharing"
+    icon_name: "star.circle.fill"
+    order_position: 38
+    active: true
+    is_featured: false
+    chapters:
+      - title: "When I Grow Up..."
+        sections:
+          - title: "Childhood Ambitions"
+            questions:
+              - "What did you want to be when you grew up, and how specific were your plans?"
+              - "What job or career seemed like the most glamorous thing in the world to you as a kid?"
+              - "What skills or talents did you think would make you famous when you were little?"
+          - title: "The Fantasy Life"
+            questions:
+              - "If you could have been any cartoon character or superhero, who would you have chosen?"
+              - "What imaginary world did you want to live in as a child?"
+              - "What seemed like the most adult thing you couldn't wait to do?"
+      - title: "Plot Twist: Adult Edition"
+        sections:
+          - title: "Reality Check"
+            questions:
+              - "How close did you get to your childhood dream career?"
+              - "What's something you do now that your child self would find incredibly boring?"
+              - "What adult responsibility did you never see coming as a kid?"
+          - title: "Dreams Evolved"
+            questions:
+              - "What childhood interest or passion has stayed with you in some form?"
+              - "What dream have you actually achieved that kid-you would be amazed by?"
+              - "If you could tell your childhood self one thing about your life now, what would it be?"
+      - title: "New Dreams"
+        sections:
+          - title: "Current Aspirations"
+            questions:
+              - "What's a dream you have now that you never would have had as a child?"
+              - "What would 'living the dream' look like for you at this stage of life?"
+              - "What childhood dream are you still secretly holding onto?"
+
+  - title: "Dating Chronicles"
+    uuid: "44496300-96e6-42a3-a1dd-bfaf10ff0dd7"
+    description: "From first dates to dating apps to relationship lessons, share your dating journey with humor and honesty. These questions help you create entertaining content about the wild world of modern romance while keeping it light and relatable."
+    category: "social_sharing"
+    icon_name: "heart.rectangle.fill"
+    order_position: 39
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Dating Adventures"
+        sections:
+          - title: "First Date Disasters"
+            questions:
+              - "What's your most memorable first date story (good or bad)?"
+              - "Tell me about a time you knew within 5 minutes that a date wasn't going to work out."
+              - "What's the weirdest place you've ever been taken on a date?"
+          - title: "Dating App Chronicles"
+            questions:
+              - "What's your funniest or most bizarre online dating experience?"
+              - "What dating app bio red flag makes you immediately swipe left?"
+              - "Tell me about a time someone's dating profile was completely different from reality."
+      - title: "Learning Curves"
+        sections:
+          - title: "What Not to Do"
+            questions:
+              - "What dating advice did you receive that turned out to be completely wrong?"
+              - "What's a dating mistake you made that taught you an important lesson?"
+              - "What dating trend or game do you think is absolutely ridiculous?"
+          - title: "Green Flags & Deal Breakers"
+            questions:
+              - "What's something small that someone did on a date that really impressed you?"
+              - "What's your most unexpected deal breaker in dating?"
+              - "How has your idea of what you want in a partner changed over time?"
+      - title: "Love Lessons"
+        sections:
+          - title: "Relationship Wisdom"
+            questions:
+              - "What's the most important thing dating has taught you about yourself?"
+              - "What would you tell your single friends about dating in today's world?"
+              - "How do you know when someone is actually worth your time and energy?"
+
+  - title: "Generational Differences Exposed"
+    uuid: "40632bf6-118b-4d08-ad48-19557c39933e"
+    description: "Every generation thinks they invented everything and that other generations are doing it all wrong. Explore the hilarious and fascinating differences between generations with questions that spark conversation and maybe some friendly debate."
+    category: "social_sharing"
+    icon_name: "person.3.fill"
+    order_position: 40
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Back in My Day..."
+        sections:
+          - title: "How Things Used to Be"
+            questions:
+              - "What's something from your childhood that kids today will never understand?"
+              - "What technology did you have to live without that seems essential now?"
+              - "What was dating or socializing like before social media and dating apps?"
+          - title: "Different Times"
+            questions:
+              - "What freedom did you have as a kid that children today don't seem to have?"
+              - "What was considered normal when you were young that would seem crazy now?"
+              - "What life skill did you have to learn that kids today might never need?"
+      - title: "Kids These Days..."
+        sections:
+          - title: "What's Changed"
+            questions:
+              - "What do you admire about younger generations that your generation struggled with?"
+              - "What trend or behavior in younger people completely baffles you?"
+              - "How are young people handling life challenges differently than you did?"
+          - title: "Technology & Culture"
+            questions:
+              - "What social media platform or app do you just not understand?"
+              - "What aspect of modern culture makes you feel old?"
+              - "What's something young people are doing that you secretly wish you had done?"
+      - title: "Finding Common Ground"
+        sections:
+          - title: "Universal Experiences"
+            questions:
+              - "What life experiences are the same no matter what generation you're from?"
+              - "What piece of wisdom do you think applies to every generation?"
+              - "How do you bridge the gap between different generations in your life?"
+
+  - title: "Seasonal Memories & Traditions"
+    uuid: "24d039ec-eca6-4b09-b3fb-91c395d5ed93"
+    description: "Each season brings its own magic and memories. Explore your favorite seasonal experiences, traditions, and the feelings that different times of year evoke. Perfect for creating timely, nostalgic content that celebrates the rhythm of the year."
+    category: "social_sharing"
+    icon_name: "leaf.fill"
+    order_position: 41
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Spring Awakening"
+        sections:
+          - title: "Renewal & Growth"
+            questions:
+              - "What's your favorite thing about spring and the feeling of everything coming back to life?"
+              - "What spring tradition or activity did you love as a child?"
+              - "How do you celebrate or mark the arrival of spring now?"
+      - title: "Summer Vibes"
+        sections:
+          - title: "The Freedom Season"
+            questions:
+              - "What does the perfect summer day look like to you?"
+              - "Tell me about your most memorable summer vacation or adventure."
+              - "What summer food, activity, or tradition are you most nostalgic for?"
+          - title: "Making Memories"
+            questions:
+              - "What's your favorite summer memory from childhood?"
+              - "How do you make the most of summer as an adult?"
+              - "What summer goal or tradition do you try to maintain every year?"
+      - title: "Fall & Winter Magic"
+        sections:
+          - title: "Cozy Season"
+            questions:
+              - "What makes fall special for you—the weather, activities, or atmosphere?"
+              - "How do you embrace the coziness of winter?"
+              - "What holiday tradition means the most to you and why?"
+          - title: "Year-End Reflection"
+            questions:
+              - "What does the transition from fall to winter represent in your life?"
+              - "How do you find joy and light during the darkest months?"
+              - "What seasonal change are you most grateful for each year?"
+
+  - title: "Life's Plot Twists"
+    uuid: "b982730b-691e-42e4-8de9-2b74bb6a945b"
+    description: "Life rarely goes according to plan, and sometimes the best stories come from the unexpected turns. Share the surprising moments, lucky breaks, and curveballs that changed your life's direction in ways you never saw coming."
+    category: "social_sharing"
+    icon_name: "arrow.triangle.turn.up.right.diamond.fill"
+    order_position: 42
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Unexpected Opportunities"
+        sections:
+          - title: "Lucky Breaks"
+            questions:
+              - "Tell me about a time you were in the right place at the right time."
+              - "What opportunity came your way that you almost didn't take?"
+              - "How has a seemingly small decision led to a major change in your life?"
+          - title: "Doors Opening"
+            questions:
+              - "What rejection or disappointment actually led to something better?"
+              - "Tell me about a time when saying yes to something scary paid off big time."
+              - "What connection or relationship changed the trajectory of your life?"
+      - title: "Life Curveballs"
+        sections:
+          - title: "When Plans Changed"
+            questions:
+              - "What major life plan got completely derailed, and how did you adapt?"
+              - "Tell me about a time when something you thought was terrible turned out to be a blessing."
+              - "What unexpected challenge forced you to discover strengths you didn't know you had?"
+          - title: "Silver Linings"
+            questions:
+              - "How has a difficult period in your life ultimately made you stronger or wiser?"
+              - "What's the best thing that came out of your worst year?"
+              - "When has being forced out of your comfort zone led to growth?"
+      - title: "Embracing the Unknown"
+        sections:
+          - title: "Rolling with Change"
+            questions:
+              - "How has your relationship with uncertainty and change evolved over time?"
+              - "What would you tell someone who's afraid of life's unpredictability?"
+              - "What plot twist are you most grateful for, even if it was scary at the time?"

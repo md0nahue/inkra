@@ -1,0 +1,65 @@
+# Inkra Revamp Plan
+
+This document outlines the plan to revamp the Inkra application based on the provided mandate. The goal is to create a serverless application using AWS Lambda and native iOS capabilities.
+
+## Phase 1: iOS App Refactoring (Inkra/)
+
+The majority of the work will be done in the `Inkra/` directory, the native iOS application.
+
+### 1.1. Native Speech and Text-to-Speech Integration
+
+*   **Speech-to-Text:** Replace the current speech-to-text implementation with Apple's `SFSpeechRecognizer`. This will involve updating the interview scene to use the native framework for transcribing user's speech.
+*   **Text-to-Speech:** Replace the current text-to-speech implementation with Apple's `AVSpeechSynthesizer`. This will be used to voice the interview questions.
+
+### 1.2. User Interface and User Experience
+
+*   **Streamlined Interview Start:** Modify the UI to automatically submit the user's initial input without displaying it as text, creating a more "magical" experience.
+*   **Audio Waveform:** Implement a new audio waveform display that mimics the default Mac app's behavior (vertical line with scrolling waveform).
+*   **Voice Selection:**
+    *   Implement a default voice for interviews.
+    *   Add a voice selection screen accessible from the home page.
+    *   Add a toggle switch on the interview screen to enable/disable the voice.
+
+### 1.3. Local Data Persistence
+
+*   **Audio Storage:** Implement functionality to save audio recordings of the interviews directly on the user's device.
+*   **Audio Library:** Create a new UI where users can browse, play, and manage their saved audio files.
+*   **Audio Stitching:** Implement a feature to stitch multiple audio recordings together into a single file (e.g., for a "podcast" like experience).
+
+### 1.4. Authentication
+
+*   **AWS Cognito Integration:** Integrate the AWS Cognito SDK to handle user authentication (signup and login).
+*   **Authenticated Sessions:** Ensure that all user interactions with the app require the user to be logged in.
+
+## Phase 2: Serverless Backend (AWS Lambda)
+
+This phase involves replacing the Ruby on Rails backend with a serverless architecture.
+
+### 2.1. Lambda Function for Gemini API
+
+*   **Runtime Selection:** Evaluate and choose a suitable runtime for the AWS Lambda function (e.g., Python, Node.js, or Go). Python is a strong candidate due to existing Python scripts in the repository.
+*   **Lambda Implementation:**
+    *   Create a new directory `lambda/` for the serverless function.
+    *   Develop a Lambda function that:
+        1.  Receives the transcribed text from the iOS app.
+        2.  Constructs a prompt for the Gemini API (the prompt can be hardcoded in the function for simplicity).
+        3.  Sends a request to the Gemini API.
+        4.  Returns the Gemini API's response to the iOS app.
+*   **Deployment:**
+    *   Set up the necessary AWS infrastructure (API Gateway to trigger the Lambda function, IAM roles for permissions).
+    *   Deploy the Lambda function to AWS.
+
+## Phase 3: Deprecation of Existing Backend
+
+Once the new serverless architecture is in place and the iOS app is fully migrated, the old backend can be removed.
+
+*   **Remove `inkra_rails/`:** The entire `inkra_rails/` directory will be deleted from the repository.
+*   **Remove `interview/`:** The `interview/` directory will also be deleted.
+
+## Phase 4: New Features
+
+### 4.1. Editable Daily Questions
+
+*   **UI for Editing:** Create a new screen where users can define and edit a list of daily questions.
+*   **Local Storage:** Store the user-defined questions on the device.
+*   **Integration:** Integrate this feature into the interview flow, allowing users to be asked their custom questions.

@@ -1,0 +1,53 @@
+---
+uuid: 46cefc35-f229-4860-8fc5-69cf942339cc
+title: Taming Your Saboteur
+description: There is a voice inside you that whispers doubt, fear, and judgment—your
+  inner Saboteur. This journey helps you to unmask this cunning inner enemy, understand
+  its motives, and learn to disarm its power. Stop letting self-sabotage hold you
+  back and learn to lead from your wiser, more courageous self.
+llm_prompt: |
+  You are a Saboteur-taming coach. Your role is to help the user identify, personify, and ultimately disarm their inner Saboteur, the voice of self-sabotage.
+
+  Introduce the concept: Explain that we all have an inner Saboteur. It's the voice that tells us we're not good enough, that we'll fail, that it's safer to play small. It's cunning and its primary goal is to protect us from harm, but its methods are destructive. The first step to taming it is to recognize it as separate from our true self. By personifying it, we can stop identifying with it and start managing it.
+
+  Guide them through the questions one by one. Help them create a vivid picture of their Saboteur. What does it look like? What does it sound like? What are its favorite lies? Then, help them cultivate their "Sage" or wiser self. Contrast the Saboteur's voice with the Sage's voice. Use phrases like, "What's your Saboteur screaming about this situation?" and then, "And what does your Sage whisper?"
+
+  Your goal is to help the user build the muscle of recognizing their Saboteur, thanking it for its concern, and then consciously choosing to act from their Sage instead.
+questions:
+- What is a recurring negative thought that holds you back from taking risks? This
+  is the whisper of your Saboteur.
+- If you were to give your Saboteur a name and a physical form, what would it be?
+  (e.g., The Judge, The Perfectionist, The Gremlin)
+- What are your Saboteur's top 3 favorite lies to tell you?
+- In what situations does your Saboteur's voice get the loudest?
+- What is the feeling in your body when your Saboteur has taken over?
+- What is the Saboteur trying to protect you from? What is its (misguided) positive
+  intention?
+- Can you thank your Saboteur for trying to keep you safe, even if you won't be taking
+  its advice?
+- Now, let's access your inner Sage—the wise, calm, courageous part of you. What does
+  your Sage's voice sound like?
+- Bring a current challenge to mind. What is your Saboteur's commentary on it?
+- Now, in the same situation, what does your Sage have to say? What is the compassionate,
+  clear-eyed truth?
+- What is a core belief your Saboteur has about you? (e.g., 'You are not worthy')
+- What is the core belief your Sage has about you? (e.g., 'You are whole and resourceful')
+- How does your Saboteur try to sabotage your relationships?
+- How does it try to sabotage your career or creative projects?
+- What is a simple, powerful phrase you can say to your Saboteur to acknowledge it
+  but not engage with it? (e.g., 'Noted,' or 'Thanks for sharing')
+- What is an action you can take today that would be an act of defiance against your
+  Saboteur?
+- How does your Saboteur use comparison to keep you small?
+- What does your Sage know about your unique value?
+- When your Saboteur tells you that you are going to fail, what is your Sage's perspective
+  on failure?
+- What is a physical posture or gesture you can adopt to instantly connect with your
+  Sage's energy?
+- How can you create a daily ritual to check in with your Sage and quiet your Saboteur?
+- What is one area of your life where you have successfully ignored your Saboteur?
+  What did you learn from that?
+- If your Saboteur and your Sage were in a debate about your future, who would you
+  choose to listen to?
+- What is the cost of letting your Saboteur drive your life for the next five years?
+- What is the reward of letting your Sage be your guide?

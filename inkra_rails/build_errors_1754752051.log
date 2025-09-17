@@ -1,0 +1,5 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/magnusfremont/Desktop/VibeWriter/VibeWriter.xcodeproj -scheme VibeWriter -destination "platform=iOS Simulator,name=iPhone 16,OS=18.5" -derivedDataPath /Users/magnusfremont/Desktop/VibeWriter/build-1754752051 build
+
+2025-08-09 08:07:32.552 xcodebuild[76584:30593312] Writing error result bundle to /var/folders/h6/gt987qh93hs085p28xhy8z840000gn/T/ResultBundle_2025-09-08_08-07-0032.xcresult
+xcodebuild: error: '/Users/magnusfremont/Desktop/VibeWriter/VibeWriter.xcodeproj' does not exist.

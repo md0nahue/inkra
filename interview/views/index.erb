@@ -1,0 +1,121 @@
+<div class="home">
+    <h2>Choose Your Journey</h2>
+    <p class="intro">Select a collection of interview tracks designed to guide deep self-reflection and personal transformation.</p>
+    
+    <div class="random-selector">
+        <h3>🎲 Random Track Explorer</h3>
+        <p>Select one or more books below and get a random interview track to explore!</p>
+        <div class="book-selector">
+            <% @interviews.each_with_index do |book, index| %>
+                <label class="book-checkbox-label">
+                    <input type="checkbox" class="book-selector-checkbox" data-book-id="<%= index %>" data-track-count="<%= book['tracks'].length %>">
+                    <span><%= book['source'] %></span>
+                </label>
+            <% end %>
+        </div>
+        <button id="randomTrackBtn" class="btn btn-random" disabled>
+            <span class="dice">🎲</span> Open Random Track
+        </button>
+    </div>
+    
+    <div class="books-grid">
+        <% @interviews.each_with_index do |book, index| %>
+            <div class="book-card">
+                <h3><%= book['source'] %></h3>
+                <p class="track-count"><%= book['tracks'].length %> Interview Tracks</p>
+                <ul class="track-preview">
+                    <% book['tracks'].first(3).each do |track| %>
+                        <li><%= track['title'] %></li>
+                    <% end %>
+                    <% if book['tracks'].length > 3 %>
+                        <li class="more">...and <%= book['tracks'].length - 3 %> more</li>
+                    <% end %>
+                </ul>
+                <a href="/book/<%= index %>" class="btn">Explore Tracks</a>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.book-selector-checkbox');
+    const randomBtn = document.getElementById('randomTrackBtn');
+    
+    // Load saved selections from localStorage
+    const savedSelections = JSON.parse(localStorage.getItem('selectedBooks') || '[]');
+    savedSelections.forEach(bookId => {
+        const checkbox = document.querySelector(`[data-book-id="${bookId}"]`);
+        if (checkbox) checkbox.checked = true;
+    });
+    updateButtonState();
+    
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            updateButtonState();
+            saveSelections();
+        });
+    });
+    
+    randomBtn.addEventListener('click', function() {
+        const selectedBooks = getSelectedBooks();
+        if (selectedBooks.length === 0) return;
+        
+        // Build array of all possible tracks
+        const allTracks = [];
+        selectedBooks.forEach(book => {
+            for (let i = 0; i < book.trackCount; i++) {
+                allTracks.push({
+                    bookId: book.bookId,
+                    trackId: i
+                });
+            }
+        });
+        
+        // Select random track
+        const randomIndex = Math.floor(Math.random() * allTracks.length);
+        const selected = allTracks[randomIndex];
+        
+        // Add spinning animation
+        randomBtn.classList.add('spinning');
+        
+        // Navigate after animation
+        setTimeout(() => {
+            window.location.href = `/book/${selected.bookId}/track/${selected.trackId}`;
+        }, 500);
+    });
+    
+    function getSelectedBooks() {
+        const selected = [];
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selected.push({
+                    bookId: checkbox.dataset.bookId,
+                    trackCount: parseInt(checkbox.dataset.trackCount)
+                });
+            }
+        });
+        return selected;
+    }
+    
+    function updateButtonState() {
+        const hasSelection = Array.from(checkboxes).some(cb => cb.checked);
+        randomBtn.disabled = !hasSelection;
+        if (hasSelection) {
+            randomBtn.classList.add('active');
+        } else {
+            randomBtn.classList.remove('active');
+        }
+    }
+    
+    function saveSelections() {
+        const selected = [];
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selected.push(checkbox.dataset.bookId);
+            }
+        });
+        localStorage.setItem('selectedBooks', JSON.stringify(selected));
+    }
+});
+</script>

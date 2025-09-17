@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite-preview-06-17:generateContent?key=<FILTERED_API_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"contents":[{"parts":[{"text":"You are an expert interview designer
+        creating a comprehensive interview outline.\n\nTOPIC: Building a successful
+        startup\n\nTASK: Create a structured interview outline with:\n- 1 chapters
+        (main themes/areas)\n- 1 sections per chapter (sub-topics)\n- 3 questions
+        per section (specific interview questions)\n\nREQUIREMENTS:\n- Questions should
+        be open-ended and thought-provoking\n- Progress from general to specific within
+        each section\n- Ensure logical flow between chapters and sections\n- Questions
+        should encourage detailed, personal responses\n- Avoid yes/no questions\n-
+        Include follow-up question suggestions where appropriate\n- Make questions
+        conversational and engaging\n\nRESPONSE FORMAT (JSON only):\n{\n  \"title\":
+        \"Interview about [topic]\",\n  \"chapters\": [\n    {\n      \"title\": \"Chapter
+        title\",\n      \"order\": 1,\n      \"sections\": [\n        {\n          \"title\":
+        \"Section title\",\n          \"order\": 1,\n          \"questions\": [\n            {\n              \"text\":
+        \"Question text here?\",\n              \"order\": 1\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n\nGenerate
+        only the JSON response, no other text.\n"}]}],"generationConfig":{"temperature":0.7,"maxOutputTokens":2048,"topP":0.8,"topK":40}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - generativelanguage.googleapis.com
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 25 Aug 2025 03:18:22 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Server-Timing:
+      - gfet4t7; dur=5352
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "candidates": [
+            {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"title\": \"Interview about Building a Successful Startup\",\n  \"chapters\": [\n    {\n      \"title\": \"The Genesis of an Idea and Founding Vision\",\n      \"order\": 1,\n      \"sections\": [\n        {\n          \"title\": \"Identifying the Opportunity\",\n          \"order\": 1,\n          \"questions\": [\n            {\n              \"text\": \"Can you walk me through the initial spark or insight that led you to believe this startup idea had real potential?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"What specific problem were you aiming to solve, and how did you validate that this problem was significant enough for a business to address?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"Beyond the immediate solution, what is the overarching vision or long-term impact you hope your startup will achieve?\",\n              \"order\": 3\n            }\n          ]\n        },\n        {\n          \"title\": \"Forming the Founding Team\",\n          \"order\": 2,\n          \"questions\": [\n            {\n              \"text\": \"What were the key qualities and skills you looked for when assembling your founding team, and why were those critical for early success?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"How did you navigate the process of aligning your founding team around a shared vision and ensuring a cohesive working dynamic?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"Reflecting on the early days, what was the most challenging aspect of building trust and establishing clear roles within the founding team?\",\n              \"order\": 3\n            }\n          ]\n        },\n        {\n          \"title\": \"Defining the Core Values and Culture\",\n          \"order\": 3,\n          \"questions\": [\n            {\n              \"text\": \"What are the foundational values that you believe are essential for your startup's long-term success, and how did you embed these from the beginning?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"How do you actively foster and maintain a positive and productive company culture as the startup grows and evolves?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"Can you share an example of a time when your core values were tested, and how the team responded to that situation?\",\n              \"order\": 3\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Navigating Growth and Scaling Challenges\",\n      \"order\": 2,\n      \"sections\": [\n        {\n          \"title\": \"Product Development and Market Fit\",\n          \"order\": 1,\n          \"questions\": [\n            {\n              \"text\": \"Describe your approach to iterating on your product or service based on early customer feedback. What was a key learning that significantly shifted your direction?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"How did you identify and achieve product-market fit, and what metrics or signals were most indicative of this milestone?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"What strategies have you employed to ensure your product or service continues to meet the evolving needs of your target market?\",\n              \"order\": 3\n            }\n          ]\n        },\n        {\n          \"title\": \"Customer Acquisition and Retention\",\n          \"order\": 2,\n          \"questions\": [\n            {\n              \"text\": \"What have been your most effective channels for acquiring customers, and how have you adapted your strategies as your company has grown?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"Beyond initial acquisition, what are your key approaches to fostering customer loyalty and ensuring long-term retention?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"Can you share a particularly insightful or challenging customer interaction that taught you a valuable lesson about your business?\",\n              \"order\": 3\n            }\n          ]\n        },\n        {\n          \"title\": \"Building and Managing a High-Performing Team\",\n          \"order\": 3,\n          \"questions\": [\n            {\n              \"text\": \"As your team has expanded, what have been your most important considerations when hiring new talent to maintain momentum and align with your culture?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"How do you empower your team members and foster an environment where they feel motivated to contribute their best work?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"What leadership philosophies or practices have you found most effective in guiding your team through periods of rapid growth and change?\",\n              \"order\": 3\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Overcoming Obstacles and Sustaining Success\",\n      \"order\": 3,\n      \"sections\": [\n        {\n          \"title\": \"Financial Management and Funding\",\n          \"order\": 1,\n          \"questions\": [\n            {\n              \"text\": \"What has been your approach to managing cash flow and financial planning, especially during the lean early stages of the startup?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"When considering external funding, what factors were most important to you in choosing investors, and what advice would you give to other founders?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"How do you balance the need for growth and investment with maintaining financial discipline and profitability?\",\n              \"order\": 3\n            }\n          ]\n        },\n        {\n          \"title\": \"Adapting to Market Shifts and Competition\",\n          \"order\": 2,\n          \"questions\": [\n            {\n              \"text\": \"How do you stay attuned to shifts in your market and anticipate potential disruptions or new competitive threats?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"Can you describe a time when you had to significantly pivot your business strategy in response to market changes or competitive pressures?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"What is your philosophy on competition, and how do you leverage it to drive innovation and improve your offerings?\",\n              \"order\": 3\n            }\n          ]\n        },\n        {\n          \"title\": \"Personal Resilience and Learning\",\n          \"order\": 3,\n          \"questions\": [\n            {\n              \"text\": \"What are some of the most significant personal challenges you've faced as a startup founder, and how did you navigate them?\",\n              \"order\": 1\n            },\n            {\n              \"text\": \"What are your key strategies for maintaining your own well-being and resilience amidst the demands of building a startup?\",\n              \"order\": 2\n            },\n            {\n              \"text\": \"Looking back, what is one piece of advice you would give to your past self when you were just starting out, knowing what you know now?\",\n              \"order\": 3\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokenCount": 263,
+            "candidatesTokenCount": 1597,
+            "totalTokenCount": 1860,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 263
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-flash-lite-preview-06-17",
+          "responseId": "_tWraOqOBKa_qtsPgr3KwQQ"
+        }
+  recorded_at: Mon, 25 Aug 2025 03:18:22 GMT
+recorded_with: VCR 6.3.1

@@ -1,0 +1,59 @@
+---
+uuid: e04a613b-b621-4a23-9c9d-572a95ad9847
+title: Unfiltered Inquiry Engine
+description: Ignite profound self-discovery with a journey that asks more than it
+  answers. This is not a system or a framework; it's a relentless inquiry into your
+  values, fears, desires, and identity. Each question is a doorway to a new part of
+  yourself. Be prepared for surprising, challenging, and ultimately liberating insights
+  as you explore the unfiltered landscape of your own mind.
+llm_prompt: |-
+  You are a master of provocative inquiry, inspired by 'The Book of Questions'. Your role is to guide the user on a journey of radical self-exploration. There is no theory or framework here—only the power of the question itself.
+  Your task is to ask the user the following questions one at a time. Do not offer analysis, comfort, or guidance. Simply ask the question, wait for the user's response, and then ask the next one. The power is in the user's own reflection. Let the silence and the space you create be as powerful as the questions themselves. The goal is to provoke thought, not to provide answers.
+questions:
+- If a crystal ball could tell you the truth about any one thing about yourself, life,
+  the future, or anything else, what would you want to know, and why?
+- What is the most serious law you've broken doing something you thought was morally
+  right, wouldn't hurt anyone, or was no one's business but yours?
+- Would you like to be famous? If so, for what?
+- If you were to die this evening with no opportunity to communicate with anyone,
+  what would you most regret not having told someone? What good might come out of
+  telling them now?
+- Have your character and humanity been forged more by pleasure and success or by
+  pain and disappointment?
+- If you could gain any one ability or quality you admire in someone else, what would
+  you choose?
+- When it comes to love, is intensity or permanence more important to you?
+- What do you feel more often: gratitude or envy?
+- Would you be happier with more control over what happens in your life or more control
+  over your response to what happens?
+- What is the most outrageous thing you've ever done? Do you look back on it more
+  with pleasure or regret?
+- Do you wish you’d been more or less cautious in your life?
+- Would you be willing to murder an innocent child to end hunger in the world?
+- What is your greatest accomplishment? Has it meant as much to you as you thought
+  it would?
+- Do you work harder to earn praise and recognition or to avoid criticism?
+- Do you strive more for security, accomplishment, success, love, power, or excitement?
+- Is there anything in your life too personal to discuss with others?
+- What would you do if you knew that in a year you would die of a heart attack?
+- Is it hard for you to ask for help? If so, what about it bothers you the most?
+- What, if anything, is too serious to be joked about?
+- When was the last time you felt real excitement and passion in your work? What about
+  your life in general?
+- If you were handed an envelope with the date of your death inside, and you knew
+  you could do nothing to alter your fate, would you look?
+- 'Which would you prefer: a wild, turbulent life filled with joy, sorrow, passion,
+  and adventure; or a happy, secure, predictable life?'
+- Is there something you've dreamed of doing for a long time but haven't? Why haven't
+  you?
+- Do you believe in God? If not, do you think you might nonetheless pray if you were
+  in a life-threatening situation?
+- What is so important to you that, without it, life wouldn't be worth living?
+- How many of your friendships have lasted more than 10 years?
+- If you could reshape your recollections of any unpleasant past experience and replace
+  your present memories with ones much more palatable, would you?
+- What do you like best about your life? least?
+- When you recount something that has happened to you, do you typically exaggerate
+  and embellish? If so, why?
+- How often do you step back and reflect on where you are headed?
+- Can you be counted on to do what you say you’ll do?

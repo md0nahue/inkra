@@ -1,0 +1,523 @@
+presets:
+  - title: "The Story of a Place"
+    uuid: ""
+    description: "Certain places hold our stories. A childhood home, a university campus, a quiet park bench—they become silent witnesses to our growth and change. This interview invites you to choose one such place and explore the memories, feelings, and transformations it holds for you. It's a way to map your personal history through the geography of your life."
+    category: "non_fiction_writing"
+    icon_name: "map.fill"
+    order_position: 7
+    active: true
+    is_featured: false
+    chapters:
+      - title: "First Encounters"
+        sections:
+          - title: "Arriving"
+            questions:
+              - "Bring to mind a place that holds significant meaning for you. What were your first impressions when you saw or experienced it?"
+              - "What sounds, smells, or sights do you most strongly associate with this place?"
+              - "How did you feel in the beginning when you were there?"
+      - title: "Defining Moments"
+        sections:
+          - title: "Memories and Milestones"
+            questions:
+              - "Describe a specific, vivid memory that took place there."
+              - "What important life lesson did you learn in this place?"
+              - "Tell me about a relationship that is deeply connected to this location."
+      - title: "Its Lasting Impact"
+        sections:
+          - title: "How It Shaped You"
+            questions:
+              - "How is a piece of that place still with you today?"
+              - "If that place could speak, what would it say about you?"
+              - "What does this place represent in the larger story of your life?"
+
+  - title: "The 80/20 Project Debrief"
+    uuid: ""
+    description: "Results are not evenly distributed. A small number of your inputs are generating the vast majority of your outputs. This interview is a post-mortem for a recent project, sprint, or work period, designed to identify that critical few. Use this framework to find your points of maximum leverage, eliminate wasteful effort, and double down on what actually works."
+    category: "non_fiction_writing"
+    icon_name: "chart.bar.xaxis"
+    order_position: 12
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Outcome Analysis"
+        sections:
+          - title: "Defining Success and Failure"
+            questions:
+              - "Think about a recently completed project or work cycle. What was the intended outcome?"
+              - "What was the actual outcome? Be brutally honest about the results."
+              - "What were the one or two biggest, undeniable wins from this period?"
+      - title: "Identifying the 20%"
+        sections:
+          - title: "The High-Leverage Inputs"
+            questions:
+              - "Which 20% of your efforts or actions generated 80% of the positive results?"
+              - "Who were the 20% of people (colleagues, clients) who contributed to 80% of the value?"
+              - "What was the single most effective skill or tool you used during this project?"
+          - title: "The 80% of Waste"
+            questions:
+              - "Which 80% of your activities produced only 20% of the results? What tasks, meetings, or processes were low-impact?"
+              - "What caused the most frustration, delays, or wasted energy?"
+              - "What is one thing you will commit to stop doing in the next project cycle?"
+      - title: "The Next Sprint Protocol"
+        sections:
+          - title: "Applying the Lessons"
+            questions:
+              - "How will you systematically allocate more time and resources to the high-leverage 20% you identified?"
+              - "What is your plan to ruthlessly eliminate, automate, or delegate one major source of waste?"
+              - "Based on this debrief, what is the single most important objective for your next sprint?"
+
+  - title: "Career Transition Chronicles"
+    uuid: ""
+    description: "Document your professional evolution and career pivots. This interview helps you process career changes, extract lessons from professional experiences, and articulate your professional story for networking, interviews, or personal reflection."
+    category: "non_fiction_writing"
+    icon_name: "briefcase.fill"
+    order_position: 32
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Catalyst"
+        sections:
+          - title: "Why Change?"
+            questions:
+              - "What specific event or realization made you consider changing your career path?"
+              - "What aspects of your previous career were no longer fulfilling?"
+              - "What dreams or interests had you been suppressing professionally?"
+          - title: "The Decision Point"
+            questions:
+              - "What was the exact moment you decided to make the change?"
+              - "What fears did you have to overcome to take the leap?"
+              - "Who supported your decision and who questioned it?"
+      - title: "The Transition"
+        sections:
+          - title: "Making the Move"
+            questions:
+              - "What practical steps did you take to prepare for your career change?"
+              - "What skills did you need to develop or update?"
+              - "What was the hardest part of the transition period?"
+          - title: "Early Challenges"
+            questions:
+              - "What surprised you most about your new field or role?"
+              - "What mistakes did you make early on that taught you valuable lessons?"
+              - "How did you handle moments of doubt during the transition?"
+      - title: "Reflection & Growth"
+        sections:
+          - title: "Looking Back"
+            questions:
+              - "How has this career change impacted other areas of your life?"
+              - "What skills from your previous career proved unexpectedly valuable?"
+              - "What advice would you give to someone considering a similar career transition?"
+
+  - title: "Expertise Deep Dive"
+    uuid: ""
+    description: "Share your professional knowledge and insights in your field of expertise. This interview helps you articulate complex concepts, share practical wisdom, and position yourself as a thought leader while making your expertise accessible to others."
+    category: "non_fiction_writing"
+    icon_name: "brain.head.profile"
+    order_position: 33
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Your Foundation"
+        sections:
+          - title: "How You Became an Expert"
+            questions:
+              - "What drew you to specialize in your particular field or area?"
+              - "What key experiences shaped your understanding of this subject?"
+              - "What misconceptions did you have to unlearn as you developed expertise?"
+          - title: "Core Principles"
+            questions:
+              - "What are the fundamental principles that guide your approach?"
+              - "What do most people get wrong about your field?"
+              - "What framework or mental model do you use to approach complex problems?"
+      - title: "Practical Wisdom"
+        sections:
+          - title: "Hard-Won Lessons"
+            questions:
+              - "What's the most expensive mistake you've made, and what did you learn?"
+              - "What pattern do you see repeatedly that others miss?"
+              - "What skill or knowledge area do you wish you'd developed earlier?"
+          - title: "Success Strategies"
+            questions:
+              - "What unconventional approach has worked surprisingly well for you?"
+              - "What tools, resources, or methods are essential in your work?"
+              - "How do you stay current and continue learning in your field?"
+      - title: "Sharing Your Knowledge"
+        sections:
+          - title: "Teaching Others"
+            questions:
+              - "If you were mentoring someone new to your field, what would you focus on first?"
+              - "What question do people ask you most often, and how do you answer it?"
+              - "What emerging trends or changes do you see coming in your field?"
+
+  - title: "Life Lessons Anthology"
+    uuid: ""
+    description: "Reflect on the wisdom you've gained through experience. This interview helps you identify and articulate the most important lessons life has taught you, creating a personal philosophy that can guide future decisions and inspire others."
+    category: "non_fiction_writing"
+    icon_name: "book.closed.fill"
+    order_position: 34
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Wisdom Through Experience"
+        sections:
+          - title: "Pivotal Lessons"
+            questions:
+              - "What's the most important life lesson you learned before age 25?"
+              - "What belief about life or success had you convinced until experience proved you wrong?"
+              - "What lesson did you learn the hard way that you now try to share with others?"
+          - title: "Relationship Insights"
+            questions:
+              - "What has experience taught you about building and maintaining relationships?"
+              - "What's the most valuable thing you've learned about love, friendship, or family?"
+              - "How has your understanding of trust and forgiveness evolved over time?"
+      - title: "Personal Philosophy"
+        sections:
+          - title: "Core Beliefs"
+            questions:
+              - "What principles do you absolutely refuse to compromise on?"
+              - "How do you decide what's worth your time and energy?"
+              - "What does success mean to you now versus when you were younger?"
+          - title: "Practical Wisdom"
+            questions:
+              - "What daily practice or habit has had the most positive impact on your life?"
+              - "What's your approach to handling failure, setbacks, or disappointment?"
+              - "How do you balance ambition with contentment?"
+      - title: "Sharing Your Wisdom"
+        sections:
+          - title: "Legacy of Learning"
+            questions:
+              - "What do you hope people remember about your approach to life?"
+              - "What advice do you find yourself giving most often?"
+              - "What life lesson are you still working on mastering?"
+
+  - title: "Industry Insider Perspective"
+    uuid: ""
+    description: "Share your behind-the-scenes knowledge of your industry. This interview helps you provide valuable insights about trends, challenges, and opportunities in your field while establishing your credibility and unique perspective."
+    category: "non_fiction_writing"
+    icon_name: "building.2.fill"
+    order_position: 35
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Industry Landscape"
+        sections:
+          - title: "Current State"
+            questions:
+              - "How has your industry changed significantly in the past 5-10 years?"
+              - "What are the biggest challenges facing your industry right now?"
+              - "What opportunities do you see that others might be missing?"
+          - title: "Key Players & Dynamics"
+            questions:
+              - "Who are the most influential people or companies shaping your industry?"
+              - "What unspoken rules or cultural norms exist in your field?"
+              - "How do industry insiders think differently from outsiders?"
+      - title: "Trends & Predictions"
+        sections:
+          - title: "Emerging Patterns"
+            questions:
+              - "What trend in your industry excites you most?"
+              - "What change do you see coming that most people aren't prepared for?"
+              - "What innovation or development could disrupt your entire field?"
+          - title: "Future Implications"
+            questions:
+              - "How do you think your industry will look different in 10 years?"
+              - "What skills will be most valuable for future professionals in your field?"
+              - "What advice would you give to someone just entering your industry?"
+      - title: "Personal Insights"
+        sections:
+          - title: "Your Unique Perspective"
+            questions:
+              - "What unpopular opinion do you have about your industry?"
+              - "What aspect of your industry do outsiders consistently misunderstand?"
+              - "What change would you implement if you had the power to transform your industry?"
+
+  - title: "Process & Methodology Deep Dive"
+    uuid: ""
+    description: "Document your unique approach to solving problems or completing complex work. This interview helps you articulate your methodology, share best practices, and create a replicable framework that others can learn from."
+    category: "non_fiction_writing"
+    icon_name: "gearshape.2.fill"
+    order_position: 36
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Your System"
+        sections:
+          - title: "Core Methodology"
+            questions:
+              - "Walk me through your step-by-step process for tackling complex projects."
+              - "How did you develop this approach? What influenced it?"
+              - "What makes your methodology different from standard approaches?"
+          - title: "Key Principles"
+            questions:
+              - "What underlying principles guide your decision-making process?"
+              - "When do you know to deviate from your standard process?"
+              - "What common mistakes do you see others make that your process avoids?"
+      - title: "Implementation"
+        sections:
+          - title: "Practical Application"
+            questions:
+              - "What tools or resources are essential for your process to work?"
+              - "How do you adapt your methodology for different types of projects or constraints?"
+              - "What warning signs tell you when your process isn't working?"
+          - title: "Optimization"
+            questions:
+              - "How has your process evolved over time?"
+              - "What shortcuts or efficiencies have you discovered?"
+              - "Where do most people struggle when trying to implement similar processes?"
+      - title: "Teaching Your Method"
+        sections:
+          - title: "Knowledge Transfer"
+            questions:
+              - "If you were training someone to use your methodology, where would you start?"
+              - "What aspects of your process are hardest to teach and why?"
+              - "How do you measure whether your process is being implemented correctly?"
+
+  - title: "Educational Journey Reflection"
+    uuid: ""
+    description: "Explore your learning experiences and how education has shaped your worldview. This interview helps you reflect on formal and informal education, mentors who influenced you, and the evolution of your intellectual curiosity."
+    category: "non_fiction_writing"
+    icon_name: "graduationcap.fill"
+    order_position: 55
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Formative Learning"
+        sections:
+          - title: "Early Education"
+            questions:
+              - "What subject or topic first sparked your intellectual curiosity?"
+              - "Which teacher or educator had the most significant impact on your learning?"
+              - "What educational experience challenged your preconceptions about yourself or the world?"
+          - title: "Learning Style Discovery"
+            questions:
+              - "How did you discover the way you learn best?"
+              - "What study methods or learning approaches have been most effective for you?"
+              - "How has your approach to learning evolved over time?"
+      - title: "Beyond the Classroom"
+        sections:
+          - title: "Self-Directed Learning"
+            questions:
+              - "What important skills or knowledge did you acquire outside of formal education?"
+              - "Who have been your most influential mentors or learning guides?"
+              - "What role has failure played in your educational journey?"
+          - title: "Continuous Growth"
+            questions:
+              - "How do you stay curious and continue learning as an adult?"
+              - "What subject are you currently exploring or want to learn more about?"
+              - "How has your definition of intelligence or expertise changed over time?"
+      - title: "Educational Philosophy"
+        sections:
+          - title: "Learning Insights"
+            questions:
+              - "What's the most important thing education has taught you about yourself?"
+              - "What gaps in traditional education do you wish had been addressed?"
+              - "How do you share knowledge or teach others in your current life?"
+
+  - title: "Cultural Commentary & Observations"
+    uuid: ""
+    description: "Share your perspective on cultural patterns, social trends, and the zeitgeist of our times. This interview helps you articulate observations about society, culture, and human behavior while developing your voice as a cultural commentator."
+    category: "non_fiction_writing"
+    icon_name: "eye.fill"
+    order_position: 56
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Social Observations"
+        sections:
+          - title: "Current Patterns"
+            questions:
+              - "What social or cultural trend have you noticed that others seem to be missing?"
+              - "How has technology changed human behavior in ways that concern or excite you?"
+              - "What generational differences do you observe in how people approach work, relationships, or life?"
+          - title: "Cultural Shifts"
+            questions:
+              - "What cultural value or norm is changing that few people are talking about?"
+              - "How has the way people communicate or connect evolved in recent years?"
+              - "What aspect of modern life would be unrecognizable to someone from 20 years ago?"
+      - title: "Critical Perspectives"
+        sections:
+          - title: "Contrarian Views"
+            questions:
+              - "What popular belief or trend do you think is misguided or harmful?"
+              - "What aspect of modern culture do you think future generations will judge harshly?"
+              - "What traditional value or practice do you think we've wrongly abandoned?"
+          - title: "Deeper Analysis"
+            questions:
+              - "What underlying forces do you think are driving major cultural changes?"
+              - "How do media and social platforms shape public discourse and opinion?"
+              - "What would an alien anthropologist find most puzzling about human culture today?"
+      - title: "Future Implications"
+        sections:
+          - title: "Long-Term Consequences"
+            questions:
+              - "What current cultural trend will have significant long-term consequences?"
+              - "How do you think society will need to adapt to emerging cultural shifts?"
+              - "What positive cultural change are you most hopeful about?"
+
+  - title: "Research & Investigation Process"
+    uuid: ""
+    description: "Document your approach to researching complex topics and uncovering hidden truths. This interview helps you share your investigative methodology, fact-checking processes, and critical thinking skills."
+    category: "non_fiction_writing"
+    icon_name: "magnifyingglass.circle.fill"
+    order_position: 57
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Research Foundation"
+        sections:
+          - title: "Information Gathering"
+            questions:
+              - "How do you identify credible sources when researching a new topic?"
+              - "What's your process for organizing and tracking information from multiple sources?"
+              - "How do you determine when you have enough information to form an opinion?"
+          - title: "Source Evaluation"
+            questions:
+              - "What red flags help you identify unreliable or biased sources?"
+              - "How do you fact-check claims and verify information?"
+              - "What role does primary versus secondary research play in your work?"
+      - title: "Critical Analysis"
+        sections:
+          - title: "Thinking Process"
+            questions:
+              - "How do you identify your own biases when researching controversial topics?"
+              - "What techniques help you consider multiple perspectives on complex issues?"
+              - "How do you distinguish between correlation and causation in your analysis?"
+          - title: "Evidence Standards"
+            questions:
+              - "What level of evidence do you require before drawing conclusions?"
+              - "How do you handle conflicting information from credible sources?"
+              - "What's your process for updating your views when new evidence emerges?"
+      - title: "Communication of Findings"
+        sections:
+          - title: "Presenting Information"
+            questions:
+              - "How do you make complex information accessible without oversimplifying?"
+              - "What's your approach to presenting controversial findings?"
+              - "How do you maintain objectivity while still engaging your audience?"
+
+  - title: "Historical Analysis & Lessons"
+    uuid: ""
+    description: "Examine historical events, patterns, and their relevance to contemporary issues. This interview helps you draw connections between past and present while extracting timeless lessons from historical analysis."
+    category: "non_fiction_writing"
+    icon_name: "clock.arrow.circlepath"
+    order_position: 58
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Historical Perspective"
+        sections:
+          - title: "Patterns & Cycles"
+            questions:
+              - "What historical pattern or cycle do you see repeating in current events?"
+              - "Which historical period or event offers the most relevant lessons for today?"
+              - "What historical misconception or oversimplification frustrates you most?"
+          - title: "Deeper Understanding"
+            questions:
+              - "How has studying history changed your perspective on current issues?"
+              - "What historical figure's decision-making process do you find most instructive?"
+              - "What role does context play in understanding historical events?"
+      - title: "Contemporary Relevance"
+        sections:
+          - title: "Modern Applications"
+            questions:
+              - "What historical lesson should current leaders be paying attention to?"
+              - "How can understanding past mistakes help us avoid repeating them?"
+              - "What historical precedent gives you hope for current challenges?"
+          - title: "Timeless Principles"
+            questions:
+              - "What human behavior patterns remain constant across different eras?"
+              - "Which historical solutions to problems could be adapted for modern challenges?"
+              - "What does history teach us about the pace and nature of social change?"
+      - title: "Learning from the Past"
+        sections:
+          - title: "Historical Wisdom"
+            questions:
+              - "What historical period would you most like to have lived through and why?"
+              - "How do you separate historical fact from myth or propaganda?"
+              - "What historical lesson has most influenced your personal decision-making?"
+
+  - title: "Opinion & Commentary Framework"
+    uuid: ""
+    description: "Develop and articulate your opinions on current events and controversial topics. This interview helps you build persuasive arguments, consider counterarguments, and refine your voice as a thoughtful commentator."
+    category: "non_fiction_writing"
+    icon_name: "megaphone.fill"
+    order_position: 59
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Opinion Formation"
+        sections:
+          - title: "Core Beliefs"
+            questions:
+              - "What current issue or controversy are you most passionate about?"
+              - "How did you form your opinion on this topic? What influenced you?"
+              - "What personal experiences or values inform your perspective?"
+          - title: "Evidence Base"
+            questions:
+              - "What evidence most strongly supports your position?"
+              - "What are the strongest counterarguments to your view?"
+              - "How has your opinion on this topic evolved over time?"
+      - title: "Argument Construction"
+        sections:
+          - title: "Persuasive Reasoning"
+            questions:
+              - "What's the most compelling way to present your argument to skeptics?"
+              - "What common misconceptions about your position do you need to address?"
+              - "How do you handle emotional versus logical appeals in your argument?"
+          - title: "Addressing Opposition"
+            questions:
+              - "What aspects of opposing viewpoints do you acknowledge as valid?"
+              - "How do you respond to the strongest criticism of your position?"
+              - "What would it take for you to change your mind on this issue?"
+      - title: "Effective Communication"
+        sections:
+          - title: "Audience Engagement"
+            questions:
+              - "How do you tailor your message for different audiences?"
+              - "What tone and style best serve your argumentative goals?"
+              - "How do you balance passion with reasoned discourse?"
+
+  - title: "Case Study Deep Analysis"
+    uuid: ""
+    description: "Examine a specific example, project, or situation in detail to extract broader insights and lessons. This interview helps you analyze complex scenarios and derive actionable principles that others can apply."
+    category: "non_fiction_writing"
+    icon_name: "doc.text.magnifyingglass"
+    order_position: 60
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Case Selection & Context"
+        sections:
+          - title: "Why This Case"
+            questions:
+              - "What specific case, project, or situation do you want to analyze in depth?"
+              - "Why is this case particularly instructive or representative?"
+              - "What makes this example worth studying and learning from?"
+          - title: "Background & Setup"
+            questions:
+              - "What was the context and initial situation?"
+              - "What were the key constraints, resources, and stakeholders involved?"
+              - "What assumptions or expectations existed at the beginning?"
+      - title: "Detailed Analysis"
+        sections:
+          - title: "What Happened"
+            questions:
+              - "Walk me through the key events, decisions, and turning points."
+              - "What factors contributed most to the eventual outcome?"
+              - "What unexpected elements or complications arose?"
+          - title: "Critical Decisions"
+            questions:
+              - "What were the most crucial decisions made, and who made them?"
+              - "What alternative approaches were considered but not chosen?"
+              - "Which decisions had the most significant impact on the final result?"
+      - title: "Lessons & Applications"
+        sections:
+          - title: "Key Insights"
+            questions:
+              - "What are the most important lessons that can be extracted from this case?"
+              - "What principles or strategies proved most effective?"
+              - "What would you do differently if you could replay this situation?"
+          - title: "Broader Applications"
+            questions:
+              - "How can these insights be applied to similar situations?"
+              - "What warning signs or success indicators should others watch for?"
+              - "What general principles does this case illustrate about success, failure, or decision-making?"

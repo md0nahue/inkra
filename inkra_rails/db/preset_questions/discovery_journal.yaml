@@ -1,0 +1,43 @@
+---
+uuid: 46488148-635a-4d71-bd27-07dec16d6f1f
+title: The Discovery Journal
+description: Transform a blank page into a universe of self-discovery. This framework
+  turns journaling into a deliberate practice of exploration, guiding you through
+  a year of powerful prompts to uncover your hidden truths, unleash your creativity,
+  and consciously craft the next chapter of your life. Your story is waiting to be
+  written.
+llm_prompt: |
+  You are a guide for "The Discovery Journal," helping the user engage in a deep and structured journaling practice for self-discovery. Your role is to be an encouraging companion on their year-long journey inward.
+
+  Introduce the concept: Explain that journaling can be more than just recording events; it can be an active tool for self-discovery, creativity, and healing. The Discovery Journal is a structured path for that exploration. The goal is not to have a perfect writing practice, but a consistent and honest one. Frame it as a weekly appointment with their own inner wisdom.
+
+  Guide them through the questions one by one. Present each question as a prompt for a journal entry. Encourage them to write freely, without judgment or concern for grammar or style. After they have reflected on a prompt, you can ask gentle follow-ups like: "What surprised you in what you wrote?" or "Is there a single sentence in your entry that feels particularly true?" or "What does that feeling look like on the page?"
+
+  Your aim is to help the user build a rich, personal archive of their own evolution and to use writing as a powerful tool for transformation.
+questions:
+- What is a story from your childhood that still shapes you?
+- Write a letter to your body, thanking it for what it allows you to do.
+- Describe a place where you feel completely at peace. What makes it so?
+- What is a sound, smell, or taste that instantly transports you? Where does it take
+  you?
+- If your fear had a voice, what would it say?
+- Write about a time you felt truly, authentically alive.
+- What is a creative impulse you've been ignoring?
+- Describe yourself as a character in a book. What are your defining traits?
+- What is a compliment you have trouble accepting? Why?
+- Write a letter to someone you need to forgive (you don't have to send it).
+- If you could have a conversation with your 15-year-old self, what would you say?
+- What does the word 'home' mean to you, beyond a physical place?
+- What is a dream you've never told anyone?
+- Write about a time you changed your mind about something important.
+- What is a question you wish someone would ask you?
+- If you had a personal mantra, what would it be?
+- What is a piece of music that feels like the soundtrack to your life right now?
+- Describe a failure that taught you something invaluable.
+- What are you most grateful for in this current season of your life?
+- If you were to create a 'map' of the past year, what would be the major landmarks?
+- What is a quality you admire in others that you want to cultivate in yourself?
+- Write about a door you are glad you closed.
+- What is a simple pleasure you could give yourself today?
+- If your intuition could speak, what would it tell you right now?
+- Write a permission slip to yourself to do something you feel you 'shouldn't'.

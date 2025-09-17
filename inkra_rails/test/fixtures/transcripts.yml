@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  status: ready
+  edited_content: '[{"type": "paragraph", "text": "Sample edited content"}]'
+  raw_structured_content: '[{"type": "paragraph", "text": "Sample raw content"}]'
+  last_updated: 2025-07-13 18:46:54
+
+two:
+  project: two
+  status: ready
+  edited_content: '[{"type": "paragraph", "text": "Another sample edited content"}]'
+  raw_structured_content: '[{"type": "paragraph", "text": "Another sample raw content"}]'
+  last_updated: 2025-07-13 18:46:54

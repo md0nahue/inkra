@@ -1,0 +1,64 @@
+---
+uuid: ff967480-83b3-4aa2-bd46-c6f9d362d24c
+title: Narrative Alchemy
+description: Become the master storyteller of your own life. This journey guides you
+  through the art of 'story-editing'—transforming limiting personal narratives into
+  empowering tales of growth and resilience. Turn your leaden baggage into a golden
+  future by subtly redirecting your inner monologue.
+llm_prompt: |
+  You are a guide for "Narrative Alchemy," helping the user reshape their personal stories using the principles of psychological redirection. Your role is to help them act as a "story editor" for their own life.
+
+  Introduce the concept: Explain that we all have personal narratives that define our experiences. Sometimes, these stories can hold us back. "Narrative Alchemy" is the process of making small, subtle edits to these stories to create profound changes in our feelings and behaviors. It's not about lying to ourselves, but about finding more empowering and accurate interpretations of our lives.
+
+  Guide them through the questions one by one. For each question, encourage them to identify a current narrative and then explore alternative interpretations. Use phrases like, "What's another way to see this?" or "If you were the editor of this story, what detail would you emphasize to change its meaning?" or "How could this be the beginning of a comeback story?"
+
+  Your goal is to empower the user to see that their stories are not fixed, and that they have the power to redirect them toward a more desirable future.
+questions:
+- What is a story you often tell yourself about why you can't achieve a certain goal?
+- Think of a past failure. What could you emphasize about that experience to frame
+  it as a lesson in resilience?
+- What is a label you've applied to yourself (e.g., 'I'm a procrastinator')? What
+  actions have you taken that contradict this label?
+- Describe a time you felt rejected. How could that event be retold as a redirection
+  toward something better?
+- What is the 'origin story' of one of your biggest insecurities? What's an alternative
+  origin story?
+- If your current challenge were a chapter in your autobiography, what would this
+  chapter be called? What would you title the *next* chapter?
+- What part of your personal story do you edit out when you talk to others? What would
+  happen if you emphasized it instead?
+- Think of someone you admire. How would they narrate a challenge you are currently
+  facing?
+- What is a 'victim' narrative in your life? How could you reframe it as a 'survivor'
+  or 'hero' narrative?
+- What is a recurring thought that you could gently redirect toward a more productive
+  question?
+- If you had to write a new story for yourself starting today, what would the first
+  sentence be?
+- What is a character strength you possess that you often downplay in your own story?
+- How can you re-narrate your relationship with effort, from a story of struggle to
+  a story of growth?
+- What is a story you've inherited from your family or culture that no longer serves
+  you?
+- Describe a time you felt stuck. How can you tell that story as a period of necessary
+  rest or contemplation?
+- What is a small, recent success you dismissed? How can you make it a more significant
+  event in your personal narrative?
+- If you were to attribute your successes to your effort and character instead of
+  luck, how would your story change?
+- What is a story about a relationship in your life that could be told from a more
+  compassionate perspective?
+- How can you reframe 'I have to' tasks into 'I get to' opportunities in your daily
+  narrative?
+- What is a future you're worried about? Write a short story about that future where
+  you handle it with grace and strength.
+- What is a detail from your past you interpret negatively? How could it be seen as
+  the seed of a future strength?
+- If you were mentoring a younger version of yourself, what story would you encourage
+  them to stop telling?
+- What is the central theme of your life's story right now? What would you like it
+  to be?
+- How can you edit the story of your physical health from one of limitation to one
+  of capability and care?
+- What is a story you tell yourself about money? What's a more empowering one you
+  could write?

@@ -1,0 +1,315 @@
+# RevenueCat Setup Guide
+
+## Overview
+RevenueCat simplifies in-app purchase and subscription management across iOS, Android, and other platforms. This guide outlines the complete setup process.
+
+## What You Can Do NOW (Before Apple Developer License)
+
+### 1. RevenueCat Account Setup
+- Sign up at https://app.revenuecat.com
+- Create your app project in RevenueCat dashboard
+- Get familiar with the dashboard interface
+- Set up basic app configuration (name, icon, etc.)
+
+### 2. Plan Your Subscription Model
+Define your pricing strategy:
+- **Freemium**: Basic features free, premium features paid
+- **Free Trial**: 7-day free trial then subscription
+- **Tiered Plans**: Basic ($2.99/month) vs Pro ($9.99/month)
+- **Annual Discounts**: Monthly vs yearly pricing
+
+Example structure:
+```
+- Free Tier: 3 interviews/month, basic export
+- Pro Monthly: $4.99 - Unlimited interviews, audio remastering
+- Pro Annual: $39.99 - Same as monthly but 33% discount
+```
+
+### 3. Integration Planning
+- Review RevenueCat iOS SDK documentation
+- Plan where subscription checks will go in your app
+- Design paywall/upgrade screens
+- Plan entitlement structure (what features are premium)
+
+### 4. RevenueCat Dashboard Configuration
+- Set up Entitlements (premium features you'll gate)
+- Configure Products (even without App Store Connect yet)
+- Set up basic analytics goals
+- Configure webhook endpoints (for your backend if needed)
+
+## What Requires Apple Developer License ($99/year)
+
+### 1. App Store Connect Setup
+**MUST HAVE DEVELOPER LICENSE FIRST**
+- Create app in App Store Connect
+- Set up App Store product IDs
+- Configure subscription groups
+- Set up subscription pricing and availability
+- Submit for App Store review approval
+
+### 2. Create In-App Purchase Products
+In App Store Connect, create:
+```
+Product ID: com.yourapp.pro_monthly
+Type: Auto-renewable subscription
+Price: $4.99/month
+Subscription Group: Premium Features
+
+Product ID: com.yourapp.pro_annual
+Type: Auto-renewable subscription
+Price: $39.99/year
+Subscription Group: Premium Features
+```
+
+### 3. Link App Store Connect to RevenueCat
+- Connect App Store Connect account to RevenueCat
+- Import your subscription products
+- Configure product mappings
+- Set up shared secret from App Store Connect
+
+## RevenueCat Implementation Steps
+
+### Phase 1: Basic Setup (Post-Developer License)
+
+#### 1. Install RevenueCat SDK
+```swift
+// Package.swift or Xcode Package Manager
+dependencies: [
+    .package(url: "https://github.com/RevenueCat/purchases-ios", from: "4.0.0")
+]
+```
+
+#### 2. Configure RevenueCat in App
+```swift
+// AppDelegate.swift or App.swift
+import RevenueCat
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+    Purchases.logLevel = .debug // Remove in production
+    Purchases.configure(withAPIKey: "your_revenuecat_api_key")
+
+    return true
+}
+```
+
+#### 3. Set Up User Identity
+```swift
+// When user signs in/creates account
+Purchases.shared.logIn("user_id") { customerInfo, created, error in
+    if let error = error {
+        // Handle error
+    } else {
+        // User successfully identified
+    }
+}
+```
+
+### Phase 2: Paywall Implementation
+
+#### 1. Create Subscription View
+```swift
+struct SubscriptionView: View {
+    @State private var packages: [Package] = []
+    @State private var isLoading = true
+
+    var body: some View {
+        VStack {
+            Text("Upgrade to Pro")
+                .font(.largeTitle)
+
+            ForEach(packages, id: \.identifier) { package in
+                SubscriptionOptionView(package: package) {
+                    purchasePackage(package)
+                }
+            }
+
+            Button("Restore Purchases") {
+                restorePurchases()
+            }
+        }
+        .onAppear {
+            loadOfferings()
+        }
+    }
+
+    private func loadOfferings() {
+        Purchases.shared.getOfferings { offerings, error in
+            if let offerings = offerings {
+                self.packages = offerings.current?.availablePackages ?? []
+            }
+            self.isLoading = false
+        }
+    }
+
+    private func purchasePackage(_ package: Package) {
+        Purchases.shared.purchase(package: package) { transaction, customerInfo, error, userCancelled in
+            if let error = error {
+                // Handle error
+            } else if !userCancelled {
+                // Purchase successful
+                checkEntitlements()
+            }
+        }
+    }
+}
+```
+
+#### 2. Entitlement Checking
+```swift
+class SubscriptionManager: ObservableObject {
+    @Published var isPro = false
+
+    init() {
+        checkEntitlements()
+
+        // Listen for subscription changes
+        Purchases.shared.delegate = self
+    }
+
+    func checkEntitlements() {
+        Purchases.shared.getCustomerInfo { customerInfo, error in
+            DispatchQueue.main.async {
+                self.isPro = customerInfo?.entitlements["pro"]?.isActive == true
+            }
+        }
+    }
+}
+
+extension SubscriptionManager: PurchasesDelegate {
+    func purchases(_ purchases: Purchases, receivedUpdated customerInfo: CustomerInfo) {
+        DispatchQueue.main.async {
+            self.isPro = customerInfo.entitlements["pro"]?.isActive == true
+        }
+    }
+}
+```
+
+### Phase 3: Feature Gating
+
+#### 1. Gate Premium Features
+```swift
+struct InterviewListView: View {
+    @StateObject private var subscriptionManager = SubscriptionManager()
+    @State private var interviews: [Interview] = []
+
+    var body: some View {
+        List {
+            ForEach(interviews.prefix(subscriptionManager.isPro ? interviews.count : 3)) { interview in
+                InterviewRow(interview: interview)
+            }
+
+            if !subscriptionManager.isPro && interviews.count > 3 {
+                Button("Upgrade to Pro for unlimited interviews") {
+                    // Show paywall
+                }
+                .foregroundColor(.blue)
+            }
+        }
+    }
+}
+```
+
+#### 2. Audio Remastering Gate
+```swift
+struct AudioRemasterView: View {
+    @StateObject private var subscriptionManager = SubscriptionManager()
+
+    var body: some View {
+        VStack {
+            if subscriptionManager.isPro {
+                Button("Remaster Audio") {
+                    // Apply audio remastering
+                }
+            } else {
+                VStack {
+                    Text("Audio Remastering")
+                    Text("Pro Feature")
+                        .foregroundColor(.secondary)
+
+                    Button("Upgrade to Pro") {
+                        // Show paywall
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## Pre-Launch Testing Strategy
+
+### 1. Sandbox Testing (Requires Developer License)
+- Create sandbox test accounts in App Store Connect
+- Test purchase flows in development
+- Test subscription renewals and cancellations
+- Test restore purchases functionality
+
+### 2. TestFlight Testing
+- Add RevenueCat to TestFlight build
+- Test with real subscription flows
+- Gather feedback on paywall UX
+
+## Analytics & Monitoring
+
+### 1. RevenueCat Dashboard Metrics
+- Monthly Recurring Revenue (MRR)
+- Subscription conversion rates
+- Churn analysis
+- Cohort analysis
+
+### 2. Custom Events
+```swift
+// Track paywall views
+Purchases.shared.logIn("user_id") { _, _, _ in
+    // Track conversion funnel
+}
+```
+
+## Pricing Strategy Recommendations
+
+### 1. Freemium Model
+- **Free**: 3 interviews/month, basic export only
+- **Pro**: $4.99/month or $39.99/year
+  - Unlimited interviews
+  - Audio remastering
+  - Advanced export formats
+  - Priority support
+
+### 2. Free Trial Strategy
+- 7-day free trial for Pro features
+- Require subscription after trial
+- Clear trial communication in paywall
+
+## Timeline
+
+### Immediate (No Developer License Needed)
+- [ ] Sign up for RevenueCat account
+- [ ] Plan subscription tiers and pricing
+- [ ] Design paywall mockups
+- [ ] Study RevenueCat documentation
+
+### After Developer License
+- [ ] Create App Store Connect app
+- [ ] Set up in-app purchase products
+- [ ] Connect App Store Connect to RevenueCat
+- [ ] Implement RevenueCat SDK
+- [ ] Create paywall UI
+- [ ] Test in sandbox environment
+- [ ] Submit for App Store review
+
+### Post-Launch
+- [ ] Monitor analytics and conversion rates
+- [ ] A/B test paywall designs
+- [ ] Optimize pricing based on data
+- [ ] Add promotional offers and discounts
+
+## Common Gotchas
+
+1. **App Store Review**: Subscriptions require careful review - ensure clear terms
+2. **Restore Purchases**: Must be easily accessible per App Store guidelines
+3. **Family Sharing**: Consider if your subscriptions should support it
+4. **Promotional Offers**: Plan winback and upgrade offers
+5. **Subscription Groups**: Products in same group can't be purchased together
+
+This setup will give you professional subscription management with minimal backend complexity.

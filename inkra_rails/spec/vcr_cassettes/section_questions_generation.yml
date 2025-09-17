@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite-preview-06-17:generateContent?key=<FILTERED_API_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"contents":[{"parts":[{"text":"You are an expert interview designer
+        adding questions to an existing section.\n\nCONTEXT:\nChapter: Early Days\nSection:
+        The Initial Idea\n\nEXISTING QUESTIONS:\n1. What inspired you to start this
+        venture?\n2. What problem were you trying to solve?\n\nTASK: Generate 2 additional
+        interview questions for this section that:\n- Complement the existing questions
+        without being repetitive\n- Maintain the same theme and depth level\n- Are
+        open-ended and encourage detailed responses\n- Flow naturally with the existing
+        questions\n\nRESPONSE FORMAT (JSON only):\n{\n  \"questions\": [\n    {\n      \"text\":
+        \"Question text here?\",\n      \"order\": 3\n    }\n  ]\n}\n\nGenerate only
+        the JSON response, no other text.\n"}]}],"generationConfig":{"temperature":0.7,"maxOutputTokens":2048,"topP":0.8,"topK":40}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - generativelanguage.googleapis.com
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 25 Aug 2025 03:18:22 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Server-Timing:
+      - gfet4t7; dur=650
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "candidates": [
+            {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"questions\": [\n    {\n      \"text\": \"Can you describe the very first steps you took to bring this idea to life?\",\n      \"order\": 3\n    },\n    {\n      \"text\": \"What were the biggest challenges you faced in those initial stages of developing the idea?\",\n      \"order\": 4\n    }\n  ]\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokenCount": 159,
+            "candidatesTokenCount": 87,
+            "totalTokenCount": 246,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 159
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-flash-lite-preview-06-17",
+          "responseId": "_tWraNSDOdjjz7IPjZ3HqQ0"
+        }
+  recorded_at: Mon, 25 Aug 2025 03:18:22 GMT
+recorded_with: VCR 6.3.1

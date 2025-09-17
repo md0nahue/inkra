@@ -1,0 +1,59 @@
+---
+uuid: acc1f820-dbda-4920-ad71-7c24ef9ffdee
+title: The Fixes That Fail Loop
+description: Are your solutions actually making your problems worse? This journey
+  helps you identify the hidden 'Fixes That Fail' loops in your life—the self-sabotaging
+  patterns where your short-term solutions create bigger long-term problems. Learn
+  to spot these traps and design lasting solutions instead of quick fixes.
+llm_prompt: |
+  You are a systems analyst for personal life, helping the user diagnose a common pattern called a "Fixes That Fail" loop. Your role is to be a clear, objective guide, helping the user map out the unintended consequences of their actions.
+
+  Introduce the concept: Explain the "Fixes That Fail" archetype. It starts with a problem that creates a symptom of stress. We apply a "quick fix" that alleviates the symptom in the short term. However, the fix has an unseen, delayed, negative consequence that either makes the original problem worse or creates a new one. This leads us to apply the fix even more, creating a reinforcing loop of self-sabotage.
+
+  Guide them through the questions one by one. Help them map out a specific loop in their own life. Use the language of systems thinking: "What is the problem symptom?" "What is the quick fix you apply?" "What is the immediate relief?" "And what is the delayed, unintended consequence?" Help them draw the loop.
+
+  Your goal is to make the user a better systems thinker in their own life, so they can stop applying fixes that fail and start addressing the fundamental problem.
+questions:
+- What is a recurring problem in your life that seems to get better for a little while,
+  but then always comes back worse?
+- Let's identify the 'symptom' of this problem. What is the stress or pain that you
+  feel that makes you want to act?
+- What is your go-to 'quick fix' when you feel this symptom? (e.g., procrastination,
+  comfort eating, borrowing money, avoiding a conversation)
+- What is the immediate relief or benefit you get from this quick fix? Describe the
+  feeling.
+- Now, let's look for the unintended consequence. What is the delayed, negative result
+  of applying this fix?
+- How does this negative result affect the original problem? Does it make it worse
+  over time?
+- Can you trace the whole loop? The problem leads to the fix, the fix leads to relief,
+  the relief leads to a delayed negative consequence, which makes the problem worse.
+- What is the fundamental, underlying problem that the quick fix is allowing you to
+  ignore?
+- What would a 'fundamental solution'—one that actually addresses the root problem—look
+  like?
+- Why is the fundamental solution harder to apply in the short term than the quick
+  fix?
+- What is the story you tell yourself that justifies using the quick fix? (e.g., 'I'm
+  too tired,' 'I'll deal with it tomorrow')
+- How has this loop impacted your health, finances, or relationships over time?
+- What is the first, small step you could take toward the fundamental solution instead
+  of the quick fix?
+- How can you prepare for the discomfort of *not* applying the quick fix?
+- Who could support you in choosing the fundamental solution?
+- Let's look for another loop. Where else in your life do you use a short-term gain
+  for a long-term pain?
+- Think about your career. Is there a 'fix that fails' loop at play? (e.g., working
+  excessive hours to catch up, leading to burnout and less productivity)
+- Think about your relationships. Is there a loop? (e.g., avoiding a difficult conversation
+  for temporary peace, leading to growing resentment)
+- What is the belief that keeps you stuck in this loop?
+- How can you make the fundamental solution easier or more attractive to implement?
+- What would your life look like in one year if you broke this loop?
+- What is the cost of staying in this loop for another year?
+- How can you track the delayed consequences of your fixes so you can see the pattern
+  more clearly?
+- What is a healthier, more sustainable way to get the relief you seek from the quick
+  fix?
+- Can you have compassion for the part of you that chose the quick fix, while still
+  committing to a better way?

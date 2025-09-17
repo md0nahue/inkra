@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Inkra Data Export is Ready</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px 0;
+      border-bottom: 2px solid #4F46E5;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4F46E5;
+    }
+    .content {
+      margin-bottom: 30px;
+    }
+    .download-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      margin: 25px 0;
+    }
+    .download-button {
+      display: inline-block;
+      background: white;
+      color: #4F46E5;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+    .download-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .download-text {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .expires-warning {
+      background: #FEF3C7;
+      border-left: 4px solid #F59E0B;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .what-included {
+      background: #F3F4F6;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .what-included h3 {
+      margin-top: 0;
+      color: #374151;
+    }
+    .what-included ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .what-included li {
+      margin-bottom: 8px;
+    }
+    .footer {
+      text-align: center;
+      color: #6B7280;
+      font-size: 14px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #E5E7EB;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Inkra</div>
+  </div>
+
+  <div class="content">
+    <h2>Your Data Export is Ready!</h2>
+    
+    <p>Hi there,</p>
+    
+    <p>Your complete Inkra data export has been prepared and is ready for download. This includes all your interview projects, audio recordings, transcripts, and account data.</p>
+
+    <div class="download-section">
+      <div class="download-text">Click below to download your data:</div>
+      <a href="<%= @download_url %>" class="download-button">Download My Inkra Data</a>
+    </div>
+
+    <div class="expires-warning">
+      <strong>⚠️ Important:</strong> This download link expires on <strong><%= @expires_at %></strong>. Make sure to download your data before this date.
+    </div>
+
+    <div class="what-included">
+      <h3>What's included in your export:</h3>
+      <ul>
+        <li><strong>CSV Data Files</strong> - Your structured data in spreadsheet format</li>
+        <li><strong>Audio Recordings</strong> - All your interview audio files</li>
+        <li><strong>Transcripts</strong> - Text versions of your interviews</li>
+        <li><strong>Account Settings</strong> - Your preferences and configuration</li>
+        <li><strong>Support History</strong> - Any feedback or support interactions</li>
+        <li><strong>README File</strong> - Instructions for understanding your data</li>
+      </ul>
+    </div>
+
+    <p>The export is provided as a ZIP file containing organized folders with your data. You can open CSV files in Excel, Google Sheets, or any spreadsheet application.</p>
+
+    <p>If you have any questions about your export or need help accessing your data, please contact us at <a href="mailto:support@inkra.app">support@inkra.app</a>.</p>
+
+    <p>Thank you for using Inkra to capture your stories!</p>
+
+    <p>Best regards,<br>The Inkra Team</p>
+  </div>
+
+  <div class="footer">
+    <p>This email was sent to <%= @user.email %> at your request.</p>
+    <p>Inkra - Capture your voice, preserve your story</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+
+require 'find'
+
+output_file = 'gemini-context.txt'
+
+File.open(output_file, 'w') do |f|
+  f.puts "# Gemini Context File"
+  f.puts "# Generated on #{Time.now}"
+  f.puts ""
+
+  # Rails files
+  f.puts "## Rails Files"
+  f.puts ""
+  
+  Find.find('.') do |path|
+    next if path.include?('/.git/') || path.include?('/node_modules/') || path.include?('/tmp/') || path.include?('/log/') || path.include?('/coverage/')
+    next unless File.file?(path)
+    
+    if path.match?(/\.(rb|erb|yml|yaml)$/)
+      f.puts "### #{path}"
+      f.puts "```#{File.extname(path)[1..-1]}"
+      f.puts File.read(path)
+      f.puts "```"
+      f.puts ""
+    end
+  end
+
+  # Swift files
+  f.puts "## Swift Files"
+  f.puts ""
+  
+  Find.find('../VibeWriter') do |path|
+    next if path.include?('/.git/') || path.include?('/Build/') || path.include?('/DerivedData/')
+    next unless File.file?(path)
+    
+    if path.match?(/\.swift$/)
+      f.puts "### #{path}"
+      f.puts "```swift"
+      f.puts File.read(path)
+      f.puts "```"
+      f.puts ""
+    end
+  end
+end
+
+puts "Generated #{output_file}"

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Inkra Account Has Been Deleted</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px 0;
+      border-bottom: 2px solid #4F46E5;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4F46E5;
+    }
+    .content {
+      margin-bottom: 30px;
+    }
+    .deletion-confirmation {
+      background: linear-gradient(135deg, #EF4444, #DC2626);
+      color: white;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      margin: 25px 0;
+    }
+    .deletion-confirmation h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    .what-deleted {
+      background: #FEF2F2;
+      border-left: 4px solid #EF4444;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .what-deleted h3 {
+      margin-top: 0;
+      color: #B91C1C;
+    }
+    .what-deleted ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .what-deleted li {
+      margin-bottom: 8px;
+      color: #7F1D1D;
+    }
+    .feedback-section {
+      background: #F0F9FF;
+      border-left: 4px solid #3B82F6;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .feedback-section h3 {
+      margin-top: 0;
+      color: #1E40AF;
+    }
+    .footer {
+      text-align: center;
+      color: #6B7280;
+      font-size: 14px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #E5E7EB;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Inkra</div>
+  </div>
+
+  <div class="content">
+    <h2>Account Deletion Complete</h2>
+    
+    <div class="deletion-confirmation">
+      <h3>✓ Your account has been permanently deleted</h3>
+      <p>Deletion completed on <%= @deletion_date %></p>
+    </div>
+
+    <p>Your Inkra account and all associated data have been permanently removed from our systems as requested.</p>
+
+    <div class="what-deleted">
+      <h3>What was permanently deleted:</h3>
+      <ul>
+        <li><strong>Account Information</strong> - Email, login credentials, and preferences</li>
+        <li><strong>Interview Projects</strong> - All your interview projects and metadata</li>
+        <li><strong>Audio Recordings</strong> - All stored audio files and segments</li>
+        <li><strong>Transcripts</strong> - All text transcriptions and content</li>
+        <li><strong>Device Data</strong> - Logs, crash reports, and diagnostic information</li>
+        <li><strong>Cloud Storage</strong> - All files stored in our cloud infrastructure</li>
+        <li><strong>Support History</strong> - Feedback submissions and support interactions</li>
+      </ul>
+    </div>
+
+    <% if @feedback_data[:experience_description].present? %>
+    <div class="feedback-section">
+      <h3>Thank you for your feedback</h3>
+      <p>We appreciate you taking the time to share your experience with Inkra. Your feedback helps us improve the app for other users.</p>
+      
+      <% if @feedback_data[:requested_export] %>
+      <p><strong>Note:</strong> Your data export was sent to this email address before the deletion was completed.</p>
+      <% end %>
+    </div>
+    <% end %>
+
+    <p>This deletion is permanent and cannot be undone. If you decide to use Inkra again in the future, you'll need to create a new account.</p>
+
+    <p>We're sorry to see you go, and we hope Inkra was able to help you capture some meaningful stories during your time with us.</p>
+
+    <p>If you have any questions about this deletion or need assistance with anything else, you can reach out to us at <a href="mailto:support@inkra.app">support@inkra.app</a>.</p>
+
+    <p>Best regards,<br>The Inkra Team</p>
+  </div>
+
+  <div class="footer">
+    <p>This confirmation was sent to <%= @user_email %> regarding the account deletion request.</p>
+    <p>Inkra - Capture your voice, preserve your story</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,3208 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.000 --> 00:00:08.790 align:start position:0%
+ 
+[Music]
+
+00:00:08.790 --> 00:00:08.800 align:start position:0%
+[Music]
+ 
+
+00:00:08.800 --> 00:00:10.669 align:start position:0%
+[Music]
+hey<00:00:09.000><c> everyone</c><00:00:09.360><c> welcome</c><00:00:09.639><c> to</c><00:00:09.719><c> my</c><00:00:10.080><c> tutorial</c>
+
+00:00:10.669 --> 00:00:10.679 align:start position:0%
+hey everyone welcome to my tutorial
+ 
+
+00:00:10.679 --> 00:00:12.509 align:start position:0%
+hey everyone welcome to my tutorial
+today<00:00:10.960><c> we</c><00:00:11.080><c> are</c><00:00:11.240><c> going</c><00:00:11.440><c> to</c><00:00:11.639><c> create</c><00:00:12.040><c> this</c><00:00:12.240><c> cool</c>
+
+00:00:12.509 --> 00:00:12.519 align:start position:0%
+today we are going to create this cool
+ 
+
+00:00:12.519 --> 00:00:14.589 align:start position:0%
+today we are going to create this cool
+audio<00:00:12.880><c> visualizer</c><00:00:13.559><c> animation</c><00:00:14.120><c> and</c><00:00:14.240><c> I</c><00:00:14.400><c> really</c>
+
+00:00:14.589 --> 00:00:14.599 align:start position:0%
+audio visualizer animation and I really
+ 
+
+00:00:14.599 --> 00:00:16.150 align:start position:0%
+audio visualizer animation and I really
+hope<00:00:14.759><c> you</c><00:00:14.839><c> will</c><00:00:15.040><c> enjoy</c><00:00:15.360><c> this</c><00:00:15.480><c> one</c><00:00:15.759><c> and</c><00:00:15.879><c> if</c><00:00:16.039><c> you</c>
+
+00:00:16.150 --> 00:00:16.160 align:start position:0%
+hope you will enjoy this one and if you
+ 
+
+00:00:16.160 --> 00:00:17.710 align:start position:0%
+hope you will enjoy this one and if you
+do<00:00:16.359><c> don't</c><00:00:16.520><c> forget</c><00:00:16.800><c> to</c><00:00:16.960><c> leave</c><00:00:17.199><c> that</c><00:00:17.400><c> like</c><00:00:17.600><c> and</c>
+
+00:00:17.710 --> 00:00:17.720 align:start position:0%
+do don't forget to leave that like and
+ 
+
+00:00:17.720 --> 00:00:19.230 align:start position:0%
+do don't forget to leave that like and
+if<00:00:17.800><c> you're</c><00:00:18.039><c> new</c><00:00:18.279><c> around</c><00:00:18.560><c> here</c><00:00:18.840><c> hit</c><00:00:19.039><c> that</c>
+
+00:00:19.230 --> 00:00:19.240 align:start position:0%
+if you're new around here hit that
+ 
+
+00:00:19.240 --> 00:00:20.870 align:start position:0%
+if you're new around here hit that
+subscribe<00:00:19.880><c> let's</c><00:00:20.080><c> now</c><00:00:20.199><c> jump</c><00:00:20.519><c> right</c><00:00:20.640><c> into</c>
+
+00:00:20.870 --> 00:00:20.880 align:start position:0%
+subscribe let's now jump right into
+ 
+
+00:00:20.880 --> 00:00:22.950 align:start position:0%
+subscribe let's now jump right into
+empty<00:00:21.119><c> blender</c><00:00:21.439><c> file</c><00:00:21.920><c> and</c><00:00:22.160><c> the</c><00:00:22.320><c> default</c><00:00:22.680><c> Cube</c>
+
+00:00:22.950 --> 00:00:22.960 align:start position:0%
+empty blender file and the default Cube
+ 
+
+00:00:22.960 --> 00:00:24.269 align:start position:0%
+empty blender file and the default Cube
+gets<00:00:23.160><c> to</c><00:00:23.279><c> shine</c><00:00:23.599><c> again</c><00:00:23.760><c> because</c><00:00:24.039><c> we</c><00:00:24.160><c> were</c>
+
+00:00:24.269 --> 00:00:24.279 align:start position:0%
+gets to shine again because we were
+ 
+
+00:00:24.279 --> 00:00:26.470 align:start position:0%
+gets to shine again because we were
+going<00:00:24.400><c> to</c><00:00:24.640><c> use</c><00:00:24.840><c> it</c><00:00:25.080><c> so</c><00:00:25.320><c> just</c><00:00:25.519><c> delete</c><00:00:26.039><c> the</c><00:00:26.199><c> light</c>
+
+00:00:26.470 --> 00:00:26.480 align:start position:0%
+going to use it so just delete the light
+ 
+
+00:00:26.480 --> 00:00:29.390 align:start position:0%
+going to use it so just delete the light
+here<00:00:26.720><c> press</c><00:00:27.000><c> X</c><00:00:27.400><c> and</c><00:00:27.679><c> delete</c><00:00:28.679><c> and</c><00:00:28.840><c> now</c><00:00:29.080><c> select</c>
+
+00:00:29.390 --> 00:00:29.400 align:start position:0%
+here press X and delete and now select
+ 
+
+00:00:29.400 --> 00:00:31.790 align:start position:0%
+here press X and delete and now select
+the<00:00:29.560><c> cube</c><00:00:30.240><c> uh</c><00:00:30.400><c> because</c><00:00:30.679><c> what</c><00:00:30.800><c> I</c><00:00:30.920><c> like</c><00:00:31.080><c> to</c><00:00:31.240><c> do</c><00:00:31.679><c> uh</c>
+
+00:00:31.790 --> 00:00:31.800 align:start position:0%
+the cube uh because what I like to do uh
+ 
+
+00:00:31.800 --> 00:00:34.350 align:start position:0%
+the cube uh because what I like to do uh
+with<00:00:32.000><c> these</c><00:00:32.200><c> audio</c><00:00:32.599><c> files</c><00:00:33.200><c> I</c><00:00:33.399><c> like</c><00:00:33.600><c> to</c><00:00:33.960><c> do</c><00:00:34.239><c> like</c>
+
+00:00:34.350 --> 00:00:34.360 align:start position:0%
+with these audio files I like to do like
+ 
+
+00:00:34.360 --> 00:00:37.470 align:start position:0%
+with these audio files I like to do like
+an<00:00:34.559><c> indirect</c><00:00:35.320><c> method</c><00:00:36.160><c> where</c><00:00:36.440><c> I</c><00:00:36.680><c> animate</c><00:00:37.320><c> one</c>
+
+00:00:37.470 --> 00:00:37.480 align:start position:0%
+an indirect method where I animate one
+ 
+
+00:00:37.480 --> 00:00:40.549 align:start position:0%
+an indirect method where I animate one
+of<00:00:37.640><c> the</c><00:00:37.800><c> objects</c><00:00:38.559><c> and</c><00:00:38.719><c> then</c><00:00:38.960><c> use</c><00:00:39.280><c> its</c><00:00:39.719><c> values</c>
+
+00:00:40.549 --> 00:00:40.559 align:start position:0%
+of the objects and then use its values
+ 
+
+00:00:40.559 --> 00:00:43.510 align:start position:0%
+of the objects and then use its values
+um<00:00:40.719><c> throughout</c><00:00:41.039><c> the</c><00:00:41.160><c> scene</c><00:00:41.920><c> so</c><00:00:42.239><c> let's</c><00:00:42.520><c> expand</c>
+
+00:00:43.510 --> 00:00:43.520 align:start position:0%
+um throughout the scene so let's expand
+ 
+
+00:00:43.520 --> 00:00:46.310 align:start position:0%
+um throughout the scene so let's expand
+the<00:00:43.719><c> timeline</c><00:00:44.640><c> here</c><00:00:44.879><c> a</c><00:00:45.000><c> little</c><00:00:45.200><c> bit</c><00:00:45.840><c> and</c><00:00:46.079><c> then</c>
+
+00:00:46.310 --> 00:00:46.320 align:start position:0%
+the timeline here a little bit and then
+ 
+
+00:00:46.320 --> 00:00:50.430 align:start position:0%
+the timeline here a little bit and then
+let's<00:00:47.039><c> expand</c><00:00:48.039><c> one</c><00:00:48.280><c> more</c><00:00:49.280><c> window</c><00:00:49.760><c> right</c><00:00:49.920><c> there</c>
+
+00:00:50.430 --> 00:00:50.440 align:start position:0%
+let's expand one more window right there
+ 
+
+00:00:50.440 --> 00:00:52.430 align:start position:0%
+let's expand one more window right there
+and<00:00:50.600><c> let's</c><00:00:50.800><c> switch</c><00:00:51.079><c> this</c><00:00:51.239><c> to</c><00:00:51.480><c> video</c>
+
+00:00:52.430 --> 00:00:52.440 align:start position:0%
+and let's switch this to video
+ 
+
+00:00:52.440 --> 00:00:55.069 align:start position:0%
+and let's switch this to video
+sequencer<00:00:53.440><c> and</c><00:00:53.719><c> right</c><00:00:53.960><c> here</c><00:00:54.359><c> we</c><00:00:54.480><c> are</c><00:00:54.640><c> going</c><00:00:54.879><c> to</c>
+
+00:00:55.069 --> 00:00:55.079 align:start position:0%
+sequencer and right here we are going to
+ 
+
+00:00:55.079 --> 00:00:57.029 align:start position:0%
+sequencer and right here we are going to
+need<00:00:55.480><c> the</c><00:00:55.640><c> graph</c><00:00:55.879><c> editor</c><00:00:56.399><c> you</c><00:00:56.480><c> can</c><00:00:56.600><c> just</c><00:00:56.719><c> hover</c>
+
+00:00:57.029 --> 00:00:57.039 align:start position:0%
+need the graph editor you can just hover
+ 
+
+00:00:57.039 --> 00:00:59.189 align:start position:0%
+need the graph editor you can just hover
+here<00:00:57.239><c> and</c><00:00:57.399><c> hit</c><00:00:57.600><c> control</c><00:00:58.000><c> Tab</c><00:00:58.840><c> and</c><00:00:58.960><c> you</c><00:00:59.039><c> will</c>
+
+00:00:59.189 --> 00:00:59.199 align:start position:0%
+here and hit control Tab and you will
+ 
+
+00:00:59.199 --> 00:01:01.549 align:start position:0%
+here and hit control Tab and you will
+switch<00:00:59.440><c> to</c><00:00:59.600><c> graph</c><00:01:00.000><c> editor</c><00:01:00.600><c> now</c><00:01:00.760><c> let's</c><00:01:00.960><c> press</c><00:01:01.199><c> n</c>
+
+00:01:01.549 --> 00:01:01.559 align:start position:0%
+switch to graph editor now let's press n
+ 
+
+00:01:01.559 --> 00:01:03.950 align:start position:0%
+switch to graph editor now let's press n
+for<00:01:01.760><c> the</c><00:01:01.920><c> side</c><00:01:02.160><c> panel</c><00:01:02.440><c> in</c><00:01:02.559><c> the</c><00:01:02.719><c> viewport</c><00:01:03.719><c> and</c>
+
+00:01:03.950 --> 00:01:03.960 align:start position:0%
+for the side panel in the viewport and
+ 
+
+00:01:03.960 --> 00:01:06.429 align:start position:0%
+for the side panel in the viewport and
+in<00:01:04.080><c> the</c><00:01:04.239><c> item</c><00:01:04.519><c> menu</c><00:01:05.080><c> let's</c><00:01:05.400><c> insert</c><00:01:05.799><c> the</c><00:01:05.960><c> Z</c>
+
+00:01:06.429 --> 00:01:06.439 align:start position:0%
+in the item menu let's insert the Z
+ 
+
+00:01:06.439 --> 00:01:08.310 align:start position:0%
+in the item menu let's insert the Z
+location<00:01:06.920><c> for</c><00:01:07.119><c> the</c><00:01:07.240><c> cube</c><00:01:07.479><c> so</c><00:01:07.680><c> right</c><00:01:07.880><c> click</c><00:01:08.159><c> and</c>
+
+00:01:08.310 --> 00:01:08.320 align:start position:0%
+location for the cube so right click and
+ 
+
+00:01:08.320 --> 00:01:11.230 align:start position:0%
+location for the cube so right click and
+insert<00:01:08.640><c> single</c><00:01:08.960><c> key</c><00:01:09.200><c> frame</c><00:01:09.840><c> on</c><00:01:10.119><c> frame</c><00:01:10.880><c> one</c>
+
+00:01:11.230 --> 00:01:11.240 align:start position:0%
+insert single key frame on frame one
+ 
+
+00:01:11.240 --> 00:01:13.070 align:start position:0%
+insert single key frame on frame one
+here<00:01:11.479><c> and</c><00:01:11.640><c> that's</c><00:01:11.799><c> all</c><00:01:11.960><c> we</c><00:01:12.080><c> need</c><00:01:12.360><c> there</c><00:01:12.960><c> and</c>
+
+00:01:13.070 --> 00:01:13.080 align:start position:0%
+here and that's all we need there and
+ 
+
+00:01:13.080 --> 00:01:14.630 align:start position:0%
+here and that's all we need there and
+now<00:01:13.280><c> basically</c><00:01:13.640><c> you</c><00:01:13.759><c> just</c><00:01:13.920><c> need</c><00:01:14.119><c> to</c><00:01:14.320><c> pick</c><00:01:14.520><c> the</c>
+
+00:01:14.630 --> 00:01:14.640 align:start position:0%
+now basically you just need to pick the
+ 
+
+00:01:14.640 --> 00:01:17.310 align:start position:0%
+now basically you just need to pick the
+audio<00:01:15.000><c> file</c><00:01:15.320><c> and</c><00:01:15.520><c> bake</c><00:01:16.159><c> the</c><00:01:16.320><c> sound</c><00:01:16.640><c> wave</c><00:01:17.080><c> into</c>
+
+00:01:17.310 --> 00:01:17.320 align:start position:0%
+audio file and bake the sound wave into
+ 
+
+00:01:17.320 --> 00:01:20.270 align:start position:0%
+audio file and bake the sound wave into
+the<00:01:17.520><c> graph</c><00:01:18.159><c> so</c><00:01:18.400><c> here</c><00:01:18.560><c> in</c><00:01:18.720><c> the</c><00:01:18.840><c> 4.2</c><00:01:19.640><c> you</c><00:01:19.799><c> go</c><00:01:19.960><c> into</c>
+
+00:01:20.270 --> 00:01:20.280 align:start position:0%
+the graph so here in the 4.2 you go into
+ 
+
+00:01:20.280 --> 00:01:23.149 align:start position:0%
+the graph so here in the 4.2 you go into
+Channel<00:01:20.960><c> and</c><00:01:21.119><c> choose</c><00:01:21.560><c> sound</c><00:01:21.960><c> to</c><00:01:22.159><c> samples</c><00:01:22.960><c> and</c>
+
+00:01:23.149 --> 00:01:23.159 align:start position:0%
+Channel and choose sound to samples and
+ 
+
+00:01:23.159 --> 00:01:25.950 align:start position:0%
+Channel and choose sound to samples and
+just<00:01:23.360><c> choose</c><00:01:23.640><c> your</c><00:01:23.960><c> audio</c><00:01:24.240><c> file</c><00:01:24.560><c> here</c><00:01:25.560><c> it</c><00:01:25.759><c> can</c>
+
+00:01:25.950 --> 00:01:25.960 align:start position:0%
+just choose your audio file here it can
+ 
+
+00:01:25.960 --> 00:01:28.749 align:start position:0%
+just choose your audio file here it can
+be<00:01:26.960><c> whatever</c><00:01:27.360><c> audio</c><00:01:27.720><c> file</c><00:01:28.079><c> you</c><00:01:28.200><c> would</c><00:01:28.360><c> like</c><00:01:28.560><c> to</c>
+
+00:01:28.749 --> 00:01:28.759 align:start position:0%
+be whatever audio file you would like to
+ 
+
+00:01:28.759 --> 00:01:32.030 align:start position:0%
+be whatever audio file you would like to
+have<00:01:29.200><c> I</c><00:01:29.360><c> unfortunately</c><00:01:30.200><c> cannot</c><00:01:30.520><c> pack</c><00:01:30.840><c> this</c><00:01:31.799><c> um</c>
+
+00:01:32.030 --> 00:01:32.040 align:start position:0%
+have I unfortunately cannot pack this um
+ 
+
+00:01:32.040 --> 00:01:34.350 align:start position:0%
+have I unfortunately cannot pack this um
+because<00:01:32.280><c> it's</c><00:01:32.399><c> a</c><00:01:32.600><c> licensed</c><00:01:33.439><c> so</c><00:01:33.960><c> but</c><00:01:34.079><c> you</c><00:01:34.159><c> can</c>
+
+00:01:34.350 --> 00:01:34.360 align:start position:0%
+because it's a licensed so but you can
+ 
+
+00:01:34.360 --> 00:01:36.830 align:start position:0%
+because it's a licensed so but you can
+go<00:01:34.479><c> ahead</c><00:01:34.840><c> and</c><00:01:35.119><c> search</c><00:01:35.479><c> for</c><00:01:35.799><c> you</c><00:01:35.960><c> know</c>
+
+00:01:36.830 --> 00:01:36.840 align:start position:0%
+go ahead and search for you know
+ 
+
+00:01:36.840 --> 00:01:39.630 align:start position:0%
+go ahead and search for you know
+royaltyfree<00:01:37.840><c> um</c><00:01:38.360><c> soundtracks</c><00:01:39.040><c> or</c><00:01:39.240><c> anything</c>
+
+00:01:39.630 --> 00:01:39.640 align:start position:0%
+royaltyfree um soundtracks or anything
+ 
+
+00:01:39.640 --> 00:01:41.270 align:start position:0%
+royaltyfree um soundtracks or anything
+and<00:01:39.840><c> use</c><00:01:40.159><c> something</c><00:01:40.520><c> like</c><00:01:40.720><c> that</c><00:01:41.040><c> so</c>
+
+00:01:41.270 --> 00:01:41.280 align:start position:0%
+and use something like that so
+ 
+
+00:01:41.280 --> 00:01:43.109 align:start position:0%
+and use something like that so
+immediately<00:01:41.799><c> you</c><00:01:41.920><c> can</c><00:01:42.119><c> see</c><00:01:42.520><c> the</c><00:01:42.640><c> sound</c><00:01:42.960><c> is</c>
+
+00:01:43.109 --> 00:01:43.119 align:start position:0%
+immediately you can see the sound is
+ 
+
+00:01:43.119 --> 00:01:46.149 align:start position:0%
+immediately you can see the sound is
+baked<00:01:43.520><c> here</c><00:01:44.119><c> into</c><00:01:44.360><c> the</c><00:01:44.640><c> graph</c><00:01:45.640><c> and</c><00:01:45.880><c> we</c><00:01:46.000><c> can</c>
+
+00:01:46.149 --> 00:01:46.159 align:start position:0%
+baked here into the graph and we can
+ 
+
+00:01:46.159 --> 00:01:49.389 align:start position:0%
+baked here into the graph and we can
+just<00:01:46.320><c> play</c><00:01:46.520><c> it</c><00:01:46.799><c> back</c><00:01:47.799><c> and</c><00:01:48.560><c> the</c><00:01:48.719><c> cube</c><00:01:49.079><c> will</c>
+
+00:01:49.389 --> 00:01:49.399 align:start position:0%
+just play it back and the cube will
+ 
+
+00:01:49.399 --> 00:01:52.510 align:start position:0%
+just play it back and the cube will
+animate<00:01:50.159><c> based</c><00:01:50.880><c> on</c><00:01:51.079><c> the</c><00:01:51.200><c> audio</c><00:01:51.640><c> file</c><00:01:52.280><c> but</c><00:01:52.399><c> the</c>
+
+00:01:52.510 --> 00:01:52.520 align:start position:0%
+animate based on the audio file but the
+ 
+
+00:01:52.520 --> 00:01:55.190 align:start position:0%
+animate based on the audio file but the
+audio<00:01:52.880><c> file</c><00:01:53.159><c> is</c><00:01:53.320><c> not</c><00:01:53.560><c> playing</c><00:01:54.040><c> here</c><00:01:54.680><c> so</c><00:01:55.079><c> you</c>
+
+00:01:55.190 --> 00:01:55.200 align:start position:0%
+audio file is not playing here so you
+ 
+
+00:01:55.200 --> 00:01:56.990 align:start position:0%
+audio file is not playing here so you
+would<00:01:55.399><c> need</c><00:01:55.560><c> to</c><00:01:55.880><c> insert</c><00:01:56.399><c> that</c><00:01:56.600><c> into</c><00:01:56.880><c> the</c>
+
+00:01:56.990 --> 00:01:57.000 align:start position:0%
+would need to insert that into the
+ 
+
+00:01:57.000 --> 00:02:00.230 align:start position:0%
+would need to insert that into the
+channel<00:01:57.479><c> right</c><00:01:57.680><c> there</c><00:01:58.000><c> so</c><00:01:58.240><c> I</c><00:01:58.320><c> will</c><00:01:58.600><c> just</c><00:01:59.079><c> drag</c>
+
+00:02:00.230 --> 00:02:00.240 align:start position:0%
+channel right there so I will just drag
+ 
+
+00:02:00.240 --> 00:02:02.510 align:start position:0%
+channel right there so I will just drag
+the<00:02:00.399><c> same</c><00:02:00.719><c> track</c><00:02:01.520><c> right</c><00:02:01.719><c> there</c><00:02:01.960><c> into</c><00:02:02.320><c> the</c>
+
+00:02:02.510 --> 00:02:02.520 align:start position:0%
+the same track right there into the
+ 
+
+00:02:02.520 --> 00:02:06.429 align:start position:0%
+the same track right there into the
+channel<00:02:03.240><c> one</c><00:02:04.240><c> and</c><00:02:04.439><c> then</c><00:02:04.680><c> move</c><00:02:04.920><c> it</c><00:02:05.079><c> to</c><00:02:05.280><c> frame</c>
+
+00:02:06.429 --> 00:02:06.439 align:start position:0%
+channel one and then move it to frame
+ 
+
+00:02:06.439 --> 00:02:13.750 align:start position:0%
+channel one and then move it to frame
+one<00:02:07.439><c> so</c><00:02:07.640><c> now</c><00:02:07.880><c> this</c><00:02:08.000><c> is</c>
+
+00:02:13.750 --> 00:02:13.760 align:start position:0%
+ 
+ 
+
+00:02:13.760 --> 00:02:15.670 align:start position:0%
+ 
+synchronized<00:02:14.760><c> and</c><00:02:14.920><c> we</c><00:02:15.000><c> can</c><00:02:15.120><c> now</c><00:02:15.319><c> basically</c>
+
+00:02:15.670 --> 00:02:15.680 align:start position:0%
+synchronized and we can now basically
+ 
+
+00:02:15.680 --> 00:02:17.350 align:start position:0%
+synchronized and we can now basically
+just<00:02:15.959><c> collapse</c>
+
+00:02:17.350 --> 00:02:17.360 align:start position:0%
+just collapse
+ 
+
+00:02:17.360 --> 00:02:20.110 align:start position:0%
+just collapse
+this<00:02:18.360><c> and</c><00:02:18.560><c> move</c><00:02:18.800><c> the</c><00:02:18.959><c> cube</c><00:02:19.239><c> out</c><00:02:19.400><c> of</c><00:02:19.519><c> the</c><00:02:19.680><c> way</c><00:02:19.920><c> so</c>
+
+00:02:20.110 --> 00:02:20.120 align:start position:0%
+this and move the cube out of the way so
+ 
+
+00:02:20.120 --> 00:02:22.470 align:start position:0%
+this and move the cube out of the way so
+I<00:02:20.200><c> will</c><00:02:20.360><c> scale</c><00:02:20.680><c> it</c><00:02:20.840><c> down</c><00:02:21.000><c> a</c><00:02:21.080><c> little</c><00:02:21.280><c> bit</c><00:02:22.239><c> press</c>
+
+00:02:22.470 --> 00:02:22.480 align:start position:0%
+I will scale it down a little bit press
+ 
+
+00:02:22.480 --> 00:02:25.190 align:start position:0%
+I will scale it down a little bit press
+G<00:02:22.760><c> then</c><00:02:23.040><c> Y</c><00:02:23.800><c> and</c><00:02:24.000><c> move</c><00:02:24.200><c> it</c><00:02:24.319><c> to</c><00:02:24.480><c> the</c><00:02:24.640><c> side</c><00:02:24.920><c> here</c><00:02:25.080><c> it</c>
+
+00:02:25.190 --> 00:02:25.200 align:start position:0%
+G then Y and move it to the side here it
+ 
+
+00:02:25.200 --> 00:02:28.470 align:start position:0%
+G then Y and move it to the side here it
+will<00:02:25.400><c> still</c><00:02:26.280><c> jump</c><00:02:27.120><c> up</c><00:02:27.239><c> and</c><00:02:27.440><c> down</c><00:02:27.760><c> here</c><00:02:28.160><c> and</c><00:02:28.280><c> now</c>
+
+00:02:28.470 --> 00:02:28.480 align:start position:0%
+will still jump up and down here and now
+ 
+
+00:02:28.480 --> 00:02:29.990 align:start position:0%
+will still jump up and down here and now
+if<00:02:28.599><c> you</c><00:02:28.680><c> want</c><00:02:28.840><c> to</c><00:02:29.000><c> have</c><00:02:29.200><c> this</c><00:02:29.360><c> as</c><00:02:29.440><c> a</c><00:02:29.560><c> looping</c>
+
+00:02:29.990 --> 00:02:30.000 align:start position:0%
+if you want to have this as a looping
+ 
+
+00:02:30.000 --> 00:02:32.150 align:start position:0%
+if you want to have this as a looping
+animation<00:02:30.400><c> for</c><00:02:30.599><c> example</c><00:02:31.319><c> you</c><00:02:31.480><c> might</c><00:02:31.720><c> want</c><00:02:31.920><c> to</c>
+
+00:02:32.150 --> 00:02:32.160 align:start position:0%
+animation for example you might want to
+ 
+
+00:02:32.160 --> 00:02:34.509 align:start position:0%
+animation for example you might want to
+find<00:02:32.480><c> the</c><00:02:32.720><c> part</c><00:02:33.120><c> you</c><00:02:33.239><c> want</c><00:02:33.400><c> to</c><00:02:33.560><c> Loop</c><00:02:34.239><c> the</c><00:02:34.360><c> thing</c>
+
+00:02:34.509 --> 00:02:34.519 align:start position:0%
+find the part you want to Loop the thing
+ 
+
+00:02:34.519 --> 00:02:37.589 align:start position:0%
+find the part you want to Loop the thing
+you<00:02:34.640><c> can</c><00:02:34.840><c> do</c><00:02:35.239><c> is</c><00:02:35.720><c> to</c><00:02:36.080><c> cut</c><00:02:36.560><c> the</c><00:02:36.720><c> sound</c><00:02:37.080><c> file</c>
+
+00:02:37.589 --> 00:02:37.599 align:start position:0%
+you can do is to cut the sound file
+ 
+
+00:02:37.599 --> 00:02:40.309 align:start position:0%
+you can do is to cut the sound file
+beforehand<00:02:38.599><c> but</c><00:02:38.760><c> it's</c><00:02:39.000><c> quite</c><00:02:39.239><c> destructive</c><00:02:40.120><c> so</c>
+
+00:02:40.309 --> 00:02:40.319 align:start position:0%
+beforehand but it's quite destructive so
+ 
+
+00:02:40.319 --> 00:02:42.149 align:start position:0%
+beforehand but it's quite destructive so
+what<00:02:40.440><c> I</c><00:02:40.560><c> like</c><00:02:40.720><c> to</c><00:02:40.840><c> do</c><00:02:41.080><c> is</c><00:02:41.159><c> to</c><00:02:41.400><c> just</c><00:02:41.560><c> set</c><00:02:42.000><c> the</c>
+
+00:02:42.149 --> 00:02:42.159 align:start position:0%
+what I like to do is to just set the
+ 
+
+00:02:42.159 --> 00:02:43.430 align:start position:0%
+what I like to do is to just set the
+first<00:02:42.440><c> and</c><00:02:42.599><c> the</c><00:02:42.720><c> last</c><00:02:42.920><c> frame</c><00:02:43.159><c> of</c><00:02:43.280><c> the</c>
+
+00:02:43.430 --> 00:02:43.440 align:start position:0%
+first and the last frame of the
+ 
+
+00:02:43.440 --> 00:02:46.070 align:start position:0%
+first and the last frame of the
+animation<00:02:44.239><c> depending</c><00:02:44.560><c> on</c><00:02:44.720><c> the</c><00:02:44.840><c> loop</c><00:02:45.360><c> I</c><00:02:45.560><c> have</c>
+
+00:02:46.070 --> 00:02:46.080 align:start position:0%
+animation depending on the loop I have
+ 
+
+00:02:46.080 --> 00:02:47.869 align:start position:0%
+animation depending on the loop I have
+so<00:02:46.280><c> let</c><00:02:46.400><c> me</c><00:02:46.599><c> hit</c><00:02:46.800><c> control</c><00:02:47.200><c> tab</c><00:02:47.480><c> here</c><00:02:47.640><c> in</c><00:02:47.760><c> the</c>
+
+00:02:47.869 --> 00:02:47.879 align:start position:0%
+so let me hit control tab here in the
+ 
+
+00:02:47.879 --> 00:02:51.190 align:start position:0%
+so let me hit control tab here in the
+graph<00:02:48.120><c> editor</c><00:02:49.080><c> and</c><00:02:49.760><c> I</c><00:02:49.920><c> located</c><00:02:50.400><c> a</c><00:02:50.599><c> nice</c><00:02:50.840><c> Loop</c>
+
+00:02:51.190 --> 00:02:51.200 align:start position:0%
+graph editor and I located a nice Loop
+ 
+
+00:02:51.200 --> 00:02:56.430 align:start position:0%
+graph editor and I located a nice Loop
+starting<00:02:51.599><c> at</c><00:02:51.800><c> frame</c><00:02:52.599><c> 1200</c><00:02:53.599><c> and</c><00:02:53.879><c> ending</c><00:02:54.440><c> at</c>
+
+00:02:56.430 --> 00:02:56.440 align:start position:0%
+starting at frame 1200 and ending at
+ 
+
+00:02:56.440 --> 00:02:58.869 align:start position:0%
+starting at frame 1200 and ending at
+1523<00:02:57.440><c> if</c><00:02:57.560><c> you</c><00:02:57.680><c> feel</c><00:02:57.959><c> like</c><00:02:58.120><c> this</c><00:02:58.239><c> is</c><00:02:58.400><c> too</c><00:02:58.640><c> fast</c>
+
+00:02:58.869 --> 00:02:58.879 align:start position:0%
+1523 if you feel like this is too fast
+ 
+
+00:02:58.879 --> 00:03:00.309 align:start position:0%
+1523 if you feel like this is too fast
+for<00:02:59.040><c> you</c><00:02:59.159><c> or</c><00:02:59.280><c> you</c><00:02:59.400><c> don't</c><00:03:00.040><c> understand</c><00:03:00.159><c> some</c>
+
+00:03:00.309 --> 00:03:00.319 align:start position:0%
+for you or you don't understand some
+ 
+
+00:03:00.319 --> 00:03:02.350 align:start position:0%
+for you or you don't understand some
+Core<00:03:00.640><c> Concepts</c><00:03:01.319><c> make</c><00:03:01.480><c> sure</c><00:03:01.680><c> to</c><00:03:01.840><c> check</c><00:03:02.000><c> out</c><00:03:02.159><c> my</c>
+
+00:03:02.350 --> 00:03:02.360 align:start position:0%
+Core Concepts make sure to check out my
+ 
+
+00:03:02.360 --> 00:03:04.390 align:start position:0%
+Core Concepts make sure to check out my
+courses<00:03:03.080><c> I</c><00:03:03.239><c> carefully</c><00:03:03.640><c> designed</c><00:03:04.000><c> them</c><00:03:04.200><c> to</c>
+
+00:03:04.390 --> 00:03:04.400 align:start position:0%
+courses I carefully designed them to
+ 
+
+00:03:04.400 --> 00:03:05.750 align:start position:0%
+courses I carefully designed them to
+take<00:03:04.560><c> you</c><00:03:04.720><c> from</c><00:03:04.959><c> beginner</c><00:03:05.319><c> skills</c><00:03:05.560><c> through</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+take you from beginner skills through
+ 
+
+00:03:05.760 --> 00:03:07.789 align:start position:0%
+take you from beginner skills through
+Lal<00:03:06.159><c> illustration</c><00:03:06.760><c> all</c><00:03:06.920><c> the</c><00:03:07.040><c> way</c><00:03:07.360><c> to</c><00:03:07.519><c> full</c>
+
+00:03:07.789 --> 00:03:07.799 align:start position:0%
+Lal illustration all the way to full
+ 
+
+00:03:07.799 --> 00:03:09.149 align:start position:0%
+Lal illustration all the way to full
+character<00:03:08.120><c> illustration</c><00:03:08.640><c> text</c><00:03:08.920><c> sh</c>
+
+00:03:09.149 --> 00:03:09.159 align:start position:0%
+character illustration text sh
+ 
+
+00:03:09.159 --> 00:03:10.990 align:start position:0%
+character illustration text sh
+environments<00:03:09.840><c> and</c><00:03:10.080><c> much</c><00:03:10.280><c> more</c><00:03:10.599><c> and</c><00:03:10.680><c> I</c><00:03:10.799><c> build</c>
+
+00:03:10.990 --> 00:03:11.000 align:start position:0%
+environments and much more and I build
+ 
+
+00:03:11.000 --> 00:03:13.190 align:start position:0%
+environments and much more and I build
+the<00:03:11.120><c> courses</c><00:03:11.560><c> as</c><00:03:11.720><c> creative</c><00:03:12.239><c> projects</c><00:03:12.840><c> each</c>
+
+00:03:13.190 --> 00:03:13.200 align:start position:0%
+the courses as creative projects each
+ 
+
+00:03:13.200 --> 00:03:15.470 align:start position:0%
+the courses as creative projects each
+with<00:03:13.360><c> its</c><00:03:13.560><c> own</c><00:03:13.879><c> style</c><00:03:14.599><c> and</c><00:03:14.799><c> every</c><00:03:15.040><c> time</c>
+
+00:03:15.470 --> 00:03:15.480 align:start position:0%
+with its own style and every time
+ 
+
+00:03:15.480 --> 00:03:16.990 align:start position:0%
+with its own style and every time
+there's<00:03:15.799><c> a</c><00:03:15.920><c> new</c><00:03:16.159><c> technique</c><00:03:16.519><c> or</c><00:03:16.720><c> something</c>
+
+00:03:16.990 --> 00:03:17.000 align:start position:0%
+there's a new technique or something
+ 
+
+00:03:17.000 --> 00:03:19.110 align:start position:0%
+there's a new technique or something
+needs<00:03:17.280><c> explaining</c><00:03:17.920><c> we</c><00:03:18.080><c> stop</c><00:03:18.319><c> for</c><00:03:18.480><c> a</c><00:03:18.599><c> while</c><00:03:18.920><c> and</c>
+
+00:03:19.110 --> 00:03:19.120 align:start position:0%
+needs explaining we stop for a while and
+ 
+
+00:03:19.120 --> 00:03:21.509 align:start position:0%
+needs explaining we stop for a while and
+you<00:03:19.319><c> get</c><00:03:19.519><c> an</c><00:03:19.799><c> in-depth</c><00:03:20.400><c> explanation</c><00:03:21.239><c> but</c><00:03:21.400><c> in</c>
+
+00:03:21.509 --> 00:03:21.519 align:start position:0%
+you get an in-depth explanation but in
+ 
+
+00:03:21.519 --> 00:03:23.390 align:start position:0%
+you get an in-depth explanation but in
+the<00:03:21.640><c> end</c><00:03:21.959><c> you</c><00:03:22.159><c> still</c><00:03:22.400><c> get</c><00:03:22.560><c> a</c><00:03:22.680><c> full</c><00:03:23.000><c> project</c>
+
+00:03:23.390 --> 00:03:23.400 align:start position:0%
+the end you still get a full project
+ 
+
+00:03:23.400 --> 00:03:25.149 align:start position:0%
+the end you still get a full project
+result<00:03:23.920><c> so</c><00:03:24.120><c> if</c><00:03:24.200><c> you're</c><00:03:24.400><c> interested</c><00:03:24.920><c> please</c>
+
+00:03:25.149 --> 00:03:25.159 align:start position:0%
+result so if you're interested please
+ 
+
+00:03:25.159 --> 00:03:27.670 align:start position:0%
+result so if you're interested please
+check<00:03:25.319><c> out</c><00:03:25.480><c> the</c><00:03:25.599><c> link</c><00:03:25.799><c> in</c><00:03:25.879><c> the</c><00:03:26.480><c> description</c><00:03:27.480><c> so</c>
+
+00:03:27.670 --> 00:03:27.680 align:start position:0%
+check out the link in the description so
+ 
+
+00:03:27.680 --> 00:03:29.830 align:start position:0%
+check out the link in the description so
+now<00:03:27.879><c> if</c><00:03:28.000><c> I</c><00:03:28.120><c> zoom</c><00:03:28.439><c> this</c><00:03:28.599><c> out</c><00:03:28.799><c> you</c><00:03:28.920><c> can</c><00:03:29.120><c> see</c><00:03:29.519><c> the</c>
+
+00:03:29.830 --> 00:03:29.840 align:start position:0%
+now if I zoom this out you can see the
+ 
+
+00:03:29.840 --> 00:03:33.309 align:start position:0%
+now if I zoom this out you can see the
+active<00:03:30.400><c> timeline</c><00:03:31.400><c> is</c><00:03:31.879><c> right</c><00:03:32.120><c> there</c><00:03:33.080><c> and</c>
+
+00:03:33.309 --> 00:03:33.319 align:start position:0%
+active timeline is right there and
+ 
+
+00:03:33.319 --> 00:03:35.190 align:start position:0%
+active timeline is right there and
+that's<00:03:33.480><c> what</c><00:03:33.640><c> I'm</c><00:03:33.799><c> going</c><00:03:33.920><c> to</c><00:03:34.080><c> use</c><00:03:34.879><c> um</c><00:03:35.000><c> but</c><00:03:35.080><c> you</c>
+
+00:03:35.190 --> 00:03:35.200 align:start position:0%
+that's what I'm going to use um but you
+ 
+
+00:03:35.200 --> 00:03:37.509 align:start position:0%
+that's what I'm going to use um but you
+can<00:03:35.439><c> easily</c><00:03:36.280><c> uh</c><00:03:36.439><c> just</c><00:03:36.560><c> switch</c><00:03:36.959><c> this</c><00:03:37.200><c> you</c><00:03:37.360><c> know</c>
+
+00:03:37.509 --> 00:03:37.519 align:start position:0%
+can easily uh just switch this you know
+ 
+
+00:03:37.519 --> 00:03:39.589 align:start position:0%
+can easily uh just switch this you know
+move<00:03:37.879><c> your</c><00:03:38.120><c> start</c><00:03:38.400><c> and</c><00:03:38.599><c> end</c><00:03:38.840><c> frame</c><00:03:39.080><c> to</c><00:03:39.239><c> locate</c>
+
+00:03:39.589 --> 00:03:39.599 align:start position:0%
+move your start and end frame to locate
+ 
+
+00:03:39.599 --> 00:03:41.070 align:start position:0%
+move your start and end frame to locate
+the<00:03:39.760><c> part</c><00:03:39.959><c> of</c><00:03:40.080><c> the</c><00:03:40.200><c> sound</c><00:03:40.480><c> you</c><00:03:40.599><c> want</c><00:03:40.760><c> to</c><00:03:40.879><c> be</c>
+
+00:03:41.070 --> 00:03:41.080 align:start position:0%
+the part of the sound you want to be
+ 
+
+00:03:41.080 --> 00:03:43.990 align:start position:0%
+the part of the sound you want to be
+playing<00:03:42.080><c> and</c><00:03:42.319><c> it's</c><00:03:42.560><c> much</c><00:03:42.799><c> easier</c><00:03:43.319><c> than</c><00:03:43.640><c> to</c><00:03:43.920><c> you</c>
+
+00:03:43.990 --> 00:03:44.000 align:start position:0%
+playing and it's much easier than to you
+ 
+
+00:03:44.000 --> 00:03:46.390 align:start position:0%
+playing and it's much easier than to you
+know<00:03:44.200><c> bake</c><00:03:44.519><c> the</c><00:03:44.680><c> sound</c><00:03:45.080><c> all</c><00:03:45.239><c> over</c><00:03:45.560><c> again</c><00:03:46.280><c> and</c>
+
+00:03:46.390 --> 00:03:46.400 align:start position:0%
+know bake the sound all over again and
+ 
+
+00:03:46.400 --> 00:03:48.509 align:start position:0%
+know bake the sound all over again and
+the<00:03:46.560><c> reason</c><00:03:47.040><c> I</c><00:03:47.239><c> have</c><00:03:47.360><c> it</c><00:03:47.519><c> baked</c><00:03:47.879><c> on</c><00:03:48.040><c> the</c><00:03:48.159><c> cube</c>
+
+00:03:48.509 --> 00:03:48.519 align:start position:0%
+the reason I have it baked on the cube
+ 
+
+00:03:48.519 --> 00:03:51.149 align:start position:0%
+the reason I have it baked on the cube
+is<00:03:48.680><c> that</c><00:03:48.840><c> I</c><00:03:48.920><c> can</c><00:03:49.159><c> now</c><00:03:49.519><c> just</c><00:03:49.799><c> add</c><00:03:50.120><c> any</c><00:03:50.400><c> object</c><00:03:50.879><c> so</c>
+
+00:03:51.149 --> 00:03:51.159 align:start position:0%
+is that I can now just add any object so
+ 
+
+00:03:51.159 --> 00:03:53.670 align:start position:0%
+is that I can now just add any object so
+first<00:03:51.360><c> of</c><00:03:51.480><c> all</c><00:03:51.760><c> let's</c><00:03:51.959><c> go</c><00:03:52.159><c> edit</c><00:03:52.680><c> preferences</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+first of all let's go edit preferences
+ 
+
+00:03:53.680 --> 00:03:56.069 align:start position:0%
+first of all let's go edit preferences
+and<00:03:53.879><c> here</c><00:03:54.000><c> in</c><00:03:54.159><c> your</c><00:03:54.319><c> blender</c><00:03:55.319><c> um</c><00:03:55.560><c> you</c><00:03:55.799><c> get</c><00:03:55.959><c> the</c>
+
+00:03:56.069 --> 00:03:56.079 align:start position:0%
+and here in your blender um you get the
+ 
+
+00:03:56.079 --> 00:03:59.030 align:start position:0%
+and here in your blender um you get the
+add-on<00:03:56.519><c> still</c><00:03:57.439><c> and</c><00:03:57.640><c> if</c><00:03:57.760><c> you</c><00:03:58.040><c> first</c><00:03:58.319><c> launch</c><00:03:58.680><c> it</c>
+
+00:03:59.030 --> 00:03:59.040 align:start position:0%
+add-on still and if you first launch it
+ 
+
+00:03:59.040 --> 00:04:01.429 align:start position:0%
+add-on still and if you first launch it
+you<00:03:59.200><c> should</c><00:03:59.439><c> have</c><00:03:59.599><c> an</c><00:03:59.920><c> option</c><00:04:00.480><c> to</c><00:04:00.799><c> install</c>
+
+00:04:01.429 --> 00:04:01.439 align:start position:0%
+you should have an option to install
+ 
+
+00:04:01.439 --> 00:04:03.190 align:start position:0%
+you should have an option to install
+these<00:04:01.720><c> as</c><00:04:01.840><c> an</c><00:04:02.079><c> extensions</c><00:04:02.640><c> because</c><00:04:02.920><c> that's</c>
+
+00:04:03.190 --> 00:04:03.200 align:start position:0%
+these as an extensions because that's
+ 
+
+00:04:03.200 --> 00:04:05.750 align:start position:0%
+these as an extensions because that's
+like<00:04:03.360><c> the</c><00:04:03.480><c> new</c><00:04:03.920><c> system</c><00:04:04.920><c> um</c><00:04:05.200><c> there's</c><00:04:05.480><c> now</c>
+
+00:04:05.750 --> 00:04:05.760 align:start position:0%
+like the new system um there's now
+ 
+
+00:04:05.760 --> 00:04:08.390 align:start position:0%
+like the new system um there's now
+unified<00:04:06.319><c> storage</c><00:04:06.760><c> for</c><00:04:07.079><c> all</c><00:04:07.280><c> the</c><00:04:07.439><c> add-ons</c>
+
+00:04:08.390 --> 00:04:08.400 align:start position:0%
+unified storage for all the add-ons
+ 
+
+00:04:08.400 --> 00:04:10.270 align:start position:0%
+unified storage for all the add-ons
+Community<00:04:08.840><c> add-ons</c><00:04:09.400><c> default</c><00:04:09.799><c> add-ons</c><00:04:10.159><c> that</c>
+
+00:04:10.270 --> 00:04:10.280 align:start position:0%
+Community add-ons default add-ons that
+ 
+
+00:04:10.280 --> 00:04:12.309 align:start position:0%
+Community add-ons default add-ons that
+come<00:04:10.480><c> with</c><00:04:10.599><c> bunder</c><00:04:11.480><c> and</c><00:04:11.599><c> these</c><00:04:11.760><c> are</c><00:04:11.959><c> called</c>
+
+00:04:12.309 --> 00:04:12.319 align:start position:0%
+come with bunder and these are called
+ 
+
+00:04:12.319 --> 00:04:14.869 align:start position:0%
+come with bunder and these are called
+extensions<00:04:13.280><c> and</c><00:04:13.400><c> you</c><00:04:13.519><c> can</c><00:04:13.760><c> just</c><00:04:14.000><c> locate</c><00:04:14.439><c> them</c>
+
+00:04:14.869 --> 00:04:14.879 align:start position:0%
+extensions and you can just locate them
+ 
+
+00:04:14.879 --> 00:04:17.830 align:start position:0%
+extensions and you can just locate them
+and<00:04:15.120><c> install</c><00:04:15.760><c> right</c><00:04:16.000><c> here</c><00:04:16.479><c> so</c><00:04:17.120><c> right</c><00:04:17.280><c> now</c><00:04:17.600><c> just</c>
+
+00:04:17.830 --> 00:04:17.840 align:start position:0%
+and install right here so right now just
+ 
+
+00:04:17.840 --> 00:04:20.909 align:start position:0%
+and install right here so right now just
+locate<00:04:18.280><c> the</c><00:04:18.440><c> extra</c><00:04:18.840><c> mesh</c><00:04:19.160><c> objects</c><00:04:19.919><c> extension</c>
+
+00:04:20.909 --> 00:04:20.919 align:start position:0%
+locate the extra mesh objects extension
+ 
+
+00:04:20.919 --> 00:04:22.590 align:start position:0%
+locate the extra mesh objects extension
+and<00:04:21.120><c> click</c><00:04:21.440><c> install</c><00:04:21.880><c> if</c><00:04:22.000><c> you</c><00:04:22.079><c> don't</c><00:04:22.320><c> have</c><00:04:22.440><c> it</c>
+
+00:04:22.590 --> 00:04:22.600 align:start position:0%
+and click install if you don't have it
+ 
+
+00:04:22.600 --> 00:04:24.070 align:start position:0%
+and click install if you don't have it
+installed<00:04:23.080><c> yet</c><00:04:23.280><c> you</c><00:04:23.400><c> can</c><00:04:23.560><c> search</c><00:04:23.880><c> for</c>
+
+00:04:24.070 --> 00:04:24.080 align:start position:0%
+installed yet you can search for
+ 
+
+00:04:24.080 --> 00:04:26.230 align:start position:0%
+installed yet you can search for
+extensions<00:04:24.880><c> right</c><00:04:25.080><c> here</c><00:04:25.560><c> and</c><00:04:25.720><c> then</c><00:04:25.919><c> you</c><00:04:26.040><c> will</c>
+
+00:04:26.230 --> 00:04:26.240 align:start position:0%
+extensions right here and then you will
+ 
+
+00:04:26.240 --> 00:04:28.350 align:start position:0%
+extensions right here and then you will
+see<00:04:26.479><c> it</c><00:04:26.800><c> active</c><00:04:27.240><c> in</c><00:04:27.360><c> the</c><00:04:27.520><c> add-on</c><00:04:27.960><c> section</c>
+
+00:04:28.350 --> 00:04:28.360 align:start position:0%
+see it active in the add-on section
+ 
+
+00:04:28.360 --> 00:04:30.629 align:start position:0%
+see it active in the add-on section
+right<00:04:28.520><c> there</c><00:04:29.400><c> and</c><00:04:29.880><c> then</c><00:04:30.039><c> just</c><00:04:30.240><c> close</c><00:04:30.520><c> the</c>
+
+00:04:30.629 --> 00:04:30.639 align:start position:0%
+right there and then just close the
+ 
+
+00:04:30.639 --> 00:04:33.150 align:start position:0%
+right there and then just close the
+preferences<00:04:31.400><c> and</c><00:04:31.560><c> now</c><00:04:31.800><c> you</c><00:04:31.919><c> can</c><00:04:32.080><c> press</c><00:04:32.280><c> Shi</c><00:04:32.560><c> a</c>
+
+00:04:33.150 --> 00:04:33.160 align:start position:0%
+preferences and now you can press Shi a
+ 
+
+00:04:33.160 --> 00:04:35.550 align:start position:0%
+preferences and now you can press Shi a
+add<00:04:33.400><c> mesh</c><00:04:34.199><c> and</c><00:04:34.360><c> from</c><00:04:34.520><c> the</c><00:04:34.680><c> extra</c><00:04:35.039><c> objects</c><00:04:35.440><c> you</c>
+
+00:04:35.550 --> 00:04:35.560 align:start position:0%
+add mesh and from the extra objects you
+ 
+
+00:04:35.560 --> 00:04:37.469 align:start position:0%
+add mesh and from the extra objects you
+can<00:04:35.759><c> pick</c><00:04:35.960><c> the</c><00:04:36.080><c> round</c>
+
+00:04:37.469 --> 00:04:37.479 align:start position:0%
+can pick the round
+ 
+
+00:04:37.479 --> 00:04:40.189 align:start position:0%
+can pick the round
+Cube<00:04:38.479><c> and</c><00:04:38.840><c> right</c><00:04:39.080><c> here</c><00:04:39.520><c> we</c><00:04:39.639><c> are</c><00:04:39.800><c> going</c><00:04:40.000><c> to</c>
+
+00:04:40.189 --> 00:04:40.199 align:start position:0%
+Cube and right here we are going to
+ 
+
+00:04:40.199 --> 00:04:42.430 align:start position:0%
+Cube and right here we are going to
+increase<00:04:40.560><c> the</c>
+
+00:04:42.430 --> 00:04:42.440 align:start position:0%
+increase the
+ 
+
+00:04:42.440 --> 00:04:45.710 align:start position:0%
+increase the
+radius<00:04:43.440><c> and</c><00:04:44.039><c> divisions</c><00:04:44.840><c> to</c><00:04:45.080><c> something</c><00:04:45.479><c> like</c>
+
+00:04:45.710 --> 00:04:45.720 align:start position:0%
+radius and divisions to something like
+ 
+
+00:04:45.720 --> 00:04:49.430 align:start position:0%
+radius and divisions to something like
+10<00:04:46.360><c> so</c><00:04:46.560><c> we</c><00:04:46.680><c> have</c><00:04:46.840><c> a</c><00:04:47.520><c> sphere</c><00:04:47.919><c> made</c><00:04:48.120><c> out</c><00:04:48.280><c> of</c><00:04:48.440><c> quads</c>
+
+00:04:49.430 --> 00:04:49.440 align:start position:0%
+10 so we have a sphere made out of quads
+ 
+
+00:04:49.440 --> 00:04:51.790 align:start position:0%
+10 so we have a sphere made out of quads
+and<00:04:49.600><c> now</c><00:04:49.759><c> we'll</c><00:04:50.000><c> press</c><00:04:50.240><c> contrl</c><00:04:50.600><c> 2</c><00:04:51.360><c> to</c><00:04:51.600><c> add</c>
+
+00:04:51.790 --> 00:04:51.800 align:start position:0%
+and now we'll press contrl 2 to add
+ 
+
+00:04:51.800 --> 00:04:53.909 align:start position:0%
+and now we'll press contrl 2 to add
+subdivision<00:04:52.360><c> surface</c><00:04:52.680><c> modifier</c><00:04:53.320><c> you</c><00:04:53.400><c> can</c><00:04:53.520><c> see</c>
+
+00:04:53.909 --> 00:04:53.919 align:start position:0%
+subdivision surface modifier you can see
+ 
+
+00:04:53.919 --> 00:04:55.749 align:start position:0%
+subdivision surface modifier you can see
+right<00:04:54.120><c> here</c><00:04:54.440><c> in</c><00:04:54.600><c> the</c>
+
+00:04:55.749 --> 00:04:55.759 align:start position:0%
+right here in the
+ 
+
+00:04:55.759 --> 00:04:58.469 align:start position:0%
+right here in the
+modifiers<00:04:56.759><c> or</c><00:04:57.080><c> you</c><00:04:57.160><c> can</c><00:04:57.400><c> just</c><00:04:57.600><c> go</c><00:04:57.759><c> ahead</c><00:04:58.240><c> and</c>
+
+00:04:58.469 --> 00:04:58.479 align:start position:0%
+modifiers or you can just go ahead and
+ 
+
+00:04:58.479 --> 00:05:01.150 align:start position:0%
+modifiers or you can just go ahead and
+add<00:04:58.720><c> it</c><00:04:59.199><c> you</c><00:04:59.320><c> know</c><00:04:59.720><c> through</c><00:04:59.840><c> the</c><00:04:59.960><c> menu</c><00:05:00.639><c> and</c><00:05:00.840><c> set</c>
+
+00:05:01.150 --> 00:05:01.160 align:start position:0%
+add it you know through the menu and set
+ 
+
+00:05:01.160 --> 00:05:04.189 align:start position:0%
+add it you know through the menu and set
+the<00:05:01.320><c> levels</c><00:05:01.759><c> of</c><00:05:01.919><c> f</c><00:05:02.240><c> port</c><00:05:02.440><c> to</c><00:05:02.759><c> two</c><00:05:03.759><c> and</c><00:05:03.919><c> now</c>
+
+00:05:04.189 --> 00:05:04.199 align:start position:0%
+the levels of f port to two and now
+ 
+
+00:05:04.199 --> 00:05:07.790 align:start position:0%
+the levels of f port to two and now
+right<00:05:04.400><c> click</c><00:05:04.800><c> Shades</c><00:05:05.320><c> mode</c><00:05:06.400><c> and</c><00:05:07.400><c> here</c><00:05:07.680><c> I'm</c>
+
+00:05:07.790 --> 00:05:07.800 align:start position:0%
+right click Shades mode and here I'm
+ 
+
+00:05:07.800 --> 00:05:09.310 align:start position:0%
+right click Shades mode and here I'm
+just<00:05:07.919><c> going</c><00:05:08.039><c> to</c><00:05:08.240><c> add</c><00:05:08.560><c> simple</c><00:05:08.919><c> displace</c>
+
+00:05:09.310 --> 00:05:09.320 align:start position:0%
+just going to add simple displace
+ 
+
+00:05:09.320 --> 00:05:12.469 align:start position:0%
+just going to add simple displace
+modifier<00:05:10.080><c> so</c><00:05:10.680><c> let's</c><00:05:10.919><c> add</c><00:05:11.120><c> modifier</c><00:05:11.880><c> the</c><00:05:12.039><c> form</c>
+
+00:05:12.469 --> 00:05:12.479 align:start position:0%
+modifier so let's add modifier the form
+ 
+
+00:05:12.479 --> 00:05:13.950 align:start position:0%
+modifier so let's add modifier the form
+and<00:05:12.680><c> dis</c>
+
+00:05:13.950 --> 00:05:13.960 align:start position:0%
+and dis
+ 
+
+00:05:13.960 --> 00:05:16.909 align:start position:0%
+and dis
+place<00:05:14.960><c> and</c><00:05:15.199><c> we</c><00:05:15.320><c> are</c><00:05:15.479><c> going</c><00:05:15.800><c> to</c><00:05:16.280><c> create</c><00:05:16.560><c> a</c><00:05:16.720><c> new</c>
+
+00:05:16.909 --> 00:05:16.919 align:start position:0%
+place and we are going to create a new
+ 
+
+00:05:16.919 --> 00:05:18.270 align:start position:0%
+place and we are going to create a new
+texture
+
+00:05:18.270 --> 00:05:18.280 align:start position:0%
+texture
+ 
+
+00:05:18.280 --> 00:05:20.990 align:start position:0%
+texture
+there<00:05:19.280><c> let's</c><00:05:19.479><c> go</c><00:05:19.600><c> to</c><00:05:19.759><c> the</c><00:05:19.880><c> texture</c><00:05:20.240><c> settings</c>
+
+00:05:20.990 --> 00:05:21.000 align:start position:0%
+there let's go to the texture settings
+ 
+
+00:05:21.000 --> 00:05:23.110 align:start position:0%
+there let's go to the texture settings
+and<00:05:21.120><c> for</c><00:05:21.400><c> this</c><00:05:21.520><c> one</c><00:05:21.759><c> I</c><00:05:21.880><c> use</c><00:05:22.160><c> the</c><00:05:22.280><c> wood</c><00:05:22.560><c> texture</c>
+
+00:05:23.110 --> 00:05:23.120 align:start position:0%
+and for this one I use the wood texture
+ 
+
+00:05:23.120 --> 00:05:26.870 align:start position:0%
+and for this one I use the wood texture
+but<00:05:23.240><c> I</c><00:05:23.360><c> changed</c><00:05:23.840><c> bands</c><00:05:24.280><c> to</c><00:05:24.479><c> band</c>
+
+00:05:26.870 --> 00:05:26.880 align:start position:0%
+ 
+ 
+
+00:05:26.880 --> 00:05:29.430 align:start position:0%
+ 
+noise<00:05:27.880><c> and</c><00:05:28.080><c> reduce</c><00:05:28.479><c> the</c><00:05:28.600><c> turbolence</c><00:05:29.240><c> all</c><00:05:29.360><c> the</c>
+
+00:05:29.430 --> 00:05:29.440 align:start position:0%
+noise and reduce the turbolence all the
+ 
+
+00:05:29.440 --> 00:05:31.390 align:start position:0%
+noise and reduce the turbolence all the
+way<00:05:29.720><c> to</c><00:05:29.880><c> zero</c><00:05:30.240><c> for</c><00:05:30.479><c> now</c><00:05:30.960><c> and</c><00:05:31.080><c> now</c><00:05:31.280><c> the</c>
+
+00:05:31.390 --> 00:05:31.400 align:start position:0%
+way to zero for now and now the
+ 
+
+00:05:31.400 --> 00:05:32.990 align:start position:0%
+way to zero for now and now the
+advantage<00:05:31.800><c> of</c><00:05:31.919><c> having</c><00:05:32.120><c> the</c><00:05:32.240><c> sound</c><00:05:32.479><c> wave</c><00:05:32.680><c> baked</c>
+
+00:05:32.990 --> 00:05:33.000 align:start position:0%
+advantage of having the sound wave baked
+ 
+
+00:05:33.000 --> 00:05:35.270 align:start position:0%
+advantage of having the sound wave baked
+on<00:05:33.199><c> another</c><00:05:33.639><c> object</c><00:05:34.240><c> I</c><00:05:34.360><c> can</c><00:05:34.520><c> just</c><00:05:34.759><c> use</c><00:05:35.080><c> the</c>
+
+00:05:35.270 --> 00:05:35.280 align:start position:0%
+on another object I can just use the
+ 
+
+00:05:35.280 --> 00:05:38.990 align:start position:0%
+on another object I can just use the
+value<00:05:35.639><c> of</c><00:05:35.840><c> this</c><00:05:36.120><c> object</c><00:05:37.120><c> um</c><00:05:37.800><c> wherever</c><00:05:38.160><c> I</c><00:05:38.280><c> want</c>
+
+00:05:38.990 --> 00:05:39.000 align:start position:0%
+value of this object um wherever I want
+ 
+
+00:05:39.000 --> 00:05:41.870 align:start position:0%
+value of this object um wherever I want
+whether<00:05:39.360><c> it's</c><00:05:39.919><c> as</c><00:05:40.039><c> a</c><00:05:40.240><c> driver</c><00:05:41.160><c> in</c><00:05:41.400><c> these</c><00:05:41.759><c> you</c>
+
+00:05:41.870 --> 00:05:41.880 align:start position:0%
+whether it's as a driver in these you
+ 
+
+00:05:41.880 --> 00:05:44.029 align:start position:0%
+whether it's as a driver in these you
+know<00:05:42.080><c> modifier</c><00:05:42.600><c> settings</c><00:05:43.319><c> or</c><00:05:43.440><c> you</c><00:05:43.560><c> can</c><00:05:43.720><c> use</c><00:05:43.880><c> it</c>
+
+00:05:44.029 --> 00:05:44.039 align:start position:0%
+know modifier settings or you can use it
+ 
+
+00:05:44.039 --> 00:05:47.029 align:start position:0%
+know modifier settings or you can use it
+in<00:05:44.199><c> Geometry</c><00:05:44.639><c> notes</c><00:05:45.160><c> or</c><00:05:45.520><c> what</c><00:05:45.800><c> have</c><00:05:45.960><c> you</c><00:05:46.520><c> so</c>
+
+00:05:47.029 --> 00:05:47.039 align:start position:0%
+in Geometry notes or what have you so
+ 
+
+00:05:47.039 --> 00:05:49.590 align:start position:0%
+in Geometry notes or what have you so
+right<00:05:47.199><c> here</c><00:05:47.400><c> I</c><00:05:47.479><c> will</c><00:05:47.639><c> use</c><00:05:47.840><c> it</c><00:05:48.000><c> as</c><00:05:48.120><c> a</c><00:05:48.400><c> driver</c><00:05:49.400><c> um</c>
+
+00:05:49.590 --> 00:05:49.600 align:start position:0%
+right here I will use it as a driver um
+ 
+
+00:05:49.600 --> 00:05:52.629 align:start position:0%
+right here I will use it as a driver um
+so<00:05:49.960><c> let</c><00:05:50.080><c> me</c><00:05:50.400><c> expand</c><00:05:51.000><c> this</c><00:05:51.199><c> part</c><00:05:51.440><c> a</c><00:05:51.520><c> little</c><00:05:51.720><c> bit</c>
+
+00:05:52.629 --> 00:05:52.639 align:start position:0%
+so let me expand this part a little bit
+ 
+
+00:05:52.639 --> 00:05:54.110 align:start position:0%
+so let me expand this part a little bit
+and<00:05:53.000><c> right</c><00:05:53.160><c> here</c><00:05:53.319><c> let's</c><00:05:53.520><c> go</c><00:05:53.759><c> back</c><00:05:53.880><c> to</c><00:05:54.000><c> the</c>
+
+00:05:54.110 --> 00:05:54.120 align:start position:0%
+and right here let's go back to the
+ 
+
+00:05:54.120 --> 00:05:56.430 align:start position:0%
+and right here let's go back to the
+modifiers<00:05:55.000><c> and</c><00:05:55.160><c> in</c><00:05:55.280><c> the</c><00:05:55.440><c> display</c><00:05:55.840><c> modifier</c>
+
+00:05:56.430 --> 00:05:56.440 align:start position:0%
+modifiers and in the display modifier
+ 
+
+00:05:56.440 --> 00:05:58.309 align:start position:0%
+modifiers and in the display modifier
+let's<00:05:56.680><c> just</c><00:05:56.880><c> right</c><00:05:57.120><c> click</c><00:05:57.319><c> the</c><00:05:57.440><c> strength</c><00:05:58.120><c> and</c>
+
+00:05:58.309 --> 00:05:58.319 align:start position:0%
+let's just right click the strength and
+ 
+
+00:05:58.319 --> 00:06:01.230 align:start position:0%
+let's just right click the strength and
+choose<00:05:58.759><c> add</c><00:05:59.080><c> driver</c><00:05:59.919><c> and</c><00:06:00.160><c> you</c><00:06:00.240><c> can</c><00:06:00.440><c> click</c><00:06:00.680><c> away</c>
+
+00:06:01.230 --> 00:06:01.240 align:start position:0%
+choose add driver and you can click away
+ 
+
+00:06:01.240 --> 00:06:03.150 align:start position:0%
+choose add driver and you can click away
+uh<00:06:01.360><c> you</c><00:06:01.479><c> can</c><00:06:01.600><c> see</c><00:06:01.840><c> this</c><00:06:02.000><c> turning</c><00:06:02.479><c> Violet</c><00:06:03.039><c> and</c>
+
+00:06:03.150 --> 00:06:03.160 align:start position:0%
+uh you can see this turning Violet and
+ 
+
+00:06:03.160 --> 00:06:05.230 align:start position:0%
+uh you can see this turning Violet and
+that<00:06:03.280><c> means</c><00:06:03.520><c> there's</c><00:06:03.680><c> a</c><00:06:03.880><c> driver</c><00:06:04.280><c> there</c><00:06:04.479><c> now</c><00:06:04.960><c> so</c>
+
+00:06:05.230 --> 00:06:05.240 align:start position:0%
+that means there's a driver there now so
+ 
+
+00:06:05.240 --> 00:06:07.670 align:start position:0%
+that means there's a driver there now so
+right<00:06:05.440><c> here</c><00:06:05.639><c> you</c><00:06:05.759><c> can</c><00:06:05.880><c> switch</c><00:06:06.199><c> this</c><00:06:06.319><c> to</c>
+
+00:06:07.670 --> 00:06:07.680 align:start position:0%
+right here you can switch this to
+ 
+
+00:06:07.680 --> 00:06:10.110 align:start position:0%
+right here you can switch this to
+drivers<00:06:08.680><c> and</c><00:06:09.039><c> right</c><00:06:09.240><c> here</c><00:06:09.560><c> you</c><00:06:09.759><c> have</c><00:06:09.919><c> the</c>
+
+00:06:10.110 --> 00:06:10.120 align:start position:0%
+drivers and right here you have the
+ 
+
+00:06:10.120 --> 00:06:11.710 align:start position:0%
+drivers and right here you have the
+driver
+
+00:06:11.710 --> 00:06:11.720 align:start position:0%
+driver
+ 
+
+00:06:11.720 --> 00:06:15.029 align:start position:0%
+driver
+curve<00:06:12.720><c> and</c><00:06:12.919><c> if</c><00:06:13.039><c> you</c><00:06:13.199><c> select</c><00:06:13.520><c> the</c><00:06:13.759><c> driver</c><00:06:14.759><c> and</c>
+
+00:06:15.029 --> 00:06:15.039 align:start position:0%
+curve and if you select the driver and
+ 
+
+00:06:15.039 --> 00:06:16.870 align:start position:0%
+curve and if you select the driver and
+choose<00:06:15.360><c> drivers</c><00:06:15.880><c> here</c><00:06:16.039><c> if</c><00:06:16.120><c> you</c><00:06:16.240><c> don't</c><00:06:16.479><c> have</c>
+
+00:06:16.870 --> 00:06:16.880 align:start position:0%
+choose drivers here if you don't have
+ 
+
+00:06:16.880 --> 00:06:19.309 align:start position:0%
+choose drivers here if you don't have
+this<00:06:17.120><c> option</c><00:06:17.520><c> right</c><00:06:17.720><c> there</c><00:06:18.039><c> just</c><00:06:18.240><c> press</c><00:06:18.479><c> n</c><00:06:19.080><c> to</c>
+
+00:06:19.309 --> 00:06:19.319 align:start position:0%
+this option right there just press n to
+ 
+
+00:06:19.319 --> 00:06:22.510 align:start position:0%
+this option right there just press n to
+expand<00:06:19.800><c> the</c><00:06:19.960><c> side</c><00:06:20.240><c> panel</c><00:06:21.039><c> you</c><00:06:21.160><c> will</c><00:06:21.440><c> see</c><00:06:22.319><c> the</c>
+
+00:06:22.510 --> 00:06:22.520 align:start position:0%
+expand the side panel you will see the
+ 
+
+00:06:22.520 --> 00:06:24.710 align:start position:0%
+expand the side panel you will see the
+same<00:06:22.759><c> settings</c><00:06:23.400><c> as</c><00:06:23.880><c> you</c><00:06:24.080><c> would</c><00:06:24.360><c> when</c><00:06:24.520><c> you</c>
+
+00:06:24.710 --> 00:06:24.720 align:start position:0%
+same settings as you would when you
+ 
+
+00:06:24.720 --> 00:06:26.749 align:start position:0%
+same settings as you would when you
+right<00:06:24.919><c> click</c><00:06:25.199><c> here</c><00:06:25.360><c> and</c><00:06:25.479><c> choose</c><00:06:25.759><c> edit</c><00:06:26.080><c> driver</c>
+
+00:06:26.749 --> 00:06:26.759 align:start position:0%
+right click here and choose edit driver
+ 
+
+00:06:26.759 --> 00:06:29.070 align:start position:0%
+right click here and choose edit driver
+here<00:06:26.880><c> in</c><00:06:27.039><c> the</c><00:06:27.160><c> pop-up</c><00:06:27.520><c> menu</c><00:06:28.360><c> so</c><00:06:28.560><c> let</c><00:06:28.680><c> me</c><00:06:28.840><c> zoom</c>
+
+00:06:29.070 --> 00:06:29.080 align:start position:0%
+here in the pop-up menu so let me zoom
+ 
+
+00:06:29.080 --> 00:06:32.550 align:start position:0%
+here in the pop-up menu so let me zoom
+in<00:06:29.240><c> a</c><00:06:29.360><c> little</c><00:06:29.680><c> bit</c>
+
+00:06:32.550 --> 00:06:32.560 align:start position:0%
+ 
+ 
+
+00:06:32.560 --> 00:06:34.870 align:start position:0%
+ 
+here<00:06:33.560><c> because</c><00:06:33.800><c> the</c><00:06:33.960><c> curve</c><00:06:34.400><c> is</c><00:06:34.599><c> really</c>
+
+00:06:34.870 --> 00:06:34.880 align:start position:0%
+here because the curve is really
+ 
+
+00:06:34.880 --> 00:06:38.589 align:start position:0%
+here because the curve is really
+important<00:06:35.520><c> you</c><00:06:35.639><c> can</c><00:06:35.840><c> see</c><00:06:36.160><c> it</c><00:06:36.440><c> goes</c><00:06:37.319><c> from</c><00:06:37.680><c> 0</c><00:06:38.120><c> 0</c>
+
+00:06:38.589 --> 00:06:38.599 align:start position:0%
+important you can see it goes from 0 0
+ 
+
+00:06:38.599 --> 00:06:41.309 align:start position:0%
+important you can see it goes from 0 0
+to<00:06:38.840><c> 1</c><00:06:39.080><c> one</c><00:06:39.880><c> so</c><00:06:40.240><c> that's</c><00:06:40.479><c> basically</c><00:06:41.039><c> like</c><00:06:41.199><c> a</c>
+
+00:06:41.309 --> 00:06:41.319 align:start position:0%
+to 1 one so that's basically like a
+ 
+
+00:06:41.319 --> 00:06:43.990 align:start position:0%
+to 1 one so that's basically like a
+value<00:06:41.639><c> mapping</c><00:06:42.120><c> for</c><00:06:42.440><c> this</c><00:06:43.360><c> so</c><00:06:43.599><c> right</c><00:06:43.720><c> now</c><00:06:43.880><c> this</c>
+
+00:06:43.990 --> 00:06:44.000 align:start position:0%
+value mapping for this so right now this
+ 
+
+00:06:44.000 --> 00:06:46.150 align:start position:0%
+value mapping for this so right now this
+will<00:06:44.120><c> be</c><00:06:44.280><c> linear</c><00:06:44.840><c> and</c><00:06:45.039><c> I</c><00:06:45.120><c> will</c><00:06:45.680><c> get</c><00:06:45.880><c> back</c><00:06:46.000><c> to</c>
+
+00:06:46.150 --> 00:06:46.160 align:start position:0%
+will be linear and I will get back to
+ 
+
+00:06:46.160 --> 00:06:48.469 align:start position:0%
+will be linear and I will get back to
+this<00:06:46.360><c> later</c><00:06:47.280><c> but</c><00:06:47.479><c> let's</c><00:06:47.680><c> set</c><00:06:47.800><c> up</c><00:06:47.960><c> the</c><00:06:48.080><c> driver</c>
+
+00:06:48.469 --> 00:06:48.479 align:start position:0%
+this later but let's set up the driver
+ 
+
+00:06:48.479 --> 00:06:51.749 align:start position:0%
+this later but let's set up the driver
+right<00:06:48.680><c> there</c><00:06:49.319><c> in</c><00:06:49.440><c> the</c><00:06:49.599><c> driver</c><00:06:50.240><c> you</c><00:06:50.639><c> have</c><00:06:51.639><c> if</c>
+
+00:06:51.749 --> 00:06:51.759 align:start position:0%
+right there in the driver you have if
+ 
+
+00:06:51.759 --> 00:06:53.270 align:start position:0%
+right there in the driver you have if
+you<00:06:51.919><c> keep</c><00:06:52.160><c> the</c><00:06:52.280><c> type</c><00:06:52.560><c> as</c><00:06:52.680><c> a</c><00:06:52.840><c> scripted</c>
+
+00:06:53.270 --> 00:06:53.280 align:start position:0%
+you keep the type as a scripted
+ 
+
+00:06:53.280 --> 00:06:55.469 align:start position:0%
+you keep the type as a scripted
+expression<00:06:54.120><c> you</c><00:06:54.280><c> have</c><00:06:54.479><c> the</c><00:06:54.680><c> expression</c><00:06:55.280><c> right</c>
+
+00:06:55.469 --> 00:06:55.479 align:start position:0%
+expression you have the expression right
+ 
+
+00:06:55.479 --> 00:06:57.830 align:start position:0%
+expression you have the expression right
+there<00:06:56.440><c> and</c><00:06:56.599><c> then</c><00:06:56.879><c> you</c><00:06:57.039><c> have</c><00:06:57.240><c> these</c><00:06:57.440><c> input</c>
+
+00:06:57.830 --> 00:06:57.840 align:start position:0%
+there and then you have these input
+ 
+
+00:06:57.840 --> 00:06:59.710 align:start position:0%
+there and then you have these input
+variables<00:06:58.560><c> and</c><00:06:58.680><c> you</c><00:06:58.759><c> can</c><00:06:58.879><c> see</c><00:06:59.080><c> the</c><00:06:59.199><c> default</c>
+
+00:06:59.710 --> 00:06:59.720 align:start position:0%
+variables and you can see the default
+ 
+
+00:06:59.720 --> 00:07:01.990 align:start position:0%
+variables and you can see the default
+this<00:06:59.919><c> right</c><00:07:00.080><c> there</c><00:07:00.280><c> it's</c><00:07:00.479><c> called</c><00:07:00.759><c> VAR</c><00:07:01.759><c> and</c>
+
+00:07:01.990 --> 00:07:02.000 align:start position:0%
+this right there it's called VAR and
+ 
+
+00:07:02.000 --> 00:07:03.869 align:start position:0%
+this right there it's called VAR and
+it's<00:07:02.199><c> used</c><00:07:02.520><c> in</c><00:07:02.680><c> the</c><00:07:02.840><c> expression</c><00:07:03.319><c> you</c><00:07:03.440><c> can</c><00:07:03.599><c> call</c>
+
+00:07:03.869 --> 00:07:03.879 align:start position:0%
+it's used in the expression you can call
+ 
+
+00:07:03.879 --> 00:07:05.950 align:start position:0%
+it's used in the expression you can call
+this<00:07:04.039><c> whatever</c><00:07:04.319><c> you</c><00:07:04.440><c> want</c><00:07:04.840><c> so</c><00:07:05.120><c> for</c><00:07:05.319><c> example</c><00:07:05.759><c> in</c>
+
+00:07:05.950 --> 00:07:05.960 align:start position:0%
+this whatever you want so for example in
+ 
+
+00:07:05.960 --> 00:07:08.710 align:start position:0%
+this whatever you want so for example in
+this<00:07:06.160><c> case</c><00:07:06.440><c> we</c><00:07:06.560><c> can</c><00:07:06.720><c> call</c><00:07:07.000><c> this</c>
+
+00:07:08.710 --> 00:07:08.720 align:start position:0%
+this case we can call this
+ 
+
+00:07:08.720 --> 00:07:11.909 align:start position:0%
+this case we can call this
+wave<00:07:09.720><c> and</c><00:07:09.879><c> we</c><00:07:10.000><c> can</c><00:07:10.160><c> switch</c><00:07:10.479><c> this</c><00:07:10.639><c> to</c><00:07:10.879><c> wave</c><00:07:11.800><c> you</c>
+
+00:07:11.909 --> 00:07:11.919 align:start position:0%
+wave and we can switch this to wave you
+ 
+
+00:07:11.919 --> 00:07:14.790 align:start position:0%
+wave and we can switch this to wave you
+will<00:07:12.120><c> see</c><00:07:12.639><c> it</c><00:07:12.759><c> will</c><00:07:12.960><c> start</c><00:07:13.240><c> working</c><00:07:13.680><c> again</c><00:07:14.400><c> so</c>
+
+00:07:14.790 --> 00:07:14.800 align:start position:0%
+will see it will start working again so
+ 
+
+00:07:14.800 --> 00:07:16.550 align:start position:0%
+will see it will start working again so
+here<00:07:15.000><c> you</c><00:07:15.199><c> create</c><00:07:15.560><c> the</c><00:07:15.680><c> variables</c><00:07:16.280><c> and</c><00:07:16.440><c> here</c>
+
+00:07:16.550 --> 00:07:16.560 align:start position:0%
+here you create the variables and here
+ 
+
+00:07:16.560 --> 00:07:18.749 align:start position:0%
+here you create the variables and here
+in<00:07:16.680><c> the</c><00:07:16.800><c> expression</c><00:07:17.360><c> you</c><00:07:17.520><c> use</c><00:07:17.800><c> them</c><00:07:18.440><c> and</c><00:07:18.560><c> the</c>
+
+00:07:18.749 --> 00:07:18.759 align:start position:0%
+in the expression you use them and the
+ 
+
+00:07:18.759 --> 00:07:21.029 align:start position:0%
+in the expression you use them and the
+wave<00:07:19.400><c> gets</c><00:07:19.720><c> populated</c><00:07:20.360><c> by</c><00:07:20.560><c> whatever</c><00:07:20.879><c> you</c>
+
+00:07:21.029 --> 00:07:21.039 align:start position:0%
+wave gets populated by whatever you
+ 
+
+00:07:21.039 --> 00:07:23.869 align:start position:0%
+wave gets populated by whatever you
+configure<00:07:21.560><c> here</c><00:07:21.840><c> so</c><00:07:22.599><c> here</c><00:07:22.960><c> I</c><00:07:23.039><c> want</c><00:07:23.240><c> to</c><00:07:23.400><c> use</c><00:07:23.680><c> the</c>
+
+00:07:23.869 --> 00:07:23.879 align:start position:0%
+configure here so here I want to use the
+ 
+
+00:07:23.879 --> 00:07:27.270 align:start position:0%
+configure here so here I want to use the
+cube<00:07:24.199><c> object</c><00:07:25.199><c> and</c><00:07:25.360><c> I</c><00:07:25.479><c> want</c><00:07:25.639><c> to</c><00:07:25.840><c> use</c><00:07:26.280><c> its</c><00:07:26.759><c> Z</c>
+
+00:07:27.270 --> 00:07:27.280 align:start position:0%
+cube object and I want to use its Z
+ 
+
+00:07:27.280 --> 00:07:30.110 align:start position:0%
+cube object and I want to use its Z
+location<00:07:28.280><c> for</c><00:07:28.520><c> this</c><00:07:28.759><c> variable</c><00:07:29.520><c> so</c><00:07:29.759><c> right</c><00:07:29.919><c> now</c>
+
+00:07:30.110 --> 00:07:30.120 align:start position:0%
+location for this variable so right now
+ 
+
+00:07:30.120 --> 00:07:32.070 align:start position:0%
+location for this variable so right now
+if<00:07:30.240><c> I</c><00:07:30.360><c> play</c><00:07:30.680><c> this</c>
+
+00:07:32.070 --> 00:07:32.080 align:start position:0%
+if I play this
+ 
+
+00:07:32.080 --> 00:07:34.749 align:start position:0%
+if I play this
+back<00:07:33.080><c> you</c><00:07:33.199><c> will</c><00:07:33.360><c> see</c><00:07:33.800><c> this</c><00:07:34.039><c> value</c><00:07:34.520><c> is</c>
+
+00:07:34.749 --> 00:07:34.759 align:start position:0%
+back you will see this value is
+ 
+
+00:07:34.759 --> 00:07:37.869 align:start position:0%
+back you will see this value is
+animating<00:07:35.639><c> based</c><00:07:36.080><c> on</c><00:07:36.240><c> the</c><00:07:36.560><c> bouncing</c><00:07:37.560><c> of</c><00:07:37.680><c> the</c>
+
+00:07:37.869 --> 00:07:37.879 align:start position:0%
+animating based on the bouncing of the
+ 
+
+00:07:37.879 --> 00:07:41.589 align:start position:0%
+animating based on the bouncing of the
+cube<00:07:38.879><c> so</c><00:07:39.599><c> that's</c><00:07:39.840><c> the</c><00:07:40.000><c> gist</c><00:07:40.280><c> of</c><00:07:40.479><c> drivers</c><00:07:41.360><c> and</c>
+
+00:07:41.589 --> 00:07:41.599 align:start position:0%
+cube so that's the gist of drivers and
+ 
+
+00:07:41.599 --> 00:07:43.510 align:start position:0%
+cube so that's the gist of drivers and
+you<00:07:41.720><c> can</c><00:07:42.080><c> remove</c><00:07:42.639><c> whatever</c><00:07:42.960><c> you</c><00:07:43.080><c> have</c><00:07:43.240><c> in</c><00:07:43.400><c> the</c>
+
+00:07:43.510 --> 00:07:43.520 align:start position:0%
+you can remove whatever you have in the
+ 
+
+00:07:43.520 --> 00:07:45.710 align:start position:0%
+you can remove whatever you have in the
+Expressions<00:07:44.120><c> you</c><00:07:44.199><c> can</c><00:07:44.400><c> just</c><00:07:44.599><c> directly</c><00:07:45.479><c> use</c>
+
+00:07:45.710 --> 00:07:45.720 align:start position:0%
+Expressions you can just directly use
+ 
+
+00:07:45.720 --> 00:07:48.869 align:start position:0%
+Expressions you can just directly use
+the<00:07:45.919><c> bra</c><00:07:46.919><c> value</c><00:07:47.919><c> and</c><00:07:48.080><c> then</c><00:07:48.280><c> you</c><00:07:48.400><c> can</c><00:07:48.560><c> start</c>
+
+00:07:48.869 --> 00:07:48.879 align:start position:0%
+the bra value and then you can start
+ 
+
+00:07:48.879 --> 00:07:51.230 align:start position:0%
+the bra value and then you can start
+playing<00:07:49.400><c> with</c><00:07:49.560><c> the</c><00:07:49.680><c> Curve</c><00:07:50.240><c> so</c><00:07:50.599><c> right</c><00:07:50.800><c> here</c><00:07:51.120><c> you</c>
+
+00:07:51.230 --> 00:07:51.240 align:start position:0%
+playing with the Curve so right here you
+ 
+
+00:07:51.240 --> 00:07:53.550 align:start position:0%
+playing with the Curve so right here you
+can<00:07:51.400><c> see</c><00:07:51.720><c> the</c><00:07:51.960><c> actual</c><00:07:52.400><c> values</c><00:07:52.960><c> with</c><00:07:53.120><c> the</c><00:07:53.280><c> dash</c>
+
+00:07:53.550 --> 00:07:53.560 align:start position:0%
+can see the actual values with the dash
+ 
+
+00:07:53.560 --> 00:07:56.469 align:start position:0%
+can see the actual values with the dash
+lines<00:07:54.360><c> you</c><00:07:54.479><c> can</c><00:07:54.639><c> see</c><00:07:54.879><c> how</c><00:07:55.000><c> it</c><00:07:55.159><c> bounces</c><00:07:55.960><c> up</c><00:07:56.240><c> and</c>
+
+00:07:56.469 --> 00:07:56.479 align:start position:0%
+lines you can see how it bounces up and
+ 
+
+00:07:56.479 --> 00:07:58.869 align:start position:0%
+lines you can see how it bounces up and
+down<00:07:56.759><c> on</c><00:07:56.919><c> that</c><00:07:57.159><c> expression</c><00:07:57.720><c> on</c><00:07:57.879><c> that</c><00:07:58.080><c> curve</c>
+
+00:07:58.869 --> 00:07:58.879 align:start position:0%
+down on that expression on that curve
+ 
+
+00:07:58.879 --> 00:08:01.510 align:start position:0%
+down on that expression on that curve
+and<00:07:59.000><c> you</c><00:07:59.080><c> can</c><00:07:59.520><c> change</c><00:08:00.080><c> the</c><00:08:00.240><c> curve</c><00:08:00.800><c> right</c>
+
+00:08:01.510 --> 00:08:01.520 align:start position:0%
+and you can change the curve right
+ 
+
+00:08:01.520 --> 00:08:06.350 align:start position:0%
+and you can change the curve right
+here<00:08:02.520><c> from</c><00:08:03.000><c> value</c><00:08:04.000><c> from</c><00:08:04.199><c> 0</c><00:08:04.560><c> to</c><00:08:04.759><c> one</c><00:08:05.520><c> and</c><00:08:05.759><c> change</c>
+
+00:08:06.350 --> 00:08:06.360 align:start position:0%
+here from value from 0 to one and change
+ 
+
+00:08:06.360 --> 00:08:09.029 align:start position:0%
+here from value from 0 to one and change
+its<00:08:06.680><c> Behavior</c><00:08:07.240><c> a</c><00:08:07.400><c> little</c><00:08:07.639><c> bit</c><00:08:08.280><c> you</c><00:08:08.360><c> will</c><00:08:08.560><c> see</c>
+
+00:08:09.029 --> 00:08:09.039 align:start position:0%
+its Behavior a little bit you will see
+ 
+
+00:08:09.039 --> 00:08:11.909 align:start position:0%
+its Behavior a little bit you will see
+it<00:08:09.159><c> will</c><00:08:09.400><c> still</c><00:08:10.120><c> bounce</c><00:08:10.520><c> on</c><00:08:10.680><c> the</c><00:08:10.840><c> curve</c><00:08:11.720><c> but</c>
+
+00:08:11.909 --> 00:08:11.919 align:start position:0%
+it will still bounce on the curve but
+ 
+
+00:08:11.919 --> 00:08:14.350 align:start position:0%
+it will still bounce on the curve but
+now<00:08:12.159><c> since</c><00:08:12.400><c> I</c><00:08:12.599><c> changed</c><00:08:12.960><c> the</c><00:08:13.120><c> curve</c><00:08:13.960><c> and</c><00:08:14.159><c> the</c>
+
+00:08:14.350 --> 00:08:14.360 align:start position:0%
+now since I changed the curve and the
+ 
+
+00:08:14.360 --> 00:08:16.869 align:start position:0%
+now since I changed the curve and the
+extremes<00:08:15.319><c> are</c><00:08:15.680><c> a</c><00:08:15.759><c> little</c><00:08:15.919><c> bit</c><00:08:16.120><c> more</c><00:08:16.360><c> subtle</c>
+
+00:08:16.869 --> 00:08:16.879 align:start position:0%
+extremes are a little bit more subtle
+ 
+
+00:08:16.879 --> 00:08:19.790 align:start position:0%
+extremes are a little bit more subtle
+you<00:08:17.000><c> know</c><00:08:17.680><c> so</c><00:08:18.479><c> for</c><00:08:18.800><c> this</c><00:08:19.039><c> case</c><00:08:19.360><c> I</c><00:08:19.440><c> would</c><00:08:19.639><c> keep</c>
+
+00:08:19.790 --> 00:08:19.800 align:start position:0%
+you know so for this case I would keep
+ 
+
+00:08:19.800 --> 00:08:22.350 align:start position:0%
+you know so for this case I would keep
+it<00:08:20.000><c> like</c><00:08:20.240><c> this</c><00:08:20.960><c> and</c><00:08:21.120><c> then</c><00:08:21.319><c> if</c><00:08:21.479><c> I</c><00:08:21.599><c> want</c><00:08:21.800><c> to</c><00:08:22.240><c> you</c>
+
+00:08:22.350 --> 00:08:22.360 align:start position:0%
+it like this and then if I want to you
+ 
+
+00:08:22.360 --> 00:08:25.510 align:start position:0%
+it like this and then if I want to you
+know<00:08:22.599><c> make</c><00:08:22.800><c> it</c><00:08:23.039><c> even</c><00:08:23.240><c> more</c><00:08:23.520><c> subtle</c><00:08:24.319><c> I</c><00:08:24.520><c> can</c><00:08:25.360><c> you</c>
+
+00:08:25.510 --> 00:08:25.520 align:start position:0%
+know make it even more subtle I can you
+ 
+
+00:08:25.520 --> 00:08:28.110 align:start position:0%
+know make it even more subtle I can you
+know<00:08:25.759><c> subtract</c><00:08:26.560><c> from</c><00:08:26.840><c> that</c><00:08:27.039><c> expression</c><00:08:27.720><c> so</c><00:08:28.000><c> I</c>
+
+00:08:28.110 --> 00:08:28.120 align:start position:0%
+know subtract from that expression so I
+ 
+
+00:08:28.120 --> 00:08:32.630 align:start position:0%
+know subtract from that expression so I
+can<00:08:28.319><c> use</c><00:08:28.599><c> something</c><00:08:28.919><c> like</c><00:08:29.080><c> minus</c><00:08:29.599><c> 0.8</c><00:08:30.560><c> or</c>
+
+00:08:32.630 --> 00:08:32.640 align:start position:0%
+can use something like minus 0.8 or
+ 
+
+00:08:32.640 --> 00:08:35.990 align:start position:0%
+can use something like minus 0.8 or
+something<00:08:33.640><c> and</c><00:08:33.800><c> now</c><00:08:34.039><c> you</c><00:08:34.159><c> can</c><00:08:34.360><c> see</c><00:08:35.320><c> the</c><00:08:35.519><c> range</c>
+
+00:08:35.990 --> 00:08:36.000 align:start position:0%
+something and now you can see the range
+ 
+
+00:08:36.000 --> 00:08:39.469 align:start position:0%
+something and now you can see the range
+is<00:08:36.360><c> a</c><00:08:36.479><c> little</c><00:08:36.680><c> bit</c><00:08:37.240><c> different</c><00:08:38.240><c> and</c><00:08:38.959><c> I</c><00:08:39.039><c> can</c><00:08:39.240><c> do</c>
+
+00:08:39.469 --> 00:08:39.479 align:start position:0%
+is a little bit different and I can do
+ 
+
+00:08:39.479 --> 00:08:43.710 align:start position:0%
+is a little bit different and I can do
+even<00:08:39.760><c> more</c><00:08:40.080><c> I</c><00:08:40.159><c> can</c><00:08:40.320><c> do</c><00:08:40.560><c> like</c>
+
+00:08:43.710 --> 00:08:43.720 align:start position:0%
+ 
+ 
+
+00:08:43.720 --> 00:08:48.030 align:start position:0%
+ 
+0.9<00:08:44.720><c> and</c><00:08:44.920><c> then</c><00:08:45.320><c> you</c><00:08:45.519><c> can</c><00:08:45.880><c> multiply</c><00:08:46.640><c> the</c><00:08:46.800><c> whole</c>
+
+00:08:48.030 --> 00:08:48.040 align:start position:0%
+0.9 and then you can multiply the whole
+ 
+
+00:08:48.040 --> 00:08:51.470 align:start position:0%
+0.9 and then you can multiply the whole
+thing<00:08:49.040><c> by</c><00:08:49.279><c> for</c><00:08:49.480><c> example</c><00:08:49.959><c> 1.2</c><00:08:50.959><c> so</c><00:08:51.120><c> you</c><00:08:51.240><c> can</c>
+
+00:08:51.470 --> 00:08:51.480 align:start position:0%
+thing by for example 1.2 so you can
+ 
+
+00:08:51.480 --> 00:08:54.509 align:start position:0%
+thing by for example 1.2 so you can
+really<00:08:51.800><c> play</c><00:08:52.040><c> with</c><00:08:52.200><c> the</c><00:08:52.320><c> numbers</c><00:08:52.800><c> here</c><00:08:53.800><c> and</c>
+
+00:08:54.509 --> 00:08:54.519 align:start position:0%
+really play with the numbers here and
+ 
+
+00:08:54.519 --> 00:08:56.509 align:start position:0%
+really play with the numbers here and
+get<00:08:54.959><c> the</c><00:08:55.120><c> desired</c><00:08:55.600><c> Behavior</c><00:08:56.160><c> you</c><00:08:56.279><c> know</c>
+
+00:08:56.509 --> 00:08:56.519 align:start position:0%
+get the desired Behavior you know
+ 
+
+00:08:56.519 --> 00:08:59.150 align:start position:0%
+get the desired Behavior you know
+convert<00:08:57.120><c> the</c><00:08:57.360><c> original</c><00:08:58.120><c> value</c><00:08:58.640><c> of</c><00:08:58.800><c> the</c><00:08:58.920><c> cube</c>
+
+00:08:59.150 --> 00:08:59.160 align:start position:0%
+convert the original value of the cube
+ 
+
+00:08:59.160 --> 00:09:01.790 align:start position:0%
+convert the original value of the cube
+jump<00:08:59.640><c> up</c><00:08:59.760><c> and</c><00:08:59.959><c> down</c><00:09:00.519><c> to</c><00:09:00.920><c> whatever</c><00:09:01.360><c> values</c><00:09:01.680><c> you</c>
+
+00:09:01.790 --> 00:09:01.800 align:start position:0%
+jump up and down to whatever values you
+ 
+
+00:09:01.800 --> 00:09:05.710 align:start position:0%
+jump up and down to whatever values you
+want<00:09:01.959><c> to</c><00:09:02.120><c> see</c><00:09:02.480><c> here</c><00:09:03.000><c> in</c><00:09:03.200><c> the</c><00:09:03.399><c> displacement</c>
+
+00:09:05.710 --> 00:09:05.720 align:start position:0%
+want to see here in the displacement
+ 
+
+00:09:05.720 --> 00:09:07.870 align:start position:0%
+want to see here in the displacement
+strength<00:09:06.720><c> and</c><00:09:06.880><c> then</c><00:09:07.079><c> you</c><00:09:07.160><c> can</c><00:09:07.399><c> still</c><00:09:07.600><c> go</c><00:09:07.760><c> to</c>
+
+00:09:07.870 --> 00:09:07.880 align:start position:0%
+strength and then you can still go to
+ 
+
+00:09:07.880 --> 00:09:09.870 align:start position:0%
+strength and then you can still go to
+the<00:09:08.040><c> texture</c><00:09:08.399><c> settings</c><00:09:09.120><c> and</c><00:09:09.279><c> play</c><00:09:09.600><c> with</c><00:09:09.720><c> the</c>
+
+00:09:09.870 --> 00:09:09.880 align:start position:0%
+the texture settings and play with the
+ 
+
+00:09:09.880 --> 00:09:12.509 align:start position:0%
+the texture settings and play with the
+values<00:09:10.320><c> like</c><00:09:10.880><c> turbulence</c><00:09:11.880><c> so</c><00:09:12.120><c> you</c><00:09:12.240><c> can</c><00:09:12.399><c> make</c>
+
+00:09:12.509 --> 00:09:12.519 align:start position:0%
+values like turbulence so you can make
+ 
+
+00:09:12.519 --> 00:09:15.110 align:start position:0%
+values like turbulence so you can make
+it<00:09:12.680><c> more</c><00:09:13.160><c> funky</c><00:09:14.160><c> and</c><00:09:14.360><c> then</c><00:09:14.600><c> you</c><00:09:14.720><c> know</c><00:09:14.920><c> play</c>
+
+00:09:15.110 --> 00:09:15.120 align:start position:0%
+it more funky and then you know play
+ 
+
+00:09:15.120 --> 00:09:18.790 align:start position:0%
+it more funky and then you know play
+with<00:09:15.279><c> the</c><00:09:15.560><c> size</c><00:09:16.000><c> so</c><00:09:16.240><c> the</c><00:09:16.399><c> mapping</c><00:09:16.800><c> is</c><00:09:17.000><c> not</c><00:09:17.920><c> so</c>
+
+00:09:18.790 --> 00:09:18.800 align:start position:0%
+with the size so the mapping is not so
+ 
+
+00:09:18.800 --> 00:09:21.350 align:start position:0%
+with the size so the mapping is not so
+aggressive<00:09:19.800><c> we</c><00:09:19.920><c> can</c><00:09:20.079><c> maybe</c><00:09:20.399><c> increase</c><00:09:21.120><c> the</c>
+
+00:09:21.350 --> 00:09:21.360 align:start position:0%
+aggressive we can maybe increase the
+ 
+
+00:09:21.360 --> 00:09:24.230 align:start position:0%
+aggressive we can maybe increase the
+levels<00:09:22.360><c> of</c><00:09:22.519><c> the</c><00:09:22.680><c> subdivision</c>
+
+00:09:24.230 --> 00:09:24.240 align:start position:0%
+levels of the subdivision
+ 
+
+00:09:24.240 --> 00:09:27.470 align:start position:0%
+levels of the subdivision
+surface<00:09:25.240><c> maybe</c><00:09:25.519><c> even</c><00:09:25.800><c> more</c><00:09:26.399><c> but</c><00:09:26.600><c> be</c><00:09:26.760><c> careful</c>
+
+00:09:27.470 --> 00:09:27.480 align:start position:0%
+surface maybe even more but be careful
+ 
+
+00:09:27.480 --> 00:09:31.030 align:start position:0%
+surface maybe even more but be careful
+about<00:09:27.760><c> the</c><00:09:27.920><c> FPS</c><00:09:28.640><c> it</c><00:09:28.800><c> can</c><00:09:28.959><c> start</c><00:09:29.519><c> going</c><00:09:30.040><c> down</c>
+
+00:09:31.030 --> 00:09:31.040 align:start position:0%
+about the FPS it can start going down
+ 
+
+00:09:31.040 --> 00:09:32.630 align:start position:0%
+about the FPS it can start going down
+and<00:09:31.240><c> one</c><00:09:31.440><c> important</c><00:09:31.839><c> thing</c><00:09:31.959><c> to</c><00:09:32.120><c> mention</c><00:09:32.480><c> I</c>
+
+00:09:32.630 --> 00:09:32.640 align:start position:0%
+and one important thing to mention I
+ 
+
+00:09:32.640 --> 00:09:35.829 align:start position:0%
+and one important thing to mention I
+left<00:09:32.920><c> this</c><00:09:33.079><c> at</c><00:09:33.279><c> 25</c><00:09:33.760><c> FPS</c><00:09:34.600><c> if</c><00:09:34.720><c> you</c><00:09:34.920><c> for</c><00:09:35.200><c> example</c>
+
+00:09:35.829 --> 00:09:35.839 align:start position:0%
+left this at 25 FPS if you for example
+ 
+
+00:09:35.839 --> 00:09:39.430 align:start position:0%
+left this at 25 FPS if you for example
+want<00:09:36.519><c> 30</c><00:09:36.920><c> FPS</c><00:09:37.839><c> you</c><00:09:37.959><c> need</c><00:09:38.240><c> to</c><00:09:38.519><c> bake</c><00:09:38.839><c> your</c><00:09:39.040><c> sound</c>
+
+00:09:39.430 --> 00:09:39.440 align:start position:0%
+want 30 FPS you need to bake your sound
+ 
+
+00:09:39.440 --> 00:09:41.350 align:start position:0%
+want 30 FPS you need to bake your sound
+again<00:09:39.720><c> obviously</c><00:09:40.320><c> because</c><00:09:40.760><c> the</c><00:09:40.880><c> timing</c><00:09:41.200><c> would</c>
+
+00:09:41.350 --> 00:09:41.360 align:start position:0%
+again obviously because the timing would
+ 
+
+00:09:41.360 --> 00:09:42.750 align:start position:0%
+again obviously because the timing would
+be<00:09:41.480><c> a</c><00:09:41.519><c> little</c><00:09:41.680><c> bit</c><00:09:41.880><c> different</c><00:09:42.279><c> so</c><00:09:42.440><c> if</c><00:09:42.519><c> you</c><00:09:42.600><c> want</c>
+
+00:09:42.750 --> 00:09:42.760 align:start position:0%
+be a little bit different so if you want
+ 
+
+00:09:42.760 --> 00:09:45.750 align:start position:0%
+be a little bit different so if you want
+to<00:09:42.880><c> change</c><00:09:43.240><c> FPS</c><00:09:43.800><c> here</c><00:09:44.600><c> um</c><00:09:44.880><c> just</c><00:09:45.079><c> go</c><00:09:45.240><c> ahead</c><00:09:45.560><c> and</c>
+
+00:09:45.750 --> 00:09:45.760 align:start position:0%
+to change FPS here um just go ahead and
+ 
+
+00:09:45.760 --> 00:09:48.670 align:start position:0%
+to change FPS here um just go ahead and
+bake<00:09:46.320><c> the</c><00:09:46.519><c> sound</c><00:09:46.959><c> again</c><00:09:47.959><c> and</c><00:09:48.200><c> it</c><00:09:48.320><c> will</c><00:09:48.519><c> just</c>
+
+00:09:48.670 --> 00:09:48.680 align:start position:0%
+bake the sound again and it will just
+ 
+
+00:09:48.680 --> 00:09:50.670 align:start position:0%
+bake the sound again and it will just
+work<00:09:48.959><c> out</c><00:09:49.120><c> of</c><00:09:49.240><c> the</c><00:09:49.399><c> box</c><00:09:50.000><c> and</c><00:09:50.120><c> then</c><00:09:50.279><c> of</c><00:09:50.399><c> course</c>
+
+00:09:50.670 --> 00:09:50.680 align:start position:0%
+work out of the box and then of course
+ 
+
+00:09:50.680 --> 00:09:52.750 align:start position:0%
+work out of the box and then of course
+adjust<00:09:51.160><c> the</c><00:09:51.279><c> frame</c><00:09:51.560><c> range</c><00:09:51.920><c> for</c><00:09:52.160><c> the</c><00:09:52.279><c> animation</c>
+
+00:09:52.750 --> 00:09:52.760 align:start position:0%
+adjust the frame range for the animation
+ 
+
+00:09:52.760 --> 00:09:53.829 align:start position:0%
+adjust the frame range for the animation
+because<00:09:52.959><c> that</c><00:09:53.079><c> would</c><00:09:53.240><c> be</c><00:09:53.399><c> a</c><00:09:53.480><c> little</c><00:09:53.640><c> bit</c>
+
+00:09:53.829 --> 00:09:53.839 align:start position:0%
+because that would be a little bit
+ 
+
+00:09:53.839 --> 00:09:55.910 align:start position:0%
+because that would be a little bit
+different<00:09:54.560><c> so</c><00:09:54.800><c> basically</c><00:09:55.200><c> that's</c><00:09:55.360><c> all</c><00:09:55.519><c> I</c><00:09:55.640><c> used</c>
+
+00:09:55.910 --> 00:09:55.920 align:start position:0%
+different so basically that's all I used
+ 
+
+00:09:55.920 --> 00:09:58.310 align:start position:0%
+different so basically that's all I used
+for<00:09:56.200><c> this</c><00:09:56.360><c> type</c><00:09:56.560><c> of</c><00:09:56.680><c> audio</c><00:09:57.040><c> visual</c><00:09:57.959><c> now</c><00:09:58.200><c> you</c>
+
+00:09:58.310 --> 00:09:58.320 align:start position:0%
+for this type of audio visual now you
+ 
+
+00:09:58.320 --> 00:09:59.829 align:start position:0%
+for this type of audio visual now you
+can<00:09:58.480><c> play</c><00:09:58.680><c> with</c><00:09:58.800><c> the</c><00:09:58.920><c> details</c><00:09:59.480><c> like</c><00:09:59.680><c> for</c>
+
+00:09:59.829 --> 00:09:59.839 align:start position:0%
+can play with the details like for
+ 
+
+00:09:59.839 --> 00:10:02.230 align:start position:0%
+can play with the details like for
+example<00:10:00.240><c> in</c><00:10:00.360><c> the</c><00:10:00.480><c> texture</c><00:10:01.279><c> you</c><00:10:01.480><c> might</c><00:10:01.720><c> want</c><00:10:01.920><c> to</c>
+
+00:10:02.230 --> 00:10:02.240 align:start position:0%
+example in the texture you might want to
+ 
+
+00:10:02.240 --> 00:10:05.949 align:start position:0%
+example in the texture you might want to
+play<00:10:02.959><c> um</c><00:10:03.440><c> with</c><00:10:03.800><c> the</c><00:10:04.040><c> size</c><00:10:04.480><c> or</c><00:10:04.680><c> the</c><00:10:04.959><c> turbulence</c>
+
+00:10:05.949 --> 00:10:05.959 align:start position:0%
+play um with the size or the turbulence
+ 
+
+00:10:05.959 --> 00:10:07.750 align:start position:0%
+play um with the size or the turbulence
+of<00:10:06.200><c> this</c><00:10:06.640><c> but</c><00:10:06.760><c> you</c><00:10:06.880><c> don't</c><00:10:07.079><c> necessarily</c><00:10:07.600><c> need</c>
+
+00:10:07.750 --> 00:10:07.760 align:start position:0%
+of this but you don't necessarily need
+ 
+
+00:10:07.760 --> 00:10:09.949 align:start position:0%
+of this but you don't necessarily need
+to<00:10:07.880><c> map</c><00:10:08.120><c> this</c><00:10:08.240><c> to</c><00:10:08.440><c> driver</c><00:10:09.320><c> so</c><00:10:09.560><c> we</c><00:10:09.680><c> can</c><00:10:09.839><c> just</c>
+
+00:10:09.949 --> 00:10:09.959 align:start position:0%
+to map this to driver so we can just
+ 
+
+00:10:09.959 --> 00:10:12.870 align:start position:0%
+to map this to driver so we can just
+switch<00:10:10.320><c> this</c><00:10:10.480><c> to</c><00:10:11.200><c> you</c><00:10:11.320><c> know</c><00:10:11.560><c> timeline</c><00:10:12.560><c> go</c><00:10:12.720><c> to</c>
+
+00:10:12.870 --> 00:10:12.880 align:start position:0%
+switch this to you know timeline go to
+ 
+
+00:10:12.880 --> 00:10:16.389 align:start position:0%
+switch this to you know timeline go to
+start<00:10:13.160><c> of</c><00:10:13.360><c> the</c><00:10:13.880><c> animation</c><00:10:14.880><c> and</c><00:10:15.360><c> for</c><00:10:15.600><c> example</c>
+
+00:10:16.389 --> 00:10:16.399 align:start position:0%
+start of the animation and for example
+ 
+
+00:10:16.399 --> 00:10:20.310 align:start position:0%
+start of the animation and for example
+do<00:10:17.000><c> like</c><00:10:18.000><c> turbulance</c><00:10:18.640><c> of</c><00:10:18.839><c> one</c><00:10:19.360><c> and</c><00:10:19.640><c> insert</c><00:10:20.079><c> key</c>
+
+00:10:20.310 --> 00:10:20.320 align:start position:0%
+do like turbulance of one and insert key
+ 
+
+00:10:20.320 --> 00:10:22.670 align:start position:0%
+do like turbulance of one and insert key
+frame<00:10:20.600><c> here</c><00:10:21.560><c> then</c><00:10:21.760><c> in</c><00:10:21.880><c> the</c><00:10:22.040><c> timeline</c><00:10:22.440><c> press</c>
+
+00:10:22.670 --> 00:10:22.680 align:start position:0%
+frame here then in the timeline press
+ 
+
+00:10:22.680 --> 00:10:25.150 align:start position:0%
+frame here then in the timeline press
+shift<00:10:22.880><c> d</c><00:10:23.040><c> to</c><00:10:23.200><c> duplicated</c><00:10:23.800><c> on</c><00:10:23.920><c> the</c><00:10:24.079><c> other</c>
+
+00:10:25.150 --> 00:10:25.160 align:start position:0%
+shift d to duplicated on the other
+ 
+
+00:10:25.160 --> 00:10:28.870 align:start position:0%
+shift d to duplicated on the other
+side<00:10:26.160><c> and</c><00:10:26.320><c> then</c><00:10:26.519><c> here</c><00:10:26.720><c> in</c><00:10:26.839><c> the</c><00:10:27.320><c> middle</c><00:10:28.320><c> we</c><00:10:28.519><c> can</c>
+
+00:10:28.870 --> 00:10:28.880 align:start position:0%
+side and then here in the middle we can
+ 
+
+00:10:28.880 --> 00:10:31.750 align:start position:0%
+side and then here in the middle we can
+you<00:10:29.000><c> know</c><00:10:29.320><c> increase</c><00:10:29.760><c> this</c><00:10:29.920><c> a</c><00:10:30.040><c> little</c><00:10:30.519><c> bit</c><00:10:31.519><c> so</c>
+
+00:10:31.750 --> 00:10:31.760 align:start position:0%
+you know increase this a little bit so
+ 
+
+00:10:31.760 --> 00:10:33.550 align:start position:0%
+you know increase this a little bit so
+it<00:10:31.880><c> looks</c><00:10:32.120><c> a</c><00:10:32.200><c> little</c><00:10:32.320><c> bit</c><00:10:32.480><c> more</c><00:10:32.680><c> interesting</c>
+
+00:10:33.550 --> 00:10:33.560 align:start position:0%
+it looks a little bit more interesting
+ 
+
+00:10:33.560 --> 00:10:35.430 align:start position:0%
+it looks a little bit more interesting
+right<00:10:33.800><c> click</c><00:10:34.200><c> and</c><00:10:34.360><c> insert</c><00:10:34.680><c> single</c><00:10:34.959><c> key</c><00:10:35.160><c> frame</c>
+
+00:10:35.430 --> 00:10:35.440 align:start position:0%
+right click and insert single key frame
+ 
+
+00:10:35.440 --> 00:10:39.230 align:start position:0%
+right click and insert single key frame
+and<00:10:35.600><c> now</c><00:10:36.240><c> the</c><00:10:36.440><c> animation</c><00:10:36.959><c> will</c><00:10:37.399><c> kind</c><00:10:37.680><c> of</c>
+
+00:10:39.230 --> 00:10:39.240 align:start position:0%
+and now the animation will kind of
+ 
+
+00:10:39.240 --> 00:10:42.710 align:start position:0%
+and now the animation will kind of
+animate<00:10:40.240><c> through</c><00:10:40.480><c> the</c><00:10:40.680><c> texture</c><00:10:41.079><c> noise</c><00:10:42.079><c> but</c>
+
+00:10:42.710 --> 00:10:42.720 align:start position:0%
+animate through the texture noise but
+ 
+
+00:10:42.720 --> 00:10:44.590 align:start position:0%
+animate through the texture noise but
+the<00:10:42.880><c> scale</c><00:10:43.519><c> or</c><00:10:43.800><c> the</c><00:10:43.920><c> strength</c><00:10:44.279><c> of</c><00:10:44.399><c> the</c>
+
+00:10:44.590 --> 00:10:44.600 align:start position:0%
+the scale or the strength of the
+ 
+
+00:10:44.600 --> 00:10:47.990 align:start position:0%
+the scale or the strength of the
+displacement<00:10:45.600><c> will</c><00:10:45.800><c> be</c><00:10:46.040><c> still</c><00:10:46.639><c> mapped</c><00:10:47.279><c> to</c><00:10:47.839><c> the</c>
+
+00:10:47.990 --> 00:10:48.000 align:start position:0%
+displacement will be still mapped to the
+ 
+
+00:10:48.000 --> 00:10:51.550 align:start position:0%
+displacement will be still mapped to the
+sound<00:10:48.320><c> level</c><00:10:49.040><c> you</c><00:10:49.279><c> have</c><00:10:49.639><c> right</c><00:10:49.880><c> there</c><00:10:50.880><c> and</c>
+
+00:10:51.550 --> 00:10:51.560 align:start position:0%
+sound level you have right there and
+ 
+
+00:10:51.560 --> 00:10:53.750 align:start position:0%
+sound level you have right there and
+then<00:10:52.040><c> what</c><00:10:52.160><c> I</c><00:10:52.279><c> did</c><00:10:52.480><c> for</c><00:10:52.639><c> the</c><00:10:52.800><c> animation</c><00:10:53.440><c> I</c><00:10:53.560><c> just</c>
+
+00:10:53.750 --> 00:10:53.760 align:start position:0%
+then what I did for the animation I just
+ 
+
+00:10:53.760 --> 00:10:55.629 align:start position:0%
+then what I did for the animation I just
+created<00:10:54.240><c> background</c><00:10:54.720><c> so</c><00:10:54.880><c> let</c><00:10:55.000><c> me</c><00:10:55.240><c> just</c><00:10:55.399><c> do</c>
+
+00:10:55.629 --> 00:10:55.639 align:start position:0%
+created background so let me just do
+ 
+
+00:10:55.639 --> 00:10:58.150 align:start position:0%
+created background so let me just do
+that<00:10:56.040><c> real</c><00:10:56.279><c> quick</c><00:10:56.600><c> here</c><00:10:57.360><c> tab</c><00:10:57.600><c> into</c><00:10:57.800><c> the</c><00:10:57.920><c> edit</c>
+
+00:10:58.150 --> 00:10:58.160 align:start position:0%
+that real quick here tab into the edit
+ 
+
+00:10:58.160 --> 00:11:01.310 align:start position:0%
+that real quick here tab into the edit
+mode<00:10:58.399><c> press</c><00:10:58.600><c> s</c><00:10:58.800><c> to</c><00:10:58.959><c> scale</c><00:10:59.399><c> it</c><00:10:59.880><c> up</c><00:11:00.880><c> right</c><00:11:01.120><c> click</c>
+
+00:11:01.310 --> 00:11:01.320 align:start position:0%
+mode press s to scale it up right click
+ 
+
+00:11:01.320 --> 00:11:03.150 align:start position:0%
+mode press s to scale it up right click
+choose<00:11:01.680><c> subdivide</c><00:11:02.279><c> and</c><00:11:02.440><c> press</c><00:11:02.639><c> shift</c><00:11:02.880><c> R</c>
+
+00:11:03.150 --> 00:11:03.160 align:start position:0%
+choose subdivide and press shift R
+ 
+
+00:11:03.160 --> 00:11:06.790 align:start position:0%
+choose subdivide and press shift R
+several<00:11:03.639><c> times</c><00:11:04.519><c> to</c><00:11:04.680><c> get</c><00:11:04.880><c> more</c><00:11:05.160><c> dense</c><00:11:05.519><c> mesh</c><00:11:06.519><c> Tab</c>
+
+00:11:06.790 --> 00:11:06.800 align:start position:0%
+several times to get more dense mesh Tab
+ 
+
+00:11:06.800 --> 00:11:09.470 align:start position:0%
+several times to get more dense mesh Tab
+out<00:11:07.040><c> press</c><00:11:07.279><c> G</c><00:11:07.480><c> then</c><00:11:07.639><c> Z</c><00:11:07.760><c> and</c><00:11:07.880><c> move</c><00:11:08.079><c> it</c><00:11:08.320><c> down</c><00:11:09.320><c> and</c>
+
+00:11:09.470 --> 00:11:09.480 align:start position:0%
+out press G then Z and move it down and
+ 
+
+00:11:09.480 --> 00:11:11.509 align:start position:0%
+out press G then Z and move it down and
+then<00:11:09.680><c> basically</c><00:11:10.519><c> just</c><00:11:10.680><c> going</c><00:11:10.959><c> to</c><00:11:11.079><c> the</c>
+
+00:11:11.509 --> 00:11:11.519 align:start position:0%
+then basically just going to the
+ 
+
+00:11:11.519 --> 00:11:14.350 align:start position:0%
+then basically just going to the
+modifiers<00:11:12.519><c> add</c><00:11:12.920><c> that</c><00:11:13.079><c> subdivision</c><00:11:13.959><c> surface</c>
+
+00:11:14.350 --> 00:11:14.360 align:start position:0%
+modifiers add that subdivision surface
+ 
+
+00:11:14.360 --> 00:11:19.949 align:start position:0%
+modifiers add that subdivision surface
+modifier<00:11:15.000><c> again</c><00:11:15.680><c> and</c><00:11:15.920><c> another</c>
+
+00:11:19.949 --> 00:11:19.959 align:start position:0%
+ 
+ 
+
+00:11:19.959 --> 00:11:22.629 align:start position:0%
+ 
+displacement<00:11:20.959><c> and</c><00:11:21.240><c> here</c><00:11:21.600><c> I</c><00:11:21.760><c> used</c><00:11:22.279><c> something</c>
+
+00:11:22.629 --> 00:11:22.639 align:start position:0%
+displacement and here I used something
+ 
+
+00:11:22.639 --> 00:11:24.710 align:start position:0%
+displacement and here I used something
+like<00:11:22.839><c> a</c><00:11:22.959><c> cloud</c>
+
+00:11:24.710 --> 00:11:24.720 align:start position:0%
+like a cloud
+ 
+
+00:11:24.720 --> 00:11:27.790 align:start position:0%
+like a cloud
+texture<00:11:25.720><c> with</c><00:11:25.880><c> a</c><00:11:26.040><c> large</c><00:11:26.480><c> size</c><00:11:27.360><c> right</c><00:11:27.600><c> click</c>
+
+00:11:27.790 --> 00:11:27.800 align:start position:0%
+texture with a large size right click
+ 
+
+00:11:27.800 --> 00:11:30.590 align:start position:0%
+texture with a large size right click
+shade<00:11:28.160><c> smooth</c><00:11:29.040><c> or</c><00:11:29.279><c> or</c><00:11:29.399><c> maybe</c><00:11:29.839><c> you</c><00:11:30.000><c> can</c><00:11:30.200><c> go</c><00:11:30.360><c> for</c>
+
+00:11:30.590 --> 00:11:30.600 align:start position:0%
+shade smooth or or maybe you can go for
+ 
+
+00:11:30.600 --> 00:11:32.430 align:start position:0%
+shade smooth or or maybe you can go for
+something<00:11:30.880><c> like</c><00:11:31.040><c> a</c><00:11:31.160><c> distorted</c>
+
+00:11:32.430 --> 00:11:32.440 align:start position:0%
+something like a distorted
+ 
+
+00:11:32.440 --> 00:11:36.350 align:start position:0%
+something like a distorted
+noise<00:11:33.440><c> that</c><00:11:33.639><c> looks</c><00:11:33.920><c> quite</c><00:11:34.320><c> cool</c><00:11:35.320><c> and</c><00:11:36.040><c> then</c><00:11:36.200><c> I</c>
+
+00:11:36.350 --> 00:11:36.360 align:start position:0%
+noise that looks quite cool and then I
+ 
+
+00:11:36.360 --> 00:11:38.470 align:start position:0%
+noise that looks quite cool and then I
+used<00:11:36.839><c> the</c><00:11:36.959><c> trick</c><00:11:37.279><c> for</c><00:11:37.480><c> looping</c><00:11:37.880><c> animation</c>
+
+00:11:38.470 --> 00:11:38.480 align:start position:0%
+used the trick for looping animation
+ 
+
+00:11:38.480 --> 00:11:39.990 align:start position:0%
+used the trick for looping animation
+where<00:11:38.639><c> I</c><00:11:38.760><c> use</c><00:11:39.040><c> the</c><00:11:39.160><c> empty</c><00:11:39.519><c> so</c><00:11:39.639><c> let's</c><00:11:39.839><c> press</c>
+
+00:11:39.990 --> 00:11:40.000 align:start position:0%
+where I use the empty so let's press
+ 
+
+00:11:40.000 --> 00:11:43.150 align:start position:0%
+where I use the empty so let's press
+shift<00:11:40.240><c> a</c><00:11:40.959><c> add</c><00:11:41.120><c> an</c><00:11:41.279><c> empty</c><00:11:42.079><c> let's</c><00:11:42.279><c> press</c><00:11:42.440><c> shift</c><00:11:42.680><c> d</c>
+
+00:11:43.150 --> 00:11:43.160 align:start position:0%
+shift a add an empty let's press shift d
+ 
+
+00:11:43.160 --> 00:11:45.030 align:start position:0%
+shift a add an empty let's press shift d
+and<00:11:43.360><c> press</c><00:11:43.680><c> y</c><00:11:43.959><c> to</c><00:11:44.120><c> move</c><00:11:44.320><c> it</c><00:11:44.440><c> to</c><00:11:44.600><c> the</c><00:11:44.760><c> side</c><00:11:44.920><c> a</c>
+
+00:11:45.030 --> 00:11:45.040 align:start position:0%
+and press y to move it to the side a
+ 
+
+00:11:45.040 --> 00:11:47.190 align:start position:0%
+and press y to move it to the side a
+little<00:11:45.200><c> bit</c><00:11:45.519><c> and</c><00:11:45.639><c> then</c><00:11:45.839><c> hold</c><00:11:46.160><c> control</c><00:11:46.920><c> click</c>
+
+00:11:47.190 --> 00:11:47.200 align:start position:0%
+little bit and then hold control click
+ 
+
+00:11:47.200 --> 00:11:49.310 align:start position:0%
+little bit and then hold control click
+it<00:11:47.399><c> in</c><00:11:47.560><c> the</c><00:11:47.680><c> outliner</c><00:11:48.320><c> Press</c><00:11:48.560><c> contrl</c><00:11:48.920><c> p</c><00:11:49.120><c> in</c><00:11:49.200><c> the</c>
+
+00:11:49.310 --> 00:11:49.320 align:start position:0%
+it in the outliner Press contrl p in the
+ 
+
+00:11:49.320 --> 00:11:53.350 align:start position:0%
+it in the outliner Press contrl p in the
+viewport<00:11:50.320><c> and</c><00:11:50.480><c> choose</c><00:11:50.839><c> to</c><00:11:51.160><c> parent</c><00:11:52.160><c> and</c><00:11:52.360><c> now</c>
+
+00:11:53.350 --> 00:11:53.360 align:start position:0%
+viewport and choose to parent and now
+ 
+
+00:11:53.360 --> 00:11:55.990 align:start position:0%
+viewport and choose to parent and now
+click<00:11:53.680><c> the</c><00:11:53.800><c> original</c><00:11:54.200><c> one</c><00:11:54.560><c> again</c><00:11:55.519><c> and</c><00:11:55.680><c> in</c><00:11:55.839><c> the</c>
+
+00:11:55.990 --> 00:11:56.000 align:start position:0%
+click the original one again and in the
+ 
+
+00:11:56.000 --> 00:11:59.230 align:start position:0%
+click the original one again and in the
+frame<00:11:56.320><c> one</c><00:11:56.760><c> or</c><00:11:57.040><c> you</c><00:11:57.200><c> know</c><00:11:58.000><c> whatever</c><00:11:58.360><c> frame</c><00:11:59.000><c> you</c>
+
+00:11:59.230 --> 00:11:59.240 align:start position:0%
+frame one or you know whatever frame you
+ 
+
+00:11:59.240 --> 00:12:01.310 align:start position:0%
+frame one or you know whatever frame you
+your<00:11:59.399><c> animation</c><00:11:59.839><c> starts</c><00:12:00.680><c> just</c><00:12:00.920><c> right</c><00:12:01.120><c> click</c>
+
+00:12:01.310 --> 00:12:01.320 align:start position:0%
+your animation starts just right click
+ 
+
+00:12:01.320 --> 00:12:03.110 align:start position:0%
+your animation starts just right click
+the<00:12:01.399><c> X</c><00:12:01.639><c> rotation</c><00:12:02.079><c> and</c><00:12:02.279><c> insert</c><00:12:02.600><c> single</c><00:12:02.920><c> key</c>
+
+00:12:03.110 --> 00:12:03.120 align:start position:0%
+the X rotation and insert single key
+ 
+
+00:12:03.120 --> 00:12:06.470 align:start position:0%
+the X rotation and insert single key
+frame<00:12:04.000><c> move</c><00:12:04.279><c> to</c><00:12:04.440><c> the</c><00:12:04.519><c> end</c><00:12:04.720><c> of</c><00:12:04.839><c> the</c><00:12:05.480><c> animation</c>
+
+00:12:06.470 --> 00:12:06.480 align:start position:0%
+frame move to the end of the animation
+ 
+
+00:12:06.480 --> 00:12:09.550 align:start position:0%
+frame move to the end of the animation
+and<00:12:07.360><c> let's</c><00:12:07.560><c> change</c><00:12:07.839><c> this</c><00:12:08.000><c> to</c><00:12:08.200><c> 360</c><00:12:09.079><c> right</c><00:12:09.320><c> click</c>
+
+00:12:09.550 --> 00:12:09.560 align:start position:0%
+and let's change this to 360 right click
+ 
+
+00:12:09.560 --> 00:12:12.670 align:start position:0%
+and let's change this to 360 right click
+and<00:12:09.720><c> insert</c><00:12:10.079><c> single</c><00:12:10.399><c> key</c><00:12:10.600><c> frame</c><00:12:11.320><c> so</c><00:12:11.880><c> the</c><00:12:12.040><c> main</c>
+
+00:12:12.670 --> 00:12:12.680 align:start position:0%
+and insert single key frame so the main
+ 
+
+00:12:12.680 --> 00:12:16.230 align:start position:0%
+and insert single key frame so the main
+empty<00:12:13.040><c> will</c><00:12:13.480><c> rotate</c><00:12:14.480><c> and</c><00:12:14.800><c> take</c><00:12:15.560><c> this</c><00:12:16.079><c> that's</c>
+
+00:12:16.230 --> 00:12:16.240 align:start position:0%
+empty will rotate and take this that's
+ 
+
+00:12:16.240 --> 00:12:18.590 align:start position:0%
+empty will rotate and take this that's
+on<00:12:16.399><c> the</c><00:12:16.639><c> side</c><00:12:16.920><c> with</c><00:12:17.120><c> it</c><00:12:17.839><c> uh</c><00:12:18.000><c> just</c><00:12:18.160><c> make</c><00:12:18.279><c> sure</c><00:12:18.480><c> in</c>
+
+00:12:18.590 --> 00:12:18.600 align:start position:0%
+on the side with it uh just make sure in
+ 
+
+00:12:18.600 --> 00:12:20.310 align:start position:0%
+on the side with it uh just make sure in
+the<00:12:18.760><c> timeline</c><00:12:19.360><c> with</c><00:12:19.519><c> all</c><00:12:19.680><c> the</c><00:12:19.800><c> key</c><00:12:20.000><c> frames</c>
+
+00:12:20.310 --> 00:12:20.320 align:start position:0%
+the timeline with all the key frames
+ 
+
+00:12:20.320 --> 00:12:23.030 align:start position:0%
+the timeline with all the key frames
+selected<00:12:21.279><c> press</c><00:12:21.519><c> T</c><00:12:21.800><c> and</c><00:12:21.920><c> choose</c><00:12:22.440><c> linear</c>
+
+00:12:23.030 --> 00:12:23.040 align:start position:0%
+selected press T and choose linear
+ 
+
+00:12:23.040 --> 00:12:25.990 align:start position:0%
+selected press T and choose linear
+interpolation<00:12:24.040><c> so</c><00:12:24.279><c> it</c><00:12:24.480><c> starts</c><00:12:25.320><c> at</c><00:12:25.519><c> speed</c><00:12:25.839><c> and</c>
+
+00:12:25.990 --> 00:12:26.000 align:start position:0%
+interpolation so it starts at speed and
+ 
+
+00:12:26.000 --> 00:12:28.310 align:start position:0%
+interpolation so it starts at speed and
+doesn't<00:12:26.600><c> accelerate</c><00:12:27.600><c> and</c><00:12:27.720><c> now</c><00:12:27.839><c> we'll</c><00:12:28.079><c> use</c>
+
+00:12:28.310 --> 00:12:28.320 align:start position:0%
+doesn't accelerate and now we'll use
+ 
+
+00:12:28.320 --> 00:12:31.470 align:start position:0%
+doesn't accelerate and now we'll use
+this<00:12:28.480><c> empty</c><00:12:28.800><c> to</c><00:12:28.959><c> map</c><00:12:29.560><c> this</c><00:12:29.720><c> texture</c><00:12:30.320><c> so</c><00:12:31.199><c> let's</c>
+
+00:12:31.470 --> 00:12:31.480 align:start position:0%
+this empty to map this texture so let's
+ 
+
+00:12:31.480 --> 00:12:33.710 align:start position:0%
+this empty to map this texture so let's
+go<00:12:31.800><c> to</c><00:12:31.959><c> the</c><00:12:32.040><c> modifier</c><00:12:32.639><c> panel</c><00:12:33.240><c> and</c><00:12:33.399><c> for</c><00:12:33.600><c> the</c>
+
+00:12:33.710 --> 00:12:33.720 align:start position:0%
+go to the modifier panel and for the
+ 
+
+00:12:33.720 --> 00:12:36.550 align:start position:0%
+go to the modifier panel and for the
+coordinates<00:12:34.360><c> we'll</c><00:12:34.600><c> use</c><00:12:35.079><c> object</c><00:12:36.079><c> and</c><00:12:36.360><c> just</c>
+
+00:12:36.550 --> 00:12:36.560 align:start position:0%
+coordinates we'll use object and just
+ 
+
+00:12:36.560 --> 00:12:38.949 align:start position:0%
+coordinates we'll use object and just
+pick<00:12:37.000><c> this</c><00:12:37.240><c> empty</c><00:12:37.680><c> right</c><00:12:37.880><c> here</c><00:12:38.480><c> you</c><00:12:38.600><c> can</c><00:12:38.720><c> see</c>
+
+00:12:38.949 --> 00:12:38.959 align:start position:0%
+pick this empty right here you can see
+ 
+
+00:12:38.959 --> 00:12:41.030 align:start position:0%
+pick this empty right here you can see
+now<00:12:39.160><c> this</c><00:12:39.279><c> is</c><00:12:39.480><c> animating</c><00:12:40.440><c> you</c><00:12:40.519><c> can</c><00:12:40.680><c> of</c><00:12:40.839><c> course</c>
+
+00:12:41.030 --> 00:12:41.040 align:start position:0%
+now this is animating you can of course
+ 
+
+00:12:41.040 --> 00:12:43.629 align:start position:0%
+now this is animating you can of course
+map<00:12:41.360><c> this</c><00:12:42.079><c> uh</c><00:12:42.240><c> to</c><00:12:42.399><c> the</c><00:12:42.600><c> cube</c><00:12:42.839><c> movement</c><00:12:43.399><c> through</c>
+
+00:12:43.629 --> 00:12:43.639 align:start position:0%
+map this uh to the cube movement through
+ 
+
+00:12:43.639 --> 00:12:45.590 align:start position:0%
+map this uh to the cube movement through
+some<00:12:43.880><c> driver</c><00:12:44.360><c> expression</c><00:12:44.959><c> or</c><00:12:45.320><c> you</c><00:12:45.440><c> know</c>
+
+00:12:45.590 --> 00:12:45.600 align:start position:0%
+some driver expression or you know
+ 
+
+00:12:45.600 --> 00:12:47.710 align:start position:0%
+some driver expression or you know
+geometry<00:12:46.079><c> nodes</c><00:12:46.480><c> and</c><00:12:46.600><c> now</c><00:12:46.880><c> I</c><00:12:46.959><c> can</c><00:12:47.160><c> just</c><00:12:47.320><c> select</c>
+
+00:12:47.710 --> 00:12:47.720 align:start position:0%
+geometry nodes and now I can just select
+ 
+
+00:12:47.720 --> 00:12:50.069 align:start position:0%
+geometry nodes and now I can just select
+this<00:12:48.040><c> empty</c><00:12:48.519><c> right</c><00:12:48.720><c> here</c><00:12:49.320><c> and</c><00:12:49.440><c> scale</c><00:12:49.760><c> it</c><00:12:49.920><c> up</c>
+
+00:12:50.069 --> 00:12:50.079 align:start position:0%
+this empty right here and scale it up
+ 
+
+00:12:50.079 --> 00:12:52.710 align:start position:0%
+this empty right here and scale it up
+and<00:12:50.279><c> down</c><00:12:51.000><c> to</c><00:12:51.240><c> adjust</c><00:12:51.600><c> the</c><00:12:51.720><c> waves</c><00:12:52.440><c> and</c><00:12:52.560><c> now</c>
+
+00:12:52.710 --> 00:12:52.720 align:start position:0%
+and down to adjust the waves and now
+ 
+
+00:12:52.720 --> 00:12:55.430 align:start position:0%
+and down to adjust the waves and now
+let's<00:12:52.920><c> look</c><00:12:53.160><c> from</c><00:12:53.320><c> the</c><00:12:53.720><c> camera</c><00:12:54.720><c> and</c><00:12:54.920><c> I</c><00:12:55.079><c> think</c>
+
+00:12:55.430 --> 00:12:55.440 align:start position:0%
+let's look from the camera and I think
+ 
+
+00:12:55.440 --> 00:12:57.629 align:start position:0%
+let's look from the camera and I think
+this<00:12:55.600><c> will</c><00:12:55.839><c> need</c><00:12:56.079><c> to</c><00:12:56.320><c> be</c><00:12:56.600><c> a</c><00:12:56.720><c> little</c><00:12:56.880><c> bit</c><00:12:57.079><c> larger</c>
+
+00:12:57.629 --> 00:12:57.639 align:start position:0%
+this will need to be a little bit larger
+ 
+
+00:12:57.639 --> 00:12:59.790 align:start position:0%
+this will need to be a little bit larger
+here
+
+00:12:59.790 --> 00:12:59.800 align:start position:0%
+here
+ 
+
+00:12:59.800 --> 00:13:01.670 align:start position:0%
+here
+and<00:13:00.120><c> yeah</c><00:13:00.279><c> basically</c><00:13:00.760><c> that's</c><00:13:00.959><c> it</c><00:13:01.240><c> that's</c><00:13:01.440><c> all</c>
+
+00:13:01.670 --> 00:13:01.680 align:start position:0%
+and yeah basically that's it that's all
+ 
+
+00:13:01.680 --> 00:13:03.430 align:start position:0%
+and yeah basically that's it that's all
+I<00:13:01.839><c> used</c><00:13:02.440><c> now</c><00:13:02.560><c> for</c><00:13:02.720><c> the</c>
+
+00:13:03.430 --> 00:13:03.440 align:start position:0%
+I used now for the
+ 
+
+00:13:03.440 --> 00:13:06.030 align:start position:0%
+I used now for the
+material<00:13:04.440><c> let's</c><00:13:04.639><c> select</c><00:13:05.160><c> the</c><00:13:05.440><c> object</c><00:13:05.880><c> and</c>
+
+00:13:06.030 --> 00:13:06.040 align:start position:0%
+material let's select the object and
+ 
+
+00:13:06.040 --> 00:13:08.389 align:start position:0%
+material let's select the object and
+let's<00:13:06.199><c> switch</c><00:13:06.519><c> this</c><00:13:06.639><c> to</c><00:13:06.760><c> Shader</c><00:13:07.240><c> editor</c><00:13:08.160><c> press</c>
+
+00:13:08.389 --> 00:13:08.399 align:start position:0%
+let's switch this to Shader editor press
+ 
+
+00:13:08.399 --> 00:13:10.710 align:start position:0%
+let's switch this to Shader editor press
+contrl<00:13:08.760><c> B</c><00:13:09.120><c> to</c><00:13:09.360><c> limit</c><00:13:09.800><c> the</c><00:13:09.959><c> preview</c><00:13:10.320><c> only</c><00:13:10.560><c> to</c>
+
+00:13:10.710 --> 00:13:10.720 align:start position:0%
+contrl B to limit the preview only to
+ 
+
+00:13:10.720 --> 00:13:13.030 align:start position:0%
+contrl B to limit the preview only to
+camera<00:13:11.040><c> bounds</c><00:13:12.040><c> and</c><00:13:12.199><c> let's</c><00:13:12.399><c> go</c><00:13:12.519><c> to</c><00:13:12.680><c> render</c>
+
+00:13:13.030 --> 00:13:13.040 align:start position:0%
+camera bounds and let's go to render
+ 
+
+00:13:13.040 --> 00:13:18.030 align:start position:0%
+camera bounds and let's go to render
+settings<00:13:13.519><c> switch</c><00:13:13.839><c> to</c><00:13:14.320><c> Cycles</c><00:13:15.320><c> enable</c><00:13:15.800><c> GPU</c><00:13:17.040><c> and</c>
+
+00:13:18.030 --> 00:13:18.040 align:start position:0%
+settings switch to Cycles enable GPU and
+ 
+
+00:13:18.040 --> 00:13:20.790 align:start position:0%
+settings switch to Cycles enable GPU and
+the<00:13:18.199><c> noising</c><00:13:18.760><c> right</c>
+
+00:13:20.790 --> 00:13:20.800 align:start position:0%
+the noising right
+ 
+
+00:13:20.800 --> 00:13:24.030 align:start position:0%
+the noising right
+here<00:13:21.800><c> and</c><00:13:22.000><c> something</c><00:13:22.320><c> like</c><00:13:22.519><c> 128</c><00:13:23.519><c> samples</c>
+
+00:13:24.030 --> 00:13:24.040 align:start position:0%
+here and something like 128 samples
+ 
+
+00:13:24.040 --> 00:13:26.470 align:start position:0%
+here and something like 128 samples
+should<00:13:24.240><c> be</c><00:13:24.519><c> fine</c><00:13:25.240><c> and</c><00:13:25.360><c> now</c><00:13:25.519><c> let's</c><00:13:25.680><c> P</c><00:13:25.880><c> shift</c><00:13:26.120><c> a</c>
+
+00:13:26.470 --> 00:13:26.480 align:start position:0%
+should be fine and now let's P shift a
+ 
+
+00:13:26.480 --> 00:13:29.550 align:start position:0%
+should be fine and now let's P shift a
+and<00:13:26.680><c> let's</c><00:13:26.959><c> add</c><00:13:27.160><c> a</c><00:13:27.399><c> light</c><00:13:27.920><c> area</c><00:13:28.360><c> light</c><00:13:29.160><c> press</c><00:13:29.360><c> G</c>
+
+00:13:29.550 --> 00:13:29.560 align:start position:0%
+and let's add a light area light press G
+ 
+
+00:13:29.560 --> 00:13:31.990 align:start position:0%
+and let's add a light area light press G
+then<00:13:29.760><c> Z</c><00:13:29.920><c> move</c><00:13:30.079><c> it</c><00:13:30.240><c> up</c><00:13:30.399><c> a</c><00:13:30.480><c> little</c>
+
+00:13:31.990 --> 00:13:32.000 align:start position:0%
+then Z move it up a little
+ 
+
+00:13:32.000 --> 00:13:35.629 align:start position:0%
+then Z move it up a little
+bit<00:13:33.000><c> and</c><00:13:33.160><c> let's</c><00:13:33.360><c> make</c><00:13:33.519><c> it</c><00:13:33.639><c> a</c><00:13:33.720><c> little</c><00:13:33.839><c> bit</c>
+
+00:13:35.629 --> 00:13:35.639 align:start position:0%
+bit and let's make it a little bit
+ 
+
+00:13:35.639 --> 00:13:37.990 align:start position:0%
+bit and let's make it a little bit
+larger<00:13:36.639><c> and</c><00:13:36.800><c> let's</c><00:13:37.079><c> increase</c><00:13:37.519><c> to</c><00:13:37.680><c> something</c>
+
+00:13:37.990 --> 00:13:38.000 align:start position:0%
+larger and let's increase to something
+ 
+
+00:13:38.000 --> 00:13:41.189 align:start position:0%
+larger and let's increase to something
+like<00:13:38.279><c> 500</c><00:13:39.199><c> and</c><00:13:39.720><c> press</c><00:13:40.040><c> Z</c><00:13:40.360><c> and</c><00:13:40.680><c> preview</c><00:13:41.120><c> the</c>
+
+00:13:41.189 --> 00:13:41.199 align:start position:0%
+like 500 and press Z and preview the
+ 
+
+00:13:41.199 --> 00:13:43.829 align:start position:0%
+like 500 and press Z and preview the
+rendered<00:13:41.920><c> animation</c><00:13:42.920><c> so</c><00:13:43.240><c> this</c><00:13:43.360><c> is</c><00:13:43.519><c> what</c><00:13:43.639><c> we</c>
+
+00:13:43.829 --> 00:13:43.839 align:start position:0%
+rendered animation so this is what we
+ 
+
+00:13:43.839 --> 00:13:45.949 align:start position:0%
+rendered animation so this is what we
+have<00:13:44.079><c> here</c><00:13:44.680><c> and</c><00:13:44.839><c> now</c><00:13:45.000><c> I'll</c><00:13:45.199><c> select</c><00:13:45.480><c> the</c><00:13:45.600><c> object</c>
+
+00:13:45.949 --> 00:13:45.959 align:start position:0%
+have here and now I'll select the object
+ 
+
+00:13:45.959 --> 00:13:47.069 align:start position:0%
+have here and now I'll select the object
+create<00:13:46.199><c> a</c><00:13:46.320><c> new</c>
+
+00:13:47.069 --> 00:13:47.079 align:start position:0%
+create a new
+ 
+
+00:13:47.079 --> 00:13:48.870 align:start position:0%
+create a new
+material<00:13:48.079><c> and</c><00:13:48.199><c> I</c><00:13:48.320><c> really</c><00:13:48.560><c> like</c><00:13:48.720><c> the</c>
+
+00:13:48.870 --> 00:13:48.880 align:start position:0%
+material and I really like the
+ 
+
+00:13:48.880 --> 00:13:51.430 align:start position:0%
+material and I really like the
+combination<00:13:49.519><c> of</c><00:13:49.680><c> you</c><00:13:49.800><c> know</c><00:13:49.959><c> gray</c><00:13:50.240><c> scale</c><00:13:50.800><c> and</c>
+
+00:13:51.430 --> 00:13:51.440 align:start position:0%
+combination of you know gray scale and
+ 
+
+00:13:51.440 --> 00:13:54.470 align:start position:0%
+combination of you know gray scale and
+strong<00:13:51.759><c> orange</c><00:13:52.279><c> saturated</c><00:13:52.920><c> color</c><00:13:53.839><c> so</c><00:13:54.240><c> that's</c>
+
+00:13:54.470 --> 00:13:54.480 align:start position:0%
+strong orange saturated color so that's
+ 
+
+00:13:54.480 --> 00:13:56.870 align:start position:0%
+strong orange saturated color so that's
+what<00:13:54.600><c> I</c><00:13:54.720><c> went</c><00:13:55.000><c> here</c><00:13:55.199><c> for</c><00:13:56.079><c> and</c><00:13:56.360><c> redu</c><00:13:56.759><c> the</c>
+
+00:13:56.870 --> 00:13:56.880 align:start position:0%
+what I went here for and redu the
+ 
+
+00:13:56.880 --> 00:13:59.430 align:start position:0%
+what I went here for and redu the
+roughness<00:13:57.279><c> all</c><00:13:57.440><c> the</c><00:13:57.519><c> way</c><00:13:57.680><c> to</c><00:13:58.040><c> zero</c><00:13:59.120><c> this</c><00:13:59.279><c> can</c>
+
+00:13:59.430 --> 00:13:59.440 align:start position:0%
+roughness all the way to zero this can
+ 
+
+00:13:59.440 --> 00:14:01.470 align:start position:0%
+roughness all the way to zero this can
+be<00:14:00.000><c> a</c><00:14:00.199><c> bit</c><00:14:00.360><c> brighter</c>
+
+00:14:01.470 --> 00:14:01.480 align:start position:0%
+be a bit brighter
+ 
+
+00:14:01.480 --> 00:14:04.150 align:start position:0%
+be a bit brighter
+here<00:14:02.480><c> um</c><00:14:02.600><c> but</c><00:14:02.759><c> I</c><00:14:02.880><c> wanted</c><00:14:03.240><c> to</c><00:14:03.600><c> give</c><00:14:03.800><c> this</c><00:14:04.000><c> you</c>
+
+00:14:04.150 --> 00:14:04.160 align:start position:0%
+here um but I wanted to give this you
+ 
+
+00:14:04.160 --> 00:14:06.150 align:start position:0%
+here um but I wanted to give this you
+know<00:14:04.440><c> a</c><00:14:04.639><c> little</c><00:14:04.839><c> bit</c><00:14:05.040><c> of</c><00:14:05.160><c> a</c><00:14:05.320><c> special</c><00:14:05.680><c> effect</c><00:14:05.959><c> so</c>
+
+00:14:06.150 --> 00:14:06.160 align:start position:0%
+know a little bit of a special effect so
+ 
+
+00:14:06.160 --> 00:14:09.310 align:start position:0%
+know a little bit of a special effect so
+let's<00:14:06.360><c> press</c><00:14:06.519><c> shift</c><00:14:06.759><c> a</c><00:14:07.199><c> and</c><00:14:07.360><c> choose</c><00:14:08.320><c> frenal</c>
+
+00:14:09.310 --> 00:14:09.320 align:start position:0%
+let's press shift a and choose frenal
+ 
+
+00:14:09.320 --> 00:14:11.189 align:start position:0%
+let's press shift a and choose frenal
+and<00:14:09.480><c> now</c><00:14:09.959><c> if</c><00:14:10.040><c> you</c><00:14:10.160><c> have</c><00:14:10.320><c> the</c><00:14:10.480><c> old</c><00:14:10.720><c> Wrangler</c>
+
+00:14:11.189 --> 00:14:11.199 align:start position:0%
+and now if you have the old Wrangler
+ 
+
+00:14:11.199 --> 00:14:13.389 align:start position:0%
+and now if you have the old Wrangler
+active<00:14:11.720><c> so</c><00:14:12.000><c> again</c><00:14:12.199><c> you</c><00:14:12.320><c> can</c><00:14:12.480><c> go</c><00:14:12.600><c> to</c><00:14:12.800><c> edit</c>
+
+00:14:13.389 --> 00:14:13.399 align:start position:0%
+active so again you can go to edit
+ 
+
+00:14:13.399 --> 00:14:15.670 align:start position:0%
+active so again you can go to edit
+preferences<00:14:14.399><c> extensions</c><00:14:15.079><c> if</c><00:14:15.160><c> you</c><00:14:15.279><c> don't</c><00:14:15.519><c> have</c>
+
+00:14:15.670 --> 00:14:15.680 align:start position:0%
+preferences extensions if you don't have
+ 
+
+00:14:15.680 --> 00:14:18.790 align:start position:0%
+preferences extensions if you don't have
+it<00:14:16.440><c> and</c><00:14:16.600><c> search</c><00:14:16.880><c> for</c><00:14:17.120><c> Wrangler</c><00:14:18.079><c> but</c><00:14:18.279><c> I</c><00:14:18.440><c> already</c>
+
+00:14:18.790 --> 00:14:18.800 align:start position:0%
+it and search for Wrangler but I already
+ 
+
+00:14:18.800 --> 00:14:21.910 align:start position:0%
+it and search for Wrangler but I already
+have<00:14:18.920><c> it</c><00:14:19.079><c> installed</c><00:14:19.600><c> here</c><00:14:19.720><c> in</c><00:14:19.839><c> the</c>
+
+00:14:21.910 --> 00:14:21.920 align:start position:0%
+have it installed here in the
+ 
+
+00:14:21.920 --> 00:14:25.870 align:start position:0%
+have it installed here in the
+add-ons<00:14:22.920><c> so</c><00:14:23.120><c> you</c><00:14:23.240><c> can</c><00:14:23.360><c> see</c><00:14:23.680><c> right</c><00:14:24.040><c> here</c><00:14:25.040><c> um</c><00:14:25.639><c> so</c>
+
+00:14:25.870 --> 00:14:25.880 align:start position:0%
+add-ons so you can see right here um so
+ 
+
+00:14:25.880 --> 00:14:27.749 align:start position:0%
+add-ons so you can see right here um so
+just<00:14:26.040><c> get</c><00:14:26.240><c> the</c><00:14:26.320><c> node</c><00:14:26.560><c> Wrangler</c><00:14:27.320><c> and</c><00:14:27.440><c> now</c><00:14:27.680><c> if</c>
+
+00:14:27.749 --> 00:14:27.759 align:start position:0%
+just get the node Wrangler and now if
+ 
+
+00:14:27.759 --> 00:14:29.470 align:start position:0%
+just get the node Wrangler and now if
+you<00:14:27.959><c> hold</c><00:14:28.240><c> control</c><00:14:28.560><c> and</c><00:14:28.720><c> shift</c><00:14:29.079><c> and</c><00:14:29.199><c> click</c><00:14:29.399><c> the</c>
+
+00:14:29.470 --> 00:14:29.480 align:start position:0%
+you hold control and shift and click the
+ 
+
+00:14:29.480 --> 00:14:31.710 align:start position:0%
+you hold control and shift and click the
+frontel<00:14:29.959><c> you</c><00:14:30.079><c> will</c><00:14:30.199><c> see</c><00:14:30.399><c> the</c><00:14:30.560><c> preview</c><00:14:31.440><c> and</c><00:14:31.600><c> we</c>
+
+00:14:31.710 --> 00:14:31.720 align:start position:0%
+frontel you will see the preview and we
+ 
+
+00:14:31.720 --> 00:14:34.749 align:start position:0%
+frontel you will see the preview and we
+can<00:14:31.920><c> reduce</c><00:14:32.320><c> the</c><00:14:32.720><c> I</c><00:14:33.720><c> you</c><00:14:33.839><c> will</c><00:14:34.040><c> see</c><00:14:34.360><c> it</c><00:14:34.480><c> will</c>
+
+00:14:34.749 --> 00:14:34.759 align:start position:0%
+can reduce the I you will see it will
+ 
+
+00:14:34.759 --> 00:14:38.910 align:start position:0%
+can reduce the I you will see it will
+create<00:14:35.199><c> these</c><00:14:35.839><c> like</c><00:14:36.240><c> nice</c><00:14:37.240><c> Edge</c><00:14:37.720><c> masks</c>
+
+00:14:38.910 --> 00:14:38.920 align:start position:0%
+create these like nice Edge masks
+ 
+
+00:14:38.920 --> 00:14:42.230 align:start position:0%
+create these like nice Edge masks
+depending<00:14:39.920><c> on</c><00:14:40.279><c> where</c><00:14:40.519><c> your</c><00:14:40.800><c> camera</c><00:14:41.199><c> is</c><00:14:42.000><c> so</c><00:14:42.120><c> we</c>
+
+00:14:42.230 --> 00:14:42.240 align:start position:0%
+depending on where your camera is so we
+ 
+
+00:14:42.240 --> 00:14:44.749 align:start position:0%
+depending on where your camera is so we
+can<00:14:42.360><c> now</c><00:14:42.519><c> press</c><00:14:42.720><c> shift</c><00:14:42.959><c> a</c><00:14:43.440><c> use</c><00:14:43.920><c> color</c><00:14:44.199><c> mix</c><00:14:44.560><c> so</c>
+
+00:14:44.749 --> 00:14:44.759 align:start position:0%
+can now press shift a use color mix so
+ 
+
+00:14:44.759 --> 00:14:47.749 align:start position:0%
+can now press shift a use color mix so
+let's<00:14:44.920><c> search</c><00:14:45.160><c> for</c><00:14:45.440><c> color</c><00:14:45.920><c> mix</c><00:14:46.480><c> color</c><00:14:47.480><c> and</c>
+
+00:14:47.749 --> 00:14:47.759 align:start position:0%
+let's search for color mix color and
+ 
+
+00:14:47.759 --> 00:14:50.389 align:start position:0%
+let's search for color mix color and
+plug<00:14:48.079><c> the</c><00:14:48.199><c> frel</c><00:14:48.560><c> into</c><00:14:48.839><c> factor</c><00:14:49.800><c> and</c><00:14:49.959><c> then</c><00:14:50.160><c> press</c>
+
+00:14:50.389 --> 00:14:50.399 align:start position:0%
+plug the frel into factor and then press
+ 
+
+00:14:50.399 --> 00:14:52.790 align:start position:0%
+plug the frel into factor and then press
+contrl<00:14:50.720><c> C</c><00:14:51.000><c> hovering</c><00:14:51.440><c> over</c><00:14:51.639><c> the</c><00:14:51.800><c> color</c><00:14:52.120><c> here</c>
+
+00:14:52.790 --> 00:14:52.800 align:start position:0%
+contrl C hovering over the color here
+ 
+
+00:14:52.800 --> 00:14:55.949 align:start position:0%
+contrl C hovering over the color here
+paste<00:14:53.120><c> it</c><00:14:53.480><c> right</c><00:14:53.720><c> there</c><00:14:54.519><c> and</c><00:14:54.720><c> change</c><00:14:55.120><c> this</c><00:14:55.639><c> to</c>
+
+00:14:55.949 --> 00:14:55.959 align:start position:0%
+paste it right there and change this to
+ 
+
+00:14:55.959 --> 00:14:58.590 align:start position:0%
+paste it right there and change this to
+White<00:14:56.920><c> and</c><00:14:57.120><c> connect</c><00:14:57.440><c> to</c><00:14:57.639><c> color</c><00:14:58.199><c> and</c><00:14:58.320><c> hold</c>
+
+00:14:58.590 --> 00:14:58.600 align:start position:0%
+White and connect to color and hold
+ 
+
+00:14:58.600 --> 00:14:59.949 align:start position:0%
+White and connect to color and hold
+control<00:14:58.839><c> shift</c><00:14:59.000><c> shift</c><00:14:59.279><c> and</c><00:14:59.440><c> click</c><00:14:59.680><c> on</c><00:14:59.800><c> the</c>
+
+00:14:59.949 --> 00:14:59.959 align:start position:0%
+control shift shift and click on the
+ 
+
+00:14:59.959 --> 00:15:02.310 align:start position:0%
+control shift shift and click on the
+principal<00:15:00.360><c> Shader</c><00:15:01.000><c> back</c><00:15:01.360><c> again</c><00:15:02.040><c> and</c><00:15:02.199><c> of</c>
+
+00:15:02.310 --> 00:15:02.320 align:start position:0%
+principal Shader back again and of
+ 
+
+00:15:02.320 --> 00:15:05.350 align:start position:0%
+principal Shader back again and of
+course<00:15:02.519><c> you</c><00:15:02.639><c> can</c><00:15:02.800><c> press</c><00:15:02.959><c> shift</c><00:15:03.240><c> a</c><00:15:04.240><c> add</c>
+
+00:15:05.350 --> 00:15:05.360 align:start position:0%
+course you can press shift a add
+ 
+
+00:15:05.360 --> 00:15:09.069 align:start position:0%
+course you can press shift a add
+ramp<00:15:06.360><c> and</c><00:15:06.560><c> you</c><00:15:06.720><c> know</c><00:15:07.000><c> make</c><00:15:07.240><c> this</c><00:15:08.079><c> transition</c>
+
+00:15:09.069 --> 00:15:09.079 align:start position:0%
+ramp and you know make this transition
+ 
+
+00:15:09.079 --> 00:15:11.110 align:start position:0%
+ramp and you know make this transition
+on<00:15:09.279><c> the</c><00:15:09.399><c> frontal</c><00:15:09.920><c> more</c><00:15:10.120><c> sharp</c><00:15:10.519><c> you</c><00:15:10.639><c> can</c><00:15:10.839><c> even</c>
+
+00:15:11.110 --> 00:15:11.120 align:start position:0%
+on the frontal more sharp you can even
+ 
+
+00:15:11.120 --> 00:15:13.670 align:start position:0%
+on the frontal more sharp you can even
+invert<00:15:11.519><c> it</c><00:15:11.759><c> if</c><00:15:11.880><c> you</c>
+
+00:15:13.670 --> 00:15:13.680 align:start position:0%
+invert it if you
+ 
+
+00:15:13.680 --> 00:15:17.509 align:start position:0%
+invert it if you
+want<00:15:14.680><c> so</c><00:15:15.000><c> yeah</c><00:15:15.160><c> basically</c><00:15:15.600><c> that's</c><00:15:15.759><c> what</c><00:15:15.920><c> I</c><00:15:16.040><c> use</c>
+
+00:15:17.509 --> 00:15:17.519 align:start position:0%
+want so yeah basically that's what I use
+ 
+
+00:15:17.519 --> 00:15:20.030 align:start position:0%
+want so yeah basically that's what I use
+there<00:15:18.519><c> and</c><00:15:18.680><c> then</c><00:15:18.839><c> you</c><00:15:18.959><c> can</c><00:15:19.160><c> of</c><00:15:19.320><c> course</c>
+
+00:15:20.030 --> 00:15:20.040 align:start position:0%
+there and then you can of course
+ 
+
+00:15:20.040 --> 00:15:22.310 align:start position:0%
+there and then you can of course
+duplicate<00:15:20.600><c> this</c><00:15:20.800><c> light</c><00:15:21.560><c> first</c><00:15:21.800><c> of</c><00:15:21.920><c> all</c><00:15:22.079><c> maybe</c>
+
+00:15:22.310 --> 00:15:22.320 align:start position:0%
+duplicate this light first of all maybe
+ 
+
+00:15:22.320 --> 00:15:24.550 align:start position:0%
+duplicate this light first of all maybe
+make<00:15:22.480><c> it</c><00:15:22.600><c> a</c><00:15:22.680><c> little</c><00:15:22.839><c> bit</c><00:15:23.160><c> stronger</c><00:15:23.560><c> here</c><00:15:24.360><c> and</c>
+
+00:15:24.550 --> 00:15:24.560 align:start position:0%
+make it a little bit stronger here and
+ 
+
+00:15:24.560 --> 00:15:26.670 align:start position:0%
+make it a little bit stronger here and
+then<00:15:24.880><c> press</c><00:15:25.120><c> shift</c>
+
+00:15:26.670 --> 00:15:26.680 align:start position:0%
+then press shift
+ 
+
+00:15:26.680 --> 00:15:30.309 align:start position:0%
+then press shift
+d<00:15:27.680><c> and</c><00:15:27.839><c> move</c><00:15:28.079><c> it</c><00:15:28.240><c> somewhere</c><00:15:28.680><c> back</c>
+
+00:15:30.309 --> 00:15:30.319 align:start position:0%
+d and move it somewhere back
+ 
+
+00:15:30.319 --> 00:15:33.150 align:start position:0%
+d and move it somewhere back
+press<00:15:30.560><c> R</c><00:15:30.880><c> then</c><00:15:31.079><c> X</c><00:15:31.399><c> Change</c><00:15:31.680><c> the</c><00:15:31.880><c> rotation</c><00:15:32.800><c> so</c><00:15:33.040><c> it</c>
+
+00:15:33.150 --> 00:15:33.160 align:start position:0%
+press R then X Change the rotation so it
+ 
+
+00:15:33.160 --> 00:15:35.550 align:start position:0%
+press R then X Change the rotation so it
+falls<00:15:33.720><c> a</c><00:15:33.839><c> little</c><00:15:34.040><c> bit</c><00:15:34.440><c> more</c><00:15:34.759><c> shallow</c><00:15:35.279><c> on</c><00:15:35.440><c> the</c>
+
+00:15:35.550 --> 00:15:35.560 align:start position:0%
+falls a little bit more shallow on the
+ 
+
+00:15:35.560 --> 00:15:36.509 align:start position:0%
+falls a little bit more shallow on the
+waves
+
+00:15:36.509 --> 00:15:36.519 align:start position:0%
+waves
+ 
+
+00:15:36.519 --> 00:15:38.829 align:start position:0%
+waves
+there<00:15:37.519><c> and</c><00:15:37.800><c> increase</c><00:15:38.240><c> the</c><00:15:38.399><c> power</c><00:15:38.680><c> to</c>
+
+00:15:38.829 --> 00:15:38.839 align:start position:0%
+there and increase the power to
+ 
+
+00:15:38.839 --> 00:15:45.030 align:start position:0%
+there and increase the power to
+something<00:15:39.199><c> really</c>
+
+00:15:45.030 --> 00:15:45.040 align:start position:0%
+ 
+ 
+
+00:15:45.040 --> 00:15:47.309 align:start position:0%
+ 
+strong<00:15:46.040><c> and</c><00:15:46.240><c> then</c><00:15:46.480><c> you</c><00:15:46.600><c> know</c><00:15:46.759><c> in</c><00:15:46.880><c> the</c><00:15:46.959><c> render</c>
+
+00:15:47.309 --> 00:15:47.319 align:start position:0%
+strong and then you know in the render
+ 
+
+00:15:47.319 --> 00:15:49.110 align:start position:0%
+strong and then you know in the render
+settings<00:15:48.040><c> you</c><00:15:48.160><c> can</c><00:15:48.399><c> go</c><00:15:48.519><c> ahead</c><00:15:48.759><c> and</c><00:15:48.880><c> in</c><00:15:49.000><c> the</c>
+
+00:15:49.110 --> 00:15:49.120 align:start position:0%
+settings you can go ahead and in the
+ 
+
+00:15:49.120 --> 00:15:51.710 align:start position:0%
+settings you can go ahead and in the
+color<00:15:49.360><c> management</c><00:15:50.319><c> play</c><00:15:50.680><c> with</c><00:15:50.800><c> the</c><00:15:51.000><c> contrast</c>
+
+00:15:51.710 --> 00:15:51.720 align:start position:0%
+color management play with the contrast
+ 
+
+00:15:51.720 --> 00:15:54.110 align:start position:0%
+color management play with the contrast
+settings<00:15:52.720><c> and</c><00:15:53.120><c> with</c><00:15:53.319><c> the</c>
+
+00:15:54.110 --> 00:15:54.120 align:start position:0%
+settings and with the
+ 
+
+00:15:54.120 --> 00:15:57.430 align:start position:0%
+settings and with the
+exposure<00:15:55.120><c> right</c><00:15:55.399><c> there</c><00:15:56.240><c> and</c><00:15:56.519><c> you</c><00:15:56.639><c> should</c><00:15:57.000><c> have</c>
+
+00:15:57.430 --> 00:15:57.440 align:start position:0%
+exposure right there and you should have
+ 
+
+00:15:57.440 --> 00:15:59.430 align:start position:0%
+exposure right there and you should have
+your<00:15:57.720><c> animation</c>
+
+00:15:59.430 --> 00:15:59.440 align:start position:0%
+your animation
+ 
+
+00:15:59.440 --> 00:16:01.629 align:start position:0%
+your animation
+working<00:16:00.199><c> and</c><00:16:00.319><c> then</c><00:16:00.480><c> of</c><00:16:00.639><c> course</c><00:16:00.920><c> in</c><00:16:01.120><c> the</c><00:16:01.279><c> output</c>
+
+00:16:01.629 --> 00:16:01.639 align:start position:0%
+working and then of course in the output
+ 
+
+00:16:01.639 --> 00:16:04.870 align:start position:0%
+working and then of course in the output
+settings<00:16:02.120><c> you</c><00:16:02.240><c> can</c><00:16:02.440><c> go</c><00:16:02.600><c> ahead</c><00:16:03.199><c> switch</c><00:16:03.480><c> to</c><00:16:03.680><c> FFN</c>
+
+00:16:04.870 --> 00:16:04.880 align:start position:0%
+settings you can go ahead switch to FFN
+ 
+
+00:16:04.880 --> 00:16:09.030 align:start position:0%
+settings you can go ahead switch to FFN
+Peg<00:16:05.959><c> encoding</c><00:16:06.959><c> switch</c><00:16:07.199><c> to</c><00:16:07.319><c> MP4</c><00:16:07.880><c> for</c><00:16:08.120><c> example</c>
+
+00:16:09.030 --> 00:16:09.040 align:start position:0%
+Peg encoding switch to MP4 for example
+ 
+
+00:16:09.040 --> 00:16:11.949 align:start position:0%
+Peg encoding switch to MP4 for example
+and<00:16:09.199><c> don't</c><00:16:09.440><c> forget</c><00:16:09.920><c> to</c><00:16:10.240><c> include</c><00:16:10.920><c> the</c><00:16:11.160><c> audio</c>
+
+00:16:11.949 --> 00:16:11.959 align:start position:0%
+and don't forget to include the audio
+ 
+
+00:16:11.959 --> 00:16:15.269 align:start position:0%
+and don't forget to include the audio
+with<00:16:12.120><c> some</c><00:16:12.399><c> codc</c><00:16:13.399><c> um</c><00:16:13.680><c> if</c><00:16:13.880><c> you</c><00:16:14.199><c> have</c><00:16:14.399><c> the</c><00:16:14.600><c> track</c>
+
+00:16:15.269 --> 00:16:15.279 align:start position:0%
+with some codc um if you have the track
+ 
+
+00:16:15.279 --> 00:16:17.350 align:start position:0%
+with some codc um if you have the track
+you<00:16:15.399><c> know</c><00:16:15.560><c> in</c><00:16:15.720><c> the</c><00:16:15.839><c> sequencer</c><00:16:16.839><c> and</c><00:16:17.000><c> then</c><00:16:17.199><c> just</c>
+
+00:16:17.350 --> 00:16:17.360 align:start position:0%
+you know in the sequencer and then just
+ 
+
+00:16:17.360 --> 00:16:20.509 align:start position:0%
+you know in the sequencer and then just
+choose<00:16:17.600><c> your</c><00:16:17.759><c> folder</c><00:16:18.639><c> here</c><00:16:19.639><c> hit</c><00:16:19.880><c> render</c><00:16:20.360><c> and</c>
+
+00:16:20.509 --> 00:16:20.519 align:start position:0%
+choose your folder here hit render and
+ 
+
+00:16:20.519 --> 00:16:23.030 align:start position:0%
+choose your folder here hit render and
+render<00:16:20.880><c> animation</c><00:16:21.839><c> so</c><00:16:22.319><c> yeah</c><00:16:22.519><c> that's</c><00:16:22.680><c> it</c><00:16:22.800><c> from</c>
+
+00:16:23.030 --> 00:16:23.040 align:start position:0%
+render animation so yeah that's it from
+ 
+
+00:16:23.040 --> 00:16:25.749 align:start position:0%
+render animation so yeah that's it from
+me<00:16:23.279><c> today</c><00:16:24.279><c> um</c><00:16:24.560><c> you</c><00:16:24.680><c> know</c><00:16:24.880><c> just</c><00:16:25.040><c> go</c><00:16:25.160><c> ahead</c><00:16:25.480><c> get</c>
+
+00:16:25.749 --> 00:16:25.759 align:start position:0%
+me today um you know just go ahead get
+ 
+
+00:16:25.759 --> 00:16:28.030 align:start position:0%
+me today um you know just go ahead get
+creative<00:16:26.600><c> um</c><00:16:26.759><c> there</c><00:16:26.880><c> are</c><00:16:27.040><c> multiple</c><00:16:27.519><c> ways</c><00:16:27.920><c> how</c>
+
+00:16:28.030 --> 00:16:28.040 align:start position:0%
+creative um there are multiple ways how
+ 
+
+00:16:28.040 --> 00:16:30.910 align:start position:0%
+creative um there are multiple ways how
+to<00:16:28.240><c> use</c><00:16:28.600><c> that</c><00:16:28.959><c> value</c><00:16:29.360><c> in</c><00:16:29.519><c> form</c><00:16:29.759><c> of</c><00:16:29.959><c> drivers</c><00:16:30.800><c> um</c>
+
+00:16:30.910 --> 00:16:30.920 align:start position:0%
+to use that value in form of drivers um
+ 
+
+00:16:30.920 --> 00:16:33.069 align:start position:0%
+to use that value in form of drivers um
+you<00:16:31.040><c> can</c><00:16:31.199><c> add</c><00:16:31.399><c> multiple</c><00:16:31.920><c> objects</c><00:16:32.480><c> you</c><00:16:32.600><c> can</c><00:16:32.759><c> map</c>
+
+00:16:33.069 --> 00:16:33.079 align:start position:0%
+you can add multiple objects you can map
+ 
+
+00:16:33.079 --> 00:16:36.069 align:start position:0%
+you can add multiple objects you can map
+this<00:16:33.240><c> to</c><00:16:33.600><c> their</c><00:16:33.959><c> rotation</c><00:16:34.880><c> to</c><00:16:35.120><c> their</c><00:16:35.360><c> scale</c><00:16:35.959><c> um</c>
+
+00:16:36.069 --> 00:16:36.079 align:start position:0%
+this to their rotation to their scale um
+ 
+
+00:16:36.079 --> 00:16:39.150 align:start position:0%
+this to their rotation to their scale um
+use<00:16:36.279><c> modifiers</c><00:16:37.160><c> map</c><00:16:37.399><c> it</c><00:16:37.600><c> to</c><00:16:37.959><c> whatever</c><00:16:38.480><c> value</c>
+
+00:16:39.150 --> 00:16:39.160 align:start position:0%
+use modifiers map it to whatever value
+ 
+
+00:16:39.160 --> 00:16:41.749 align:start position:0%
+use modifiers map it to whatever value
+you<00:16:39.360><c> want</c><00:16:39.600><c> to</c><00:16:39.839><c> have</c><00:16:40.160><c> animated</c><00:16:41.160><c> um</c><00:16:41.319><c> and</c><00:16:41.440><c> I</c><00:16:41.519><c> would</c>
+
+00:16:41.749 --> 00:16:41.759 align:start position:0%
+you want to have animated um and I would
+ 
+
+00:16:41.759 --> 00:16:43.710 align:start position:0%
+you want to have animated um and I would
+love<00:16:41.959><c> to</c><00:16:42.079><c> see</c><00:16:42.279><c> what</c><00:16:42.440><c> you</c><00:16:42.639><c> create</c><00:16:43.199><c> so</c><00:16:43.360><c> you</c><00:16:43.480><c> know</c>
+
+00:16:43.710 --> 00:16:43.720 align:start position:0%
+love to see what you create so you know
+ 
+
+00:16:43.720 --> 00:16:44.990 align:start position:0%
+love to see what you create so you know
+if<00:16:43.800><c> you</c><00:16:44.040><c> create</c><00:16:44.360><c> something</c><00:16:44.639><c> really</c>
+
+00:16:44.990 --> 00:16:45.000 align:start position:0%
+if you create something really
+ 
+
+00:16:45.000 --> 00:16:47.309 align:start position:0%
+if you create something really
+interesting<00:16:45.839><c> tag</c><00:16:46.040><c> me</c><00:16:46.199><c> on</c><00:16:46.360><c> the</c><00:16:46.519><c> Instagram</c><00:16:47.120><c> with</c>
+
+00:16:47.309 --> 00:16:47.319 align:start position:0%
+interesting tag me on the Instagram with
+ 
+
+00:16:47.319 --> 00:16:49.269 align:start position:0%
+interesting tag me on the Instagram with
+polygon<00:16:47.680><c> Runway</c><00:16:48.079><c> handle</c><00:16:48.519><c> so</c><00:16:48.720><c> I</c><00:16:48.800><c> can</c><00:16:49.000><c> have</c><00:16:49.120><c> a</c>
+
+00:16:49.269 --> 00:16:49.279 align:start position:0%
+polygon Runway handle so I can have a
+ 
+
+00:16:49.279 --> 00:16:51.269 align:start position:0%
+polygon Runway handle so I can have a
+look<00:16:49.560><c> or</c><00:16:49.720><c> you</c><00:16:49.839><c> know</c><00:16:50.000><c> share</c><00:16:50.279><c> it</c><00:16:50.480><c> with</c><00:16:50.600><c> us</c><00:16:50.880><c> on</c><00:16:51.000><c> our</c>
+
+00:16:51.269 --> 00:16:51.279 align:start position:0%
+look or you know share it with us on our
+ 
+
+00:16:51.279 --> 00:16:53.389 align:start position:0%
+look or you know share it with us on our
+Discord<00:16:52.000><c> um</c><00:16:52.160><c> you</c><00:16:52.240><c> can</c><00:16:52.399><c> find</c><00:16:52.600><c> the</c><00:16:52.880><c> links</c><00:16:53.120><c> to</c>
+
+00:16:53.389 --> 00:16:53.399 align:start position:0%
+Discord um you can find the links to
+ 
+
+00:16:53.399 --> 00:16:55.910 align:start position:0%
+Discord um you can find the links to
+Discord<00:16:54.399><c> in</c><00:16:54.880><c> the</c><00:16:55.120><c> YouTube</c><00:16:55.480><c> channel</c>
+
+00:16:55.910 --> 00:16:55.920 align:start position:0%
+Discord in the YouTube channel
+ 
+
+00:16:55.920 --> 00:16:57.829 align:start position:0%
+Discord in the YouTube channel
+description<00:16:56.839><c> so</c><00:16:57.040><c> yeah</c><00:16:57.199><c> that's</c><00:16:57.399><c> the</c><00:16:57.519><c> audio</c>
+
+00:16:57.829 --> 00:16:57.839 align:start position:0%
+description so yeah that's the audio
+ 
+
+00:16:57.839 --> 00:16:59.790 align:start position:0%
+description so yeah that's the audio
+visual<00:16:58.199><c> animation</c><00:16:58.639><c> from</c><00:16:59.000><c> me</c><00:16:59.120><c> today</c><00:16:59.480><c> I</c><00:16:59.600><c> really</c>
+
+00:16:59.790 --> 00:16:59.800 align:start position:0%
+visual animation from me today I really
+ 
+
+00:16:59.800 --> 00:17:01.230 align:start position:0%
+visual animation from me today I really
+hope<00:16:59.959><c> you</c><00:17:00.120><c> enjoyed</c><00:17:00.480><c> this</c><00:17:00.560><c> one</c><00:17:00.759><c> and</c><00:17:00.920><c> again</c><00:17:01.160><c> if</c>
+
+00:17:01.230 --> 00:17:01.240 align:start position:0%
+hope you enjoyed this one and again if
+ 
+
+00:17:01.240 --> 00:17:02.949 align:start position:0%
+hope you enjoyed this one and again if
+you<00:17:01.399><c> did</c><00:17:01.639><c> please</c><00:17:01.880><c> leave</c><00:17:02.079><c> a</c><00:17:02.279><c> like</c><00:17:02.720><c> and</c><00:17:02.839><c> if</c>
+
+00:17:02.949 --> 00:17:02.959 align:start position:0%
+you did please leave a like and if
+ 
+
+00:17:02.959 --> 00:17:04.270 align:start position:0%
+you did please leave a like and if
+you're<00:17:03.160><c> new</c><00:17:03.360><c> around</c><00:17:03.680><c> here</c><00:17:03.880><c> hit</c><00:17:04.039><c> that</c>
+
+00:17:04.270 --> 00:17:04.280 align:start position:0%
+you're new around here hit that
+ 
+
+00:17:04.280 --> 00:17:06.110 align:start position:0%
+you're new around here hit that
+subscribe<00:17:04.880><c> thank</c><00:17:05.039><c> you</c><00:17:05.199><c> all</c><00:17:05.360><c> for</c><00:17:05.600><c> watching</c><00:17:05.959><c> and</c>
+
+00:17:06.110 --> 00:17:06.120 align:start position:0%
+subscribe thank you all for watching and
+ 
+
+00:17:06.120 --> 00:17:08.120 align:start position:0%
+subscribe thank you all for watching and
+have<00:17:06.240><c> a</c><00:17:06.360><c> wonderful</c><00:17:06.760><c> day</c>
+
+00:17:08.120 --> 00:17:08.130 align:start position:0%
+have a wonderful day
+ 
+
+00:17:08.130 --> 00:17:41.359 align:start position:0%
+have a wonderful day
+[Music]
+

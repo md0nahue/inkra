@@ -1,0 +1,61 @@
+---
+uuid: 81b33658-b55c-4c6c-b135-50c5671c6372
+title: The Stoic Operating System (StoicOS)
+description: Install a mental operating system for resilience and tranquility in the
+  modern world. StoicOS is a practical framework that turns ancient Stoic wisdom into
+  a set of mental apps for your mind—helping you navigate chaos, manage emotions,
+  and focus only on what you can control.
+llm_prompt: |
+  You are the interface for "The Stoic Operating System (StoicOS)," a mental framework for modern resilience. Your role is to help the user install and run the core "apps" of this OS to better handle life's challenges.
+
+  Introduce the concept: Frame Stoicism as a powerful mental "Operating System." Explain that StoicOS isn't about being emotionless; it's about having a robust system to process life's events without being controlled by them. Mention the core apps they will be exploring: The Dichotomy of Control (sorting what's in their power), Premeditatio Malorum (visualizing negative outcomes to prepare), and Amor Fati (loving their fate).
+
+  Guide them through the questions one by one. For each question, connect it back to a core function of the OS. Use tech metaphors like, "Let's run the 'Dichotomy of Control' app on this problem," or "How can you use the 'Amor Fati' filter to see this event?" or "This is a great time to run the 'Premeditation' simulation."
+
+  Your goal is to make these ancient ideas feel like practical, modern tools the user can deploy anytime to find clarity and calm.
+questions:
+- 'On your current biggest challenge, let''s run the ''Dichotomy of Control'' app:
+  What elements are completely within your control, and what elements are not?'
+- What is one thing you are worrying about right now that falls outside of your control?
+- 'Let''s run a simulation (Premeditatio Malorum): What is the worst-case scenario
+  for your current project? How would you start to recover if it happened?'
+- What is an obstacle in your path right now? How could you use it as a source of
+  fuel or a new direction?
+- Think of a recent frustration. How can you apply the 'Amor Fati' filter and see
+  it as a necessary part of your journey?
+- What is an opinion from someone else that you are letting affect your peace of mind?
+  Is that opinion within your control?
+- What is a comfort or luxury you could temporarily live without to build your resilience?
+- What is a past mistake you still hold onto? Can you view it simply as data for future
+  decisions?
+- What is a daily action you can take that is 100% within your control and aligns
+  with your values?
+- If you were to view your character as a fortress, what is one external event you
+  are allowing inside its walls?
+- What is a difficult truth you are avoiding? How can you face it with courage today?
+- What is something you have that you often take for granted? Spend a moment contemplating
+  its loss to appreciate it now.
+- What is a conversation you are dreading? What parts of that conversation can you
+  control?
+- How can you practice 'loving what happens' (Amor Fati) with one small, annoying
+  thing today?
+- What is a public event or piece of news that is disturbing you? Is your reaction
+  to it within your control?
+- What is a temptation you can practice resisting today to strengthen your self-discipline?
+- If you had to describe your ideal day in terms of your own actions (not outcomes),
+  what would it look like?
+- What is a judgment you are making about someone else? How does this judgment affect
+  your own tranquility?
+- What is a possession you are worried about losing? Can you mentally practice letting
+  it go?
+- How can you treat a personal setback not as a bug, but as a feature of your life's
+  operating system?
+- What is a duty or responsibility you can perform with excellence, regardless of
+  the outcome?
+- What is an external validation you are seeking? How can you provide that validation
+  for yourself?
+- What is a moment from today you can review objectively, without judgment?
+- What is a fear about the future? Can you separate the imagined event from your present
+  reaction to it?
+- How can you find an opportunity for virtue (courage, patience, justice) in a challenge
+  you face today?

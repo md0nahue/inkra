@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0037C3C186254FADA4CDDA3D /* ExportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC36133A82A720ECDBEF01 /* ExportServiceTests.swift */; };
+		0094AC7F89386E94C6F108BF /* InterviewFinishedScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2683B590DBC8D0D59E8618DA /* InterviewFinishedScreenTests.swift */; };
+		02277314FCC792409200769A /* BasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D16598B15746326ABB461A /* BasicTests.swift */; };
+		0459909F3A08DE694C80AE0D /* CompleteInterviewWorkflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F603DF08E4A53998885C92 /* CompleteInterviewWorkflowTests.swift */; };
+		056269958B4E71C5DE696A22 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9A3F2F912C0715C6D8168 /* PerformanceTests.swift */; };
+		1505D909D656B7FC0E2513EC /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F7B16B9C241C719774B9A0 /* NetworkServiceTests.swift */; };
+		22A9D4CEDB46020126CCD506 /* HandsFreeEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F007DEB6D1E6E2ED3A0C3 /* HandsFreeEndToEndTests.swift */; };
+		34AF7F662E2F452000E23BFE /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 3473F2E92E2F4465004716C2 /* KeychainAccess */; };
+		3CDB9DA866759A299D7E48BF /* QuoteShotServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C624CD94BE3A7DDC66A7544 /* QuoteShotServiceTests.swift */; };
+		3D66713A4A74AAA1838A7B49 /* ErrorLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4BBB19960E6E894B5FC95A /* ErrorLoggerTests.swift */; };
+		3E4C372D9765F7729B0169C9 /* InterviewExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC322395F4CB32962533A82 /* InterviewExportTests.swift */; };
+		422DB33EDFB692DF03F4A283 /* dawn-walker-eye-level-atmospheric.png in Resources */ = {isa = PBXBuildFile; fileRef = 5238242C8F4EDCB743EDC74D /* dawn-walker-eye-level-atmospheric.png */; };
+		4C5D82C42115DC0B7AB2390C /* InkraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA5F3A4D6779E7F2B57A61D /* InkraTests.swift */; };
+		4E68B09211A82A34458911D7 /* SwiftUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053B24EB9B61C57D47A00065 /* SwiftUIIntegrationTests.swift */; };
+		4E957C1FC3A47CAA24DBDD1B /* LiveServerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF7A1A4EE365ADD0E7EFDF8 /* LiveServerIntegrationTests.swift */; };
+		59770D49454B6635EFA2E38C /* InterviewCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E22E6CBD031BFF3ABC38E8 /* InterviewCompletionTests.swift */; };
+		76662F0B3DF90044C079B3A1 /* RecordingStateValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10BE438A5CF148FF534B2E /* RecordingStateValidationTests.swift */; };
+		7B76F1E28FF246F7610A2C3C /* OutlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662088A239023D6FB2F5A23 /* OutlineTests.swift */; };
+		7C11C30BE82DF25BFA292197 /* mountain-sage-triumphant-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 69741F3F48323C23DED23349 /* mountain-sage-triumphant-landscape.png */; };
+		868B917F635B389F5322DAEF /* atmospheric-background-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACBCF90D6892E2A74D51F6F /* atmospheric-background-1.png */; };
+		887581A6A0A5CB5DE1341798 /* AudioServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852581B06C02A2BA0784CB2 /* AudioServiceTests.swift */; };
+		93B649B64764261BEBB3FA7C /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F90BC49B1937695869C30F /* AuthServiceTests.swift */; };
+		95D1681D5FC711F90223496C /* MockServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9D92CED72BBC227076D27B /* MockServices.swift */; };
+		978A7905D9253127CE65E5BC /* ProjectListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0694C3EDF89EC0B6E8F0A124 /* ProjectListViewModelTests.swift */; };
+		9D0878ACC8F31AF8433A87A5 /* AutomatedInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B1C39ECE5B948B12F5E4C1 /* AutomatedInterviewTests.swift */; };
+		A6F7A192FE951541C549850A /* ProjectStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CFBA6C5DFC0A5B2B4CD723 /* ProjectStatusTests.swift */; };
+		B99880A6AE9795F4E9E1B9CC /* atmospheric-background-3.png in Resources */ = {isa = PBXBuildFile; fileRef = F9531DFEA01119B34263C3FD /* atmospheric-background-3.png */; };
+		BDDCAE5D4A570D3D70DBCB83 /* SimpleQuoteShotViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F194B2AAB160B902FD16D9F /* SimpleQuoteShotViewModelTests.swift */; };
+		C1BD84A0A50517BB13713F5F /* AudioFileMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280148424FAAEC780C17945A /* AudioFileMetadataTests.swift */; };
+		C39CF33CD5B135A04D24B74E /* SimpleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DFDBE76F81667FF640CDB /* SimpleProjectTests.swift */; };
+		C474180A484E1EA5C1E25840 /* EndToEndFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2308D053939D4535925B80 /* EndToEndFlowTests.swift */; };
+		CD888476666504F40E3F35A0 /* SimpleAudiogramViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42F2FD4615A22283282DA9 /* SimpleAudiogramViewModelTests.swift */; };
+		D3F9D08AD5DB85AE316A4988 /* HandsFreeInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672BAE7DF44A8B88392BF7 /* HandsFreeInterviewTests.swift */; };
+		D814B1F37C3E8B59B930CA6F /* MinimalInterviewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8CA7898A209CA9FF10BF5B /* MinimalInterviewTest.swift */; };
+		E3B140196B75599042E12304 /* AudioRecordingPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C51C6FAE09BC93E283749 /* AudioRecordingPathTests.swift */; };
+		EBB712036BA78D4D41AD7E86 /* window-gazer-atmospheric-mood.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E733BA637857352591A4B9 /* window-gazer-atmospheric-mood.png */; };
+		ECEA93074A67AFBF25069D3C /* VibeLogBoardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C46307E28BA001C201F84 /* VibeLogBoardViewModelTests.swift */; };
+		EE0DA50FBA5DB42B9759F862 /* TestTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A7790528A37AE927A7CB57 /* TestTypes.swift */; };
+		F4391487CFB7AD255138E5FB /* atmospheric-background-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EB05D5F7612B523D3D62068 /* atmospheric-background-2.png */; };
+		F9CBE71C192DCEBA94DEBF18 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7C1A9F2D06D2F9A3A65C2 /* StringExtensionsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		343A18252E25EC0400332C44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343A180F2E25EC0200332C44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 343A18162E25EC0200332C44;
+			remoteInfo = Inkra;
+		};
+		343A182F2E25EC0400332C44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343A180F2E25EC0200332C44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 343A18162E25EC0200332C44;
+			remoteInfo = Inkra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		053B24EB9B61C57D47A00065 /* SwiftUIIntegrationTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIIntegrationTests.swift; path = InkraTests/UI/SwiftUIIntegrationTests.swift; sourceTree = "<group>"; };
+		0694C3EDF89EC0B6E8F0A124 /* ProjectListViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProjectListViewModelTests.swift; path = InkraTests/ViewModels/ProjectListViewModelTests.swift; sourceTree = "<group>"; };
+		0E42F2FD4615A22283282DA9 /* SimpleAudiogramViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleAudiogramViewModelTests.swift; path = InkraTests/ViewModels/SimpleAudiogramViewModelTests.swift; sourceTree = "<group>"; };
+		1B2308D053939D4535925B80 /* EndToEndFlowTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndToEndFlowTests.swift; path = InkraTests/Integration/EndToEndFlowTests.swift; sourceTree = "<group>"; };
+		256DFDBE76F81667FF640CDB /* SimpleProjectTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleProjectTests.swift; path = InkraTests/Models/SimpleProjectTests.swift; sourceTree = "<group>"; };
+		2683B590DBC8D0D59E8618DA /* InterviewFinishedScreenTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterviewFinishedScreenTests.swift; path = InkraTests/UI/InterviewFinishedScreenTests.swift; sourceTree = "<group>"; };
+		26A7790528A37AE927A7CB57 /* TestTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestTypes.swift; path = InkraTests/TestHelpers/TestTypes.swift; sourceTree = "<group>"; };
+		280148424FAAEC780C17945A /* AudioFileMetadataTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioFileMetadataTests.swift; path = InkraTests/Recording/AudioFileMetadataTests.swift; sourceTree = "<group>"; };
+		2C624CD94BE3A7DDC66A7544 /* QuoteShotServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuoteShotServiceTests.swift; path = InkraTests/Services/QuoteShotServiceTests.swift; sourceTree = "<group>"; };
+		2EB05D5F7612B523D3D62068 /* atmospheric-background-2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "atmospheric-background-2.png"; path = "Inkra/atmospheric-background-2.png"; sourceTree = "<group>"; };
+		343A18172E25EC0200332C44 /* Inkra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inkra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		343A18242E25EC0400332C44 /* InkraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InkraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		343A182E2E25EC0400332C44 /* InkraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InkraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3662088A239023D6FB2F5A23 /* OutlineTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutlineTests.swift; path = InkraTests/Models/OutlineTests.swift; sourceTree = "<group>"; };
+		4D672BAE7DF44A8B88392BF7 /* HandsFreeInterviewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandsFreeInterviewTests.swift; path = InkraTests/AudioInterview/HandsFreeInterviewTests.swift; sourceTree = "<group>"; };
+		4F10BE438A5CF148FF534B2E /* RecordingStateValidationTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingStateValidationTests.swift; path = InkraTests/Recording/RecordingStateValidationTests.swift; sourceTree = "<group>"; };
+		5238242C8F4EDCB743EDC74D /* dawn-walker-eye-level-atmospheric.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "dawn-walker-eye-level-atmospheric.png"; path = "Inkra/dawn-walker-eye-level-atmospheric.png"; sourceTree = "<group>"; };
+		5F194B2AAB160B902FD16D9F /* SimpleQuoteShotViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleQuoteShotViewModelTests.swift; path = InkraTests/ViewModels/SimpleQuoteShotViewModelTests.swift; sourceTree = "<group>"; };
+		65F603DF08E4A53998885C92 /* CompleteInterviewWorkflowTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompleteInterviewWorkflowTests.swift; path = InkraTests/Integration/CompleteInterviewWorkflowTests.swift; sourceTree = "<group>"; };
+		69741F3F48323C23DED23349 /* mountain-sage-triumphant-landscape.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mountain-sage-triumphant-landscape.png"; path = "Inkra/mountain-sage-triumphant-landscape.png"; sourceTree = "<group>"; };
+		6ACBCF90D6892E2A74D51F6F /* atmospheric-background-1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "atmospheric-background-1.png"; path = "Inkra/atmospheric-background-1.png"; sourceTree = "<group>"; };
+		75E22E6CBD031BFF3ABC38E8 /* InterviewCompletionTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterviewCompletionTests.swift; path = InkraTests/AudioInterview/InterviewCompletionTests.swift; sourceTree = "<group>"; };
+		7EF7A1A4EE365ADD0E7EFDF8 /* LiveServerIntegrationTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveServerIntegrationTests.swift; path = InkraTests/Integration/LiveServerIntegrationTests.swift; sourceTree = "<group>"; };
+		7FA5F3A4D6779E7F2B57A61D /* InkraTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InkraTests.swift; path = InkraTests/InkraTests.swift; sourceTree = "<group>"; };
+		81B1C39ECE5B948B12F5E4C1 /* AutomatedInterviewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutomatedInterviewTests.swift; path = InkraTests/AudioInterview/AutomatedInterviewTests.swift; sourceTree = "<group>"; };
+		8B6C51C6FAE09BC93E283749 /* AudioRecordingPathTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioRecordingPathTests.swift; path = InkraTests/Recording/AudioRecordingPathTests.swift; sourceTree = "<group>"; };
+		9EC322395F4CB32962533A82 /* InterviewExportTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterviewExportTests.swift; path = InkraTests/Export/InterviewExportTests.swift; sourceTree = "<group>"; };
+		A5B7C1A9F2D06D2F9A3A65C2 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtensionsTests.swift; path = InkraTests/Utils/StringExtensionsTests.swift; sourceTree = "<group>"; };
+		A89F007DEB6D1E6E2ED3A0C3 /* HandsFreeEndToEndTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandsFreeEndToEndTests.swift; path = InkraTests/Integration/HandsFreeEndToEndTests.swift; sourceTree = "<group>"; };
+		B1F90BC49B1937695869C30F /* AuthServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthServiceTests.swift; path = InkraTests/Services/AuthServiceTests.swift; sourceTree = "<group>"; };
+		B6D16598B15746326ABB461A /* BasicTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicTests.swift; path = InkraTests/BasicTests.swift; sourceTree = "<group>"; };
+		C09C46307E28BA001C201F84 /* VibeLogBoardViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibeLogBoardViewModelTests.swift; path = InkraTests/ViewModels/VibeLogBoardViewModelTests.swift; sourceTree = "<group>"; };
+		C0F7B16B9C241C719774B9A0 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkServiceTests.swift; path = InkraTests/Services/NetworkServiceTests.swift; sourceTree = "<group>"; };
+		CEFC36133A82A720ECDBEF01 /* ExportServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExportServiceTests.swift; path = InkraTests/Services/ExportServiceTests.swift; sourceTree = "<group>"; };
+		D0E9A3F2F912C0715C6D8168 /* PerformanceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PerformanceTests.swift; path = InkraTests/Performance/PerformanceTests.swift; sourceTree = "<group>"; };
+		D2E733BA637857352591A4B9 /* window-gazer-atmospheric-mood.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "window-gazer-atmospheric-mood.png"; path = "Inkra/window-gazer-atmospheric-mood.png"; sourceTree = "<group>"; };
+		DA4BBB19960E6E894B5FC95A /* ErrorLoggerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorLoggerTests.swift; path = InkraTests/Utils/ErrorLoggerTests.swift; sourceTree = "<group>"; };
+		DE8CA7898A209CA9FF10BF5B /* MinimalInterviewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinimalInterviewTest.swift; path = InkraTests/MinimalInterviewTest.swift; sourceTree = "<group>"; };
+		DE9D92CED72BBC227076D27B /* MockServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockServices.swift; path = InkraTests/TestHelpers/MockServices.swift; sourceTree = "<group>"; };
+		F6CFBA6C5DFC0A5B2B4CD723 /* ProjectStatusTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProjectStatusTests.swift; path = InkraTests/Models/ProjectStatusTests.swift; sourceTree = "<group>"; };
+		F852581B06C02A2BA0784CB2 /* AudioServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioServiceTests.swift; path = InkraTests/Services/AudioServiceTests.swift; sourceTree = "<group>"; };
+		F9531DFEA01119B34263C3FD /* atmospheric-background-3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "atmospheric-background-3.png"; path = "Inkra/atmospheric-background-3.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		343A18192E25EC0200332C44 /* Inkra */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Inkra;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		343A18142E25EC0200332C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34AF7F662E2F452000E23BFE /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343A18212E25EC0400332C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343A182B2E25EC0400332C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02D3550388859A2482A75DCA /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				65F603DF08E4A53998885C92 /* CompleteInterviewWorkflowTests.swift */,
+				1B2308D053939D4535925B80 /* EndToEndFlowTests.swift */,
+				A89F007DEB6D1E6E2ED3A0C3 /* HandsFreeEndToEndTests.swift */,
+				7EF7A1A4EE365ADD0E7EFDF8 /* LiveServerIntegrationTests.swift */,
+			);
+			name = Integration;
+			sourceTree = "<group>";
+		};
+		1311E76CB7BE8E24514D9248 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F852581B06C02A2BA0784CB2 /* AudioServiceTests.swift */,
+				B1F90BC49B1937695869C30F /* AuthServiceTests.swift */,
+				CEFC36133A82A720ECDBEF01 /* ExportServiceTests.swift */,
+				C0F7B16B9C241C719774B9A0 /* NetworkServiceTests.swift */,
+				2C624CD94BE3A7DDC66A7544 /* QuoteShotServiceTests.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		343A180E2E25EC0200332C44 = {
+			isa = PBXGroup;
+			children = (
+				343A18192E25EC0200332C44 /* Inkra */,
+				343A18182E25EC0200332C44 /* Products */,
+				92976747CF021120255C9B77 /* InkraTests */,
+				6ACBCF90D6892E2A74D51F6F /* atmospheric-background-1.png */,
+				2EB05D5F7612B523D3D62068 /* atmospheric-background-2.png */,
+				F9531DFEA01119B34263C3FD /* atmospheric-background-3.png */,
+				5238242C8F4EDCB743EDC74D /* dawn-walker-eye-level-atmospheric.png */,
+				69741F3F48323C23DED23349 /* mountain-sage-triumphant-landscape.png */,
+				D2E733BA637857352591A4B9 /* window-gazer-atmospheric-mood.png */,
+			);
+			sourceTree = "<group>";
+		};
+		343A18182E25EC0200332C44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343A18172E25EC0200332C44 /* Inkra.app */,
+				343A18242E25EC0400332C44 /* InkraTests.xctest */,
+				343A182E2E25EC0400332C44 /* InkraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92976747CF021120255C9B77 /* InkraTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE05CD0C1DEEC8B64316EB47 /* AudioInterview */,
+				B6D16598B15746326ABB461A /* BasicTests.swift */,
+				934104AC8DCE234362B2E899 /* Export */,
+				7FA5F3A4D6779E7F2B57A61D /* InkraTests.swift */,
+				02D3550388859A2482A75DCA /* Integration */,
+				DE8CA7898A209CA9FF10BF5B /* MinimalInterviewTest.swift */,
+				B930772DA471C6D56FC7B58D /* Models */,
+				EBC94960BCF2EEC85E9B7274 /* Performance */,
+				E93039FE049D2A49418CBE0B /* Recording */,
+				1311E76CB7BE8E24514D9248 /* Services */,
+				BEC5D698DA91581ECB558C6D /* TestHelpers */,
+				DBC059D4092526451CC5ABAB /* UI */,
+				D6C9F92A751AA8290157C3B1 /* Utils */,
+				D40A27ACBF6E61A383003E5D /* ViewModels */,
+			);
+			name = InkraTests;
+			sourceTree = "<group>";
+		};
+		934104AC8DCE234362B2E899 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				9EC322395F4CB32962533A82 /* InterviewExportTests.swift */,
+			);
+			name = Export;
+			sourceTree = "<group>";
+		};
+		B930772DA471C6D56FC7B58D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3662088A239023D6FB2F5A23 /* OutlineTests.swift */,
+				F6CFBA6C5DFC0A5B2B4CD723 /* ProjectStatusTests.swift */,
+				256DFDBE76F81667FF640CDB /* SimpleProjectTests.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BEC5D698DA91581ECB558C6D /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				DE9D92CED72BBC227076D27B /* MockServices.swift */,
+				26A7790528A37AE927A7CB57 /* TestTypes.swift */,
+			);
+			name = TestHelpers;
+			sourceTree = "<group>";
+		};
+		D40A27ACBF6E61A383003E5D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0694C3EDF89EC0B6E8F0A124 /* ProjectListViewModelTests.swift */,
+				0E42F2FD4615A22283282DA9 /* SimpleAudiogramViewModelTests.swift */,
+				5F194B2AAB160B902FD16D9F /* SimpleQuoteShotViewModelTests.swift */,
+				C09C46307E28BA001C201F84 /* VibeLogBoardViewModelTests.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		D6C9F92A751AA8290157C3B1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA4BBB19960E6E894B5FC95A /* ErrorLoggerTests.swift */,
+				A5B7C1A9F2D06D2F9A3A65C2 /* StringExtensionsTests.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		DBC059D4092526451CC5ABAB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2683B590DBC8D0D59E8618DA /* InterviewFinishedScreenTests.swift */,
+				053B24EB9B61C57D47A00065 /* SwiftUIIntegrationTests.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E93039FE049D2A49418CBE0B /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				280148424FAAEC780C17945A /* AudioFileMetadataTests.swift */,
+				8B6C51C6FAE09BC93E283749 /* AudioRecordingPathTests.swift */,
+				4F10BE438A5CF148FF534B2E /* RecordingStateValidationTests.swift */,
+			);
+			name = Recording;
+			sourceTree = "<group>";
+		};
+		EBC94960BCF2EEC85E9B7274 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9A3F2F912C0715C6D8168 /* PerformanceTests.swift */,
+			);
+			name = Performance;
+			sourceTree = "<group>";
+		};
+		FE05CD0C1DEEC8B64316EB47 /* AudioInterview */ = {
+			isa = PBXGroup;
+			children = (
+				81B1C39ECE5B948B12F5E4C1 /* AutomatedInterviewTests.swift */,
+				4D672BAE7DF44A8B88392BF7 /* HandsFreeInterviewTests.swift */,
+				75E22E6CBD031BFF3ABC38E8 /* InterviewCompletionTests.swift */,
+			);
+			name = AudioInterview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		343A18162E25EC0200332C44 /* Inkra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343A18382E25EC0400332C44 /* Build configuration list for PBXNativeTarget "Inkra" */;
+			buildPhases = (
+				343A18132E25EC0200332C44 /* Sources */,
+				343A18142E25EC0200332C44 /* Frameworks */,
+				343A18152E25EC0200332C44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				343A18192E25EC0200332C44 /* Inkra */,
+			);
+			name = Inkra;
+			packageProductDependencies = (
+				3473F2E92E2F4465004716C2 /* KeychainAccess */,
+			);
+			productName = Inkra;
+			productReference = 343A18172E25EC0200332C44 /* Inkra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		343A18232E25EC0400332C44 /* InkraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343A183B2E25EC0400332C44 /* Build configuration list for PBXNativeTarget "InkraTests" */;
+			buildPhases = (
+				343A18202E25EC0400332C44 /* Sources */,
+				343A18212E25EC0400332C44 /* Frameworks */,
+				343A18222E25EC0400332C44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343A18262E25EC0400332C44 /* PBXTargetDependency */,
+			);
+			name = InkraTests;
+			productName = InkraTests;
+			productReference = 343A18242E25EC0400332C44 /* InkraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		343A182D2E25EC0400332C44 /* InkraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343A183E2E25EC0400332C44 /* Build configuration list for PBXNativeTarget "InkraUITests" */;
+			buildPhases = (
+				343A182A2E25EC0400332C44 /* Sources */,
+				343A182B2E25EC0400332C44 /* Frameworks */,
+				343A182C2E25EC0400332C44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343A18302E25EC0400332C44 /* PBXTargetDependency */,
+			);
+			name = InkraUITests;
+			productName = InkraUITests;
+			productReference = 343A182E2E25EC0400332C44 /* InkraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		343A180F2E25EC0200332C44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					343A18162E25EC0200332C44 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					343A18232E25EC0400332C44 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 343A18162E25EC0200332C44;
+					};
+					343A182D2E25EC0400332C44 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 343A18162E25EC0200332C44;
+					};
+				};
+			};
+			buildConfigurationList = 343A18122E25EC0200332C44 /* Build configuration list for PBXProject "Inkra" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 343A180E2E25EC0200332C44;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3473F2E72E2F443F004716C2 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				3473F2E82E2F4449004716C2 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 343A18182E25EC0200332C44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				343A18162E25EC0200332C44 /* Inkra */,
+				343A18232E25EC0400332C44 /* InkraTests */,
+				343A182D2E25EC0400332C44 /* InkraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		343A18152E25EC0200332C44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868B917F635B389F5322DAEF /* atmospheric-background-1.png in Resources */,
+				F4391487CFB7AD255138E5FB /* atmospheric-background-2.png in Resources */,
+				B99880A6AE9795F4E9E1B9CC /* atmospheric-background-3.png in Resources */,
+				422DB33EDFB692DF03F4A283 /* dawn-walker-eye-level-atmospheric.png in Resources */,
+				7C11C30BE82DF25BFA292197 /* mountain-sage-triumphant-landscape.png in Resources */,
+				EBB712036BA78D4D41AD7E86 /* window-gazer-atmospheric-mood.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343A18222E25EC0400332C44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343A182C2E25EC0400332C44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		343A18132E25EC0200332C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343A18202E25EC0400332C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D0878ACC8F31AF8433A87A5 /* AutomatedInterviewTests.swift in Sources */,
+				D3F9D08AD5DB85AE316A4988 /* HandsFreeInterviewTests.swift in Sources */,
+				59770D49454B6635EFA2E38C /* InterviewCompletionTests.swift in Sources */,
+				02277314FCC792409200769A /* BasicTests.swift in Sources */,
+				3E4C372D9765F7729B0169C9 /* InterviewExportTests.swift in Sources */,
+				4C5D82C42115DC0B7AB2390C /* InkraTests.swift in Sources */,
+				0459909F3A08DE694C80AE0D /* CompleteInterviewWorkflowTests.swift in Sources */,
+				C474180A484E1EA5C1E25840 /* EndToEndFlowTests.swift in Sources */,
+				22A9D4CEDB46020126CCD506 /* HandsFreeEndToEndTests.swift in Sources */,
+				4E957C1FC3A47CAA24DBDD1B /* LiveServerIntegrationTests.swift in Sources */,
+				D814B1F37C3E8B59B930CA6F /* MinimalInterviewTest.swift in Sources */,
+				7B76F1E28FF246F7610A2C3C /* OutlineTests.swift in Sources */,
+				A6F7A192FE951541C549850A /* ProjectStatusTests.swift in Sources */,
+				C39CF33CD5B135A04D24B74E /* SimpleProjectTests.swift in Sources */,
+				056269958B4E71C5DE696A22 /* PerformanceTests.swift in Sources */,
+				C1BD84A0A50517BB13713F5F /* AudioFileMetadataTests.swift in Sources */,
+				E3B140196B75599042E12304 /* AudioRecordingPathTests.swift in Sources */,
+				76662F0B3DF90044C079B3A1 /* RecordingStateValidationTests.swift in Sources */,
+				887581A6A0A5CB5DE1341798 /* AudioServiceTests.swift in Sources */,
+				93B649B64764261BEBB3FA7C /* AuthServiceTests.swift in Sources */,
+				0037C3C186254FADA4CDDA3D /* ExportServiceTests.swift in Sources */,
+				1505D909D656B7FC0E2513EC /* NetworkServiceTests.swift in Sources */,
+				3CDB9DA866759A299D7E48BF /* QuoteShotServiceTests.swift in Sources */,
+				95D1681D5FC711F90223496C /* MockServices.swift in Sources */,
+				EE0DA50FBA5DB42B9759F862 /* TestTypes.swift in Sources */,
+				0094AC7F89386E94C6F108BF /* InterviewFinishedScreenTests.swift in Sources */,
+				4E68B09211A82A34458911D7 /* SwiftUIIntegrationTests.swift in Sources */,
+				3D66713A4A74AAA1838A7B49 /* ErrorLoggerTests.swift in Sources */,
+				F9CBE71C192DCEBA94DEBF18 /* StringExtensionsTests.swift in Sources */,
+				978A7905D9253127CE65E5BC /* ProjectListViewModelTests.swift in Sources */,
+				CD888476666504F40E3F35A0 /* SimpleAudiogramViewModelTests.swift in Sources */,
+				BDDCAE5D4A570D3D70DBCB83 /* SimpleQuoteShotViewModelTests.swift in Sources */,
+				ECEA93074A67AFBF25069D3C /* VibeLogBoardViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		343A182A2E25EC0400332C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		343A18262E25EC0400332C44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 343A18162E25EC0200332C44 /* Inkra */;
+			targetProxy = 343A18252E25EC0400332C44 /* PBXContainerItemProxy */;
+		};
+		343A18302E25EC0400332C44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 343A18162E25EC0200332C44 /* Inkra */;
+			targetProxy = 343A182F2E25EC0400332C44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		343A18362E25EC0400332C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		343A18372E25EC0400332C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		343A18392E25EC0400332C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Inkra needs access to your microphone to record audio for your interviews and transcriptions.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Inkra uses speech recognition to transcribe your audio recordings into text.";
+				INFOPLIST_KEY_UIAppFonts = "Montserrat-Bold.ttf Montserrat-SemiBold.ttf";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = markdonahue.Inkra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		343A183A2E25EC0400332C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Inkra needs access to your microphone to record audio for your interviews and transcriptions.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Inkra uses speech recognition to transcribe your audio recordings into text.";
+				INFOPLIST_KEY_UIAppFonts = "Montserrat-Bold.ttf Montserrat-SemiBold.ttf";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = markdonahue.Inkra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		343A183C2E25EC0400332C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = markdonahue.InkraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inkra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Inkra";
+			};
+			name = Debug;
+		};
+		343A183D2E25EC0400332C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = markdonahue.InkraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inkra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Inkra";
+			};
+			name = Release;
+		};
+		343A183F2E25EC0400332C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = markdonahue.InkraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Inkra;
+			};
+			name = Debug;
+		};
+		343A18402E25EC0400332C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = markdonahue.InkraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Inkra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		343A18122E25EC0200332C44 /* Build configuration list for PBXProject "Inkra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343A18362E25EC0400332C44 /* Debug */,
+				343A18372E25EC0400332C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343A18382E25EC0400332C44 /* Build configuration list for PBXNativeTarget "Inkra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343A18392E25EC0400332C44 /* Debug */,
+				343A183A2E25EC0400332C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343A183B2E25EC0400332C44 /* Build configuration list for PBXNativeTarget "InkraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343A183C2E25EC0400332C44 /* Debug */,
+				343A183D2E25EC0400332C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343A183E2E25EC0400332C44 /* Build configuration list for PBXNativeTarget "InkraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343A183F2E25EC0400332C44 /* Debug */,
+				343A18402E25EC0400332C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3473F2E72E2F443F004716C2 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3473F2E82E2F4449004716C2 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3473F2E92E2F4465004716C2 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3473F2E72E2F443F004716C2 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 343A180F2E25EC0200332C44 /* Project object */;
+}

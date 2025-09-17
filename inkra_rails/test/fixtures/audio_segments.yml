@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  question: one
+  file_name: MyString
+  mime_type: MyString
+  duration_seconds: 1
+  s3_url: MyString
+  upload_status: MyString
+
+two:
+  project: two
+  question: two
+  file_name: MyString
+  mime_type: MyString
+  duration_seconds: 1
+  s3_url: MyString
+  upload_status: MyString

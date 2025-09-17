@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VibeWrite</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center space-x-4">
+            <%= link_to root_path, class: "text-xl font-bold text-gray-900" do %>
+              🎤 VibeWrite
+            <% end %>
+            <% if content_for?(:page_title) %>
+              <span class="text-gray-400">|</span>
+              <span class="text-lg font-semibold text-gray-700"><%= content_for :page_title %></span>
+            <% end %>
+          </div>
+          
+          <div class="flex space-x-4">
+            <%= link_to "Projects", projects_path, class: "text-gray-600 hover:text-gray-900" %>
+            <%= link_to "New Project", new_project_path, class: "bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded text-sm" %>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <% if notice %>
+        <div class="bg-green-50 border border-green-200 text-green-800 px-4 py-3 mx-4 mt-4 rounded">
+          <%= notice %>
+        </div>
+      <% end %>
+      
+      <% if alert %>
+        <div class="bg-red-50 border border-red-200 text-red-800 px-4 py-3 mx-4 mt-4 rounded">
+          <%= alert %>
+        </div>
+      <% end %>
+      
+      <%= yield %>
+    </main>
+  </body>
+</html>

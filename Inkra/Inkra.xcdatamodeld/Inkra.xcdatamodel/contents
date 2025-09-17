@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="22G120" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AudioSegmentEntity" representedClassName="AudioSegmentEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="fileName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isUploaded" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="localFileURL" optional="YES" attributeType="String"/>
+        <attribute name="localURL" optional="YES" attributeType="String"/>
+        <attribute name="mimeType" optional="YES" attributeType="String"/>
+        <attribute name="recordedDurationSeconds" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="transcriptionText" optional="YES" attributeType="String"/>
+        <attribute name="uploadStatus" optional="YES" attributeType="String"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QuestionEntity" inverseName="audioSegments" inverseEntity="QuestionEntity"/>
+    </entity>
+    <entity name="OfflineUploadEntity" representedClassName="OfflineUploadEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="audioSegmentId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="audioURLString" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="lastError" optional="YES" attributeType="String"/>
+        <attribute name="projectId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="questionId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="retryCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="trackerId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ChapterEntity" representedClassName="ChapterEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="omitted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="outline" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OutlineEntity" inverseName="chapters" inverseEntity="OutlineEntity"/>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SectionEntity" inverseName="chapter" inverseEntity="SectionEntity"/>
+    </entity>
+    <entity name="OutlineEntity" representedClassName="OutlineEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ChapterEntity" inverseName="outline" inverseEntity="ChapterEntity"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectEntity" inverseName="outline" inverseEntity="ProjectEntity"/>
+    </entity>
+    <entity name="ProjectEntity" representedClassName="ProjectEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isSpeechInterview" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastSyncedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="presetId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="outline" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="OutlineEntity" inverseName="project" inverseEntity="OutlineEntity"/>
+        <relationship name="transcripts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TranscriptEntity" inverseName="project" inverseEntity="TranscriptEntity"/>
+    </entity>
+    <entity name="QuestionEntity" representedClassName="QuestionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isFollowUp" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="omitted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="parentQuestionId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <relationship name="audioSegments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AudioSegmentEntity" inverseName="question" inverseEntity="AudioSegmentEntity"/>
+        <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SectionEntity" inverseName="questions" inverseEntity="SectionEntity"/>
+    </entity>
+    <entity name="SectionEntity" representedClassName="SectionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="omitted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="chapter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChapterEntity" inverseName="sections" inverseEntity="ChapterEntity"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="QuestionEntity" inverseName="section" inverseEntity="QuestionEntity"/>
+    </entity>
+    <entity name="TranscriptContentEntity" representedClassName="TranscriptContentEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="audioSegmentId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="chapterId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="questionId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="sectionId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="transcript" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TranscriptEntity" inverseName="content" inverseEntity="TranscriptEntity"/>
+    </entity>
+    <entity name="TranscriptEntity" representedClassName="TranscriptEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <relationship name="content" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TranscriptContentEntity" inverseName="transcript" inverseEntity="TranscriptContentEntity"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectEntity" inverseName="transcripts" inverseEntity="ProjectEntity"/>
+    </entity>
+</model>

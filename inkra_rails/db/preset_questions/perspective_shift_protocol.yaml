@@ -1,0 +1,68 @@
+---
+uuid: 87fdeaeb-1d83-4922-9ec7-416c75ef7a14
+title: Perspective Shift Protocol
+description: Master your emotional responses to life's highs and lows with this powerful
+  two-part technique. Learn to step back from negative events, analyzing them with
+  clarity to neutralize their power and extract wisdom. Then, discover how to savor
+  positive experiences by embracing their mystery, prolonging joy and deepening gratitude.
+  This protocol is your key to resiliently processing the past and fully inhabiting
+  moments of happiness.
+llm_prompt: |-
+  You are a psychological guide trained in the 'story-editing' techniques from Timothy Wilson's research. Your goal is to teach the user the 'Perspective Shift Protocol' for processing life events.
+  First, explain the two core principles:
+  1.  **For Negative Events (The Distancing Technique):** When recalling a negative memory, the goal is not to re-live the emotion, but to understand it. Guide the user to visualize the event from a distance, like a neutral observer, and focus on *why* they felt that way. This builds understanding and reduces emotional charge.
+  2.  **For Positive Events (The Savoring Technique):** When recalling a positive memory, the goal is to prolong the feeling, not to deconstruct it. Explain that analyzing *why* a good thing happened can diminish its magic. The key is to embrace the mystery and simply enjoy the feeling.
+  Then, guide the user through the questions, alternating between processing negative and positive memories to practice both techniques.
+questions:
+- Recall a recent moment that made you feel angry or frustrated. First, just describe
+  what happened.
+- Now, imagine you are a fly on the wall watching that event. From this distance,
+  why do you think the 'you' in that scene felt frustrated?
+- Think of a small, unexpected positive event from your week, like a stranger's compliment
+  or a moment of beauty you noticed.
+- Instead of asking why it happened, just sit with the feeling it gave you. What was
+  that feeling like in your body?
+- Bring to mind a past failure or rejection that still stings.
+- Watch the scene play out as if it were a movie with you as the main character. What
+  can you learn about that character's motivations and reactions by watching them?
+- What external factors, which you didn't see at the time, might have influenced that
+  situation?
+- Recall a time you laughed uncontrollably. Don't analyze the joke. Just remember
+  the physical sensation of the laughter.
+- Think of a goal you didn't achieve. Instead of focusing on the feeling of disappointment,
+  analyze the reasons. What was the gap between your plan and the outcome?
+- What did the 'you' in that situation learn from the experience?
+- Remember a time someone gave you a gift that delighted you. What was the feeling
+  of surprise like? Let that feeling be enough.
+- Recall a misunderstanding or argument. Watch it from the perspective of the other
+  person. What might their narrative of the event have been?
+- From a neutral observer's standpoint, what were the contributing factors to that
+  argument, beyond who was 'right' or 'wrong'?
+- Think of a moment of pure, simple joy. A sunny day, a good cup of coffee. Don't
+  ask what made it joyful. Just re-inhabit the feeling for a moment.
+- Bring to mind a decision you regret.
+- From a distance, analyze the information and pressures the 'you' in that moment
+  was facing. Why did that decision seem like the best option at the time?
+- What does this analysis tell you about how to approach similar decisions in the
+  future?
+- Recall a time you felt deeply proud of an accomplishment. Let the feeling of pride
+  be the focus, not the reasons you 'deserved' it.
+- Think of an embarrassing memory. Watch it like a silent comedy. What's absurd or
+  even funny about it from a distance?
+- Why did the 'you' in that memory feel embarrassment? What underlying belief about
+  yourself was threatened?
+- Remember a time you felt a deep sense of connection with someone. Don't dissect
+  the conversation. Just feel the warmth of that connection.
+- By distancing yourself from a negative event, what meaning or lesson can you construct
+  from it now?
+- By refusing to over-analyze a positive event, how does it change your memory of
+  it?
+- Think of a time you felt anxious. Observe that past self from a distance. What was
+  the source of the uncertainty they were facing?
+- What story were they telling themselves about a potential future?
+- Recall a moment of unexpected kindness you received. Let the warmth of that memory
+  wash over you without questioning the giver's motives.
+- Choose a recurring negative thought pattern. From a distance, what is the trigger
+  for this pattern? Why does your mind follow that path?
+- Choose a recurring source of happiness in your life. How can you create space to
+  simply experience it, without the need to justify or understand it?

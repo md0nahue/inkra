@@ -1,0 +1,233 @@
+<% content_for :page_title, @project.title %>
+
+<div class="container mx-auto px-4 py-8">
+  <div class="flex justify-between items-center mb-8">
+    <div>
+      <h1 class="text-3xl font-bold text-gray-900">Project Overview</h1>
+      <p class="text-gray-600 mt-2"><%= @project.topic %></p>
+    </div>
+    <div class="text-right">
+      <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+        <%= @project.status.humanize %>
+      </span>
+      <p class="text-xs text-gray-500 mt-1">
+        Created <%= time_ago_in_words(@project.created_at) %> ago
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <!-- Outline Section -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-semibold mb-4">📝 Project Outline</h2>
+      
+      <% if @chapters.any? %>
+        <div class="space-y-4">
+          <% @chapters.each do |chapter| %>
+            <div class="border border-gray-200 rounded-lg p-4">
+              <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                <%= chapter.order %>. <%= chapter.title %>
+                <% if chapter.omitted %>
+                  <span class="text-sm text-gray-500">(Omitted)</span>
+                <% end %>
+              </h3>
+              
+              <% chapter.sections.each do |section| %>
+                <div class="ml-4 mb-3 <% if section.omitted %>opacity-50<% end %>">
+                  <h4 class="font-medium text-gray-800 mb-1">
+                    <%= section.order %>. <%= section.title %>
+                    <% if section.omitted %>
+                      <span class="text-sm text-gray-500">(Omitted)</span>
+                    <% end %>
+                  </h4>
+                  
+                  <% section.questions.each do |question| %>
+                    <p class="ml-4 text-sm text-gray-600 mb-1">
+                      • <%= question.text %>
+                    </p>
+                  <% end %>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      <% else %>
+        <p class="text-gray-500">Outline is being generated...</p>
+      <% end %>
+    </div>
+
+    <!-- Transcript Section -->
+    <div id="transcript" class="bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-semibold mb-4">📖 Transcript</h2>
+      
+      <% if @transcript && @transcript.content.present? %>
+        <div class="prose max-w-none">
+          <%= simple_format(@transcript.content) %>
+        </div>
+        <p class="text-xs text-gray-500 mt-4">
+          Last updated <%= time_ago_in_words(@transcript.last_updated) %> ago
+        </p>
+      <% else %>
+        <div class="text-center py-8">
+          <p class="text-gray-500 mb-4">No transcript available yet</p>
+          <p class="text-sm text-gray-400">Complete your interviews to see your transcript here</p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="mt-8 flex space-x-4">
+    <%= link_to "Back to Projects", projects_path, class: "bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded" %>
+    
+    <% if @project.status == 'outline_ready' %>
+      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onclick="startRecording()">
+        🎤 Start Recording
+      </button>
+    <% elsif @project.status == 'recording_in_progress' %>
+      <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors duration-200" onclick="completeInterview()">
+        ✅ Complete Interview
+      </button>
+      <button class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded" onclick="pauseRecording()">
+        ⏸️ Pause Recording
+      </button>
+    <% elsif @project.status == 'transcribing' %>
+      <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg">
+        <div class="flex items-center">
+          <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-yellow-600 mr-2"></div>
+          Processing transcript...
+        </div>
+      </div>
+    <% elsif @project.status == 'completed' %>
+      <div class="bg-green-100 text-green-800 px-4 py-2 rounded-lg">
+        ✅ Interview completed successfully!
+      </div>
+      <%= link_to "View Full Transcript", project_path(@project, anchor: "transcript"), class: "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" %>
+    <% end %>
+  </div>
+
+  <!-- Complete Interview Confirmation Modal -->
+  <div id="completeModal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+    <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+      <div class="mt-3 text-center">
+        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+          <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-medium text-gray-900 mt-2">Complete Interview?</h3>
+        <div class="mt-2 px-7 py-3">
+          <p class="text-sm text-gray-500">
+            Are you sure you want to complete this interview? This will stop the recording and begin processing your transcript.
+          </p>
+        </div>
+        <div class="items-center px-4 py-3">
+          <button id="confirmComplete" class="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-24 mr-2 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
+            Complete
+          </button>
+          <button id="cancelComplete" class="px-4 py-2 bg-gray-500 text-white text-base font-medium rounded-md w-24 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div id="successToast" class="hidden fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50">
+    <div class="flex items-center">
+      <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+      </svg>
+      <span>Interview completed successfully!</span>
+    </div>
+  </div>
+
+  <script>
+    function startRecording() {
+      // Update project status to recording_in_progress
+      fetch(`/api/projects/<%= @project.id %>`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').content
+        },
+        body: JSON.stringify({
+          status: 'recording_in_progress'
+        })
+      }).then(() => {
+        location.reload();
+      }).catch(error => {
+        console.error('Error starting recording:', error);
+        alert('Failed to start recording. Please try again.');
+      });
+    }
+
+    function pauseRecording() {
+      alert('Pause functionality would be implemented with mobile app integration');
+    }
+
+    function completeInterview() {
+      document.getElementById('completeModal').classList.remove('hidden');
+    }
+
+    function hideModal() {
+      document.getElementById('completeModal').classList.add('hidden');
+    }
+
+    function showSuccessToast() {
+      const toast = document.getElementById('successToast');
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3000);
+    }
+
+    // Modal event listeners
+    document.getElementById('cancelComplete').addEventListener('click', hideModal);
+    
+    document.getElementById('confirmComplete').addEventListener('click', function() {
+      const button = this;
+      button.disabled = true;
+      button.textContent = 'Completing...';
+      
+      fetch(`/api/projects/<%= @project.id %>/complete_interview`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').content
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        hideModal();
+        showSuccessToast();
+        
+        // Navigate based on the response
+        if (data.nextStep === 'view_transcript') {
+          setTimeout(() => {
+            window.location.href = '#transcript';
+            location.reload();
+          }, 1500);
+        } else {
+          // Show processing state
+          setTimeout(() => {
+            location.reload();
+          }, 1500);
+        }
+      })
+      .catch(error => {
+        console.error('Error completing interview:', error);
+        alert('Failed to complete interview. Please try again.');
+        button.disabled = false;
+        button.textContent = 'Complete';
+      });
+    });
+
+    // Close modal when clicking outside
+    document.getElementById('completeModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        hideModal();
+      }
+    });
+  </script>
+</div>

@@ -1,0 +1,58 @@
+---
+uuid: cbe72a4d-39f9-4bad-b7f0-d98182d6fbbb
+title: The Cosmic Zoom-Out
+description: When you're overwhelmed, shrink your problems by expanding your perspective.
+  This guided Stoic meditation, known as Plato's View, walks you through a powerful
+  visualization—zooming out from yourself to your city, your world, and the entire
+  cosmos—to remind you of your place in the universe and grant you a profound sense
+  of calm and clarity.
+llm_prompt: |
+  You are a guide for a powerful Stoic visualization called "The Cosmic Zoom-Out." Your role is to lead the user through a meditative journey to gain perspective.
+
+  Introduce the concept: Explain that our problems often feel huge because our perspective is too narrow. This practice is a mental technique to zoom out and see the bigger picture, just as the Stoics and Plato did. By viewing our lives from a cosmic vantage point, our anxieties and frustrations shrink to their true, manageable size.
+
+  Guide them through the visualization step-by-step. Use clear, evocative language. Start with their immediate surroundings and slowly zoom out, pausing at each stage. Encourage them to see the interconnectedness and the vastness of the world.
+
+  Your goal is to help the user experience a visceral shift in perspective, moving from a state of being overwhelmed by their problems to a state of calm, objective awareness within a vast and complex universe.
+questions:
+- To begin, bring to mind a problem or a worry that feels heavy and overwhelming right
+  now. Hold it gently in your mind.
+- Now, in your mind's eye, see yourself in the room you are in. Look at yourself as
+  if from the ceiling. Notice the room, the furniture, and your place within it.
+- Gently zoom out further. See the building you are in, from above. See the street,
+  the other buildings, the cars, the people moving like ants.
+- Keep zooming out. See your entire neighborhood, your town or city. See the web of
+  streets, the parks, the rivers. Notice the hum of activity, of which your problem
+  is just one tiny part.
+- Zoom out further still. See your entire state or province, then your country, a
+  shape on the map. See the mountains, the coastlines, the vast landscapes.
+- Now, from high above, see the Earth. A beautiful, swirling blue and white marble
+  hanging in the blackness of space. See the continent you are on. Everything you
+  know is on that sphere.
+- From this vantage point, can you locate your problem? Can you even locate yourself?
+- See the sun, a star, and the other planets of our solar system. See the Earth as
+  just one of many celestial bodies, moving in a silent, cosmic dance.
+- Zoom out even further. See our solar system as a tiny speck of light within the
+  Milky Way galaxy, a swirling spiral of billions of other stars.
+- And now, see the Milky Way as just one galaxy among billions of other galaxies in
+  the unimaginable vastness of the universe.
+- Float here for a moment in the silent, infinite blackness. Take a deep breath.
+- From this cosmic perspective, think again about that problem you started with. How
+  does it look now?
+- What is the emotion you feel when you realize the scale of the universe?
+- How does this perspective change the importance of your worry?
+- Now, let's slowly zoom back in. See the Milky Way, our solar system, our beautiful
+  Earth.
+- Zoom back to your continent, your country, your city, your street.
+- Zoom back into the building you are in, the room, and back into your body, sitting
+  here right now.
+- You are back, but you bring the cosmic perspective with you. How has your relationship
+  to your problem shifted?
+- What is a wise, calm action you can take on this problem now, from this new perspective?
+- How can you carry this feeling of spaciousness with you into the rest of your day?
+- The next time you feel overwhelmed, can you remember this journey?
+- What does it mean to have your own personal, brief life on this specific planet
+  in this vast universe?
+- How does this perspective affect what you consider truly important?
+- What is a frustration you can let go of, seeing it from this cosmic view?
+- How can you live today with this sense of wonder and perspective?

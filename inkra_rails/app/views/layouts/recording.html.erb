@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inkra Generations - Share Your Story</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        --bg-primary: #0a0a0a;
+        --bg-secondary: #1a1a1a;
+        --bg-card: #161616;
+        --text-primary: #ffffff;
+        --text-secondary: #a3a3a3;
+        --text-muted: #737373;
+        --accent-gold: #d4af37;
+        --accent-purple: #8b5cf6;
+        --accent-green: #10b981;
+        --accent-red: #ef4444;
+        --accent-amber: #f59e0b;
+        --border-subtle: #262626;
+        --gradient-storytelling: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        --shadow-elegant: 0 20px 60px rgba(0,0,0,0.4);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* Floating background elements */
+      .floating-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .floating-orb {
+        position: absolute;
+        border-radius: 50%;
+        background: var(--gradient-storytelling);
+        opacity: 0.1;
+        animation: float 20s ease-in-out infinite;
+      }
+
+      .floating-orb:nth-child(1) {
+        width: 300px;
+        height: 300px;
+        top: -150px;
+        left: -150px;
+        animation-delay: 0s;
+      }
+
+      .floating-orb:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        bottom: -100px;
+        right: -100px;
+        animation-delay: 10s;
+      }
+
+      .floating-orb:nth-child(3) {
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: -75px;
+        animation-delay: 5s;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+        33% { transform: translateY(-30px) scale(1.1) rotate(120deg); }
+        66% { transform: translateY(15px) scale(0.9) rotate(240deg); }
+      }
+      
+      .container {
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: 32px;
+        box-shadow: var(--shadow-elegant);
+        max-width: 900px;
+        width: 100%;
+        padding: 3rem;
+        position: relative;
+        z-index: 2;
+        backdrop-filter: blur(20px);
+      }
+
+      .container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient-storytelling);
+        border-radius: 32px 32px 0 0;
+      }
+      
+      h1 {
+        font-family: 'Crimson Text', serif;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+        font-size: 2.5em;
+        text-align: center;
+        background: var(--gradient-storytelling);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .subtitle {
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: 300;
+      }
+      
+      .question-container {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-subtle);
+        border-radius: 24px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        min-height: 200px;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .question-container:hover {
+        border-color: var(--accent-purple);
+        box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2);
+      }
+      
+      .question-number {
+        color: var(--accent-gold);
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 0.95em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      .question-text {
+        font-family: 'Crimson Text', serif;
+        color: var(--text-primary);
+        font-size: 1.5em;
+        line-height: 1.6;
+        font-weight: 400;
+      }
+      
+      .question-photo {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      
+      .controls {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .btn {
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: 60px;
+        font-size: 1.1em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .btn-record {
+        background: linear-gradient(135deg, var(--accent-red), #dc2626);
+        color: white;
+        border: 2px solid transparent;
+      }
+      
+      .btn-record:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 12px 48px rgba(239, 68, 68, 0.4);
+      }
+      
+      .btn-stop {
+        background: linear-gradient(135deg, var(--accent-amber), #d97706);
+        color: white;
+        border: 2px solid transparent;
+      }
+      
+      .btn-stop:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 12px 48px rgba(245, 158, 11, 0.4);
+      }
+      
+      .btn-next {
+        background: linear-gradient(135deg, var(--accent-green), #059669);
+        color: white;
+        border: 2px solid transparent;
+      }
+      
+      .btn-next:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 12px 48px rgba(16, 185, 129, 0.4);
+      }
+      
+      .btn-complete {
+        background: var(--gradient-storytelling);
+        color: white;
+        border: 2px solid transparent;
+        font-size: 1.2em;
+        padding: 1.2rem 3rem;
+      }
+      
+      .btn-complete:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 12px 48px rgba(139, 92, 246, 0.4);
+      }
+      
+      .btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none !important;
+      }
+      
+      .recording-indicator {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        color: #ef4444;
+        font-weight: 600;
+      }
+      
+      .recording-indicator.active {
+        display: flex;
+      }
+      
+      .recording-dot {
+        width: 12px;
+        height: 12px;
+        background: #ef4444;
+        border-radius: 50%;
+        margin-right: 10px;
+        animation: pulse 1.5s infinite;
+      }
+      
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      .progress-bar {
+        background: #e5e7eb;
+        height: 8px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+      
+      .progress-fill {
+        background: #667eea;
+        height: 100%;
+        border-radius: 4px;
+        transition: width 0.3s ease;
+      }
+      
+      .error-message {
+        background: #fee2e2;
+        color: #dc2626;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      
+      .success-message {
+        background: #d1fae5;
+        color: #059669;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      
+      @media (max-width: 640px) {
+        .container {
+          padding: 20px;
+        }
+        
+        h1 {
+          font-size: 1.5em;
+        }
+        
+        .question-text {
+          font-size: 1.2em;
+        }
+        
+        .btn {
+          padding: 12px 30px;
+          font-size: 1em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="floating-bg">
+      <div class="floating-orb"></div>
+      <div class="floating-orb"></div>
+      <div class="floating-orb"></div>
+    </div>
+    
+    <div class="container">
+      <%= yield %>
+    </div>
+    
+    <script>
+      // Add entrance animation
+      document.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('.container');
+        container.style.opacity = '0';
+        container.style.transform = 'translateY(30px) scale(0.95)';
+        container.style.transition = 'all 0.8s ease';
+        
+        setTimeout(() => {
+          container.style.opacity = '1';
+          container.style.transform = 'translateY(0) scale(1)';
+        }, 100);
+      });
+    </script>
+  </body>
+</html>

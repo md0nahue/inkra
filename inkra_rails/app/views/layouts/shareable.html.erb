@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= @meta_title || "Inkra Interview" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="<%= @meta_description || 'Listen to this personal interview created with Inkra' %>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:title" content="<%= @meta_title || 'Inkra Interview' %>">
+    <meta property="og:description" content="<%= @meta_description || 'Listen to this personal interview created with Inkra' %>">
+    <meta property="og:image" content="<%= @meta_image %>">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<%= request.original_url %>">
+    <meta property="twitter:title" content="<%= @meta_title || 'Inkra Interview' %>">
+    <meta property="twitter:description" content="<%= @meta_description || 'Listen to this personal interview created with Inkra' %>">
+    <meta property="twitter:image" content="<%= @meta_image %>">
+    
+    <!-- Custom CSS for Cosmic Lofi Design -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+      
+      :root {
+        --void-purple: #100F1C;
+        --deep-indigo: #1B1A2E;
+        --midnight-slate: #26243D;
+        --dreamy-lavender: #A098E0;
+        --serene-blue: #92C8D9;
+        --pastel-rose: #D9AABF;
+        --celestial-glow: #4D4975;
+        --starlight-white: #EFEFF5;
+        --moonstone-grey: #89879A;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: linear-gradient(135deg, var(--void-purple) 0%, var(--deep-indigo) 100%);
+        color: var(--starlight-white);
+        min-height: 100vh;
+        line-height: 1.6;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      
+      .interview-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 32px;
+        background: rgba(38, 36, 61, 0.8);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 40px rgba(77, 73, 117, 0.2);
+      }
+      
+      .interview-title {
+        font-family: 'AvenirNext-DemiBold', 'Inter', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--starlight-white);
+        margin-bottom: 12px;
+      }
+      
+      .interview-meta {
+        font-family: 'AvenirNext-Medium', 'Inter', sans-serif;
+        font-size: 0.875rem;
+        color: var(--moonstone-grey);
+        margin-bottom: 16px;
+      }
+      
+      .interview-description {
+        font-family: 'AvenirNext-Regular', 'Inter', sans-serif;
+        font-size: 1rem;
+        color: var(--starlight-white);
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .audio-player-section {
+        margin-bottom: 40px;
+        padding: 24px;
+        background: rgba(38, 36, 61, 0.8);
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+      }
+      
+      .audio-player {
+        width: 100%;
+        background: var(--midnight-slate);
+        border-radius: 12px;
+        padding: 16px;
+      }
+      
+      .audio-player audio {
+        width: 100%;
+        height: 48px;
+        border-radius: 8px;
+      }
+      
+      .transcript-section {
+        margin-bottom: 40px;
+        padding: 32px;
+        background: rgba(38, 36, 61, 0.8);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+      }
+      
+      .transcript-title {
+        font-family: 'AvenirNext-DemiBold', 'Inter', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--starlight-white);
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      
+      .transcript-content {
+        font-family: 'AvenirNext-Regular', 'Inter', sans-serif;
+        font-size: 1rem;
+        color: var(--starlight-white);
+        line-height: 1.8;
+        white-space: pre-wrap;
+        max-height: 500px;
+        overflow-y: auto;
+        padding: 20px;
+        background: rgba(16, 15, 28, 0.5);
+        border-radius: 12px;
+        border: 1px solid rgba(160, 152, 224, 0.1);
+      }
+      
+      .question-section {
+        margin-bottom: 24px;
+        padding: 20px;
+        background: rgba(16, 15, 28, 0.3);
+        border-radius: 12px;
+        border-left: 4px solid var(--dreamy-lavender);
+      }
+      
+      .question-title {
+        font-family: 'AvenirNext-Medium', 'Inter', sans-serif;
+        font-size: 0.875rem;
+        color: var(--dreamy-lavender);
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .question-text {
+        font-family: 'AvenirNext-Regular', 'Inter', sans-serif;
+        font-size: 1rem;
+        color: var(--starlight-white);
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+      
+      .question-response {
+        font-family: 'AvenirNext-Regular', 'Inter', sans-serif;
+        font-size: 0.95rem;
+        color: var(--starlight-white);
+        opacity: 0.9;
+        line-height: 1.7;
+      }
+      
+      .inkra-footer {
+        text-align: center;
+        margin-top: 60px;
+        padding: 32px;
+        border-top: 1px solid rgba(160, 152, 224, 0.2);
+      }
+      
+      .inkra-brand {
+        font-family: 'AvenirNext-DemiBold', 'Inter', sans-serif;
+        font-size: 1.25rem;
+        color: var(--dreamy-lavender);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      
+      .inkra-tagline {
+        font-family: 'AvenirNext-Regular', 'Inter', sans-serif;
+        font-size: 0.875rem;
+        color: var(--moonstone-grey);
+        margin-bottom: 20px;
+      }
+      
+      .cta-button {
+        display: inline-block;
+        padding: 12px 32px;
+        background: linear-gradient(135deg, var(--dreamy-lavender), var(--serene-blue));
+        color: var(--void-purple);
+        text-decoration: none;
+        border-radius: 999px;
+        font-family: 'AvenirNext-Medium', 'Inter', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(160, 152, 224, 0.3);
+      }
+      
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(160, 152, 224, 0.4);
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px 16px;
+        }
+        
+        .interview-header {
+          padding: 24px 20px;
+        }
+        
+        .interview-title {
+          font-size: 1.5rem;
+        }
+        
+        .audio-player-section,
+        .transcript-section {
+          padding: 20px 16px;
+        }
+        
+        .transcript-content {
+          padding: 16px;
+          max-height: 400px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

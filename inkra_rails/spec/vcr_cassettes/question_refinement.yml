@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite-preview-06-17:generateContent?key=<FILTERED_API_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"contents":[{"parts":[{"text":"You are an expert interview designer
+        refining questions based on feedback.\n\nCURRENT QUESTIONS:\n1. What is your
+        company?\n2. Do you like business?\n\nFEEDBACK: Make questions more open-ended
+        and specific\n\nTASK: Refine the questions based on the feedback while maintaining:\n-
+        The overall intent and structure\n- Open-ended nature that encourages detailed
+        responses\n- Logical flow and progression\n- Conversational tone\n\nRESPONSE
+        FORMAT (JSON only):\n{\n  \"questions\": [\n    {\n      \"text\": \"Refined
+        question text here?\",\n      \"order\": 1\n    }\n  ]\n}\n\nGenerate only
+        the JSON response, no other text.\n"}]}],"generationConfig":{"temperature":0.7,"maxOutputTokens":2048,"topP":0.8,"topK":40}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - generativelanguage.googleapis.com
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 14 Jul 2025 02:09:26 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Server-Timing:
+      - gfet4t7; dur=496
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "candidates": [
+            {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"questions\": [\n    {\n      \"text\": \"Could you tell me a bit about your company and what it does?\",\n      \"order\": 1\n    },\n    {\n      \"text\": \"What aspects of the business world do you find most engaging or rewarding?\",\n      \"order\": 2\n    }\n  ]\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokenCount": 143,
+            "candidatesTokenCount": 83,
+            "totalTokenCount": 226,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 143
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-flash-lite-preview-06-17",
+          "responseId": "1mZ0aL6CCrq-qtsPm5-WyQo"
+        }
+  recorded_at: Mon, 14 Jul 2025 02:09:26 GMT
+recorded_with: VCR 6.3.1

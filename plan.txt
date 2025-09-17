@@ -1,0 +1,778 @@
+# INKRA APPLICATION COMPLETE ARCHITECTURE REVAMP PLAN
+
+## EXECUTIVE SUMMARY
+Complete migration from Ruby on Rails backend to a serverless architecture with on-device processing, leveraging iOS native capabilities for speech processing and AWS Lambda for minimal backend operations. This addresses server costs, privacy concerns, and improves user experience with faster, more reliable processing.
+
+## 1. ARCHITECTURE OVERVIEW
+
+### 1.1 Current Architecture (TO BE REMOVED)
+- Ruby on Rails backend (52+ files in inkra_rails/)
+- Remote database persistence (PostgreSQL)
+- External APIs: Groq for transcription, AWS Polly for TTS
+- Complex API endpoints for projects, interviews, exports
+- Remote audio file storage and processing
+- Heavy network dependency for all operations
+
+### 1.2 New Architecture
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        iOS APP                               │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │         On-Device Processing Layer                   │    │
+│  │  - Apple Speech-to-Text (SFSpeechRecognizer)       │    │
+│  │  - Apple Text-to-Speech (AVSpeechSynthesizer)      │    │
+│  │  - Local Audio Storage (Documents Directory)        │    │
+│  │  - CoreData for metadata                           │    │
+│  │  - Audio stitching (AVFoundation)                  │    │
+│  └─────────────────────────────────────────────────────┘    │
+│                             │                                │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │         Minimal Network Layer                       │    │
+│  │  - AWS Cognito SDK for auth                        │    │
+│  │  - Lambda invoke for Gemini requests               │    │
+│  └─────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────┘
+                             │
+                             ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   AWS SERVERLESS BACKEND                     │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │  AWS Cognito: User authentication & management      │    │
+│  └─────────────────────────────────────────────────────┘    │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │  AWS Lambda Functions:                              │    │
+│  │  - generateQuestions: Gemini API proxy              │    │
+│  │  - getUserProfile: Basic user data                  │    │
+│  │  - updateUserPreferences: Settings sync             │    │
+│  └─────────────────────────────────────────────────────┘    │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │  AWS API Gateway: REST/HTTP endpoints               │    │
+│  └─────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 2. IMPLEMENTATION PHASES
+
+### PHASE 1: AWS SERVERLESS BACKEND SETUP
+**Duration: 3-4 days**
+
+#### 1.1 AWS Cognito Setup
+- Create Cognito User Pool with email/password auth
+- Configure user attributes (email, name, preferences)
+- Set up user groups for future tier management (free/premium)
+- Configure password policies and MFA options
+- Generate iOS SDK configuration
+
+#### 1.2 Lambda Functions Development
+**Runtime: Node.js 20.x or Python 3.11 (recommended for ML workloads)**
+
+**Function: generateQuestions**
+```javascript
+// handler.js
+exports.generateQuestions = async (event) => {
+  const { topic, prompt, userId } = JSON.parse(event.body);
+
+  // Validate user auth from Cognito
+  const user = await validateUser(event.headers.Authorization);
+
+  // Build Gemini prompt (stored in Lambda for efficiency)
+  const fullPrompt = buildPrompt(topic, prompt);
+
+  // Call Gemini Flash API
+  const response = await callGeminiFlash(fullPrompt);
+
+  // Return parsed questions
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      questions: parseQuestions(response),
+      timestamp: Date.now()
+    })
+  };
+};
+```
+
+**Function: getUserProfile**
+- Fetch basic user data from Cognito
+- Return preferences, subscription status
+
+**Function: updateUserPreferences**
+- Update Cognito user attributes
+- Sync voice selection, daily questions settings
+
+#### 1.3 API Gateway Configuration
+- Create REST API with CORS enabled
+- Configure Cognito authorizer
+- Set up endpoints:
+  - POST /questions/generate
+  - GET /user/profile
+  - PUT /user/preferences
+- Configure rate limiting and throttling
+
+### PHASE 2: iOS NATIVE SPEECH INTEGRATION
+**Duration: 5-6 days**
+
+#### 2.1 Remove External Dependencies
+**Files to Remove/Refactor:**
+- `PollyAudioService.swift` - Replace with native TTS
+- `TranscriptService.swift` - Remove Groq integration
+- `NetworkService.swift` - Simplify to Lambda-only calls
+- `VoiceService.swift` - Replace with iOS voice selection
+- All Rails API endpoint definitions
+
+#### 2.2 Implement Native Speech-to-Text
+**Enhanced SpeechToTextService.swift:**
+```swift
+import Speech
+import AVFoundation
+
+class NativeSpeechService: ObservableObject {
+    private let recognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
+    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    private var recognitionTask: SFSpeechRecognitionTask?
+    private let audioEngine = AVAudioEngine()
+
+    @Published var transcribedText = ""
+    @Published var isListening = false
+
+    func startContinuousListening() async {
+        // Configure audio session for recording
+        let audioSession = AVAudioSession.sharedInstance()
+        try? audioSession.setCategory(.record, mode: .measurement)
+        try? audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+
+        recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        recognitionRequest?.shouldReportPartialResults = true
+        recognitionRequest?.requiresOnDeviceRecognition = true // Privacy+
+
+        let inputNode = audioEngine.inputNode
+        let recordingFormat = inputNode.outputFormat(forBus: 0)
+
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
+            self.recognitionRequest?.append(buffer)
+        }
+
+        audioEngine.prepare()
+        try? audioEngine.start()
+
+        recognitionTask = recognizer?.recognitionTask(with: recognitionRequest!) { result, error in
+            if let result = result {
+                self.transcribedText = result.bestTranscription.formattedString
+
+                // Auto-submit when speech ends
+                if result.isFinal {
+                    self.submitToLambda()
+                }
+            }
+        }
+
+        isListening = true
+    }
+
+    private func submitToLambda() {
+        // Automatically send to Lambda without showing text
+        Task {
+            await LambdaService.shared.generateQuestions(topic: transcribedText)
+        }
+    }
+}
+```
+
+#### 2.3 Implement Native Text-to-Speech
+**NativeVoiceService.swift:**
+```swift
+import AVFoundation
+
+class NativeVoiceService: ObservableObject {
+    private let synthesizer = AVSpeechSynthesizer()
+    @Published var selectedVoice: AVSpeechSynthesisVoice?
+    @Published var isSpeaking = false
+
+    init() {
+        // Set default voice
+        selectedVoice = AVSpeechSynthesisVoice(language: "en-US")
+    }
+
+    func speak(_ text: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = selectedVoice
+        utterance.rate = 0.5
+        utterance.pitchMultiplier = 1.0
+        utterance.volume = 1.0
+
+        synthesizer.speak(utterance)
+        isSpeaking = true
+    }
+
+    func getAvailableVoices() -> [AVSpeechSynthesisVoice] {
+        return AVSpeechSynthesisVoice.speechVoices()
+            .filter { $0.language.hasPrefix("en") }
+    }
+}
+```
+
+### PHASE 3: LOCAL AUDIO PERSISTENCE & MANAGEMENT
+**Duration: 4-5 days**
+
+#### 3.1 Enhanced Audio Storage System
+**LocalAudioManager.swift:**
+```swift
+import AVFoundation
+import CoreData
+
+class LocalAudioManager {
+    private let documentsDirectory = FileManager.default.urls(for: .documentDirectory,
+                                                              in: .userDomainMask).first!
+
+    // Store interview audio segments locally
+    func saveInterviewSegment(audioData: Data, questionId: String, timestamp: Date) -> URL {
+        let fileName = "\(questionId)_\(timestamp.timeIntervalSince1970).m4a"
+        let fileURL = documentsDirectory
+            .appendingPathComponent("Interviews")
+            .appendingPathComponent(fileName)
+
+        // Create directory if needed
+        try? FileManager.default.createDirectory(
+            at: fileURL.deletingLastPathComponent(),
+            withIntermediateDirectories: true
+        )
+
+        // Save audio file
+        try? audioData.write(to: fileURL)
+
+        // Save metadata to CoreData
+        saveMetadata(questionId: questionId, fileURL: fileURL, timestamp: timestamp)
+
+        return fileURL
+    }
+
+    // Stitch audio segments into podcast
+    func createPodcast(from segments: [URL]) async -> URL? {
+        let composition = AVMutableComposition()
+        var currentTime = CMTime.zero
+
+        for segmentURL in segments {
+            guard let asset = try? AVURLAsset(url: segmentURL) else { continue }
+            let track = composition.addMutableTrack(
+                withMediaType: .audio,
+                preferredTrackID: kCMPersistentTrackID_Invalid
+            )
+
+            try? track?.insertTimeRange(
+                CMTimeRange(start: .zero, duration: asset.duration),
+                of: asset.tracks(withMediaType: .audio)[0],
+                at: currentTime
+            )
+
+            currentTime = CMTimeAdd(currentTime, asset.duration)
+        }
+
+        // Export to single file
+        let outputURL = documentsDirectory
+            .appendingPathComponent("Podcasts")
+            .appendingPathComponent("\(Date().timeIntervalSince1970)_podcast.m4a")
+
+        let exporter = AVAssetExportSession(
+            asset: composition,
+            presetName: AVAssetExportPresetAppleM4A
+        )
+        exporter?.outputURL = outputURL
+        exporter?.outputFileType = .m4a
+
+        await exporter?.export()
+        return outputURL
+    }
+}
+```
+
+#### 3.2 Audio Visualization
+**WaveformVisualizer.swift:**
+```swift
+import SwiftUI
+import AVFoundation
+
+struct WaveformVisualizer: View {
+    @ObservedObject var audioRecorder: AudioRecorder
+    @State private var waveformSamples: [CGFloat] = []
+
+    var body: some View {
+        GeometryReader { geometry in
+            HStack(spacing: 2) {
+                ForEach(waveformSamples.indices, id: \.self) { index in
+                    RoundedRectangle(cornerRadius: 2)
+                        .fill(Color.blue)
+                        .frame(width: 3, height: waveformSamples[index] * geometry.size.height)
+                }
+            }
+            .animation(.linear(duration: 0.1), value: waveformSamples)
+        }
+        .onReceive(audioRecorder.$audioLevel) { level in
+            // Scroll waveform to the left
+            waveformSamples.append(level)
+            if waveformSamples.count > 50 {
+                waveformSamples.removeFirst()
+            }
+        }
+    }
+}
+```
+
+### PHASE 4: STREAMLINED USER FLOW
+**Duration: 3-4 days**
+
+#### 4.1 Simplified Home Screen
+**HomeView.swift:**
+```swift
+struct HomeView: View {
+    @StateObject private var interviewManager = InterviewManager()
+    @AppStorage("defaultVoiceId") private var defaultVoiceId = ""
+
+    var body: some View {
+        VStack(spacing: 20) {
+            // Main CTA
+            Button(action: startInterview) {
+                Label("Start New Interview", systemImage: "mic.fill")
+                    .font(.title2)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(12)
+            }
+
+            // Quick access
+            HStack {
+                Button("Voice Settings") {
+                    // Show voice picker
+                }
+
+                Button("Daily Questions") {
+                    // Show editable questions
+                }
+            }
+
+            // Recent interviews
+            RecentInterviewsList()
+        }
+        .padding()
+    }
+
+    func startInterview() {
+        // Immediately start listening
+        interviewManager.beginMagicalInterview()
+    }
+}
+```
+
+#### 4.2 Magical Interview Flow
+**InterviewManager.swift:**
+```swift
+class InterviewManager: ObservableObject {
+    @Published var isInterviewing = false
+    @Published var currentQuestion = ""
+    @Published var isProcessing = false
+
+    private let speechService = NativeSpeechService()
+    private let voiceService = NativeVoiceService()
+    private let lambdaService = LambdaService()
+
+    func beginMagicalInterview() {
+        isInterviewing = true
+
+        // Start with prompt
+        voiceService.speak("What would you like to talk about today?")
+
+        // Wait for speech to finish, then listen
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            Task {
+                await self.speechService.startContinuousListening()
+            }
+        }
+
+        // Handle response automatically
+        speechService.$transcribedText
+            .debounce(for: .seconds(1.5), scheduler: RunLoop.main)
+            .sink { text in
+                if !text.isEmpty {
+                    self.processUserInput(text)
+                }
+            }
+    }
+
+    private func processUserInput(_ input: String) {
+        isProcessing = true
+
+        Task {
+            // Get questions from Lambda
+            let questions = await lambdaService.generateQuestions(topic: input)
+
+            // Start interview with questions
+            for question in questions {
+                await askQuestion(question)
+                await recordAnswer()
+            }
+        }
+    }
+}
+```
+
+### PHASE 5: AWS COGNITO INTEGRATION
+**Duration: 2-3 days**
+
+#### 5.1 Authentication Service
+**CognitoAuthService.swift:**
+```swift
+import AWSCognitoIdentityProvider
+
+class CognitoAuthService: ObservableObject {
+    private let userPool: AWSCognitoIdentityUserPool
+    @Published var currentUser: AWSCognitoIdentityUser?
+    @Published var isAuthenticated = false
+
+    init() {
+        let configuration = AWSServiceConfiguration(
+            region: .USEast1,
+            credentialsProvider: nil
+        )
+
+        let poolConfiguration = AWSCognitoIdentityUserPoolConfiguration(
+            clientId: "YOUR_CLIENT_ID",
+            clientSecret: nil,
+            poolId: "YOUR_POOL_ID"
+        )
+
+        AWSCognitoIdentityUserPool.register(
+            with: configuration,
+            userPoolConfiguration: poolConfiguration,
+            forKey: "UserPool"
+        )
+
+        userPool = AWSCognitoIdentityUserPool(forKey: "UserPool")
+    }
+
+    func signUp(email: String, password: String) async throws {
+        let attributes = [
+            AWSCognitoIdentityUserAttributeType(name: "email", value: email)
+        ]
+
+        try await userPool.signUp(
+            email,
+            password: password,
+            userAttributes: attributes,
+            validationData: nil
+        )
+    }
+
+    func signIn(email: String, password: String) async throws {
+        let user = userPool.getUser(email)
+        let session = try await user.getSession(email, password: password)
+
+        currentUser = user
+        isAuthenticated = session.isValid()
+
+        // Store tokens
+        storeTokens(session)
+    }
+}
+```
+
+### PHASE 6: LAMBDA SERVICE INTEGRATION
+**Duration: 2 days**
+
+#### 6.1 Lambda Client
+**LambdaService.swift:**
+```swift
+import AWSLambda
+
+class LambdaService {
+    static let shared = LambdaService()
+    private let lambda: AWSLambda
+
+    init() {
+        let configuration = AWSServiceConfiguration(
+            region: .USEast1,
+            credentialsProvider: AWSCognitoCredentialsProvider(
+                regionType: .USEast1,
+                identityPoolId: "YOUR_IDENTITY_POOL_ID"
+            )
+        )
+
+        AWSLambda.register(with: configuration!, forKey: "Lambda")
+        lambda = AWSLambda(forKey: "Lambda")
+    }
+
+    func generateQuestions(topic: String) async -> [String] {
+        let payload = [
+            "topic": topic,
+            "userId": CognitoAuthService.shared.currentUser?.username ?? ""
+        ]
+
+        let request = AWSLambdaInvocationRequest()
+        request?.functionName = "inkra-generateQuestions"
+        request?.payload = try? JSONSerialization.data(withJSONObject: payload)
+
+        let response = try? await lambda.invoke(request!)
+
+        if let data = response?.payload,
+           let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+           let questions = json["questions"] as? [String] {
+            return questions
+        }
+
+        return []
+    }
+}
+```
+
+### PHASE 7: PREMIUM FEATURES (FUTURE)
+**Duration: 3-4 days**
+
+#### 7.1 Audio Remastering (On-Device)
+```swift
+class AudioRemaster {
+    func enhanceAudio(_ url: URL) async -> URL? {
+        // Apply audio processing
+        // - Noise reduction
+        // - Normalize volume
+        // - Remove silence
+        // - EQ adjustments
+
+        // All processing done locally using AVAudioEngine
+    }
+}
+```
+
+#### 7.2 Subscription Management
+- Integrate with StoreKit 2
+- Manage via Cognito user groups
+- Free tier: 5 interviews/month
+- Premium: Unlimited + remastering
+
+## 3. MIGRATION STRATEGY
+
+### Step 1: Parallel Development (Week 1-2)
+1. Set up AWS infrastructure
+2. Develop Lambda functions
+3. Test Gemini integration
+4. Configure Cognito
+
+### Step 2: iOS Refactoring (Week 2-3)
+1. Create feature flag for new architecture
+2. Implement native speech services
+3. Update audio persistence
+4. Integrate AWS SDKs
+
+### Step 3: Testing & Validation (Week 3-4)
+1. A/B test with subset of users
+2. Validate audio quality
+3. Performance testing
+4. Privacy audit
+
+### Step 4: Cutover (Week 4)
+1. Migrate user accounts to Cognito
+2. Enable new architecture for all users
+3. Monitor and fix issues
+4. Decommission Rails backend
+
+## 4. TECHNICAL DECISIONS
+
+### Lambda Runtime: Node.js 20.x
+**Pros:**
+- Fast cold starts (200-300ms)
+- Excellent AWS SDK support
+- Async/await native support
+- Small deployment packages
+
+**Alternative: Python 3.11**
+- Better for ML workloads
+- Good for prompt engineering
+- Slightly slower cold starts
+
+### Storage: On-Device Only
+- Documents directory for audio files
+- CoreData for metadata
+- UserDefaults for preferences
+- No cloud storage (privacy first)
+
+### Authentication: AWS Cognito
+- Managed service (no maintenance)
+- Built-in MFA support
+- Easy integration with Lambda
+- Cost-effective for <50k users
+
+## 5. COST ANALYSIS
+
+### Current (Rails)
+- EC2/Heroku: ~$100-500/month
+- Database: ~$50-100/month
+- Groq API: ~$200-500/month
+- AWS Polly: ~$100-200/month
+- Storage: ~$50/month
+**Total: $500-1350/month**
+
+### New (Serverless)
+- Lambda: ~$5-20/month (generous free tier)
+- API Gateway: ~$3-10/month
+- Cognito: ~$0-50/month (50k free MAU)
+- Gemini Flash: ~$50-150/month
+**Total: $58-230/month**
+
+**Savings: 85%+ reduction in costs**
+
+## 6. PRIVACY IMPROVEMENTS
+
+### Data Never Leaves Device
+- Audio files stored locally
+- Transcription on-device
+- TTS on-device
+- No analytics tracking
+
+### Minimal Server Contact
+- Only for auth (Cognito)
+- Only for AI questions (Lambda → Gemini)
+- No personal data stored remotely
+
+### User Control
+- Export/delete all data
+- No cloud backups
+- Complete offline capability (except AI)
+
+## 7. PERFORMANCE IMPROVEMENTS
+
+### Before
+- Network round-trip for every transcription: 500-2000ms
+- TTS generation: 1000-3000ms
+- Question generation: 2000-5000ms
+- High latency, unreliable
+
+### After
+- Transcription: Instant (on-device)
+- TTS: <100ms (on-device)
+- Question generation: 500-1500ms (Lambda only)
+- Low latency, works offline
+
+## 8. IMPLEMENTATION PRIORITIES
+
+### MUST HAVE (MVP)
+1. ✅ AWS Cognito authentication
+2. ✅ Lambda function for Gemini
+3. ✅ Native speech-to-text
+4. ✅ Native text-to-speech
+5. ✅ Local audio storage
+6. ✅ Basic interview flow
+7. ✅ Audio playback
+
+### SHOULD HAVE
+1. Voice selection UI
+2. Editable daily questions
+3. Audio stitching for podcasts
+4. Waveform visualization
+5. Export functionality
+
+### NICE TO HAVE
+1. Audio remastering
+2. Premium tiers
+3. Advanced prompt customization
+4. Multiple language support
+5. iPad/Mac Catalyst support
+
+## 9. RISK MITIGATION
+
+### Risk: Speech Recognition Quality
+**Mitigation:**
+- Use on-device recognition for privacy
+- Implement retry/correction UI
+- Allow manual text input fallback
+
+### Risk: Lambda Cold Starts
+**Mitigation:**
+- Use provisioned concurrency for critical functions
+- Implement optimistic UI updates
+- Cache recent responses
+
+### Risk: User Migration
+**Mitigation:**
+- Gradual rollout with feature flags
+- Maintain backward compatibility initially
+- Clear communication about benefits
+
+## 10. SUCCESS METRICS
+
+### Technical
+- API latency: <500ms p95
+- Speech recognition accuracy: >95%
+- App crash rate: <0.1%
+- Offline capability: 100% core features
+
+### Business
+- Server costs: 85% reduction
+- User retention: 20% improvement
+- App Store rating: 4.5+ stars
+- Privacy-focused marketing opportunity
+
+## 11. DEVELOPMENT TIMELINE
+
+**Total Duration: 4-5 weeks**
+
+### Week 1
+- AWS infrastructure setup
+- Lambda functions development
+- Cognito configuration
+
+### Week 2
+- iOS native speech integration
+- Remove Rails dependencies
+- Local storage implementation
+
+### Week 3
+- User flow refinement
+- Audio visualization
+- Testing and debugging
+
+### Week 4
+- User migration prep
+- Performance optimization
+- Beta testing
+
+### Week 5
+- Production rollout
+- Monitoring setup
+- Rails decommission
+
+## 12. FILE CHANGES SUMMARY
+
+### Files to Remove (Rails Backend - ALL)
+- Entire `inkra_rails/` directory (52+ files)
+- All Rails-related configuration
+- Database migration files
+- Ruby deployment scripts
+
+### Files to Modify (iOS)
+- `NetworkService.swift` → Simplify to Lambda-only
+- `SpeechToTextService.swift` → Full native implementation
+- `VoiceService.swift` → Native TTS
+- `AudioPersistenceService.swift` → Enhanced local storage
+- `InkraApp.swift` → Remove sync services
+- `AuthService.swift` → Cognito integration
+
+### New Files to Create
+- `Lambda/` directory with Node.js functions
+- `CognitoAuthService.swift`
+- `LambdaService.swift`
+- `NativeSpeechService.swift`
+- `NativeVoiceService.swift`
+- `LocalAudioManager.swift`
+- `WaveformVisualizer.swift`
+- AWS CloudFormation templates
+
+## CONCLUSION
+
+This architectural revamp will transform Inkra into a privacy-first, cost-effective, and performant application. By leveraging iOS native capabilities and minimal serverless infrastructure, we achieve:
+
+1. **85%+ cost reduction** in server expenses
+2. **Complete privacy** with on-device processing
+3. **Better performance** with instant speech processing
+4. **Improved reliability** with offline capabilities
+5. **Simpler maintenance** with managed services
+
+The migration can be completed in 4-5 weeks with minimal risk through gradual rollout and thorough testing. The end result will be a magical, responsive interview experience that respects user privacy while dramatically reducing operational costs.

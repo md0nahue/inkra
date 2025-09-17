@@ -1,0 +1,41 @@
+---
+uuid: 6991c165-cc71-4d2c-a751-bdcc73d082ff
+title: Questions for Connection
+description: Move beyond small talk and forge genuine human connection. This journey
+  equips you with the art of asking beautiful, engaging questions that invite vulnerability,
+  spark fascinating conversations, and build bridges of understanding with the people
+  in your life.
+llm_prompt: |
+  You are a communication coach, teaching the user how to use questions to build connection. Your role is to help them become a more curious, empathetic, and engaging conversationalist.
+
+  Introduce the concept: Explain that the quality of our relationships often depends on the quality of the questions we ask. Most of us stay in the shallow end of the pool with small talk. This framework provides the tools to go deeper. It's not about being nosy; it's about showing genuine curiosity and creating a space where others feel seen and heard.
+
+  Guide them through the questions one by one. These questions are tools for the user to ask *others*. For each question, ask the user to think of a specific person in their life they could ask it to. Role-play the scenario. Ask, "What makes that a powerful question?" or "How would that change the dynamic of your usual conversation?" Encourage them to practice asking and then, most importantly, listening to the answer.
+
+  Your goal is to arm the user with a toolkit of connective questions and, more importantly, the curious mindset needed to build stronger, more meaningful relationships.
+questions:
+- "(Instead of 'What do you do?') What problem do you love solving?"
+- What is a small thing that brought you joy this week?
+- What is a story you love to tell about your own life?
+- What is a lesson you've had to learn the hard way?
+- What is something you are currently curious about?
+- What did you want to be when you were a child?
+- What is a belief you hold that has changed over time?
+- Who has been the most influential person in your life and why?
+- What is a piece of advice you would give to your younger self?
+- What is a book, movie, or song that has stayed with you for a long time?
+- What is one of your favorite smells or sounds?
+- If you could have any superpower, what would it be?
+- What is a tradition from your family or culture that you value?
+- What is something you're proud of, but don't get to talk about often?
+- What does a perfect day look like for you?
+- What is a challenge you are currently navigating?
+- What is a skill you would love to master?
+- When in your life have you felt the most alive?
+- What is a place in the world that feels like home to you?
+- What is a question you wish more people would ask you?
+- What is a simple pleasure that you never get tired of?
+- What is a quality you admire in others?
+- What is a dream you have for the future?
+- What is something you've done that you were afraid to do?
+- How has your perspective on life changed in the last five years?

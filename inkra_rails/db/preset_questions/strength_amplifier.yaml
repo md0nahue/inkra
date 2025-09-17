@@ -1,0 +1,57 @@
+---
+uuid: 8525d50e-c9d7-4d72-b23c-3af08a50c592
+title: Strength Amplifier
+description: You have innate superpowers—your character strengths. This journey is
+  not about finding your weaknesses, but about amplifying what's already strong. Learn
+  to actively apply your top strengths (like creativity, bravery, or kindness) in
+  new ways to solve problems, boost your happiness, and supercharge your life.
+llm_prompt: |
+  You are a strengths-based coach, acting as a "Strength Amplifier." Your role is to help the user identify their core character strengths and then brainstorm practical, active ways to use them more consciously.
+
+  Introduce the concept: Explain that traditional self-help often focuses on fixing weaknesses. A strengths-based approach is different: it posits that the fastest route to growth and happiness is to double down on what we're naturally good at. This framework is about moving from passively having strengths to actively *using* them as tools to build a better life.
+
+  Guide them through the questions one by one. First, help them identify a few of their top strengths (you can reference the 24 VIA Character Strengths if needed, e.g., Creativity, Bravery, Kindness, Curiosity, Gratitude, etc.). Then, for each strength, challenge them with questions that prompt action. Use phrases like, "How could you use your [Creativity] to solve this problem?" or "What would a [Brave] conversation look like in this situation?" or "How can you 'rent out' your [Kindness] to someone today?"
+
+  Your goal is to make the user feel powerful and resourceful by showing them they already have the tools they need to thrive. It's all about application.
+questions:
+- To begin, what is a time you felt you were at your absolute best? What strengths
+  were you using?
+- Let's identify one of your top strengths. (e.g., Creativity, Curiosity, Kindness,
+  Leadership, Perseverance). How does this strength show up in your life?
+- Think of a current, nagging problem. How could you apply your strength of [Creativity]
+  to find a novel solution?
+- How could you use your strength of [Curiosity] to better understand this problem?
+- What is a difficult conversation you need to have? How could you approach it using
+  your strength of [Bravery]?
+- How could you approach that same conversation using your strength of [Fairness]
+  or [Kindness]?
+- What is a routine task in your life? How could you redesign it to use more of your
+  strength of [Love of Learning] or [Appreciation of Beauty]?
+- Think of a relationship you want to improve. How could you use your strength of
+  [Gratitude] to enrich it this week?
+- How could you use your strength of [Zest/Enthusiasm] to energize a boring project
+  at work?
+- What is a goal you are working toward? How can your strength of [Perseverance] help
+  you take the next step?
+- How can your strength of [Hope/Optimism] help you navigate a current uncertainty?
+- What is one new way you could use your top strength this week?
+- How could you use your strength of [Leadership] in a situation where you don't have
+  a formal title?
+- How could you use your strength of [Humor] to de-escalate a tense situation?
+- What is a way you could 'rent out' one of your top strengths to help someone else?
+- How can you use your strength of [Self-Regulation] to build a new positive habit?
+- Think of your physical health. How could you apply your strength of [Prudence/Caution]
+  to make better choices?
+- How could you use your strength of [Social Intelligence] to better connect with
+  a colleague or family member?
+- What is a community or group you belong to? How can you contribute using your strength
+  of [Teamwork]?
+- How can you use your strength of [Forgiveness] with yourself for a past mistake?
+- What is a strength you admire in others but don't recognize in yourself? Where might
+  you have a smaller version of it?
+- How can you design your weekend to maximize the use of your favorite strengths?
+- What is a strength that feels under-utilized in your life right now?
+- Brainstorm three new, concrete actions you can take in the next 48 hours to express
+  that under-used strength.
+- At the end of the day, instead of a to-do list, try a 'strengths-used' list. What
+  strengths did you deploy today?

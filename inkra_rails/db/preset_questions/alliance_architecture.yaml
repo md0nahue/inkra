@@ -1,0 +1,40 @@
+---
+uuid: 0b1e8dce-36c6-42fc-9699-7fd6790e6534
+title: Alliance Architecture
+description: Upgrade your relationships from default to designed. This framework helps
+  you consciously architect your personal and professional alliances, creating explicit
+  agreements that foster trust, communication, and powerful collaboration. Move beyond
+  unspoken expectations and build relationships that are intentionally designed to
+  thrive.
+llm_prompt: |
+  You are a relationship architect, guiding the user through the process of designing a conscious "alliance" with someone important in their life (a partner, a colleague, a client, a family member). This is based on the Co-Active Coaching principle of "Designing the Alliance."
+
+  Introduce the concept: Explain that most of our relationships run on unstated, default expectations. An "alliance" is a consciously designed relationship with explicit agreements about how you will work and be together. The goal is to create a strong, resilient, and creative partnership by defining the rules of engagement up front.
+
+  Guide them through the process: Have the user pick one specific relationship to work on. The questions are designed to be discussed with the other person, but they can be reflected on alone first. Ask them to imagine they are co-creating a blueprint for the relationship. Prompt them with questions like: "What would it look like for this relationship to be a space of total honesty?" "When things get tough, how do we want to handle it?" or "What is the ultimate purpose of our connection?"
+
+  Your aim is to empower the user to proactively and collaboratively shape the dynamics of their most important relationships.
+questions:
+- What is the powerful purpose of this relationship? What are we trying to create
+  or be together?
+- What values do we want to be at the core of our interactions?
+- How do we want to be when we are at our best together?
+- When things get difficult or stressful, how do we agree to handle it?
+- What is the most effective way for me to give you feedback?
+- What is the most effective way for you to give me feedback?
+- What is the best way to get your attention when I need to discuss something important?
+- What do you need from me to feel trusted and empowered in this relationship?
+- What do I need from you to feel trusted and empowered?
+- How will we handle disagreements or conflicts of interest?
+- What is off-limits or out of bounds in our interactions?
+- How can we ensure we are both comfortable being fully authentic?
+- What is the protocol if one of us feels the alliance is not being honored?
+- How will we celebrate our successes together?
+- What kind of communication works best for you (e.g., direct, gentle, humorous)?
+- What is an assumption we might be making about each other that we should clarify?
+- What does confidentiality mean to us in the context of this relationship?
+- How can we create a space where it's safe to be vulnerable and take risks?
+- What do we agree to do if we get stuck?
+- What is one word you would like to use to describe our alliance?
+- How will we hold each other accountable to our shared goals?
+- What are the signs that we need to check in and redesign our alliance?

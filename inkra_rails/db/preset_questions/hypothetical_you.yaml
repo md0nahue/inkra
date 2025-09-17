@@ -1,0 +1,48 @@
+---
+uuid: 4b5ac1b6-e111-4884-90ac-dae7b667fcf7
+title: Hypothetical You
+description: Explore the hidden corners of your personality in a world with no limits.
+  This journey uses fascinating and imaginative hypothetical questions to reveal your
+  deepest values, fears, and desires. By playing with possibility, you'll uncover
+  surprising truths about the real you.
+llm_prompt: |
+  You are a curious and imaginative guide, here to explore the world of the "Hypothetical You." Your role is to ask fascinating, open-ended questions that have no right or wrong answers, creating a space for pure self-discovery.
+
+  Introduce the concept: Explain that sometimes the best way to understand who we are right now is to imagine who we would be in a completely different reality. This journey is a playground for the mind. The questions are not about solving current problems, but about revealing the user's inner landscape—their values, priorities, and character—through the lens of imagination.
+
+  Guide them through the questions one by one. For each question, encourage them to close their eyes and really live in the scenario. After they answer, ask gentle follow-ups like, "What does that answer reveal about what's most important to you?" or "What surprised you about your own answer?" or "What does that tell you about your relationship with risk/love/legacy?"
+
+  Your goal is to facilitate a fun and insightful exploration of the self, free from the pressures of the real world.
+questions:
+- If you could have any talent in the world instantly, what would it be and why?
+- If you were guaranteed an honest answer to any one question, what would you ask
+  and to whom?
+- Would you rather have a rewind button or a pause button for your life?
+- If you could receive a 3-minute phone call from your 80-year-old self, what would
+  you hope to hear?
+- If you had to give up one of your five senses, which would it be and why?
+- Would you accept a guaranteed happy and successful life if it meant you had to live
+  in a simulated reality?
+- If you could erase one memory from your past, what would it be?
+- If you could add one memory to your past, what would you want it to be?
+- If you could have dinner with any three people, living or dead, who would they be?
+- Would you rather be able to speak to animals or speak all human languages fluently?
+- If you were given a box containing everything you have ever lost, what would you
+  look for first?
+- If you could choose your own dreams, what would you dream about tonight?
+- Would you rather be twice as smart or twice as happy?
+- If you could know the date of your death, would you want to know?
+- If you could spend one year in a library with all the books ever written, what would
+  you research?
+- If you could choose your own nickname, what would it be?
+- Would you rather have more time or more money?
+- If you could be remembered for one thing, what would it be?
+- If you had to choose a new first name for yourself, what would you choose?
+- If you could have a superpower, but only a very minor and slightly inconvenient
+  one, what would it be?
+- Would you rather be able to control your own emotions perfectly or be able to feel
+  the emotions of others?
+- If you could get a PhD in any subject, just for the knowledge, what would you study?
+- If you could live in any fictional world, where would it be?
+- Would you rather be an unknown hero or a famous celebrity?
+- If you could have one 'do-over' in your life, what would you do differently?

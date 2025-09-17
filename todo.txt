@@ -1,0 +1,561 @@
+x# INKRA MIGRATION TODO LIST
+# Individually Scoped Tasks for Parallel Execution
+# ===============================================
+
+## PHASE 1: AWS INFRASTRUCTURE SETUP (Independent Tasks)
+# Duration: 3-4 days | Can run completely in parallel
+
+DO THIS AS TERRAFORM PLEASE - ONE TERRAFORM SCRIPT
+
+### 1.1 AWS Cognito User Pool Setup
+**Task**: Create and configure AWS Cognito User Pool for authentication
+**Duration**: 1 day
+**Dependencies**: None
+**Deliverables**:
+- User pool created with email/password auth
+- Custom attributes configured (subscription_tier, monthly_quota)
+- Password policies and MFA options set
+- User groups created (free_tier, premium_tier)
+- iOS SDK configuration generated
+**Status**: Not started
+**Blocking**: None
+
+### 1.2 DynamoDB Rate Limiting Table
+**Task**: Create DynamoDB table for rate limiting and usage tracking
+**Duration**: 0.5 days
+**Dependencies**: None
+**Deliverables**:
+- Table "inkra-usage" created with PK/SK design
+- Global Secondary Index for date queries
+- On-demand billing mode configured
+- IAM policies for Lambda access
+**Status**: Not started
+**Blocking**: None
+
+### 1.3 Lambda Function: generateQuestions
+**Task**: Develop Node.js Lambda function for Gemini API integration
+**Duration**: 1.5 days
+**Dependencies**: None
+**Deliverables**:
+- Lambda function with Gemini Flash API integration
+- Rate limiting logic with DynamoDB counters
+- Cognito token validation
+- Error handling and timeouts
+- Deployment package ready
+**Status**: Not started
+**Blocking**: None
+
+### 1.4 Lambda Function: getUserProfile
+**Task**: Create Lambda function for user profile management
+**Duration**: 0.5 days
+**Dependencies**: Cognito User Pool (1.1)
+**Deliverables**:
+- Fetch user data from Cognito
+- Return preferences and subscription status
+- Proper error handling
+**Status**: Not started
+**Blocking**: Cognito setup must complete first
+
+### 1.5 Lambda Function: updateUserPreferences
+**Task**: Create Lambda function for preference updates
+**Duration**: 0.5 days
+**Dependencies**: Cognito User Pool (1.1)
+**Deliverables**:
+- Update Cognito user attributes
+- Voice selection persistence
+- Settings synchronization
+**Status**: Not started
+**Blocking**: Cognito setup must complete first
+
+### 1.6 API Gateway Configuration
+**Task**: Set up REST API with proper security and routing
+**Duration**: 1 day
+**Dependencies**: All Lambda functions (1.3, 1.4, 1.5)
+**Deliverables**:
+- REST API with CORS enabled
+- Cognito authorizer configured
+- Endpoints: /questions/generate, /user/profile, /user/preferences
+- Rate limiting and throttling configured
+**Status**: Not started
+**Blocking**: All Lambda functions must be deployed first
+
+### 1.7 CloudWatch Monitoring Setup
+**Task**: Configure monitoring and alerting for AWS resources
+**Duration**: 0.5 days
+**Dependencies**: All AWS resources (1.1-1.6)
+**Deliverables**:
+- CloudWatch alarms for Lambda errors/timeouts
+- DynamoDB throttling alerts
+- API Gateway error rate monitoring
+- Cost alerts configured
+**Status**: Not started
+**Blocking**: All infrastructure must be deployed first
+
+---
+
+## PHASE 2: iOS NATIVE SPEECH INTEGRATION (Mostly Parallel)
+# Duration: 5-6 days | Some dependencies between tasks
+
+### 2.1 Remove External Dependencies
+**Task**: Clean up existing third-party integrations
+**Duration**: 1 day
+**Dependencies**: None
+**Deliverables**:
+- Remove PollyAudioService.swift
+- Remove Groq transcription code from TranscriptService.swift
+- Clean up NetworkService.swift (keep only Lambda calls)
+- Remove Rails API endpoint definitions
+- Update project dependencies
+**Status**: Not started
+**Blocking**: None
+
+### 2.2 Native Speech-to-Text Implementation
+**Task**: Implement SFSpeechRecognizer for transcription
+**Duration**: 2 days
+**Dependencies**: None (can work alongside 2.1)
+**Deliverables**:
+- NativeSpeechService.swift with continuous listening
+- On-device recognition with privacy flag
+- Auto-submit functionality
+- Proper audio session management
+- Permission handling
+**Status**: Not started
+**Blocking**: None
+
+### 2.3 Native Text-to-Speech Implementation
+**Task**: Implement AVSpeechSynthesizer for voice output
+**Duration**: 1.5 days
+**Dependencies**: None
+**Deliverables**:
+- NativeVoiceService.swift with speech synthesis
+- Voice selection and management
+- Speech rate and pitch controls
+- Queue management for multiple utterances
+**Status**: Not started
+**Blocking**: None
+
+### 2.4 Voice Selection UI Redesign
+**Task**: Create new Apple native voice selection interface
+**Duration**: 2 days
+**Dependencies**: Native TTS implementation (2.3)
+**Deliverables**:
+- Voice browser with categories
+- Preview functionality
+- Quality tier indicators
+- Settings persistence
+- Accessibility support
+**Status**: Not started
+**Blocking**: Native TTS must be implemented first
+
+### 2.5 Audio Session Management
+**Task**: Implement proper audio session handling
+**Duration**: 1 day
+**Dependencies**: Speech implementations (2.2, 2.3)
+**Deliverables**:
+- AVAudioSession configuration
+- Interrupt handling
+- Background audio support
+- Proper resource cleanup
+**Status**: Not started
+**Blocking**: Both speech services must be implemented first
+
+---
+
+## PHASE 3: LOCAL AUDIO PERSISTENCE & MANAGEMENT (Parallel Tasks)
+# Duration: 4-5 days | Mostly independent with some integration points
+
+### 3.1 Enhanced Local Audio Storage
+**Task**: Implement robust local audio file management
+**Duration**: 2 days
+**Dependencies**: None
+**Deliverables**:
+- LocalAudioManager.swift with Documents directory structure
+- Audio segment saving with metadata
+- File organization by interview/question
+- Duplicate handling and cleanup
+**Status**: Not started
+**Blocking**: None
+
+### 3.2 CoreData Model Simplification
+**Task**: Simplify data model for local-first architecture
+**Duration**: 1.5 days
+**Dependencies**: None (can work in parallel)
+**Deliverables**:
+- Simplified Interview/Question entities
+- Remove server IDs and sync fields
+- Direct question-audio relationships
+- Migration scripts for existing data
+**Status**: Not started
+**Blocking**: None
+
+### 3.3 Audio Stitching Implementation
+**Task**: Create podcast-style audio stitching functionality
+**Duration**: 2 days
+**Dependencies**: Local audio storage (3.1)
+**Deliverables**:
+- AVFoundation composition for multiple segments
+- Export functionality for single podcast file
+- Progress tracking and cancellation
+- Quality options (bitrate, format)
+**Status**: Not started
+**Blocking**: Audio storage must be implemented first
+
+SEE waveform.txt
+### 3.4 Waveform Visualization
+**Task**: Implement real-time waveform display
+**Duration**: 2 days
+**Dependencies**: None
+**Deliverables**:
+- SwiftUI waveform visualizer
+- Real-time audio level monitoring
+- Scrolling waveform animation
+- Mac-style vertical line display
+**Status**: Not started
+**Blocking**: None
+
+### 3.5 Audio Playback Controls
+**Task**: Enhanced audio playback with scrubbing
+**Duration**: 1.5 days
+**Dependencies**: Local audio storage (3.1), Waveform (3.4)
+**Deliverables**:
+- AVPlayer integration for playback
+- Scrubbing and seeking controls
+- Playback speed controls
+- Progress indicators
+**Status**: Not started
+**Blocking**: Audio storage and waveform must be complete
+
+---
+
+## PHASE 4: USER FLOW STREAMLINING (Sequential with Dependencies)
+# Duration: 3-4 days | Heavy dependencies on previous phases
+
+### 4.1 Simplified Home Screen
+**Task**: Redesign home screen for magical interview start
+**Duration**: 1 day
+**Dependencies**: None (UI only)
+**Deliverables**:
+- Clean home screen with main CTA
+- Quick access to voice settings
+- Recent interviews list
+- Daily questions access
+**Status**: Not started
+**Blocking**: None
+
+### 4.2 Magical Interview Flow Manager
+**Task**: Implement seamless interview experience
+**Duration**: 2 days
+**Dependencies**: Native speech services (2.2, 2.3), Audio storage (3.1)
+**Deliverables**:
+- InterviewManager.swift with automatic flow
+- Speech-to-text integration
+- Automatic Lambda question generation
+- Smooth transitions between questions
+**Status**: Not started
+**Blocking**: Speech services and audio storage must be complete
+
+### 4.3 Daily Questions Feature
+**Task**: Implement editable daily questions
+**Duration**: 1.5 days
+**Dependencies**: CoreData model (3.2)
+**Deliverables**:
+- UI for editing daily questions list
+- Local storage of custom questions
+- Integration with interview flow
+- Default question templates
+**Status**: Not started
+**Blocking**: Simplified data model must be ready
+
+### 4.4 Settings and Preferences
+**Task**: Comprehensive settings screen
+**Duration**: 1 day
+**Dependencies**: Voice selection (2.4), Daily questions (4.3)
+**Deliverables**:
+- Settings screen with all options
+- Voice selection integration
+- Daily questions management
+- Export/import functionality
+**Status**: Not started
+**Blocking**: Voice selection and daily questions must be complete
+
+---
+
+## PHASE 5: AWS INTEGRATION (Sequential, Depends on AWS & iOS)
+# Duration: 2-3 days | Heavy dependencies on previous phases
+
+### 5.1 Cognito Authentication Service
+**Task**: Integrate AWS Cognito SDK for authentication
+**Duration**: 1.5 days
+**Dependencies**: AWS Cognito setup (1.1), iOS cleanup (2.1)
+**Deliverables**:
+- CognitoAuthService.swift with SDK integration
+- Sign up/sign in flows
+- Token management and refresh
+- Error handling for auth failures
+**Status**: Not started
+**Blocking**: AWS Cognito must be configured and iOS dependencies cleaned up
+
+### 5.2 Lambda Service Integration
+**Task**: Create service layer for Lambda function calls
+**Duration**: 1 day
+**Dependencies**: API Gateway setup (1.6), Auth service (5.1)
+**Deliverables**:
+- LambdaService.swift with API calls
+- Authentication token inclusion
+- Rate limiting error handling
+- Network retry logic
+**Status**: Not started
+**Blocking**: API Gateway and auth service must be ready
+
+### 5.3 Rate Limiting UI Integration
+**Task**: Integrate rate limiting feedback into UI
+**Duration**: 1 day
+**Dependencies**: Lambda service (5.2), Interview flow (4.2)
+**Deliverables**:
+- Usage counter display
+- Quota exceeded handling
+- Upgrade prompts for free users
+- Error message improvements
+**Status**: Not started
+**Blocking**: Lambda service and interview flow must be complete
+
+---
+
+## PHASE 6: ADVANCED FEATURES (Parallel, Optional)
+# Duration: 3-4 days | Can be implemented independently
+
+### 6.1 CloudKit Sync (Optional)
+**Task**: Implement optional iCloud sync for cross-device access
+**Duration**: 2 days
+**Dependencies**: CoreData model (3.2)
+**Deliverables**:
+- NSPersistentCloudKitContainer implementation
+- Sync status UI
+- User opt-in/opt-out functionality
+- Migration from local-only
+**Status**: Not started (optional)
+**Blocking**: Simplified data model must be ready
+
+### 6.2 Audio Export and Sharing
+**Task**: Enhanced export functionality
+**Duration**: 1.5 days
+**Dependencies**: Audio stitching (3.3)
+**Deliverables**:
+- Export to Files app
+- Share sheet integration
+- Multiple format support
+- Batch export functionality
+**Status**: Not started (optional)
+**Blocking**: Audio stitching must be complete
+
+### 6.3 Subscription Management
+**Task**: Implement premium tier management
+**Duration**: 2 days
+**Dependencies**: Cognito integration (5.1)
+**Deliverables**:
+- StoreKit 2 integration
+- Subscription status sync with Cognito
+- Feature gating for premium users
+- Restore purchases functionality
+**Status**: Not started (optional)
+**Blocking**: Auth service must be complete
+
+### 6.4 Audio Enhancement (Premium)
+**Task**: On-device audio processing and enhancement
+**Duration**: 3 days
+**Dependencies**: Audio storage (3.1)
+**Deliverables**:
+- Noise reduction using AVAudioEngine
+- Volume normalization
+- Silence removal
+- EQ adjustments
+**Status**: Not started (premium feature)
+**Blocking**: Audio storage must be implemented
+
+---
+
+## PHASE 7: TESTING & MIGRATION (Sequential)
+# Duration: 4-5 days | Must happen after main implementation
+
+### 7.1 Unit Testing Suite
+**Task**: Comprehensive unit tests for all new components
+**Duration**: 2 days
+**Dependencies**: Most core functionality complete
+**Deliverables**:
+- Test coverage for all new services
+- Mock implementations for AWS services
+- CoreData testing setup
+- Audio processing tests
+**Status**: Not started
+**Blocking**: Core functionality must be implemented
+
+### 7.2 Integration Testing
+**Task**: End-to-end testing of complete flows
+**Duration**: 1.5 days
+**Dependencies**: All main features complete (Phases 1-5)
+**Deliverables**:
+- Complete interview flow testing
+- AWS integration testing
+- Error scenario testing
+- Performance benchmarking
+**Status**: Not started
+**Blocking**: All main features must be complete
+
+### 7.3 User Migration Scripts
+**Task**: Scripts and tools for migrating existing users
+**Duration**: 1.5 days
+**Dependencies**: All features complete, testing done
+**Deliverables**:
+- Data export from Rails backend
+- User account migration to Cognito
+- Local data migration scripts
+- Rollback procedures
+**Status**: Not started
+**Blocking**: All features and testing must be complete
+
+### 7.4 Beta Testing and Refinement
+**Task**: Real-world testing with subset of users
+**Duration**: 1 week
+**Dependencies**: Migration scripts ready (7.3)
+**Deliverables**:
+- Beta testing group setup
+- Performance monitoring
+- User feedback collection
+- Bug fixes and refinements
+**Status**: Not started
+**Blocking**: Migration capability must be ready
+
+---
+
+## PHASE 8: DEPLOYMENT & CLEANUP (Sequential)
+# Duration: 1-2 days | Final phase
+
+### 8.1 Production Deployment
+**Task**: Deploy new architecture to production
+**Duration**: 1 day
+**Dependencies**: Beta testing complete (7.4)
+**Deliverables**:
+- Production AWS infrastructure
+- App Store update deployment
+- Gradual user migration
+- Monitoring and alerting active
+**Status**: Not started
+**Blocking**: Beta testing must be successful
+
+### 8.2 Legacy System Decommission
+**Task**: Remove Rails backend and associated infrastructure
+**Duration**: 0.5 days
+**Dependencies**: Production deployment successful (8.1)
+**Deliverables**:
+- Rails backend shutdown
+- Database backups and archival
+- Domain redirects updated
+- Cost monitoring confirmed
+**Status**: Not started
+**Blocking**: Production must be stable
+
+---
+
+## CRITICAL PATH ANALYSIS
+
+### Longest Sequential Chain (Critical Path):
+1. Cognito Setup (1.1) → 1 day
+2. Lambda Functions (1.4, 1.5) → 1 day
+3. API Gateway (1.6) → 1 day
+4. Auth Service (5.1) → 1.5 days
+5. Lambda Integration (5.2) → 1 day
+6. Testing (7.1, 7.2) → 3.5 days
+7. Migration (7.3) → 1.5 days
+8. Deployment (8.1) → 1 day
+
+**Total Critical Path: 11.5 days**
+
+### High Parallelization Opportunities:
+- Phase 1 (AWS): Tasks 1.1, 1.2, 1.3 can run completely parallel
+- Phase 2 (iOS): Tasks 2.1, 2.2, 2.3 can run mostly parallel
+- Phase 3 (Audio): Tasks 3.1, 3.2, 3.4 can run completely parallel
+- Phase 6 (Advanced): All tasks can run parallel if desired
+
+### Key Blocking Relationships:
+- **AWS Lambda functions BLOCK API Gateway** (must be deployed first)
+- **API Gateway BLOCKS Lambda service integration** (endpoints must exist)
+- **Speech services BLOCK interview flow** (core functionality needed)
+- **Audio storage BLOCKS audio stitching** (files must be saved first)
+- **All core features BLOCK testing phase** (something to test needed)
+
+---
+
+## RESOURCE ALLOCATION RECOMMENDATIONS
+
+### Solo Developer (Sequential Approach):
+Follow phases in order, complete critical path items first
+**Timeline**: 4-5 weeks
+
+### Small Team (2-3 developers):
+- **Dev 1**: AWS infrastructure (Phase 1) → Integration (Phase 5)
+- **Dev 2**: iOS speech services (Phase 2) → UI flows (Phase 4)
+- **Dev 3**: Audio management (Phase 3) → Testing (Phase 7)
+**Timeline**: 2-3 weeks
+
+### Larger Team (4+ developers):
+Maximum parallelization across all phases
+**Timeline**: 1.5-2 weeks
+
+---
+
+## RISK MITIGATION
+
+### High-Risk Dependencies:
+- **AWS Cognito → Lambda integration**: Test early, have fallback auth
+- **Speech recognition accuracy**: Implement fallback text input
+- **Lambda cold starts**: Configure provisioned concurrency
+- **Migration complexity**: Maintain dual systems during transition
+
+### Recommended Risk Reduction:
+1. Implement AWS infrastructure first (validates feasibility)
+2. Create basic speech integration early (validates core concept)
+3. Keep Rails system running during parallel development
+4. Implement feature flags for gradual rollout
+5. Have rollback procedures ready at each phase
+
+---
+
+## SUCCESS METRICS PER PHASE
+
+### Phase 1 Success: AWS Working
+- Lambda functions respond within 500ms
+- Rate limiting works correctly
+- Cognito authentication successful
+- DynamoDB counters increment properly
+
+### Phase 2 Success: Native Speech Working
+- Speech recognition accuracy >90%
+- TTS playback works reliably
+- Voice selection UI functional
+- No external dependencies
+
+### Phase 3 Success: Local Storage Working
+- Audio files save/load correctly
+- CoreData migration successful
+- Audio stitching produces valid files
+- Waveform visualization smooth
+
+### Phase 4 Success: User Flow Working
+- Interview flow feels magical
+- No manual text input required
+- Daily questions customizable
+- Settings persist correctly
+
+### Phase 5 Success: Integration Working
+- AWS services integrated
+- Rate limiting enforced
+- Error handling graceful
+- Network resilience good
+
+### Final Success: Migration Complete
+- 85%+ cost reduction achieved
+- User retention maintained/improved
+- App Store rating >4.5 stars
+- Zero critical bugs in production
+
+This todo list provides a comprehensive roadmap for the Inkra migration with clear dependencies, blocking relationships, and parallel execution opportunities. Each task is individually scoped and can be assigned to different team members or tackled sequentially by a solo developer.

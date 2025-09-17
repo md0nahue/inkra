@@ -1,0 +1,298 @@
+presets:
+  - title: "Finding Resilience"
+    uuid: "04920877-48c4-464f-9173-b632ef2b2413"
+    description: "Life's challenges are inevitable, but they're also the raw material of resilience. This guided interview helps you identify the times you've overcome adversity and extract the patterns of strength that already exist within you. It's designed to help you recognize your own capacity for growth and equip you with strategies for facing future challenges with confidence."
+    category: "mental_health"
+    icon_name: "shield.fill"
+    order_position: 1
+    active: true
+    is_featured: true
+    chapters:
+      - title: "Surviving the Storm"
+        sections:
+          - title: "A Time You Persevered"
+            questions:
+              - "Think about a challenging period in your life that you've come through. What was the situation?"
+              - "What made this situation particularly difficult for you?"
+              - "What kept you going when things felt overwhelming?"
+          - title: "The Support System"
+            questions:
+              - "Who were the people who helped you through this time?"
+              - "What kind of support did you need most?"
+              - "How did you ask for help, or what prevented you from asking?"
+      - title: "Learning from the Experience"
+        sections:
+          - title: "Unexpected Discoveries"
+            questions:
+              - "What did you discover about yourself during this challenging time?"
+              - "What skills or qualities did you develop that you didn't know you had?"
+              - "How did this experience change your perspective on difficulty?"
+      - title: "Building Your Resilience Toolkit"
+        sections:
+          - title: "Your Personal Strategies"
+            questions:
+              - "What specific strategies or habits helped you get through that time?"
+              - "What would you tell someone facing a similar challenge today?"
+              - "How can you apply what you learned to current or future challenges?"
+
+  - title: "The Practice of Letting Go"
+    uuid: "541627cc-9e56-4150-b22d-c1e0362e460a"
+    description: "We all carry things that no longer serve us: a past hurt, a limiting belief, an old version of ourselves. Letting go is not about forgetting; it's an active process of acknowledging what was, understanding its lesson, and choosing to move forward with more freedom. This guided reflection offers a safe space to explore something you're ready to release."
+    category: "mental_health"
+    icon_name: "leaf.fill"
+    order_position: 9
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Acknowledging the Weight"
+        sections:
+          - title: "What You're Carrying"
+            questions:
+              - "Bring to mind something you feel ready to let go of—it could be a belief, a memory, or a past goal. What is it?"
+              - "How does carrying this 'thing' affect your daily thoughts or feelings?"
+              - "What was the origin of this? When did you first pick it up?"
+      - title: "Understanding Its Purpose"
+        sections:
+          - title: "The Lessons Within"
+            questions:
+              - "At one time, how did holding onto this serve or protect you?"
+              - "What is the most important lesson it has taught you?"
+              - "How have you grown or changed because of this experience?"
+      - title: "The Act of Releasing"
+        sections:
+          - title: "Envisioning Freedom"
+            questions:
+              - "What does your life look or feel like without the weight of this?"
+              - "What new belief or perspective can you invite in to take its place?"
+              - "What is one small, symbolic action you can take to honor your decision to let go?"
+
+  - title: "The State Shift Protocol"
+    uuid: "4a12488f-0250-4bfc-9a51-721b9e0bc76c"
+    description: "Your results are a direct reflection of your state. Feeling unmotivated, unfocused, or frustrated is not a permanent condition; it's a pattern you are running. This Tony Robbins-inspired protocol is a tactical guide to engineering a peak performance state on command. Use it to break negative patterns, install empowering beliefs, and create the energy needed to execute."
+    category: "mental_health"
+    icon_name: "bolt.fill"
+    order_position: 11
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Deconstructing the Negative State"
+        sections:
+          - title: "The Pattern"
+            questions:
+              - "Identify a recurring negative state you want to eliminate (e.g., procrastination, frustration, overwhelm). What does it feel like physically?"
+              - "What specific thoughts or internal questions consistently run through your mind when you are in this state?"
+              - "What is the trigger? What happens right before you enter this state?"
+      - title: "Engineering the Peak State"
+        sections:
+          - title: "The Physiology of Power"
+            questions:
+              - "Describe a time you felt absolutely unstoppable, confident, and in flow. What were you doing?"
+              - "If you were to stand, breathe, and move like that unstoppable version of you right now, what would change?"
+              - "What is a song, a video, or a physical movement that instantly floods your body with energy?"
+          - title: "The Focus of Power"
+            questions:
+              - "What would you be focusing on if you were already in your peak state?"
+              - "What is an empowering belief that would shatter your current limiting one? (e.g., 'I am a disciplined machine' vs. 'I'm lazy')."
+              - "Craft a powerful incantation or affirmation you can say with conviction to anchor this state."
+      - title: "The Integration Ritual"
+        sections:
+          - title: "Anchoring the Change"
+            questions:
+              - "What will be your 'pattern interrupt'—the immediate action you take the second you feel the old state returning?"
+              - "Describe your new morning ritual for the next 7 days to proactively prime your peak state."
+              - "What is the one action you will take immediately after this interview, while in this new state?"
+
+  - title: "Building the 'Cookie Jar'"
+    uuid: "20e7dc63-3b1b-4fc6-944a-087fd8f3e149"
+    description: "When you're in the suck, your mind will tell you to quit. The 'Cookie Jar' is a mental toolkit of your past victories, a concept from David Goggins. It's your proof to yourself that you've overcome incredible odds before. This interview is the process of building that toolkit. Use it to document your toughest wins so you can draw on them when you need them most."
+    category: "mental_health"
+    icon_name: "archivebox.fill"
+    order_position: 13
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Excavating Past Victories"
+        sections:
+          - title: "The Unlikely Wins"
+            questions:
+              - "Describe a time in your life when you succeeded against the odds. A time when you truly thought you might fail."
+              - "What was the specific, seemingly insurmountable obstacle you faced?"
+              - "What did you have to sacrifice to get through it?"
+      - title: "The Anatomy of the Win"
+        sections:
+          - title: "The Inner Battle"
+            questions:
+              - "What was the internal narrative of the 'quitting mind' telling you at the time?"
+              - "What was the specific thought, memory, or reason that allowed you to push through that mental barrier?"
+              - "What did you learn about your own character during that struggle?"
+      - title: "Stocking the Cookie Jar"
+        sections:
+          - title: "Crystallizing the Proof"
+            questions:
+              - "How did it feel the moment you realized you had overcome the challenge?"
+              - "If you had to summarize that victory in a single, powerful sentence to remind yourself of it later, what would it be?"
+              - "This story is now a 'cookie' in your jar. When is the next time you anticipate needing to remember this victory?"
+
+  - title: "Anxiety Navigation System"
+    uuid: "a16bef66-492b-45ff-b2f5-ab9bc2b2c03d"
+    description: "Anxiety isn't your enemy—it's information. This interview helps you decode your anxiety patterns, understand your triggers, and develop a personalized toolkit for managing anxious thoughts and feelings. It's designed to help you work with anxiety rather than against it."
+    category: "mental_health"
+    icon_name: "cloud.sun.fill"
+    order_position: 28
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Understanding Your Anxiety"
+        sections:
+          - title: "The Physical Experience"
+            questions:
+              - "How does anxiety show up in your body? What are the first physical signs you notice?"
+              - "What situations or environments tend to trigger your anxious feelings?"
+              - "What thoughts typically run through your mind when you're feeling anxious?"
+          - title: "Patterns and Triggers"
+            questions:
+              - "When do you tend to feel most anxious—certain times of day, situations, or life circumstances?"
+              - "What childhood experiences might have contributed to your anxiety patterns?"
+              - "How has your relationship with anxiety changed over the years?"
+      - title: "Coping Strategies That Work"
+        sections:
+          - title: "Your Current Toolkit"
+            questions:
+              - "What techniques have you found most helpful for managing anxiety in the moment?"
+              - "What activities or environments help you feel most calm and centered?"
+              - "Who in your life understands your anxiety and provides good support?"
+          - title: "What Doesn't Work"
+            questions:
+              - "What common anxiety advice have you tried that didn't work for you?"
+              - "What makes your anxiety worse, even when you're trying to help yourself?"
+              - "What misconceptions about anxiety have you had to unlearn?"
+      - title: "Moving Forward"
+        sections:
+          - title: "Growth and Integration"
+            questions:
+              - "How has living with anxiety taught you something valuable about yourself?"
+              - "What would you tell someone who's just starting to understand their anxiety?"
+              - "How do you want to continue evolving your relationship with anxiety?"
+
+  - title: "Depression Recovery Reflections"
+    uuid: "af13d30e-b998-49c4-926e-2f080cf8d4c6"
+    description: "Depression is a journey, not a destination. This compassionate interview helps you reflect on your experience with depression, celebrate your progress, and identify what supports your mental health. It's for anyone navigating the complexities of depression and recovery."
+    category: "mental_health"
+    icon_name: "sun.max.fill"
+    order_position: 29
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Dark Period"
+        sections:
+          - title: "Understanding the Experience"
+            questions:
+              - "How would you describe depression to someone who has never experienced it?"
+              - "What was the most challenging aspect of depression for you personally?"
+              - "What did you need most during your darkest moments?"
+          - title: "Seeking Help"
+            questions:
+              - "What finally motivated you to seek help or support?"
+              - "What barriers did you have to overcome to get the help you needed?"
+              - "What kind of support was most meaningful to you?"
+      - title: "The Healing Process"
+        sections:
+          - title: "What Helped"
+            questions:
+              - "What treatment, therapy, or support made the biggest difference for you?"
+              - "What small daily practices supported your recovery?"
+              - "How did you rediscover activities or interests that brought you joy?"
+          - title: "Setbacks and Progress"
+            questions:
+              - "How do you handle setbacks or difficult days now?"
+              - "What does progress look like for you—is it linear or more complex?"
+              - "What misconceptions about depression recovery have you encountered?"
+      - title: "Living with Mental Health"
+        sections:
+          - title: "Ongoing Wellness"
+            questions:
+              - "What does mental health maintenance look like in your daily life now?"
+              - "How has your experience with depression changed your perspective on life?"
+              - "What wisdom would you share with someone currently struggling with depression?"
+
+  - title: "Grief and Loss Journey"
+    uuid: "fe29a43a-18f0-48d5-a4eb-369d1bcb1b81"
+    description: "Grief is love with nowhere to go, and everyone's journey through loss is unique. This interview provides a gentle space to honor your grief, reflect on your healing process, and explore how loss has shaped you. It's designed for anyone navigating any type of significant loss."
+    category: "mental_health"
+    icon_name: "heart.circle.fill"
+    order_position: 30
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Loss"
+        sections:
+          - title: "What Was Lost"
+            questions:
+              - "Tell me about what or who you lost. What made this loss so significant?"
+              - "What was your relationship to what you lost—person, dream, health, identity?"
+              - "How did you first learn about or realize this loss?"
+          - title: "The Initial Impact"
+            questions:
+              - "How did grief first show up for you—emotionally, physically, mentally?"
+              - "What surprised you most about your grief experience?"
+              - "What did you need most in those early days and weeks?"
+      - title: "The Grief Process"
+        sections:
+          - title: "Navigating the Waves"
+            questions:
+              - "How has your grief changed over time—what does it feel like now versus then?"
+              - "What helped you get through the most difficult moments?"
+              - "What unhelpful advice did you receive, and what actually supported you?"
+          - title: "Unexpected Discoveries"
+            questions:
+              - "What have you learned about yourself through this grief journey?"
+              - "How has this loss changed your relationships with others?"
+              - "What myths about grief have you had to unlearn?"
+      - title: "Honoring and Moving Forward"
+        sections:
+          - title: "Carrying Love Forward"
+            questions:
+              - "How do you honor what you lost while still living your life?"
+              - "What would you want others to know about grief that isn't commonly understood?"
+              - "How has this experience of loss changed what you value or prioritize in life?"
+
+  - title: "Mindfulness & Present Moment Living"
+    uuid: "ca7351cd-f7bd-4df3-a461-14978cbbe78d"
+    description: "In a world of constant distraction, finding presence is a radical act. This interview explores your relationship with mindfulness, presence, and the simple yet profound practice of being fully here. It's for anyone interested in cultivating a deeper connection to the present moment."
+    category: "mental_health"
+    icon_name: "brain.head.profile"
+    order_position: 31
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Your Relationship with Presence"
+        sections:
+          - title: "Current Experience"
+            questions:
+              - "How present do you feel in your daily life right now?"
+              - "What pulls you most often away from the present moment?"
+              - "When do you naturally feel most present and aware?"
+          - title: "The Journey to Mindfulness"
+            questions:
+              - "What first introduced you to the concept of mindfulness or present-moment awareness?"
+              - "What motivated you to explore mindfulness practices?"
+              - "What misconceptions about mindfulness have you encountered or held yourself?"
+      - title: "Practice and Integration"
+        sections:
+          - title: "What Works for You"
+            questions:
+              - "What mindfulness practices have you tried, and which resonate most with you?"
+              - "How do you bring mindfulness into everyday activities like eating, walking, or working?"
+              - "What role does breath awareness play in your daily life?"
+          - title: "Challenges and Growth"
+            questions:
+              - "What's the biggest challenge you face in maintaining a mindful awareness?"
+              - "How has mindfulness practice affected your relationship with difficult emotions?"
+              - "What changes have you noticed in yourself since beginning to practice mindfulness?"
+      - title: "Living Mindfully"
+        sections:
+          - title: "Integration and Impact"
+            questions:
+              - "How has mindfulness changed the way you relate to stress and challenges?"
+              - "What would you share with someone who thinks mindfulness is too 'woo-woo' or impractical?"
+              - "What does living mindfully mean to you beyond formal meditation practice?"

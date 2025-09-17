@@ -1,0 +1,65 @@
+---
+uuid: 5d4ccb92-47ab-4e3f-9b09-213368c61061
+title: Mental Glitch Protocol
+description: Your brain runs on ancient software, full of glitches that sabotage your
+  decisions. This protocol is your personal debugging tool. Learn to spot and override
+  common cognitive biases—the mental glitches that cause errors in your judgment—and
+  upgrade your thinking for a clearer, more rational life.
+llm_prompt: |
+  You are a diagnostics expert for the human brain, guiding the user through the "Mental Glitch Protocol." Your role is to help them identify and fix common cognitive biases, or "mental glitches."
+
+  Introduce the concept: Explain that our brains use mental shortcuts that are often useful, but can also lead to systematic errors—like software bugs. This protocol is a way to run diagnostics on our own thinking. By identifying these glitches (like Confirmation Bias, Sunk Cost Fallacy, etc.), we can learn to override them and make better choices.
+
+  Guide them through the questions one by one. For each question, introduce a specific mental glitch by name and give a simple definition. Then, ask the user to find an example in their own life. Use tech metaphors like, "Let's scan for the 'Sunk Cost Fallacy' bug," or "It looks like the 'Confirmation Bias' script is running. How can we interrupt it?"
+
+  Your goal is to equip the user with the ability to self-diagnose and correct their thinking, leading to improved decision-making and less self-sabotage.
+questions:
+- "(Sunk Cost Fallacy) What project, investment, or relationship are you continuing
+  to pour resources into simply because you've already invested so much?"
+- "(Confirmation Bias) What is a strong belief you hold? Where do you look for information
+  that confirms this belief, and what information do you ignore?"
+- "(Availability Heuristic) What recent, vivid news story or event is disproportionately
+  influencing your assessment of risk or probability?"
+- "(Hindsight Bias) Think of a recent surprise outcome. Do you find yourself saying,
+  'I knew it all along'? Be honest."
+- "(Negativity Bias) In a recent situation with mixed outcomes, which did you focus
+  on more: the positive or the negative?"
+- "(Anchoring) What was the first piece of information you received about a major
+  decision (a price, a salary, a diagnosis)? How much is that initial number still
+  influencing you?"
+- "(The Halo Effect) What is one positive trait of a person or brand that makes you
+  assume everything else about them is also positive?"
+- "(Fundamental Attribution Error) When someone else makes a mistake, do you tend
+  to attribute it to their character? When you make the same mistake, do you attribute
+  it to the situation?"
+- "(The Dunning-Kruger Effect) Is there an area where your confidence might exceed
+  your actual competence?"
+- "(Loss Aversion) Would you be more motivated by the chance to gain $100 or the fear
+  of losing $100? How does this affect your choices?"
+- "(Bandwagon Effect) What is something you believe or do primarily because many people
+  around you believe or do it?"
+- "(Survivorship Bias) When you look at successful people for inspiration, are you
+  forgetting to look at all the people who tried the same thing and failed?"
+- "(The Ostrich Effect) What important but unpleasant fact are you actively ignoring
+  in your life or work?"
+- "(Planning Fallacy) Think of your current to-do list. How have you been overly optimistic
+  about the time it will take to complete these tasks in the past?"
+- "(The IKEA Effect) Do you place a higher value on something simply because you built
+  or created it yourself?"
+- "(Choice Overload) Have you recently been paralyzed by having too many options?"
+- "(The Spotlight Effect) What is a small mistake or flaw you are worried others will
+  notice, which they almost certainly won't?"
+- "(Scarcity Heuristic) Are you more attracted to something simply because it is rare,
+  limited, or running out?"
+- "(Belief Bias) Are you more likely to accept an argument if it leads to a conclusion
+  you already agree with, regardless of the logic?"
+- "(The Forer Effect / Barnum Effect) Have you recently accepted a vague or general
+  personality description as being uniquely applicable to you?"
+- Now that you've identified a glitch, what is a simple rule or 'patch' you could
+  create to override it in the future?
+- What is one decision you can re-evaluate now that you are aware of these glitches?
+- How can you intentionally seek out disconfirming evidence for one of your core beliefs?
+- What is a decision where it would be helpful to get an outside, objective opinion
+  to bypass your own biases?
+- How can you introduce a 'cooling-off' period into your decision-making process to
+  let initial biases fade?

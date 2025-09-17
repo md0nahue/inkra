@@ -1,0 +1,46 @@
+---
+uuid: 28ce2b24-7ef4-47dc-b753-16ccd11dbcdb
+title: Amor Fati Practice
+description: Don't just accept your fate—love it. This framework is a profound practice
+  in the Stoic art of Amor Fati, the love of fate. Learn to not just tolerate, but
+  to embrace every event, every obstacle, and every outcome as a necessary and beautiful
+  part of your journey. Transform your struggles into strengths and find peace in
+  the perfection of your path.
+llm_prompt: |
+  You are a Stoic mentor, guiding the user through the advanced practice of "Amor Fati" (the love of fate). Your tone is wise, steady, and deeply compassionate.
+
+  Introduce the concept: Explain that while Stoicism teaches us to accept what we can't control, Amor Fati is the next step. It is the conscious choice to see everything that happens—the good, the bad, the ugly—as not just acceptable, but desirable. It is to believe that this exact path, with all its twists and turns, is the perfect path for you. The goal is not to suppress feelings of disappointment, but to transmute them into a sense of purpose and even gratitude.
+
+  Guide them through the process: Ask the user to bring to mind a current difficulty or a past event that they still struggle with. The questions are designed to help them reframe this event through the lens of Amor Fati. Use prompts like: "What if this obstacle were not in your way, but *is* the way?" or "How could this exact challenge be the perfect raw material to forge the virtue you need most?" or "If you were to believe this event was for your benefit, what would that benefit be?"
+
+  Your aim is to help the user cultivate a deep, abiding trust in their own life's path, finding freedom not by changing events, but by changing their relationship to them.
+questions:
+- Think of a current obstacle in your life. What is one way it could be seen as an
+  opportunity?
+- What if this challenge was custom-designed to teach you the exact lesson you need
+  to learn right now?
+- Look back at a past failure. What strength did you develop because of it?
+- How did that past 'failure' make your current successes possible?
+- What is something you are currently resisting? What would it feel like to welcome
+  it as a necessary part of your path?
+- Can you find one thing to be grateful for in a situation you dislike?
+- If you had to treat this moment as if you chose it, how would your attitude change?
+- What virtue is this situation giving you the chance to practice (e.g., patience,
+  courage, forgiveness)?
+- How can you use this event as 'fuel' for your purpose?
+- Think of a physical or personal trait you dislike. How could it be a hidden strength?
+- What if everything that has happened in your life, good and bad, has been preparing
+  you for this moment?
+- Can you say 'yes' to this present moment, exactly as it is?
+- If you were to write the story of your life, how would this difficult chapter be
+  the turning point that makes the hero stronger?
+- What is the universe trying to show you with this challenge?
+- Instead of asking 'Why is this happening to me?,' ask 'What is this asking of me?'
+- How can you find beauty or poetry in the struggle you are facing?
+- What would you do right now if you truly believed that nothing that happens can
+  harm your inner self?
+- Think of a person who has wronged you. How has your experience with them made you
+  more resilient or compassionate?
+- If you were to say 'Thank you' for this situation, what would you be thanking it
+  for?
+- This thing that you are fighting—what if it is your greatest teacher?

@@ -1,0 +1,441 @@
+presets:
+  - title: "Uncovering Your Creative Spark"
+    uuid: ""
+    description: "Creativity isn't just for artists; it's a fundamental human trait that shows up in how we solve problems, express ourselves, and find joy. This interview helps you reconnect with your innate creativity, whether it's in the kitchen, the garden, or in a spreadsheet. It's an exercise in seeing yourself as a creative being and finding ways to nurture that vital spark."
+    category: "fiction_writing"
+    icon_name: "wand.and.stars"
+    order_position: 5
+    active: true
+    is_featured: true
+    chapters:
+      - title: "Remembering Creative Play"
+        sections:
+          - title: "Childhood Imagination"
+            questions:
+              - "As a child, what was your favorite way to play or make things?"
+              - "Describe a world or a game you remember creating from your own imagination."
+              - "What did it feel like to be completely absorbed in a creative activity as a child?"
+      - title: "Creativity in Your Life Now"
+        sections:
+          - title: "Redefining Creativity"
+            questions:
+              - "Describe an area of your life where you feel you can be truly yourself. How is creativity a part of that?"
+              - "Think about a problem you recently solved at work or at home. What creative thinking did you use?"
+              - "What is an activity—like cooking, organizing, or planning—that allows you to express a part of yourself?"
+      - title: "Nurturing the Spark"
+        sections:
+          - title: "Making Space for Play"
+            questions:
+              - "If you had a completely free afternoon with no obligations, what creative or playful activity would you choose?"
+              - "What is one 'creative well' you can draw from for inspiration—like a museum, a walk in nature, or a bookstore?"
+              - "What is a small, five-minute creative act you could incorporate into your daily routine?"
+
+  - title: "Character Development Workshop"
+    uuid: ""
+    description: "Build complex, three-dimensional characters that leap off the page. This interview guides you through the process of creating compelling protagonists, antagonists, and supporting characters with authentic motivations, flaws, and growth arcs."
+    category: "fiction_writing"
+    icon_name: "person.crop.circle.fill"
+    order_position: 28
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Character Foundation"
+        sections:
+          - title: "Core Identity"
+            questions:
+              - "Who is your main character at the beginning of your story? What defines them?"
+              - "What lie does your character believe about themselves or the world?"
+              - "What is your character's deepest fear and greatest desire?"
+          - title: "Backstory & Wounds"
+            questions:
+              - "What specific event from their past still haunts your character?"
+              - "How did your character's childhood shape who they are today?"
+              - "What secret is your character keeping that could destroy everything?"
+      - title: "Relationships & Conflict"
+        sections:
+          - title: "Key Relationships"
+            questions:
+              - "Who is the most important person in your character's life and why?"
+              - "What relationship in your story will challenge your character the most?"
+              - "How does your character behave differently with different people?"
+          - title: "Internal Conflict"
+            questions:
+              - "What internal battle is your character fighting throughout the story?"
+              - "When will your character have to choose between two things they value?"
+              - "What will force your character to confront their deepest fear?"
+      - title: "Character Arc"
+        sections:
+          - title: "Transformation"
+            questions:
+              - "How will your character be different by the end of the story?"
+              - "What specific moment will catalyze your character's change?"
+              - "What truth will replace the lie your character believes?"
+
+  - title: "World-Building Blueprint"
+    uuid: ""
+    description: "Create immersive fictional worlds that feel lived-in and authentic. Whether you're crafting a fantasy realm, a sci-fi universe, or a contemporary setting with a twist, this interview helps you develop the rich details that make your world unforgettable."
+    category: "fiction_writing"
+    icon_name: "globe.americas.fill"
+    order_position: 29
+    active: true
+    is_featured: false
+    chapters:
+      - title: "The Foundation"
+        sections:
+          - title: "Core Concept"
+            questions:
+              - "What is the central premise or 'what if' question of your world?"
+              - "What makes your world unique compared to our reality?"
+              - "What are the fundamental rules or laws that govern your world?"
+          - title: "History & Culture"
+            questions:
+              - "What historical event shaped your world into what it is today?"
+              - "What are the dominant cultures or societies in your world?"
+              - "What conflicts or tensions exist between different groups?"
+      - title: "Living Details"
+        sections:
+          - title: "Daily Life"
+            questions:
+              - "What does an ordinary day look like for someone in your world?"
+              - "What do people in your world eat, wear, and do for entertainment?"
+              - "What jobs or roles exist in your world that don't exist in ours?"
+          - title: "Systems & Structures"
+            questions:
+              - "How is power distributed in your world (government, magic, technology)?"
+              - "What is the economy based on and how do people make a living?"
+              - "What are the major religions or belief systems?"
+      - title: "Story Integration"
+        sections:
+          - title: "World as Character"
+            questions:
+              - "How does your world's unique nature drive the plot forward?"
+              - "What aspects of your world will challenge your characters the most?"
+              - "What hidden truth about your world will be revealed in the story?"
+
+  - title: "Plot Architecture"
+    uuid: ""
+    description: "Design compelling plots that keep readers turning pages. This interview helps you structure your story, develop meaningful conflicts, and create satisfying resolutions while avoiding common plotting pitfalls."
+    category: "fiction_writing"
+    icon_name: "chart.line.uptrend.xyaxis"
+    order_position: 30
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Story Foundation"
+        sections:
+          - title: "Core Conflict"
+            questions:
+              - "What is the central conflict that drives your entire story?"
+              - "What event kicks off your story and disrupts the status quo?"
+              - "What are the stakes if your protagonist fails?"
+          - title: "Story Questions"
+            questions:
+              - "What is the main question your story is trying to answer?"
+              - "What mystery or unknown element will keep readers engaged?"
+              - "What false victory or defeat will occur at your midpoint?"
+      - title: "Rising Action"
+        sections:
+          - title: "Escalation"
+            questions:
+              - "How will you continuously raise the stakes throughout your story?"
+              - "What are three major obstacles your protagonist must overcome?"
+              - "What subplot mirrors or contrasts with your main plot?"
+          - title: "Turning Points"
+            questions:
+              - "What revelation will change everything your protagonist believes?"
+              - "When will your protagonist's approach stop working?"
+              - "What betrayal or loss will occur at the darkest moment?"
+      - title: "Resolution"
+        sections:
+          - title: "Climax & Conclusion"
+            questions:
+              - "What final challenge will test everything your protagonist has learned?"
+              - "How will the climax resolve both external and internal conflicts?"
+              - "What will the new normal look like after the story ends?"
+
+  - title: "Writing Voice Discovery"
+    uuid: ""
+    description: "Find and refine your unique writing voice. This interview helps you identify your natural storytelling strengths, develop your style, and create prose that resonates with your intended audience."
+    category: "fiction_writing"
+    icon_name: "mic.fill"
+    order_position: 31
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Voice Exploration"
+        sections:
+          - title: "Natural Style"
+            questions:
+              - "When you tell stories to friends, what do they say you're good at?"
+              - "What authors' voices do you admire and why?"
+              - "What emotional tone feels most natural when you write?"
+          - title: "Narrative Approach"
+            questions:
+              - "Do you prefer writing in first, second, or third person? Why?"
+              - "How much internal thought versus action feels right for your stories?"
+              - "What's your natural balance between dialogue and description?"
+      - title: "Style Development"
+        sections:
+          - title: "Language & Rhythm"
+            questions:
+              - "Are you drawn to simple, direct prose or rich, layered descriptions?"
+              - "What kind of metaphors and imagery come naturally to you?"
+              - "How do you want your prose to make readers feel?"
+          - title: "Unique Elements"
+            questions:
+              - "What unconventional techniques do you want to experiment with?"
+              - "What themes or messages consistently appear in your writing?"
+              - "What makes your perspective on storytelling unique?"
+      - title: "Audience Connection"
+        sections:
+          - title: "Reader Experience"
+            questions:
+              - "Who is your ideal reader and what do they crave in a story?"
+              - "What emotional journey do you want to take readers on?"
+              - "What do you want readers to remember most about your writing?"
+
+  - title: "Dialogue Mastery"
+    uuid: ""
+    description: "Craft authentic, compelling dialogue that reveals character, advances plot, and sounds natural on the page. This interview helps you develop an ear for realistic speech patterns and learn to use dialogue as a powerful storytelling tool."
+    category: "fiction_writing"
+    icon_name: "quote.bubble.fill"
+    order_position: 49
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Character Voice"
+        sections:
+          - title: "Unique Speech Patterns"
+            questions:
+              - "How does each of your main characters speak differently from the others?"
+              - "What verbal tics, catchphrases, or speech patterns define each character?"
+              - "How do your characters' backgrounds influence their vocabulary and speaking style?"
+          - title: "Subtext & Motivation"
+            questions:
+              - "What is your character saying versus what they really mean?"
+              - "How do your characters avoid directly stating what they want?"
+              - "What lies do your characters tell themselves and others through dialogue?"
+      - title: "Realistic Conversation"
+        sections:
+          - title: "Natural Flow"
+            questions:
+              - "How do your characters interrupt, overlap, or talk past each other?"
+              - "What do your characters leave unsaid that speaks volumes?"
+              - "How do you balance realistic speech patterns with readability?"
+          - title: "Conflict Through Dialogue"
+            questions:
+              - "How do your characters argue or disagree while revealing their values?"
+              - "What conversations force your characters to confront uncomfortable truths?"
+              - "How does dialogue escalate tension and drive the plot forward?"
+      - title: "Dialogue Craft"
+        sections:
+          - title: "Technical Skills"
+            questions:
+              - "How do you know when to use dialogue tags versus action beats?"
+              - "What role does dialect or accent play in your character development?"
+              - "How do you make exposition feel natural within conversation?"
+
+  - title: "Scene Construction Workshop"
+    uuid: ""
+    description: "Build powerful scenes that serve multiple story functions simultaneously. Learn to craft scenes that advance plot, develop character, reveal information, and create emotional impact all at once."
+    category: "fiction_writing"
+    icon_name: "viewfinder.circle.fill"
+    order_position: 50
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Scene Purpose"
+        sections:
+          - title: "Story Function"
+            questions:
+              - "What specific story goal must this scene accomplish?"
+              - "How does this scene move your protagonist closer to or further from their goal?"
+              - "What essential information will readers learn from this scene?"
+          - title: "Character Development"
+            questions:
+              - "How will your characters change or be challenged in this scene?"
+              - "What aspects of personality will be revealed through action and choice?"
+              - "What relationships will be tested or deepened?"
+      - title: "Scene Structure"
+        sections:
+          - title: "Conflict & Tension"
+            questions:
+              - "What obstacle or conflict drives this scene forward?"
+              - "What does each character want in this scene, and what's preventing them?"
+              - "How will the scene end differently than it began?"
+          - title: "Pacing & Flow"
+            questions:
+              - "What beats of action, dialogue, and reflection create the scene's rhythm?"
+              - "Where should you slow down for emotional impact or speed up for excitement?"
+              - "How does this scene's pace serve the overall story momentum?"
+      - title: "Sensory Details"
+        sections:
+          - title: "Setting as Character"
+            questions:
+              - "How does the physical environment reflect or contrast with the emotional state?"
+              - "What sensory details will immerse readers most effectively?"
+              - "How can the setting actively participate in the conflict?"
+
+  - title: "First Draft Liberation"
+    uuid: ""
+    description: "Give yourself permission to write badly in service of getting the story down. This interview helps you overcome perfectionism, embrace the messy first draft process, and find joy in discovery writing."
+    category: "fiction_writing"
+    icon_name: "scribble.variable"
+    order_position: 51
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Permission to Suck"
+        sections:
+          - title: "First Draft Mindset"
+            questions:
+              - "What perfectionist voices try to stop you from writing your first draft?"
+              - "How can you remind yourself that first drafts are meant to be terrible?"
+              - "What does 'good enough' mean when you're discovery writing?"
+          - title: "Creative Flow"
+            questions:
+              - "What environment and conditions help you access your creative flow state?"
+              - "How do you silence your inner editor while drafting?"
+              - "What strategies help you write through moments of doubt or confusion?"
+      - title: "Discovery Process"
+        sections:
+          - title: "Finding the Story"
+            questions:
+              - "What surprises have emerged as you've written that you didn't plan?"
+              - "How do you follow interesting tangents without losing the main thread?"
+              - "What techniques help you discover what your characters really want?"
+          - title: "Overcoming Blocks"
+            questions:
+              - "What do you do when you get stuck and don't know what happens next?"
+              - "How do you push through scenes that feel boring or difficult to write?"
+              - "What tricks help you maintain momentum when motivation is low?"
+      - title: "Draft Completion"
+        sections:
+          - title: "Finishing Strong"
+            questions:
+              - "How do you maintain faith in your story when the middle feels messy?"
+              - "What strategies help you reach 'The End' even when the story isn't perfect?"
+              - "How will you celebrate completing your first draft?"
+
+  - title: "Revision Strategy Session"
+    uuid: ""
+    description: "Transform your rough first draft into a polished story through strategic revision. Learn to identify what's working, what needs fixing, and how to approach the revision process systematically and effectively."
+    category: "fiction_writing"
+    icon_name: "pencil.and.outline"
+    order_position: 52
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Story Diagnosis"
+        sections:
+          - title: "Big Picture Assessment"
+            questions:
+              - "What is your story really about at its core, beyond the plot events?"
+              - "Which scenes feel essential versus which feel like filler?"
+              - "What promises did you make to readers that you need to fulfill?"
+          - title: "Character Arc Evaluation"
+            questions:
+              - "How clearly does your protagonist change from beginning to end?"
+              - "Which characters serve the story and which are just taking up space?"
+              - "What motivations need to be clarified or strengthened?"
+      - title: "Structural Fixes"
+        sections:
+          - title: "Plot & Pacing"
+            questions:
+              - "Where does your story drag and where does it rush?"
+              - "What scenes need to be cut, combined, or completely rewritten?"
+              - "How can you increase tension and stakes throughout the story?"
+          - title: "Clarity & Logic"
+            questions:
+              - "What plot holes or inconsistencies need to be addressed?"
+              - "Where might readers get confused about what's happening or why?"
+              - "What important information is missing or poorly explained?"
+      - title: "Line-Level Polish"
+        sections:
+          - title: "Prose Refinement"
+            questions:
+              - "What sentence-level patterns do you notice in your writing (overused words, repetitive structures)?"
+              - "Where can you tighten prose and eliminate unnecessary words?"
+              - "How can you make your writing more vivid and engaging?"
+
+  - title: "Genre Mastery Deep Dive"
+    uuid: ""
+    description: "Excel within your chosen genre by understanding its conventions, reader expectations, and opportunities for innovation. Whether you write romance, mystery, fantasy, or literary fiction, master the elements that make your genre work."
+    category: "fiction_writing"
+    icon_name: "books.vertical.fill"
+    order_position: 53
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Genre Foundations"
+        sections:
+          - title: "Reader Expectations"
+            questions:
+              - "What do readers of your genre expect to experience emotionally?"
+              - "What story structures and plot beats are typical in your genre?"
+              - "What tropes and conventions do readers look forward to?"
+          - title: "Essential Elements"
+            questions:
+              - "What are the non-negotiable elements your story must include?"
+              - "How do successful books in your genre balance familiar and fresh elements?"
+              - "What subgenre or blend are you working in and how does that affect expectations?"
+      - title: "Innovation Within Tradition"
+        sections:
+          - title: "Fresh Takes"
+            questions:
+              - "How can you put a unique spin on familiar genre elements?"
+              - "What tired tropes in your genre can you subvert or revitalize?"
+              - "What perspectives or voices are underrepresented in your genre?"
+          - title: "Genre Blending"
+            questions:
+              - "What elements from other genres could enhance your story?"
+              - "How do you balance multiple genre expectations without confusing readers?"
+              - "What unique combination of genres represents your natural writing voice?"
+      - title: "Market Understanding"
+        sections:
+          - title: "Current Landscape"
+            questions:
+              - "What's trending in your genre right now and why?"
+              - "What recent successful books share similarities with your project?"
+              - "How does your story fit into current market demands while staying true to your vision?"
+
+  - title: "Publishing Path Planning"
+    uuid: ""
+    description: "Navigate the complex world of publishing with clarity and strategy. Whether you're considering traditional publishing, self-publishing, or hybrid approaches, make informed decisions about your publishing journey."
+    category: "fiction_writing"
+    icon_name: "map.fill"
+    order_position: 54
+    active: true
+    is_featured: false
+    chapters:
+      - title: "Publishing Goals"
+        sections:
+          - title: "Success Definition"
+            questions:
+              - "What does publishing success look like for you personally?"
+              - "Are you writing primarily for artistic fulfillment, career building, or financial goals?"
+              - "What timeline and milestones matter most to you?"
+          - title: "Audience Identification"
+            questions:
+              - "Who is your target reader and how do they discover new books?"
+              - "What size audience do you need to reach to consider your book successful?"
+              - "How important is it for you to reach a mainstream versus niche audience?"
+      - title: "Publishing Options"
+        sections:
+          - title: "Traditional vs. Self-Publishing"
+            questions:
+              - "What are the pros and cons of each publishing path for your specific goals?"
+              - "What level of creative control versus support do you prefer?"
+              - "How much time and energy can you invest in marketing and promotion?"
+          - title: "Platform Building"
+            questions:
+              - "What author platform do you already have or need to build?"
+              - "How comfortable are you with self-promotion and social media marketing?"
+              - "What unique expertise or personality can you bring to your author brand?"
+      - title: "Next Steps Strategy"
+        sections:
+          - title: "Preparation Requirements"
+            questions:
+              - "What does your manuscript need before it's ready for your chosen publishing path?"
+              - "What industry knowledge and connections do you need to develop?"
+              - "What resources and budget will you need for your chosen approach?"

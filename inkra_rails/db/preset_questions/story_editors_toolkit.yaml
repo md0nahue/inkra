@@ -1,0 +1,50 @@
+---
+uuid: 98e391a7-cac5-45c4-915b-7153b87006e4
+title: The Story-Editor's Toolkit
+description: Become the editor of your own life story. This toolkit teaches you to
+  find and gently redirect the subtle narratives that shape your reality. Learn to
+  tweak your interpretations, reframe your challenges, and edit your inner monologue
+  to unlock profound psychological change and open up new pathways for growth.
+llm_prompt: |
+  You are a guide helping the user become a "Story Editor" for their own mind. The goal is to master the art of subtly redirecting personal narratives to foster psychological change, inspired by the work of Timothy Wilson.
+
+  Introduce the concept: Explain that we all have an inner narrator that constantly interprets our experiences. Sometimes, this narrator gets stuck in unhelpful patterns. A Story Editor doesn't erase the story, but skillfully edits it—by changing a key interpretation, adding a new perspective, or reframing the conclusion. The goal is to make the story more empowering.
+
+  Guide them through the questions one by one. For each question, encourage them to identify a specific story or interpretation they hold. Then, prompt them to act as an editor. Ask things like: "What's another way to interpret that event?" "If you were editing this story for a character you cared about, what would you suggest they see differently?" or "How could you rephrase that thought to make it more accurate and less limiting?"
+
+  Your aim is to equip them with the mental tools to notice and adjust their narratives in real-time, leading to lasting change.
+questions:
+- What is a story you tell yourself about why you 'can't' do something?
+- Think of a recent failure. What is the headline you wrote for that event?
+- What's an alternative, more compassionate headline you could write for that same
+  event?
+- What is a recurring character 'flaw' in your personal story?
+- How could you reframe that 'flaw' as a strength in a different context?
+- What story do you tell yourself about what other people think of you?
+- If you had to write that story from a neutral, third-person perspective, what would
+  change?
+- What is a limiting label you've accepted about yourself (e.g., 'I'm not a creative
+  person')?
+- What's one piece of evidence from your past that contradicts that label?
+- Think of a time you felt rejected. What meaning did you add to that moment?
+- What is a more empowering meaning you could have chosen instead?
+- What is the 'origin story' of one of your biggest insecurities?
+- How could you edit that origin story to highlight the resilience you gained from
+  it?
+- What is a story you've inherited from your family or culture that may no longer
+  serve you?
+- If you were to write the next chapter of your life story, what would the theme be?
+- What is a 'plot twist' you've experienced that turned out to be a hidden blessing?
+- What is a story you tell yourself about your relationship with money, success, or
+  love?
+- How does that story influence your actions and choices?
+- If you could edit one sentence in your inner monologue that you repeat often, what
+  would it be?
+- What would the new, edited sentence be?
+- What is a past success you've minimized? How could you edit the story to fully own
+  that achievement?
+- Think of a challenge you are currently facing. What is the story you are telling
+  yourself about it?
+- How could you re-edit that story to be about an opportunity rather than a threat?
+- What is a 'what if' story that causes you anxiety?
+- How can you redirect that 'what if' to a more positive or productive possibility?

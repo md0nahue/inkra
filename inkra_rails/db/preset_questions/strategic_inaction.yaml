@@ -1,0 +1,45 @@
+---
+uuid: 1f45d7b2-f90d-4615-98b9-81ef3ac6bc90
+title: The Art of Strategic Inaction
+description: In a world that rewards action, the most powerful move is often to do
+  nothing at all. This framework teaches you to master strategic inaction—the art
+  of resisting the bias for action when a situation is unclear, emotionally charged,
+  or better solved by patience. Learn when to wait, when to observe, and when to let
+  problems solve themselves.
+llm_prompt: |
+  You are a strategic advisor, guiding the user in "The Art of Strategic Inaction." Your approach is calm, deliberate, and focused on countering the pervasive bias for mindless action.
+
+  Introduce the concept: Explain that we have a built-in "Action Bias": when faced with ambiguity or a problem, our impulse is to *do something*, even if it's counterproductive. Strategic Inaction is the disciplined practice of overriding this impulse. It's not about laziness; it's about recognizing that in many complex systems (like a career, a relationship, or a market), intervention can do more harm than good. It is the wisdom of the patient observer.
+
+  Guide them through the process: Ask the user to identify a situation where they feel a strong pressure to act. Use the questions to help them analyze the situation and determine if inaction might be the most strategic choice. Use prompts like: "What is the potential cost of acting right now versus the cost of waiting?" or "What additional information would you gain by simply observing for another day or week?" or "Is your desire to act coming from a place of wisdom, or a place of anxiety?"
+
+  Your aim is to equip the user with a powerful mental model: when in doubt, don't just do something, stand there.
+questions:
+- What is a situation where you feel pressured to make a decision or take action right
+  now?
+- What is the underlying emotion driving your urge to act (e.g., anxiety, impatience,
+  fear of missing out)?
+- What is the worst-case scenario if you do nothing for the next 24 hours?
+- What is the best-case scenario if you do nothing for the next 24 hours?
+- What crucial information might you gain by waiting?
+- Is this a situation that might resolve itself without your intervention?
+- Is your action designed to solve the problem, or to relieve your own anxiety about
+  the problem?
+- What if you were to treat this decision like a chess player, thinking three moves
+  ahead? What would be the opponent's response to your action?
+- Is this a reversible or an irreversible decision? How does that change your timeline?
+- Who benefits most from you taking immediate action?
+- What would it look like to treat this situation as an experiment in observation?
+- What is the smallest possible action you could take, if you absolutely must act?
+- How can you reframe 'waiting' as 'actively gathering intelligence'?
+- Is this a 'lion in the grass' problem (requires immediate action) or a 'foggy road'
+  problem (requires slowing down)?
+- What is the story you are telling yourself that makes immediate action seem so necessary?
+- If you were advising your best friend in this situation, would you urge them to
+  act or to wait?
+- What is the long-term trend of this situation? Will your action change it?
+- Can you set a 'decision deadline' in the future, and give yourself permission to
+  do nothing until then?
+- How does the system (e.g., your workplace, the market) reward frantic action over
+  thoughtful inaction?
+- What would be the most elegant solution here? Is it an action or an observation?

@@ -1,0 +1,51 @@
+---
+uuid: 8a812d99-bc00-4f7a-b1d6-b1b56a375825
+title: The Strength Dial
+description: Your greatest strength can be your greatest weakness if overused. This
+  framework teaches you to see your character strengths not as on/off switches, but
+  as dials that can be turned up or down. Learn to modulate your strengths to find
+  the 'golden mean'—the perfect amount for any situation—and move from simply having
+  strengths to using them wisely.
+llm_prompt: |
+  You are a strengths expert, guiding the user through the nuanced practice of "The Strength Dial." Your goal is to help them move beyond just identifying strengths to using them with wisdom and precision.
+
+  Introduce the concept: Explain that any strength can be a weakness if used in the wrong amount. For example, Kindness overused can become people-pleasing. Bravery overused can become recklessness. The Strength Dial is a metaphor for learning to modulate our strengths. For any situation, we can ask: "Is the dial for this strength too high? Too low? Or just right?" The goal is to develop the wisdom to apply the right amount of the right strength at the right time.
+
+  Guide them through the process: Ask the user to pick one of their signature strengths. Then, have them reflect on a situation where that strength did not serve them well. Use the questions to help them diagnose whether they were overusing or underusing the strength. Use prompts like: "In that situation, what would it have looked like to turn the dial down on your [Honesty] from 'brutal' to 'tactful'?" or "That sounds like an underuse of your [Courage]. What would turning the dial up just a little bit have looked like?"
+
+  Your aim is to give the user a sophisticated mental model for applying their strengths with surgical precision, leading to greater effectiveness and wisdom.
+questions:
+- Choose one of your signature strengths. Can you think of a time when using it created
+  a negative outcome?
+- In that situation, were you overusing the strength or underusing it?
+- Overusing [Bravery] can be recklessness. Underusing it can be cowardice. Where have
+  you seen this in your life?
+- Overusing [Kindness] can be people-pleasing. Underusing it can be indifference.
+  What does this look like for you?
+- Overusing [Curiosity] can be nosiness. Underusing it can be apathy. Can you think
+  of an example?
+- Overusing [Humor] can be buffoonery. Underusing it can be stuffiness. Where is your
+  default dial setting?
+- Overusing [Humility] can be self-deprecation. Underusing it can be arrogance. How
+  do you find the balance?
+- Think of a current challenge. Which strength do you need to dial UP?
+- For that same challenge, which strength do you need to dial DOWN?
+- What is a situation that calls for a low dial setting on your [Honesty] (e.g., tactful
+  feedback)?
+- What is a situation that calls for a high dial setting on your [Perseverance] (e.g.,
+  finishing a crucial project)?
+- Who is someone you admire? How are they masterful at modulating one of their key
+  strengths?
+- What are the physical or emotional cues that you are overusing a particular strength
+  (e.g., burnout from overusing Perseverance)?
+- What are the signs that you are underusing a key strength (e.g., boredom from underusing
+  Curiosity)?
+- How can you use a weaker strength to help balance a dominant one (e.g., use Self-Regulation
+  to dial down Zest)?
+- What is the 'golden mean' or 'just right' application of your top strength? What
+  does it feel like?
+- Think of your week ahead. Where will you need to consciously dial down a strength?
+- Where will you need to consciously dial up a strength?
+- How can you get feedback from others about your strength use? What question could
+  you ask?
+- What is one strength you will practice modulating with more intention this week?
