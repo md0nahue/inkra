@@ -11,7 +11,6 @@ class LambdaService: ObservableObject {
 
     // MARK: - Configuration
     private var apiGatewayBaseURL: String = ""
-    private var authService = CognitoAuthService.shared
 
     // MARK: - Network Session
     private let urlSession: URLSession
@@ -77,14 +76,6 @@ class LambdaService: ObservableObject {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        // Add authorization header
-        do {
-            let idToken = try await authService.getIdToken()
-            request.setValue("Bearer \(idToken)", forHTTPHeaderField: "Authorization")
-        } catch {
-            throw LambdaError.authenticationRequired
-        }
-
         // Encode request body
         do {
             request.httpBody = try JSONEncoder().encode(requestBody)
@@ -133,14 +124,6 @@ class LambdaService: ObservableObject {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
 
-        // Add authorization header
-        do {
-            let idToken = try await authService.getIdToken()
-            request.setValue("Bearer \(idToken)", forHTTPHeaderField: "Authorization")
-        } catch {
-            throw LambdaError.authenticationRequired
-        }
-
         do {
             let (data, response) = try await urlSession.data(for: request)
 
@@ -180,14 +163,6 @@ class LambdaService: ObservableObject {
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
-        // Add authorization header
-        do {
-            let idToken = try await authService.getIdToken()
-            request.setValue("Bearer \(idToken)", forHTTPHeaderField: "Authorization")
-        } catch {
-            throw LambdaError.authenticationRequired
-        }
 
         // Encode request body
         do {
